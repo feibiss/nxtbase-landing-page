@@ -3,7 +3,7 @@ import { ArrowRightIcon, CheckIcon } from "@radix-ui/react-icons";
 
 export default function ContactCard() {
   return (
-    <div className="flex flex-col justify-center items-center bg-gradient-to-b from-sky-300 via-blue-200 bottom-0  to-transparent h-[30rem] w-[90vw] rounded-t-[5rem] my-24 pt-10">
+    <div className="flex flex-col justify-center items-center bg-gradient-to-b from-sky-300  via-blue-200 bottom-0  to-transparent h-[30rem] w-[90vw] rounded-t-[5rem] my-24 pt-10">
       <h1 className="md:text-5xl text-3xl w-full text-center font-bold text-black pt-12 md:mb-10 mb-6">
         Grow on LinkedIn with Supergrow
       </h1>
@@ -24,11 +24,11 @@ export default function ContactCard() {
       </Button>
       <div className="flex justify-center mt-12">
         <CheckIcon className="text-green-500 h-6 w-6 mr-2" />
-        <span className="text-black font-semibold mr-8">
+        <span className="text-foreground font-semibold mr-8">
           No credit card required
         </span>
         <CheckIcon className="text-green-500 h-6 w-6 mr-2 " />
-        <span className="text-black font-semibold">7-day free trial</span>
+        <span className="text-foreground font-semibold">7-day free trial</span>
       </div>
     </div>
   );

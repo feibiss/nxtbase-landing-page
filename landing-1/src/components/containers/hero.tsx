@@ -17,13 +17,13 @@ export default function Hero() {
           href="#"
           className={clsx(
             buttonVariants({ variant: "ghost", size: "sm" }),
-            "gap-2 p-0 rounded-full h-fit bg-sky-50 px-0"
+            "gap-2 p-0 rounded-full h-fit bg-sky-50 dark:bg-muted px-0"
           )}
         >
           <p
             className={clsx(
               buttonVariants({ variant: "default" }),
-              "text-xs px-2 rounded-full m-0 "
+              "text-xs px-2 rounded-full m-0 text-primary-foreground "
             )}
           >
             New
@@ -33,10 +33,10 @@ export default function Hero() {
           </p>
         </Link>
       </div>
-      <h1 className="mt-4 lg:text-8xl leading-tight  font-medium text-gray-900 text-5xl">
+      <h1 className="mt-4 lg:text-8xl leading-tight  font-medium text-foreground text-5xl">
         The only LinkedIn content creation tool you’ll ever need
       </h1>
-      <p className="mt-8 max-w-xl mx-auto text-base text-gray-500">
+      <p className="mt-8 max-w-xl mx-auto text-base text-muted-foreground">
         Generate content ideas, high-quality LinkedIn posts, make eye-catching
         carousels, format for readability, and schedule easily—all in one place!
       </p>
@@ -53,9 +53,9 @@ export default function Hero() {
       </Button>
       <div className="mt-6 flex justify-center space-x-2">
         <CheckCircledIcon className="w-6 h-6 text-green-500" />
-        <span className="text-gray-700">No credit card required</span>
+        <span className="text-muted-foreground">No credit card required</span>
         <CheckCircledIcon className="w-6 h-6 text-green-500" />
-        <span className="text-gray-700">7-day free trial</span>
+        <span className="text-muted-foreground">7-day free trial</span>
       </div>
       <div className="mt-6 flex justify-center space-x-1">
         <Avatar alt="User 1" src="/placeholder.svg?height=32&width=32" />
@@ -71,7 +71,9 @@ export default function Hero() {
         <StarFilledIcon className="w-5 h-5 text-yellow-400" />
         <StarFilledIcon className="w-5 h-5 text-yellow-400" />
         <StarFilledIcon className="w-5 h-5 text-yellow-400" />
-        <span className="ml-2 text-gray-600">Loved by 570+ professionals</span>
+        <span className="ml-2 text-muted-foreground">
+          Loved by 570+ professionals
+        </span>
       </div>
     </div>
   );

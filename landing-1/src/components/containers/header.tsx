@@ -14,13 +14,19 @@ import clsx from "clsx";
 export default function Header() {
   const [openMobileNav, setOpenMobileNav] = useState(false);
   return (
-    <header className="flex bg-white/80 left-0 h-20 w-full shrink-0 items-center z-50 md:px-28 px-4 sticky top-0 bg-opacity-90 backdrop-blur-md border-b border-gray-200">
+    <header className="flex bg-background/80 left-0 h-20 w-full shrink-0 items-center z-50 md:px-28 px-4 sticky top-0 bg-opacity-90 backdrop-blur-md border-b border-gray-200">
       <Link
         className="mr-6 w-fit h-full flex justify-start items-center"
         href="#"
       >
         <span className="sr-only">Nextbase</span>
-        <Image alt="brand-logo" width={100} height={64} src="/vercel.svg" />
+        <Image
+          alt="brand-logo"
+          width={100}
+          className="dark:invert"
+          height={64}
+          src="/vercel.svg"
+        />
       </Link>
 
       <NavigationMenu className="hidden md:flex">
@@ -62,7 +68,7 @@ export default function Header() {
           size={"icon"}
           variant={"outline"}
           rounded={"full"}
-          className="ml-4 rounded-full md:hidden block"
+          className="ml-4 rounded-full md:hidden flex justify-center items-center"
         >
           {openMobileNav ? <Cross1Icon /> : <HamburgerMenuIcon />}
         </Button>

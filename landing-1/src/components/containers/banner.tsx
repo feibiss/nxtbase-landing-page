@@ -18,7 +18,7 @@ const Banner = () => {
       ref={targetRef}
       className="w-screen max-w-screen h-[60vh] md:h-[80vh] rounded-xl relative flex justify-center md:items-end pt-10 mt-16"
     >
-      <div className="bg-gradient-to-b from-sky-500 via-blue-300 bottom-0 flex mt-auto  to-transparent h-2/3 w-[90vw] rounded-t-[5rem]"></div>
+      <div className="bg-gradient-to-b from-primary via-blue-400 bottom-0 flex mt-auto  to-transparent h-2/3 w-[90vw] rounded-t-[5rem]"></div>
       <motion.div
         style={{
           scale,
