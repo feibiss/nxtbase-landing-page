@@ -5,8 +5,6 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "framerusercontent.com",
-        // port: "",
-        // pathname: "/account123/**",
       },
       {
         protocol: "https",
