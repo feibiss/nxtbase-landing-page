@@ -1,50 +1,35 @@
 import { Button } from "@/components/ui/button";
+import { ArrowRightIcon, CheckIcon } from "@radix-ui/react-icons";
 
 export default function ContactCard() {
   return (
-    <div
-      key="1"
-      className="bg-gradient-to-b from-blue-100 to-transparent p-12 text-center rounded-t-3xl"
-    >
-      <h1 className="text-5xl font-bold text-black pt-20">
+    <div className="flex flex-col justify-center items-center bg-gradient-to-b from-sky-300 via-blue-200 bottom-0  to-transparent h-[30rem] w-[90vw] rounded-t-[5rem] my-24 pt-10">
+      <h1 className="text-5xl font-bold text-black pt-12 mb-10">
         Grow on LinkedIn with Supergrow
       </h1>
-      <p className="mt-4 text-lg text-black max-w-md mx-auto text-justify">
+      <p className="mt-4 text-xl text-black max-w-3xl mx-auto text-center">
         Grow your personal brand on LinkedIn the simple, powerful, and
         affordable way with Supergrow. Hundreds of professionals and agencies
         trust Supergrow to save them time and help them grow their audience.
       </p>
       <Button
-        className="mt-8 bg-white text-[#00B0FF] hover:bg-gray-100"
+        className="mt-12 gap-2 pl-6 rounded-full"
         variant="default"
+        rounded={"full"}
       >
         Get started for free
+        <div className="ml-auto h-10 w-10 rounded-full bg-white flex justify-center items-center text-primary">
+          <ArrowRightIcon className="h-6 w-6" />
+        </div>
       </Button>
-      <div className="flex justify-center space-x-4 mt-4">
-        <CheckIcon className="text-black" />
-        <span className="text-black">No credit card required</span>
-        <CheckIcon className="text-black" />
-        <span className="text-black">7-day free trial</span>
+      <div className="flex justify-center mt-12">
+        <CheckIcon className="text-green-500 h-6 w-6 mr-2" />
+        <span className="text-black font-semibold mr-8">
+          No credit card required
+        </span>
+        <CheckIcon className="text-green-500 h-6 w-6 mr-2 " />
+        <span className="text-black font-semibold">7-day free trial</span>
       </div>
     </div>
-  );
-}
-
-function CheckIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <polyline points="20 6 9 17 4 12" />
-    </svg>
   );
 }
