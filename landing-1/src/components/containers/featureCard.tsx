@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CardContent, Card } from "@/components/ui/card";
+import { CheckIcon } from "@radix-ui/react-icons";
 
 type FeatureType = {
   title: string;
@@ -21,26 +22,12 @@ export default function FeatureCard({ feature }: { feature: FeatureType }) {
           <h2 className="text-4xl font-bold mb-4">{feature.title}</h2>
           <p className="text-lg mb-6">{feature.desc}</p>
           <ul className="list-none space-y-2 mb-6">
-            <li className="flex items-center">
-              <CheckIcon className="text-green-500 mr-2" />
-              Ready-to-use carousel templates
-            </li>
-            <li className="flex items-center">
-              <CheckIcon className="text-green-500 mr-2" />
-              Customize to your preferences
-            </li>
-            <li className="flex items-center">
-              <CheckIcon className="text-green-500 mr-2" />
-              Create carousels from content
-            </li>
-            <li className="flex items-center">
-              <CheckIcon className="text-green-500 mr-2" />
-              Save and download carousels
-            </li>
-            <li className="flex items-center">
-              <CheckIcon className="text-green-500 mr-2" />
-              Share or schedule carousels
-            </li>
+            {feature.features?.map((feature) => (
+              <li key={feature} className="flex items-center">
+                <CheckIcon className="text-green-500 mr-2 h-6 w-6 capitalize" />
+                {feature}
+              </li>
+            ))}
           </ul>
           <Button
             className="rounded-full border-blue-200 bg-white"
@@ -63,24 +50,5 @@ export default function FeatureCard({ feature }: { feature: FeatureType }) {
         </div>
       </Card>
     </div>
-  );
-}
-
-function CheckIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <polyline points="20 6 9 17 4 12" />
-    </svg>
   );
 }
