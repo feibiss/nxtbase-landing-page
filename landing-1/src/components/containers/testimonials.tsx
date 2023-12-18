@@ -28,7 +28,7 @@ type CardProps = {
 };
 const TestimonyCard = () => {
   return (
-    <Card className="flex min-w-[20rem] min-h-[24rem] flex-col items-start justify-start px-6 py-8 shadow-lg">
+    <Card className="flex cursor-pointer min-w-[20rem] min-h-[24rem] flex-col items-start justify-start px-6 py-8 shadow-lg">
       <blockquote className="text-lg font-medium leading-snug mb-20 justify-start text-left">
         The product features are innovative and help us stay ahead of our
         competitors.
