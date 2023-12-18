@@ -4,10 +4,10 @@ import { ArrowRightIcon, CheckIcon } from "@radix-ui/react-icons";
 export default function ContactCard() {
   return (
     <div className="flex flex-col justify-center items-center bg-gradient-to-b from-sky-300 via-blue-200 bottom-0  to-transparent h-[30rem] w-[90vw] rounded-t-[5rem] my-24 pt-10">
-      <h1 className="text-5xl font-bold text-black pt-12 mb-10">
+      <h1 className="md:text-5xl text-3xl w-full text-center font-bold text-black pt-12 md:mb-10 mb-6">
         Grow on LinkedIn with Supergrow
       </h1>
-      <p className="mt-4 text-xl text-black max-w-3xl mx-auto text-center">
+      <p className="mt-4 md:text-xl text-base px-4 md:px-0 text-black max-w-3xl mx-auto text-center">
         Grow your personal brand on LinkedIn the simple, powerful, and
         affordable way with Supergrow. Hundreds of professionals and agencies
         trust Supergrow to save them time and help them grow their audience.
