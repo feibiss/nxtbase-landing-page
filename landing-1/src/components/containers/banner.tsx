@@ -10,8 +10,8 @@ const Banner = () => {
     offset: ["start end", "end end"],
   });
   const scale = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
-  const rotateX = useTransform(scrollYProgress, [0, 0.5, 1], [45, 40, 0]);
-  const rotateY = useTransform(scrollYProgress, [0, 1], [11, 0]);
+  const rotateX = useTransform(scrollYProgress, [0, 0.5, 1], [15, 10, 0]);
+  const rotateY = useTransform(scrollYProgress, [0, 1], [-11, 0]);
 
   return (
     <div
