@@ -4,16 +4,19 @@ import {
   NavigationMenuList,
   NavigationMenu,
 } from "@/components/ui/navigation-menu";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
-import { HamburgerMenuIcon } from "@radix-ui/react-icons";
+import { Cross1Icon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
+import { useState } from "react";
+import clsx from "clsx";
 
 export default function Header() {
+  const [openMobileNav, setOpenMobileNav] = useState(false);
   return (
-    <header className="flex bg-white/80 left-0 h-20 w-full shrink-0 items-center z-50 px-28 sticky top-0 bg-opacity-90 backdrop-blur-md border-b border-gray-200">
+    <header className="flex bg-white/80 left-0 h-20 w-full shrink-0 items-center z-50 md:px-28 px-4 sticky top-0 bg-opacity-90 backdrop-blur-md border-b border-gray-200">
       <Link
-        className="mr-6 w-fit h-full lg:flex justify-start items-center"
+        className="mr-6 w-fit h-full flex justify-start items-center"
         href="#"
       >
         <span className="sr-only">Nextbase</span>
@@ -41,7 +44,7 @@ export default function Header() {
           variant={"outline"}
           size={"sm"}
           rounded={"full"}
-          className="rounded-full"
+          className="rounded-full hidden md:block"
         >
           Login
         </Button>
@@ -49,20 +52,31 @@ export default function Header() {
           variant={"default"}
           size={"sm"}
           rounded={"full"}
-          className="rounded-full"
+          className="rounded-full hidden md:block"
         >
           Get Started
         </Button>
-        {/* // TODO Add Mobile Navbar */}
+
         <Button
+          onClick={() => setOpenMobileNav((prev) => !prev)}
           size={"icon"}
           variant={"outline"}
           rounded={"full"}
-          className="ml-4 rounded-full"
+          className="ml-4 rounded-full md:hidden block"
         >
-          <HamburgerMenuIcon />
+          {openMobileNav ? <Cross1Icon /> : <HamburgerMenuIcon />}
         </Button>
       </div>
+      {openMobileNav && (
+        <div className="absolute bg-white bottom-0 h-[calc(100dvh-5rem)] top-20 w-full max-w-screen left-0 bg-primary-foreground z-10">
+          <div className="w-full flex flex-col justify-start items-start">
+            <MobileNavMenuItem href="#" content="Home" />
+            <MobileNavMenuItem href="#" content="Pricing" />
+            <MobileNavMenuItem href="#" content="Features" />
+            <MobileNavMenuItem href="#" content="Contact" />
+          </div>
+        </div>
+      )}
     </header>
   );
 }
@@ -80,6 +94,26 @@ const NavMenuItem = ({
       href={href}
     >
       {content}
+    </Link>
+  );
+};
+
+const MobileNavMenuItem = ({
+  href = "#",
+  content,
+}: {
+  href: string;
+  content: string;
+}) => {
+  return (
+    <Link
+      href={href}
+      className={clsx(
+        buttonVariants({ variant: "ghost", size: "lg" }),
+        "w-full border-b-2 border-gray-100"
+      )}
+    >
+      <p className=" font-medium text-base py-4">{content}</p>
     </Link>
   );
 };
