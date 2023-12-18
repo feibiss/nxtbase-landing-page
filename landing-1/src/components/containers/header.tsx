@@ -11,7 +11,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="flex bg-white/80 left-0 h-20 w-full shrink-0 items-center z-50 px-4 md:px-6 sticky top-0 bg-opacity-90 backdrop-blur-md border-b border-gray-200">
+    <header className="flex bg-white/80 left-0 h-20 w-full shrink-0 items-center z-50 px-28 sticky top-0 bg-opacity-90 backdrop-blur-md border-b border-gray-200">
       <Link
         className="mr-6 w-fit h-full lg:flex justify-start items-center"
         href="#"
@@ -36,14 +36,29 @@ export default function Header() {
           </NavigationMenuLink>
         </NavigationMenuList>
       </NavigationMenu>
-      <div className="ml-auto">
-        <Button>Get Started</Button>
+      <div className="ml-auto flex items-center justify-center gap-3">
+        <Button
+          variant={"outline"}
+          size={"sm"}
+          rounded={"full"}
+          className="rounded-full"
+        >
+          Login
+        </Button>
+        <Button
+          variant={"default"}
+          size={"sm"}
+          rounded={"full"}
+          className="rounded-full"
+        >
+          Get Started
+        </Button>
         {/* // TODO Add Mobile Navbar */}
         <Button
           size={"icon"}
           variant={"outline"}
           rounded={"full"}
-          className="ml-4"
+          className="ml-4 rounded-full"
         >
           <HamburgerMenuIcon />
         </Button>
