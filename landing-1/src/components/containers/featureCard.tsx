@@ -1,21 +1,25 @@
 import { Button } from "@/components/ui/button";
 import { CardContent, Card } from "@/components/ui/card";
 
-export default function FeatureCard() {
+type FeatureType = {
+  title: string;
+  subtitle: string;
+  desc: string;
+  features?: string[];
+  navigateTo: string;
+  imgSrc: string;
+};
+export default function FeatureCard({ feature }: { feature: FeatureType }) {
   return (
-    <div className="relative w-full max-w-4xl mx-auto">
+    <div className="relative w-full mx-auto px-28 py-8 group odd:bg-gray-50 last:mb-20">
       <div className="absolute inset-0 bg-gradient-to-br from-skyblue to-transparent" />
-      <Card className="relative z-10 w-full bg-white p-8 flex items-center">
-        <CardContent className="flex-1">
-          <h3 className="text-lg font-semibold mb-2 text-blue-500 mt-0">
-            Carousel Creation Simplified
+      <Card className="relative z-10 w-full bg-inherit border-none shadow-none p-8 flex items-center col-span-2">
+        <CardContent className={"group-odd:order-1 group-even:order-2"}>
+          <h3 className="text-base font-semibold mb-2 uppercase text-blue-500 mt-0">
+            {feature.subtitle}
           </h3>
-          <h2 className="text-4xl font-bold mb-4">LinkedIn Carousel Maker</h2>
-          <p className="text-lg mb-6">
-            Create, customize and post carousels, all on Supergrow. Ready-to-use
-            templates, simple customization, and turning content into carousels
-            save you precious time.
-          </p>
+          <h2 className="text-4xl font-bold mb-4">{feature.title}</h2>
+          <p className="text-lg mb-6">{feature.desc}</p>
           <ul className="list-none space-y-2 mb-6">
             <li className="flex items-center">
               <CheckIcon className="text-green-500 mr-2" />
@@ -45,18 +49,17 @@ export default function FeatureCard() {
             Learn More
           </Button>
         </CardContent>
-        <div className="flex-1">
-          <img
-            alt="LinkedIn Carousel Maker Screenshot"
-            className="rounded-lg shadow-lg mt-8"
-            height="300"
-            src="/placeholder.svg"
-            style={{
-              aspectRatio: "500/300",
-              objectFit: "cover",
-            }}
-            width="500"
-          />
+        <div className="md:order-1 w-full h-full col-span-1">
+          <video
+            autoPlay
+            loop
+            muted
+            width={500}
+            height={300}
+            className="rounded-lg shadow-lg min-w-[500px] mt-8 min-h-[300px] aspect-[500/300] object-cover object-center bg-gray-300"
+            src={feature.imgSrc}
+            preload=""
+          ></video>
         </div>
       </Card>
     </div>
