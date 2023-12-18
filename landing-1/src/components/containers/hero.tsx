@@ -9,14 +9,8 @@ import {
 export default function Hero() {
   return (
     <div className="text-center p-12 flex flex-col items-center justify-center">
-      <div className="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(100%_100%_at_50%_10%,#fff_40%,#60a5fa_190%)]"></div>
+      <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:150px_180px] [mask-image:radial-gradient(ellipse_30%_40%_at_50%_55%,#000_70%,transparent_110%)]"></div>
       <div className="w-fit flex items-center justify-center rounded-full p-1 gap-2 border-2 border-primary/20">
-        {/* <div className="inline-block bg-primary text-white border-2 border-indigo-400/20 rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wider">
-          New
-        </div>
-        <p className="mr-2 text-primary font-semibold ">
-          Latest release related information.
-        </p> */}
         <Button>
           <p>New</p>
           <p className="mr-2 text-primary font-semibold ">
@@ -24,7 +18,7 @@ export default function Hero() {
           </p>
         </Button>
       </div>
-      <h1 className="mt-4 text-5xl max-w-[80%] font-extrabold text-gray-900 sm:text-6xl">
+      <h1 className="mt-4 text-9xl leading-tight  font-medium text-gray-900 sm:text-6xl">
         The only LinkedIn content creation tool you’ll ever need
       </h1>
       <p className="mt-8 max-w-xl mx-auto text-base text-gray-500">
