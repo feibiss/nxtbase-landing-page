@@ -14,12 +14,12 @@ export default function Hero() {
   return (
     <div className="text-center p-12 flex flex-col items-center justify-center">
       <div className="absolute  -z-10 bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:150px_180px] [mask-image:radial-gradient(ellipse_30%_40%_at_50%_55%,#000_70%,transparent_110%)]"></div>
-      <div className="w-fit flex items-center justify-center rounded-full p-1 gap-2 border-2 border-primary/20">
+      <div className="w-fit flex items-center justify-center rounded-full gap-2 border-2 border-primary/20 p-1">
         <Link
           href="#"
           className={clsx(
             buttonVariants({ variant: "ghost", size: "sm" }),
-            "gap-2 p-0 rounded-full h-fit bg-sky-50 dark:bg-muted px-0"
+            "gap-2 px-0 py-0 rounded-full flex justify-start items-center h-fit w-full bg-sky-50 dark:bg-muted"
           )}
         >
           <p
