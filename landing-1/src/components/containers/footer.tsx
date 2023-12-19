@@ -125,7 +125,7 @@ export default function Footer() {
             Corporation.
           </p>
           <p className="text-muted-foreground text-sm text-center mt-4">
-            Copyright © 2023 Supergrow. All rights reserved.
+            Copyright © 2023 NextBase. All rights reserved.
           </p>
         </div>
       </div>
