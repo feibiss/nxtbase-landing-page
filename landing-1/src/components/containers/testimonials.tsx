@@ -29,7 +29,7 @@ type CardProps = {
 };
 const TestimonyCard = ({ details }: { details: CardProps }) => {
   return (
-    <Card className="flex bg-secondary relative overflow-hidden cursor-pointer min-w-[20rem] min-h-[24rem] group flex-col z-[1] items-start justify-start px-6 py-8 shadow-lg">
+    <Card className="flex bg-secondary relative overflow-hidden cursor-pointer min-w-[15rem] md:min-w-[20rem] min-h-[24rem] group flex-col z-[1] items-start justify-start px-6 py-8 shadow-lg">
       <div
         aria-hidden
         className="absolute h-[20rem] transition-all -bottom-72 -left-40 bg-transparent group:hover:bottom-0  group-hover:left-0 rounded-tr-3xl w-full group-hover:bg-primary/10 blur-xl -z-[1]"
