@@ -1,4 +1,4 @@
-import { Avatar } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button, buttonVariants } from "../ui/button";
 import {
   ArrowRightIcon,
@@ -7,11 +7,13 @@ import {
 } from "@radix-ui/react-icons";
 import clsx from "clsx";
 import Link from "next/link";
+import { AVATARS } from "@/lib/enums";
 
 export default function Hero() {
+  const STARS: number[] = new Array(5).fill(1);
   return (
     <div className="text-center p-12 flex flex-col items-center justify-center">
-      <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:150px_180px] [mask-image:radial-gradient(ellipse_30%_40%_at_50%_55%,#000_70%,transparent_110%)]"></div>
+      <div className="absolute  -z-10 bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:150px_180px] [mask-image:radial-gradient(ellipse_30%_40%_at_50%_55%,#000_70%,transparent_110%)]"></div>
       <div className="w-fit flex items-center justify-center rounded-full p-1 gap-2 border-2 border-primary/20">
         <Link
           href="#"
@@ -29,16 +31,17 @@ export default function Hero() {
             New
           </p>
           <p className="mr-2 text-primary text-sm font-semibold ">
-            Latest release related information.
+            Latest update details hook here.
           </p>
         </Link>
       </div>
       <h1 className="mt-4 lg:text-8xl leading-tight  font-medium text-foreground text-5xl">
-        The only LinkedIn content creation tool you’ll ever need
+        A fancy looking hero text to catch your attention
       </h1>
       <p className="mt-8 max-w-xl mx-auto text-base text-muted-foreground">
-        Generate content ideas, high-quality LinkedIn posts, make eye-catching
-        carousels, format for readability, and schedule easily—all in one place!
+        Great, now that we have your attention, we will actually talk about how
+        we help you do the above. Mostly a brief description which explains our
+        service to convince you to keep scrolling down.
       </p>
       <Button
         className="rounded-full bg-primary cursor-pointer mt-8 p-0"
@@ -57,20 +60,26 @@ export default function Hero() {
         <CheckCircledIcon className="w-6 h-6 text-green-500" />
         <span className="text-muted-foreground">7-day free trial</span>
       </div>
-      <div className="mt-6 flex justify-center space-x-1">
-        <Avatar alt="User 1" src="/placeholder.svg?height=32&width=32" />
-        <Avatar alt="User 2" src="/placeholder.svg?height=32&width=32" />
-        <Avatar alt="User 3" src="/placeholder.svg?height=32&width=32" />
-        <Avatar alt="User 4" src="/placeholder.svg?height=32&width=32" />
-        <Avatar alt="User 5" src="/placeholder.svg?height=32&width=32" />
-        <Avatar alt="User 6" src="/placeholder.svg?height=32&width=32" />
+      <div className="mt-6 flex justify-center -space-x-2">
+        {AVATARS.map(({ src, id }) => {
+          return (
+            <Avatar key={id} className="border-4 border-muted">
+              <AvatarImage src={src} className="object-cover" />
+              <AvatarFallback>CN</AvatarFallback>
+            </Avatar>
+          );
+        })}
       </div>
       <div className="mt-2 flex justify-center items-center group">
-        <StarFilledIcon className="w-5 h-5 text-yellow-400 hover:fill-yellow-400" />
-        <StarFilledIcon className="w-5 h-5 text-yellow-400" />
-        <StarFilledIcon className="w-5 h-5 text-yellow-400" />
-        <StarFilledIcon className="w-5 h-5 text-yellow-400" />
-        <StarFilledIcon className="w-5 h-5 text-yellow-400" />
+        {STARS.map((_, idx) => {
+          return (
+            <StarFilledIcon
+              key={_ + idx}
+              className="w-5 h-5 text-yellow-400 hover:fill-yellow-400"
+            />
+          );
+        })}
+
         <span className="ml-2 text-muted-foreground">
           Loved by 570+ professionals
         </span>

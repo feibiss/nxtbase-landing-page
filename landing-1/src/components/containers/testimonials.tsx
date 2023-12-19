@@ -1,5 +1,6 @@
 import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar";
 import { Card } from "@/components/ui/card";
+import { TESTIMONIES } from "@/lib/enums";
 
 export default function Testimonials() {
   return (
@@ -9,9 +10,9 @@ export default function Testimonials() {
           What Our Users Are Saying
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <TestimonyCard />
-          <TestimonyCard />
-          <TestimonyCard />
+          {TESTIMONIES.map((testimony) => (
+            <TestimonyCard key={testimony.author} details={testimony} />
+          ))}
         </div>
       </div>
     </section>
@@ -19,26 +20,31 @@ export default function Testimonials() {
 }
 
 type CardProps = {
-  testimony: string;
-  avatar: string;
+  review: string;
+  profilePic: string;
   fallback: string;
-  name: string;
-  title: string;
+  author: string;
+  role: string;
   brand: string;
 };
-const TestimonyCard = () => {
+const TestimonyCard = ({ details }: { details: CardProps }) => {
   return (
     <Card className="flex cursor-pointer min-w-[20rem] min-h-[24rem] flex-col items-start justify-start px-6 py-8 shadow-lg">
-      <blockquote className="text-lg font-medium leading-snug mb-20 justify-start text-left">
-        The product features are innovative and help us stay ahead of our
-        competitors.
+      <blockquote className="text-lg first-letter:text-primary first-letter:text-xl font-medium leading-relaxed mb-20 justify-start text-left">
+        {details.review}
       </blockquote>
       <Avatar className="mt-auto">
-        <AvatarImage alt="User 3" src="/placeholder.svg?height=64&width=64" />
-        <AvatarFallback>U3</AvatarFallback>
+        <AvatarImage
+          alt={details.author}
+          src={details.profilePic}
+          className="object-cover"
+        />
+        <AvatarFallback>{details.fallback}</AvatarFallback>
       </Avatar>
-      <h3 className="font-semibold mt-2">Mark Johnson</h3>
-      <p className="text-sm text-gray-500">COO, LMN Ltd</p>
+      <h3 className="font-semibold mt-2">{details.author}</h3>
+      <p className="text-sm text-gray-500">
+        {details.role + ", " + details.brand}
+      </p>
     </Card>
   );
 };
