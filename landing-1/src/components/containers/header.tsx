@@ -50,7 +50,7 @@ export default function Header() {
           variant={"outline"}
           size={"sm"}
           rounded={"full"}
-          className="rounded-full hidden md:block"
+          className="rounded-full hidden md:block px-3 py-1"
         >
           Login
         </Button>
@@ -58,7 +58,7 @@ export default function Header() {
           variant={"default"}
           size={"sm"}
           rounded={"full"}
-          className="rounded-full hidden md:block"
+          className="rounded-full hidden md:block px-3 py-1"
         >
           Get Started
         </Button>
