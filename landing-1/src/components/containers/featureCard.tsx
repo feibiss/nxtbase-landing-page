@@ -1,4 +1,4 @@
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { CardContent, Card } from "@/components/ui/card";
 import { CheckIcon } from "@radix-ui/react-icons";
 import clsx from "clsx";
@@ -45,7 +45,7 @@ export default function FeatureCard({ feature }: { feature: FeatureType }) {
             Learn More
           </Link>
         </CardContent>
-        <div className="md:order-1 w-full h-full col-span-1 md:mb-0 mb-8">
+        <div className="md:order-1 w-full h-full col-span-1 flex justify-center items-center md:mb-0 mb-8">
           <video
             autoPlay
             loop

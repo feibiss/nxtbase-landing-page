@@ -19,13 +19,13 @@ export default function Header() {
         className="mr-6 w-fit h-full flex justify-start items-center"
         href="#"
       >
-        <span className="sr-only">Nextbase</span>
+        <span className="sr-only">Nextbase Template</span>
         <Image
           alt="brand-logo"
           width={100}
           className="dark:invert"
           height={64}
-          src="/vercel.svg"
+          src="/brand.svg"
         />
       </Link>
 
