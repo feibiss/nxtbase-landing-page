@@ -13,7 +13,7 @@ export default function ContactCard() {
         trust Supergrow to save them time and help them grow their audience.
       </p>
       <Button
-        className="mt-12 gap-2 pl-6 rounded-full"
+        className="mt-12 gap-2 pl-6 rounded-full py-6"
         variant="default"
         rounded={"full"}
       >
