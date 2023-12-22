@@ -14,11 +14,11 @@ const Banner = () => {
   const rotateY = useTransform(scrollYProgress, [0, 1], [-11, 0]);
 
   return (
-    <div
+    <section
       ref={targetRef}
-      className="w-screen max-w-screen h-[60vh] md:h-[80vh] rounded-xl relative flex justify-center md:items-end pt-10 mt-16"
+      className="w-screen h-screen snap-start rounded-xl relative flex justify-center md:items-end pt-10 mt-16"
     >
-      <div className="bg-gradient-to-b from-primary via-blue-400 bottom-0 flex mt-auto  to-transparent h-2/3 w-[90vw] rounded-t-[5rem]"></div>
+      <div className="bg-gradient-to-b from-primary via-blue-400 bottom-0 flex mt-auto  to-transparent h-full w=full rounded-t-[5rem]"></div>
       <motion.div
         style={{
           scale,
@@ -45,7 +45,7 @@ const Banner = () => {
           src="https://framerusercontent.com/images/zDvCdrgFgrnqx6RM3w6Vm6nzTc.png?scale-down-to=1024"
         />
       </div>
-    </div>
+    </section>
   );
 };
 

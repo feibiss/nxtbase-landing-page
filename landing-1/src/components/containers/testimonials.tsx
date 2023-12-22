@@ -4,7 +4,7 @@ import { TESTIMONIES } from "@/lib/enums";
 
 export default function Testimonials() {
   return (
-    <section className="container w-full py-12 md:py-24 lg:py-32">
+    <section className="container snap-start w-full py-12 md:py-24 lg:py-32">
       <div className="mx-auto px-4 md:px-6 lg:px-8 text-center bg-background">
         <h2 className="text-3xl text-foreground flex justify-center items-center text-center pb-4 font-bold tracking-tighter sm:text-4xl md:text-5xl mb-20">
           What Our Users Are Saying
