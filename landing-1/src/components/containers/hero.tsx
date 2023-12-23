@@ -8,59 +8,59 @@ import {
 import clsx from "clsx";
 import Link from "next/link";
 import { AVATARS } from "@/lib/enums";
+import { Typography } from "../ui/typography";
 
 export default function Hero() {
   const STARS: number[] = new Array(5).fill(1);
   return (
-    <div className="text-center p-12 flex flex-col items-center justify-center">
-      <div className="absolute  -z-10 bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:150px_180px] [mask-image:radial-gradient(ellipse_30%_40%_at_50%_55%,#000_70%,transparent_110%)]"></div>
-      <div className="w-fit flex items-center justify-center rounded-full gap-2 border-2 border-primary/20 p-1">
+    <section className="text-center h-[calc(100vh-var(--navbar-height))] snap-start scroll-mt-[6rem] gap-2 flex flex-col items-center justify-center">
+      <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:150px_180px] [mask-image:radial-gradient(ellipse_30%_40%_at_50%_55%,#000_70%,transparent_110%)]"></div>
+      {/* ? Pill */}
+      <div className="w-fit flex items-center justify-center rounded-full gap-2 border-2 border-primary/20">
         <Link
           href="#"
           className={clsx(
             buttonVariants({ variant: "ghost", size: "sm" }),
-            "gap-2 px-0 py-0 rounded-full flex justify-start items-center h-fit w-full bg-sky-50 dark:bg-muted"
+            " rounded-full flex justify-start items-center h-fit w-full bg-sky-50 dark:bg-muted"
           )}
         >
           <p
             className={clsx(
               buttonVariants({ variant: "default" }),
-              "text-xs px-2 rounded-full m-0 text-primary-foreground "
+              "text-xs rounded-full text-primary-foreground "
             )}
           >
             New
           </p>
-          <p className="mr-2 text-primary text-sm font-semibold ">
+          <p className="text-primary text-sm font-semibold ">
             Latest update details hook here.
           </p>
         </Link>
       </div>
-      <h1 className="mt-4 lg:text-8xl leading-tight  font-medium text-foreground text-5xl">
+      <Typography variant="h1" className="max-w-5xl">
         A fancy looking hero text to catch your attention
-      </h1>
-      <p className="mt-8 max-w-xl mx-auto text-base text-muted-foreground">
+      </Typography>
+      <Typography variant="p" className="max-w-xl text-muted-foreground">
         Great, now that we have your attention, we will actually talk about how
         we help you do the above. Mostly a brief description which explains our
         service to convince you to keep scrolling down.
-      </p>
-      <Button
-        className="rounded-full bg-primary cursor-pointer mt-8 p-0"
-        size={"lg"}
-      >
-        <div className="flex w-full justify-between gap-4 items-center px-1 py-4">
-          <p className="pl-4">Get started for free</p>
-          <div className="bg-white rounded-full p-2 h-8 w-8 text-primary flex justify-center items-center">
+      </Typography>
+
+      <Button variant={"default"} size={"lg"} className="my-4">
+        <div className="flex w-full justify-between items-center">
+          <p className="">Get started for free</p>
+          <div className="bg-white rounded-full h-8 w-8 text-primary flex justify-center items-center">
             <ArrowRightIcon className="w-4 h-4" />
           </div>
         </div>
       </Button>
-      <div className="mt-6 flex justify-center space-x-2">
+      <div className="flex justify-center space-x-2">
         <CheckCircledIcon className="w-6 h-6 text-green-500" />
         <span className="text-muted-foreground">No credit card required</span>
         <CheckCircledIcon className="w-6 h-6 text-green-500" />
         <span className="text-muted-foreground">7-day free trial</span>
       </div>
-      <div className="mt-6 flex justify-center -space-x-2">
+      <div className="flex justify-center -space-x-2 my-2">
         {AVATARS.map(({ src, id }) => {
           return (
             <Avatar key={id} className="border-4 border-muted">
@@ -70,7 +70,7 @@ export default function Hero() {
           );
         })}
       </div>
-      <div className="mt-2 flex justify-center items-center group">
+      <div className="flex justify-center items-center group mt-2">
         {STARS.map((_, idx) => {
           return (
             <StarFilledIcon
@@ -80,10 +80,10 @@ export default function Hero() {
           );
         })}
 
-        <span className="ml-2 text-muted-foreground">
+        <span className="text-muted-foreground ml-2">
           Loved by 570+ professionals
         </span>
       </div>
-    </div>
+    </section>
   );
 }
