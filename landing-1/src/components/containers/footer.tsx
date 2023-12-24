@@ -1,6 +1,9 @@
 import clsx from "clsx";
 import Link from "next/link";
-import { buttonVariants } from "../ui/button";
+import { Button, buttonVariants } from "../ui/button";
+import { Typography } from "../ui/typography";
+import { Input } from "../ui/input";
+import { Label } from "../ui/label";
 
 type FooterCategory = {
   id: number;
@@ -110,24 +113,50 @@ export default function Footer() {
     },
   ];
   return (
-    <footer className="bg-background py-8">
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+    <footer className=" bg-gray-900 pt-32 w-screen">
+      <div className="max-w-7xl mx-auto flex justify-between items-start">
+        <div className="grid grid-cols-3 w-2/3">
           {FOOTER_LINKS.map((details) => {
             return <FooterCategory key={details.id} footerDetails={details} />;
           })}
         </div>
-        <div className="border-t border-gray-200 py-6 mt-8">
-          <p className="text-muted-foreground text-sm text-center">
-            Disclaimer: This is just a template website and is not endorsed by
-            or affiliated with the LinkedIn Corporation, registered in the U.S.
-            and other countries. LinkedIn is a trademark of the LinkedIn
-            Corporation.
-          </p>
-          <p className="text-muted-foreground text-sm text-center mt-4">
-            Copyright © 2023 NextBase. All rights reserved.
-          </p>
+        <div className="mx-auto max-w-md space-y-4">
+          <div className="text-start space-y-2">
+            <Typography variant={"h4"} className=" text-primary-foreground">
+              Subscribe to our Newsletter
+            </Typography>
+            <Typography className=" text-primary-foreground">
+              Stay updated with our latest news, articles, and updates.
+            </Typography>
+          </div>
+          <form className="space-y-4">
+            <div className="space-y-2">
+              <Label className="text-primary-foreground" htmlFor="email">
+                Email
+              </Label>
+              <Input
+                className=" bg-gray-800 border-gray-600 placeholder:text-gray-100"
+                id="email"
+                placeholder="Enter your email"
+                required
+                type="email"
+              />
+            </div>
+            <Button variant={"outline"} className="w-full" type="submit">
+              Subscribe
+            </Button>
+          </form>
         </div>
+      </div>
+      <div className="border-t-2 border-gray-700 py-6 px-24 mt-16">
+        <Typography variant={"mutedText"}>
+          Disclaimer: This is just a template website and is not endorsed by or
+          affiliated with the LinkedIn Corporation, registered in the U.S. and
+          other countries. LinkedIn is a trademark of the LinkedIn Corporation.
+        </Typography>
+        <Typography variant={"mutedText"}>
+          Copyright © 2023 NextBase. All rights reserved.
+        </Typography>
       </div>
     </footer>
   );
@@ -139,14 +168,19 @@ const FooterCategory = ({
   footerDetails: FooterCategory;
 }) => {
   return (
-    <div className="flex flex-col space-y-4">
-      <h5 className="text-lg font-semibold mb-4">{footerDetails.title}</h5>
+    <div className="flex flex-col mb-8">
+      <Typography
+        variant={"h5"}
+        className="text-lg font-bold text-gray-100 mb-4"
+      >
+        {footerDetails.title}
+      </Typography>
       <ul className="space-y-2 flex flex-col">
         {footerDetails.links?.map(({ link, title }) => (
           <Link
             key={title}
             href={link}
-            className={clsx(buttonVariants({ variant: "link" }), "px-0")}
+            className="text-gray-500 font-medium hover:text-gray-200 transition-colors prose"
           >
             <li>{title}</li>
           </Link>
