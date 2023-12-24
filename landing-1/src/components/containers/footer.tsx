@@ -1,6 +1,5 @@
-import clsx from "clsx";
 import Link from "next/link";
-import { Button, buttonVariants } from "../ui/button";
+import { Button } from "../ui/button";
 import { Typography } from "../ui/typography";
 import { Input } from "../ui/input";
 import { Label } from "../ui/label";
@@ -113,14 +112,14 @@ export default function Footer() {
     },
   ];
   return (
-    <footer className=" bg-gray-900 pt-32 w-screen">
-      <div className="max-w-7xl mx-auto flex justify-between items-start">
-        <div className="grid grid-cols-3 w-2/3">
+    <footer className=" bg-gray-900 lg:pt-32 md:pt-16 max-w-screen">
+      <div className="max-w-7xl md:w-full md:flex-col md:items-start flex justify-between items-start">
+        <div className="grid grid-cols-3 w-2/3 md:w-full md:order-2 md:mt-16  md:mx-auto  md:max-w-2xl">
           {FOOTER_LINKS.map((details) => {
             return <FooterCategory key={details.id} footerDetails={details} />;
           })}
         </div>
-        <div className="mx-auto max-w-md space-y-4">
+        <div className="lg:max-w-md space-y-4 md:px-10">
           <div className="text-start space-y-2">
             <Typography variant={"h4"} className=" text-primary-foreground">
               Subscribe to our Newsletter
@@ -148,7 +147,7 @@ export default function Footer() {
           </form>
         </div>
       </div>
-      <div className="border-t-2 border-gray-700 py-6 px-24 mt-16">
+      <div className="border-t-2 border-gray-700 py-6 lg:px-24 md:px-10 lg:mt-16 md:mt-10">
         <Typography variant={"mutedText"}>
           Disclaimer: This is just a template website and is not endorsed by or
           affiliated with the LinkedIn Corporation, registered in the U.S. and
@@ -168,14 +167,14 @@ const FooterCategory = ({
   footerDetails: FooterCategory;
 }) => {
   return (
-    <div className="flex flex-col mb-8">
+    <div className="flex flex-col mb-8 md:items-baseline">
       <Typography
         variant={"h5"}
         className="text-lg font-bold text-gray-100 mb-4"
       >
         {footerDetails.title}
       </Typography>
-      <ul className="space-y-2 flex flex-col">
+      <ul className="space-y-2 flex flex-col w-fit">
         {footerDetails.links?.map(({ link, title }) => (
           <Link
             key={title}
