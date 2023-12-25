@@ -112,8 +112,8 @@ export default function Footer() {
     },
   ];
   return (
-    <footer className=" bg-gray-900 lg:pt-32 md:pt-16 max-w-screen">
-      <div className="max-w-screen flex-col lg:flex-row flex justify-between items-start">
+    <footer className=" bg-gray-900 lg:pt-32 md:pt-16">
+      <div className="flex-col lg:flex-row flex justify-between items-start">
         <div className="grid grid-cols-3 w-full px-8 pt-12 order-2 lg:order-1 lg:w-2/3 md:w-full md:order-2 md:mt-16 lg:mt-0  md:mx-auto  md:max-w-2xl">
           {FOOTER_LINKS.map((details) => {
             return <FooterCategory key={details.id} footerDetails={details} />;

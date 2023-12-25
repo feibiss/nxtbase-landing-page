@@ -7,7 +7,7 @@ import FeatureCardsList from "@/components/containers/featureCardsList";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-between snap-y overflow-y-scroll">
+    <main className="flex flex-col items-center justify-between">
       <Hero />
       <Banner />
       <Testimonials />

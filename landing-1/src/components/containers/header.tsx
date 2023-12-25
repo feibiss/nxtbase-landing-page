@@ -74,7 +74,7 @@ export default function Header() {
         </Button>
       </div>
       {openMobileNav && (
-        <div className="absolute bottom-0 h-fit shadow-md py-4 top-20 w-full max-w-screen left-0 bg-primary-foreground z-10">
+        <div className="absolute bottom-0 h-fit shadow-md py-4 top-20 w-full left-0 bg-primary-foreground z-10">
           <div className="w-full flex flex-col justify-start items-start">
             <MobileNavMenuItem href="#" content="Home" />
             <MobileNavMenuItem href="#" content="Pricing" />

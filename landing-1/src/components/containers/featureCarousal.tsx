@@ -16,7 +16,7 @@ export default function FeatureCarousel() {
   ];
 
   return (
-    <div className="flex flex-col items-start justify-start gap-12 max-w-screen w-screen overflow-hidden mb-8">
+    <div className="flex flex-col items-start justify-start gap-12 w-full overflow-hidden mb-8">
       <div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
         <AnimatingList features={FEATURES} />
         <AnimatingList features={FEATURES} />
