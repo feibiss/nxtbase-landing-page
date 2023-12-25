@@ -7,7 +7,10 @@ export default function Testimonials() {
   return (
     <section className="snap-start w-full h-fit max-w-6xl my-32">
       <div className="mx-auto text-center bg-background">
-        <Typography variant={"h2"} className="prose text-pretty mb-8">
+        <Typography
+          variant={"h2"}
+          className=" text-card-foreground text-pretty mb-8"
+        >
           What Our Users Are Saying
         </Typography>
         <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-3 lg:grid-rows-1 md:grid-rows-2  gap-8 p-4">
@@ -38,27 +41,29 @@ const TestimonyCard = ({ details }: { details: CardProps }) => {
       <CardContent className="">
         <Typography
           variant={"p"}
-          className="prose text-start text-pretty max-h-[18rem]"
+          className="text-start text-pretty max-h-[18rem]"
         >
           {details.review}
         </Typography>
       </CardContent>
-      <CardFooter className="mt-auto">
-        <Avatar className="mr-4">
-          <AvatarImage
-            alt={details.author}
-            src={details.profilePic}
-            className="object-cover"
-          />
-          <AvatarFallback>{details.fallback}</AvatarFallback>
-        </Avatar>
-        <div className="flex flex-col justify-start items-start mt-2 gap-2">
-          <Typography className="text-card-foreground">
-            {details.author}
-          </Typography>
-          <Typography variant={"mutedText"}>
-            {details.role + ", " + details.brand}
-          </Typography>
+      <CardFooter className="mt-auto w-full ">
+        <div className=" h-12 w-fit flex items-center justify-between">
+          <Avatar className="mr-2">
+            <AvatarImage
+              alt={details.author}
+              src={details.profilePic}
+              className="object-cover"
+            />
+            <AvatarFallback>{details.fallback}</AvatarFallback>
+          </Avatar>
+          <div className="flex flex-col justify-start items-start">
+            <Typography className="text-card-foreground">
+              {details.author}
+            </Typography>
+            <Typography variant={"mutedText"}>
+              {details.role + ", " + details.brand}
+            </Typography>
+          </div>
         </div>
       </CardFooter>
     </Card>
