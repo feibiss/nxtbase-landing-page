@@ -49,7 +49,7 @@ const AnimatingList = ({
     >
       {features.map((feat: { src: string }) => (
         <li
-          className="min-w-[12rem] cursor-pointer bg-gradient-to-t from-gray-50 dark:from-gray-900 dark:bg-muted to-transparent bg-white text-gray-500 hover:text-gray-700 over:from-gray-300/20   shadow-[1px_-0px_0px_1px,-1px_0px_0px_1px] shadow-gray-300/40 hover:shadow-slate-500/20  md:py-4 py-2  w-full font-medium rounded-full flex-nowrap flex justify-center items-center"
+          className="min-w-[12rem] cursor-pointer bg-gradient-to-t from-gray-50 dark:from-gray-900 dark:bg-muted to-transparent bg-white text-gray-500 hover:text-gray-700 dark:hover:text-gray-400 over:from-gray-300/20   shadow-[1px_-0px_0px_1px,-1px_0px_0px_1px] shadow-gray-300/40 dark:shadow-gray-600/40 hover:shadow-slate-500/20 dark:hover:shadow-slate-300/20  md:py-4 py-2  w-full font-medium rounded-full flex-nowrap flex justify-center items-center"
           key={feat.src}
         >
           {feat.src}
