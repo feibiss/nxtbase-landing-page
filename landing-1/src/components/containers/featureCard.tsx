@@ -15,12 +15,12 @@ type FeatureType = {
 };
 export default function FeatureCard({ feature }: { feature: FeatureType }) {
   return (
-    <div className="relative w-full mx-auto md:px-28 md:py-8 py-4 group odd:bg-accent/50 last:mb-20">
+    <div className="relative odd:bg-accent/50 w-full mx-auto md:px-28 md:py-8 py-4 group  last:mb-20">
       <Card className="relative  z-10 w-full border-none shadow-none bg-transparent ">
         <CardContent
-          className={"flex md:flex-row flex-col items-start col-span-2 gap-8"}
+          className={"flex flex-col lg:flex-row items-start col-span-2 gap-8"}
         >
-          <div className="group-odd:order-1 group-even:order-2">
+          <div className="order-2 lg:group- odd:order-1 lg:group-even:order-2">
             <Typography
               variant={"lead"}
               className="text-sm font-bold mb-2 uppercase tracking-widest text-primary/80 mt-0"
@@ -58,14 +58,14 @@ export default function FeatureCard({ feature }: { feature: FeatureType }) {
               Learn More
             </Link>
           </div>
-          <div className="md:order-1 w-full h-full col-span-1 flex justify-center items-center">
+          <div className="order-0 lg:group-odd:order-2 lg:group-even:order-1 w-full h-full col-span-1 flex justify-center items-center">
             <video
               autoPlay
               loop
               muted
               width={600}
               height={400}
-              className="rounded-lg shadow-lg min-w-[400px] md:min-w-[600px] min-h-[400px] aspect-[600/400] object-cover object-center bg-gray-300"
+              className="rounded-lg shadow-lg min-w-[400px] md:min-w-[600px] min-h-[260px] md:min-h-[400px] aspect-[400/260] lg:aspect-[600/400] object-cover object-center bg-gray-300"
               src={feature.imgSrc}
               preload=""
             ></video>
