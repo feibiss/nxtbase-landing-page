@@ -55,7 +55,7 @@ export default function Header() {
           Login
         </Button>
         <Button
-          variant={"default"}
+          variant={"secondary"}
           size={"sm"}
           rounded={"full"}
           className="rounded-full hidden md:block px-3 py-1"
@@ -74,7 +74,7 @@ export default function Header() {
         </Button>
       </div>
       {openMobileNav && (
-        <div className="absolute bg-white bottom-0 h-[calc(100dvh-5rem)] top-20 w-full max-w-screen left-0 bg-primary-foreground z-10">
+        <div className="absolute bottom-0 h-fit shadow-md py-4 top-20 w-full max-w-screen left-0 bg-primary-foreground z-10">
           <div className="w-full flex flex-col justify-start items-start">
             <MobileNavMenuItem href="#" content="Home" />
             <MobileNavMenuItem href="#" content="Pricing" />
@@ -112,14 +112,10 @@ const MobileNavMenuItem = ({
   content: string;
 }) => {
   return (
-    <Link
-      href={href}
-      className={clsx(
-        buttonVariants({ variant: "ghost", size: "lg" }),
-        "w-full border-b-2 border-gray-100"
-      )}
-    >
-      <p className=" font-medium text-base py-4">{content}</p>
+    <Link href={href} className={"w-full justify-start pl-4"}>
+      <p className=" font-medium w-full text-base py-4 text-start text-gray-600 hover:text-primary ">
+        {content}
+      </p>
     </Link>
   );
 };
