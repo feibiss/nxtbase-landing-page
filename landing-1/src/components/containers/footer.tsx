@@ -113,24 +113,24 @@ export default function Footer() {
   ];
   return (
     <footer className=" bg-gray-900 lg:pt-32 md:pt-16 max-w-screen">
-      <div className="max-w-7xl md:w-full md:flex-col md:items-start flex justify-between items-start">
-        <div className="grid grid-cols-3 w-2/3 md:w-full md:order-2 md:mt-16  md:mx-auto  md:max-w-2xl">
+      <div className="max-w-screen flex-col lg:flex-row flex justify-between items-start">
+        <div className="grid grid-cols-3 w-full px-8 pt-12 order-2 lg:order-1 lg:w-2/3 md:w-full md:order-2 md:mt-16 lg:mt-0  md:mx-auto  md:max-w-2xl">
           {FOOTER_LINKS.map((details) => {
             return <FooterCategory key={details.id} footerDetails={details} />;
           })}
         </div>
-        <div className="lg:max-w-md space-y-4 md:px-10">
+        <div className="w-full px-8 mx-auto pt-16 lg:pt-12 lg:max-w-md space-y-4 md:px-10 md:max-w-2xl">
           <div className="text-start space-y-2">
-            <Typography variant={"h4"} className=" text-primary-foreground">
+            <Typography variant={"h4"} className=" text-gray-200">
               Subscribe to our Newsletter
             </Typography>
-            <Typography className=" text-primary-foreground">
+            <Typography className=" text-gray-400">
               Stay updated with our latest news, articles, and updates.
             </Typography>
           </div>
           <form className="space-y-4">
             <div className="space-y-2">
-              <Label className="text-primary-foreground" htmlFor="email">
+              <Label className="text-gray-300" htmlFor="email">
                 Email
               </Label>
               <Input
