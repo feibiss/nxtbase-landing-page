@@ -16,9 +16,9 @@ const Banner = () => {
   return (
     <section
       ref={targetRef}
-      className="w-screen h-screen snap-start rounded-xl relative flex justify-center md:items-end pt-10 mt-16"
+      className="w-screen h-[50dvh] md:h-screen  snap-start rounded-xl relative flex justify-center md:items-start lg:pt-10 lg:mt-16"
     >
-      <div className="bg-gradient-to-b from-primary via-blue-400 bottom-0 flex mt-auto  to-transparent h-full w=full rounded-t-[5rem]"></div>
+      <div className="bg-gradient-to-b z-10 inset-0 from-primary via-blue-400 bottom-0 flex mt-auto  to-transparent h-full w=full rounded-t-[5rem]"></div>
       <motion.div
         style={{
           scale,
@@ -29,7 +29,7 @@ const Banner = () => {
           top: "50%",
           left: "50%",
         }}
-        className="w-[1024px] absolute antialiased hidden md:block [perspective:1200px] z-[2] shadow-[0_24px_48px_-12px_#0f17282e] h-[640px] mx-auto rounded-lg overflow-hidden  "
+        className=" w-[768px] lg:w-[1024px] absolute antialiased hidden md:block [perspective:1200px] z-10 shadow-[0_24px_48px_-12px_#0f17282e] md:h-[578px] lg:h-[640px] mx-auto rounded-lg overflow-hidden  "
       >
         <Image
           alt="Hero image"
