@@ -47,12 +47,11 @@ export default function Hero() {
         service to convince you to keep scrolling down.
       </Typography>
 
-      <Button variant={"default"} className="my-4 w-fit px-2 py-0.5">
+      <Button>
         <div className="flex w-fit justify-between items-center gap-2">
           <p className="">Get started for free</p>
-          <div className=" bg-primary-foreground/80 dark:bg-primary-foreground/80 rounded-full h-6 w-6 text-primary flex justify-center items-center">
-            <ArrowRightIcon className="w-4 h-4" />
-          </div>
+
+          <ArrowRightIcon className="w-4 h-4" />
         </div>
       </Button>
       <div className="flex justify-center space-x-2">
