@@ -20,7 +20,7 @@ export default function FeatureCard({ feature }: { feature: FeatureType }) {
         <CardContent
           className={"flex flex-col lg:flex-row items-start col-span-2 gap-8"}
         >
-          <div className="order-2 lg:group- odd:order-1 lg:group-even:order-2">
+          <div className="order-2 lg:group-odd:order-1 lg:group-even:order-2">
             <Typography
               variant={"lead"}
               className="text-sm font-bold mb-2 uppercase tracking-widest text-primary/80 mt-0"
@@ -66,9 +66,7 @@ export default function FeatureCard({ feature }: { feature: FeatureType }) {
               autoPlay
               loop
               muted
-              width={600}
-              height={400}
-              className="rounded-lg shadow-lg min-w-[400px] md:min-w-[600px] min-h-[260px] md:min-h-[400px] aspect-[400/260] lg:aspect-[600/400] object-cover object-center bg-gray-300"
+              className="rounded-lg shadow-lg w-full md:min-w-[600px] min-h-[260px] md:min-h-[400px] aspect-[4/3] lg:aspect-[600/400] object-cover object-center bg-gray-300"
               src={feature.imgSrc}
               preload=""
             ></video>
