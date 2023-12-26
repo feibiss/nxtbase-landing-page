@@ -9,9 +9,9 @@ export default function ContactCard() {
         Grow with Nextbase
       </Typography>
       <Typography className="prose text-center text-pretty my-1 text-gray-800 dark:text-gray-300">
-        Grow your personal brand on LinkedIn the simple, powerful, and
-        affordable way with Supergrow. Hundreds of professionals and agencies
-        trust Supergrow to save them time and help them grow their audience.
+        Build your next SAAS project with a modern stack of Next.js 14+,
+        Supabase, Stripe and Typescript, and save 4+ months of development time
+        ~ $18000
       </Typography>
       <Button className="mt-8 my-4">
         <div className="flex w-fit justify-between items-center gap-2">
