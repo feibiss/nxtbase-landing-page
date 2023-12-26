@@ -1,5 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button, buttonVariants } from "../ui/button";
+import { Button } from "../ui/button";
 import {
   ArrowRightIcon,
   CheckCircledIcon,
@@ -13,10 +13,9 @@ import { Typography } from "../ui/typography";
 export default function Hero() {
   const STARS: number[] = new Array(5).fill(1);
   return (
-    <section className="text-center h-[calc(100vh-var(--navbar-height))] snap-start scroll-mt-[6rem] gap-2 flex flex-col items-center justify-center">
-      <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:150px_180px] [mask-image:radial-gradient(ellipse_30%_40%_at_50%_55%,#000_70%,transparent_110%)]"></div>
+    <section className="text-center h-[calc(100vh-var(--navbar-height))] gap-1 snap-start scroll-mt-[6rem] flex flex-col items-center justify-center">
       {/* ? Pill */}
-      <div className="w-fit flex items-center justify-center rounded-full gap-2 border-2 border-amber-400/20 dark:border-amber-300/50">
+      <div className="w-fit relative flex items-center mb-8 justify-center rounded-full gap-2 border-2 border-amber-400/20 dark:border-amber-300/50">
         <Link
           href="#"
           className={clsx(
@@ -47,7 +46,7 @@ export default function Hero() {
         service to convince you to keep scrolling down.
       </Typography>
 
-      <Button>
+      <Button className="mb-4">
         <div className="flex w-fit justify-between items-center gap-2">
           <p className="">Get started for free</p>
 
