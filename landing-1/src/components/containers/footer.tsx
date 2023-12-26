@@ -147,11 +147,11 @@ export default function Footer() {
           </form>
         </div>
       </div>
-      <div className="border-t-2 border-gray-700 py-6 lg:px-24 md:px-10 lg:mt-16 md:mt-10">
+      <div className="border-t-2 border-gray-700 py-6 px-8 lg:px-24 md:px-10 lg:mt-16 md:mt-10">
         <Typography variant={"mutedText"}>
           Disclaimer: This is just a template website and is not endorsed by or
-          affiliated with the LinkedIn Corporation, registered in the U.S. and
-          other countries. LinkedIn is a trademark of the LinkedIn Corporation.
+          affiliated with any Corporation, registered in the U.S. and other
+          countries.
         </Typography>
         <Typography variant={"mutedText"}>
           Copyright © 2023 NextBase. All rights reserved.
