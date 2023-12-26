@@ -53,18 +53,18 @@ export default function Hero() {
           <ArrowRightIcon className="w-4 h-4" />
         </div>
       </Button>
-      <div className="flex justify-center space-x-2">
-        <>
-          <CheckCircledIcon className="w-6 h-6 text-green-500" />
-          <span className="text-muted-foreground">No credit card required</span>
-        </>
-        <>
+      <div className="flex justify-center space-x-2 gap-4 md:flex-row flex-col items-center">
+        <div className="flex w-fit items-center justify-start gap-2">
           {" "}
           <CheckCircledIcon className="w-6 h-6 text-green-500" />
           <span className="text-muted-foreground">7-day free trial</span>
-        </>
+        </div>
+        <div className="flex w-fit items-center justify-start gap-2">
+          <CheckCircledIcon className="w-6 h-6 text-green-500" />
+          <span className="text-muted-foreground">No credit card required</span>
+        </div>
       </div>
-      <div className="flex justify-center -space-x-2 my-2">
+      <div className="flex justify-center -space-x-2 my-2 ">
         {AVATARS.map(({ src, id }) => {
           return (
             <Avatar key={id} className="border-4 border-muted">
@@ -74,15 +74,18 @@ export default function Hero() {
           );
         })}
       </div>
-      <div className="flex justify-center items-center group mt-2">
-        {STARS.map((_, idx) => {
-          return (
-            <StarFilledIcon
-              key={_ + idx}
-              className="w-5 h-5 text-yellow-400 hover:fill-yellow-400"
-            />
-          );
-        })}
+      <div className="flex justify-center items-center md:flex-row flex-col group mt-2">
+        <div className="flex justify-start gap-1 mb-4 md:mb-0">
+          {" "}
+          {STARS.map((_, idx) => {
+            return (
+              <StarFilledIcon
+                key={_ + idx}
+                className="w-5 h-5 text-yellow-400 hover:fill-yellow-400"
+              />
+            );
+          })}
+        </div>
 
         <span className="text-muted-foreground ml-2">
           Loved by 570+ professionals
