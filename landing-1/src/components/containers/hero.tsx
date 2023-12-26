@@ -34,12 +34,12 @@ export default function Hero() {
           </p>
         </Link>
       </div>
-      <Typography variant="h1" className="lg:max-w-5xl max-w-3xl">
+      <Typography variant="h1" className="px-4 md:px-0 lg:max-w-5xl max-w-3xl">
         A fancy looking hero text to catch your attention
       </Typography>
       <Typography
         variant="p"
-        className="md:max-w-lg max-w-sm text-muted-foreground my-2"
+        className="px-4 md:px-0 md:max-w-lg max-w-sm text-muted-foreground my-2"
       >
         Great, now that we have your attention, we will actually talk about how
         we help you do the above. Mostly a brief description which explains our
