@@ -31,7 +31,10 @@ export default function FeatureCard({ feature }: { feature: FeatureType }) {
               {feature.title}
             </Typography>
             <Typography className="text-pretty text-secondary-foreground">
-              {feature.desc}
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
+              impedit qui autem pariatur architecto distinctio voluptates vero
+              eligendi nisi expedita quisquam deserunt nemo amet quo corrupti,
+              accusamus consectetur nesciunt. Autem.
             </Typography>
             <ul className="list-none space-y-2 my-4">
               {feature.features?.map((feature) => (
