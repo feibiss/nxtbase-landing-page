@@ -14,6 +14,7 @@ export default function Hero() {
   const STARS: number[] = new Array(5).fill(1);
   return (
     <section className="text-center h-full lg:h-[calc(100dvh-var(--navbar-height))] md:h-[calc(100dvh-var(--navbar-height)*2.5)] gap-1 snap-start scroll-mt-[6rem] flex flex-col items-center justify-center my-8 md:my-6">
+      <div className="absolute inset-0 -z-10 h-full w-full dark:bg-primary-foreground bg-primary-foreground bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] dark:bg-[radial-gradient(#4b5563_1px,transparent_1px)] [background-size:32px_32px]"></div>
       {/* ? Pill */}
       <div className="w-fit relative flex items-center mb-8 justify-center rounded-full gap-2 border-2 border-amber-400/20 dark:border-amber-300/50">
         <Link
