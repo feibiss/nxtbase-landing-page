@@ -16,9 +16,9 @@ const Banner = () => {
   return (
     <section
       ref={targetRef}
-      className="h-[50dvh] md:h-[75vh]  snap-start rounded-xl relative flex justify-center md:items-start lg:pt-10 my-8"
+      className="h-[50dvh] md:h-[75vh]  snap-start rounded-xl relative flex justify-center md:items-start lg:pt-10 my-8 md:my-6"
     >
-      <div className="bg-gradient-to-b z-0 from-blue-400 via-indigo-100 bottom-0 flex mt-auto  to-transparent md:h-[70vh] lg:h-[60vh] md:w-[95vw] lg:w-[80vw] rounded-t-[5rem]"></div>
+      <div className="hidden lg:flex bg-gradient-to-b z-0 from-blue-400 via-indigo-100 bottom-0 mt-auto  to-transparent md:h-[70vh] lg:h-[60vh] md:w-[95vw] lg:w-[80vw] rounded-t-[5rem]"></div>
       <motion.div
         style={{
           scale,
