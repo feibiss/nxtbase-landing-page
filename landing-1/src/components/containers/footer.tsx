@@ -112,7 +112,7 @@ export default function Footer() {
     },
   ];
   return (
-    <footer className=" bg-gray-900 lg:pt-32 md:pt-16">
+    <footer className=" bg-gray-900 lg:pt-10 mt-8 md:pt-16">
       <div className="flex-col lg:flex-row flex justify-between items-start">
         <div className="grid grid-cols-3 w-full px-8 pt-12 order-2 lg:order-1 lg:w-2/3 md:w-full md:order-2 md:mt-16 lg:mt-0  md:mx-auto  md:max-w-2xl">
           {FOOTER_LINKS.map((details) => {
@@ -147,7 +147,7 @@ export default function Footer() {
           </form>
         </div>
       </div>
-      <div className="border-t-2 border-gray-700 py-6 px-8 lg:px-24 md:px-10 lg:mt-16 md:mt-10">
+      <div className="border-t-2 border-gray-700 py-8 px-8 lg:px-24 md:px-10 lg:mt-16 md:mt-10 mt-8">
         <Typography variant={"mutedText"}>
           Disclaimer: This is just a template website and is not endorsed by or
           affiliated with any Corporation, registered in the U.S. and other
