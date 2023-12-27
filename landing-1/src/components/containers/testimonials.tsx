@@ -5,11 +5,11 @@ import { Typography } from "../ui/typography";
 
 export default function Testimonials() {
   return (
-    <section className="snap-start w-full h-fit max-w-6xl my-32">
+    <section className="snap-start w-full h-fit max-w-6xl my-8 pt-20 pb-10">
       <div className="mx-auto text-center bg-background">
         <Typography
           variant={"h2"}
-          className=" text-card-foreground text-pretty font-bold mb-8"
+          className=" text-card-foreground text-pretty tracking-tighter font-bold mb-8"
         >
           What Our Users Are Saying
         </Typography>
