@@ -5,7 +5,7 @@ import { Typography } from "../ui/typography";
 
 export default function Testimonials() {
   return (
-    <section className="snap-start w-full h-fit max-w-6xl my-8 pt-20 pb-10">
+    <section className="snap-start w-full h-fit max-w-6xl my-8 md:my-6 pt-20 pb-10">
       <div className="mx-auto text-center bg-background">
         <Typography
           variant={"h2"}

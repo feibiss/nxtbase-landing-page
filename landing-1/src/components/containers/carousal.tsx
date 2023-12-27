@@ -4,7 +4,7 @@ import { Typography } from "../ui/typography";
 
 const Carousal = () => {
   return (
-    <section className="my-8 w-full">
+    <section className="my-8 w-full md:my-6">
       <Typography
         variant={"h4"}
         className="flex justify-center items-center text-center pb-4 font-bold tracking-tighter mb-8"

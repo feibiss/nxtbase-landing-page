@@ -4,7 +4,7 @@ import { Typography } from "../ui/typography";
 
 export default function ContactCard() {
   return (
-    <div className="flex flex-col justify-center items-center bg-gradient-to-b from-sky-300 dark:from-indigo-800  via-blue-200 dark:via-indigo-700/50 via-20% bottom-0  to-transparent h-[30rem] px-8 md:px-24 lg:px-72 rounded-t-[5rem] my-8 pt-8">
+    <div className="flex flex-col justify-center items-center bg-gradient-to-b from-sky-300 dark:from-indigo-800  via-blue-200 dark:via-indigo-700/50 via-20% bottom-0  to-transparent h-[30rem] px-8 md:px-24 lg:px-72 rounded-t-[5rem] my-8 md:my-6 pt-8">
       <Typography
         variant={"h4"}
         className="flex justify-center items-center text-center font-bold tracking-tighter"

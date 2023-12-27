@@ -13,7 +13,7 @@ import { Typography } from "../ui/typography";
 export default function Hero() {
   const STARS: number[] = new Array(5).fill(1);
   return (
-    <section className="text-center h-[calc(100vh-var(--navbar-height))] gap-1 snap-start scroll-mt-[6rem] flex flex-col items-center justify-center my-8 ">
+    <section className="text-center h-[calc(100vh-var(--navbar-height))] md:h-[calc(100vh-var(--navbar-height)*2.5)] gap-1 snap-start scroll-mt-[6rem] flex flex-col items-center justify-center my-8 md:my-6">
       {/* ? Pill */}
       <div className="w-fit relative flex items-center mb-8 justify-center rounded-full gap-2 border-2 border-amber-400/20 dark:border-amber-300/50">
         <Link
