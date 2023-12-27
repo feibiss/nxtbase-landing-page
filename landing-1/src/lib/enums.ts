@@ -62,8 +62,8 @@ export const SHOWCASE_FEATURES = [
     desc: "Nextbase supports a wide range of authentication providers such as Google, GitHub, Twitter, Facebook, Apple, Discord and many more. It also provides the flexibility for users to sign in with their email and password or even just with their email.",
     features: [
       "Multi-provider authentication support",
-      "Flexible sign-in options: Email and password, or solely via email",
-      "Comprehensive user authentication system within Nextbase",
+      "Flexible sign-in options: Email and password",
+      "Comprehensive user authentication system",
     ],
     imgSrc:
       "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702921481/usenextbase/tinywow_signup_43386486_t9iuny.webm",
@@ -74,8 +74,8 @@ export const SHOWCASE_FEATURES = [
     navigateTo: "#",
     desc: "Nextbase comes with a built-in admin panel that allows you to have a secret area within your app where you can manage users, teams, organizations and more. It provides a comprehensive and intuitive interface for managing all aspects of your application, from users to projects and organizations.",
     features: [
-      "Integrated admin panel for confidential app management",
-      "Secret area within the application for admin access.",
+      "Integrated admin panel",
+      "Secret area within the app for admin access.",
     ],
     imgSrc:
       "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702915076/usenextbase/tinywow_admin-panel-gif_43379830_tltcqi.webm",
@@ -85,10 +85,9 @@ export const SHOWCASE_FEATURES = [
     subtitle: "User Impersonation",
     navigateTo: "#",
     features: [
-      "User Impersonation, a potent debugging tool, integrated into the admin panel",
-      "Ability to mimic and view the app from any user's perspective",
-      "Enables thorough debugging of user-facing issues",
-      "Particularly useful for troubleshooting complex problems",
+      "Simplified debugging of user-facing issues",
+      "Mimic and view the app from any user's view",
+      "Useful for troubleshooting complex problems",
     ],
     desc: "Admin panel also comes with a powerful debugging feature called User Impersonation. This allows you to impersonate any user in your app and see what they see.Some issues are hard to reproduce and this feature will help you debug the issues and fix them.",
     imgSrc:
@@ -99,9 +98,9 @@ export const SHOWCASE_FEATURES = [
     subtitle: "Incredible performance",
     navigateTo: "#",
     features: [
-      "Leverages Next.js 13's latest features: app folder, layouts, server components, and server-side rendering",
-      "Optimization of data fetching for enhanced performance.",
-      "Exceptional user experiences through advanced Next.js capabilities.",
+      "Leverages Next.js 13's latest features",
+      "Enhanced data fetching for performance.",
+      "Exceptional UX through Next.js capabilities.",
     ],
     desc: "Nextbase is designed to deliver incredible performance. It leverages Next.js 13's all-new app folder, layouts, server components, and server-side rendering to optimize data fetching and provide the best user experience. With Nextbase, you can build high-performance applications that meet the demands of today's users.",
     imgSrc:
@@ -112,9 +111,9 @@ export const SHOWCASE_FEATURES = [
     subtitle: "Simplified Payment flow",
     navigateTo: "#",
     features: [
+      "Always in sync with stripe",
       "Pre-configured integration with Stripe",
-      "Synchronization between the Nextbase database and stripe",
-      "Real-time updates on customer activities via Stripe Webhooks",
+      "Real-time updates on customer activities",
     ],
     desc: "Nextbase is pre-configured with Stripe, a leading online payment processing platform. Your database will be in sync with all customer activity in Stripe via Webhooks. ",
     imgSrc:

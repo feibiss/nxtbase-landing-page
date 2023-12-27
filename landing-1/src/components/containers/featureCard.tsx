@@ -36,17 +36,19 @@ export default function FeatureCard({ feature }: { feature: FeatureType }) {
               eligendi nisi expedita quisquam deserunt nemo amet quo corrupti,
               accusamus consectetur nesciunt. Autem.
             </Typography>
-            <ul className="list-none space-y-2 my-4">
+            <Typography variant={"ul"} className="list-none my-4">
               {feature.features?.map((feature) => (
                 <li
                   key={feature}
-                  className="flex items-center text-secondary-foreground"
+                  className="flex w-full truncate overflow-hidden text-ellipsis
+                   items-center justify-start text-secondary-foreground"
                 >
-                  <CheckIcon className="text-green-500 mr-2 h-6 w-6 capitalize" />
-                  {feature}
+                  <CheckIcon className="text-green-500 mr-2 flex justify-center items-center h-6 w-6 capitalize" />
+
+                  <p className="truncate text-ellipsis">{feature}</p>
                 </li>
               ))}
-            </ul>
+            </Typography>
             <Link
               href={"#"}
               className={clsx(
