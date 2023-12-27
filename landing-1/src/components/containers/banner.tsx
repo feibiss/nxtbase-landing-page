@@ -38,7 +38,7 @@ const Banner = () => {
           src="https://res.cloudinary.com/dkqrmlxlg/image/upload/v1703582349/admin-dashboard_pzonvt.png"
         />
       </motion.div>
-      <div className="max-w-sm md:hidden w-[80vw] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute antialiased z-[2] shadow-[0_24px_48px_-12px_#0f17282e] h-[55vw] rounded-lg overflow-hidden  ">
+      <div className="max-w-lg md:hidden w-[80vw] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute antialiased z-[2] shadow-[0_24px_48px_-12px_#0f17282e] h-[300px] rounded-lg overflow-hidden  ">
         <Image
           alt="Hero image"
           fill
