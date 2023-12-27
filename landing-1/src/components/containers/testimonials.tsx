@@ -9,7 +9,7 @@ export default function Testimonials() {
       <div className="mx-auto text-center bg-background">
         <Typography
           variant={"h2"}
-          className=" text-card-foreground text-pretty mb-8"
+          className=" text-card-foreground text-pretty font-bold mb-8"
         >
           What Our Users Are Saying
         </Typography>
