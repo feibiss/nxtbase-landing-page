@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 import { Typography } from "../ui/typography";
 import { Input } from "../ui/input";
 import { Label } from "../ui/label";
-import { FOOTER_LINKS } from "@/lib/enums";
+import { FOOTER_LINKS, FooterCategory } from "@/lib/enums";
 
 export default function Footer() {
   return (

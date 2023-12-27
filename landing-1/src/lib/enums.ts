@@ -122,7 +122,7 @@ export const SHOWCASE_FEATURES = [
   },
 ];
 
-type FooterCategory = {
+export type FooterCategory = {
   id: number;
   title: string;
   links: { link: string; title: string }[];
