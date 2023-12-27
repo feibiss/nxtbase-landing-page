@@ -3,118 +3,13 @@ import { Button } from "../ui/button";
 import { Typography } from "../ui/typography";
 import { Input } from "../ui/input";
 import { Label } from "../ui/label";
-
-type FooterCategory = {
-  id: number;
-  title: string;
-  links: { link: string; title: string }[];
-};
+import { FOOTER_LINKS } from "@/lib/enums";
 
 export default function Footer() {
-  const FOOTER_LINKS: FooterCategory[] = [
-    {
-      id: 1,
-      title: "Product",
-      links: [
-        {
-          link: "#",
-          title: "Pricing",
-        },
-        {
-          link: "#",
-          title: "Demos",
-        },
-        {
-          link: "#",
-          title: "Changelog",
-        },
-        {
-          link: "#",
-          title: "Roadmap",
-        },
-      ],
-    },
-    {
-      id: 2,
-      title: "Features",
-      links: [
-        {
-          link: "#",
-          title: "Authentication",
-        },
-        {
-          link: "#",
-          title: "Organization and Teams",
-        },
-        {
-          link: "#",
-          title: "Admin Panel",
-        },
-        {
-          link: "#",
-          title: "Payments",
-        },
-      ],
-    },
-    {
-      id: 3,
-      title: "Support",
-      links: [
-        {
-          link: "#",
-          title: "Docs",
-        },
-        {
-          link: "#",
-          title: "Blog",
-        },
-        {
-          link: "#",
-          title: "FAQ",
-        },
-      ],
-    },
-    {
-      id: 4,
-      title: "Legal",
-      links: [
-        {
-          link: "#",
-          title: "Privacy Policy",
-        },
-        {
-          link: "#",
-          title: "Terms of Services",
-        },
-      ],
-    },
-    {
-      id: 5,
-      title: "Other",
-      links: [
-        {
-          link: "#",
-          title: "Resources",
-        },
-        {
-          link: "#",
-          title: "Professional Services",
-        },
-        {
-          link: "#",
-          title: "Contact Us",
-        },
-        {
-          link: "#",
-          title: "Affliates",
-        },
-      ],
-    },
-  ];
   return (
     <footer className=" bg-gray-900 lg:pt-8 md:pt-4 mt-8 md:mt-6 lg:h-[calc(100dvh-var(--navbar-height))]">
       <div className="flex-col lg:flex-row flex justify-between items-start">
-        <div className="grid grid-cols-3 md:grid-cols-5 w-full gap-0 md:gap-8 px-8 pt-12 order-2 lg:order-1 lg:w-2/3 md:w-full md:order-2 md:mt-8 lg:mt-0  md:mx-auto  md:max-w-3xl">
+        <div className="grid grid-cols-3 md:grid-cols-5 w-full gap-4 md:gap-8 px-8 pt-12 order-2 lg:order-1 lg:w-2/3 md:w-full md:order-2 md:mt-8 lg:mt-0  md:mx-auto  md:max-w-3xl">
           {FOOTER_LINKS.map((details) => {
             return <FooterCategory key={details.id} footerDetails={details} />;
           })}

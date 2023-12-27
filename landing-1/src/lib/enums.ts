@@ -121,3 +121,111 @@ export const SHOWCASE_FEATURES = [
       "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702916692/usenextbase/tinywow_stripe-payments-gif_43381706_by2uhy.webm",
   },
 ];
+
+type FooterCategory = {
+  id: number;
+  title: string;
+  links: { link: string; title: string }[];
+};
+
+export const FOOTER_LINKS: FooterCategory[] = [
+  {
+    id: 1,
+    title: "Product",
+    links: [
+      {
+        link: "#",
+        title: "Pricing",
+      },
+      {
+        link: "#",
+        title: "Demos",
+      },
+      {
+        link: "#",
+        title: "Changelog",
+      },
+      {
+        link: "#",
+        title: "Roadmap",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Features",
+    links: [
+      {
+        link: "#",
+        title: "Authentication",
+      },
+      {
+        link: "#",
+        title: "Organization",
+      },
+      {
+        link: "#",
+        title: "Admin Panel",
+      },
+      {
+        link: "#",
+        title: "Payments",
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Other",
+    links: [
+      {
+        link: "#",
+        title: "Resources",
+      },
+      {
+        link: "#",
+        title: "Services",
+      },
+      {
+        link: "#",
+        title: "Contact Us",
+      },
+      {
+        link: "#",
+        title: "Affliates",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Legal",
+    links: [
+      {
+        link: "#",
+        title: "Privacy Policy",
+      },
+      {
+        link: "#",
+        title: "Terms of Services",
+      },
+    ],
+  },
+
+  {
+    id: 3,
+    title: "Support",
+    links: [
+      {
+        link: "#",
+        title: "Docs",
+      },
+      {
+        link: "#",
+        title: "Blog",
+      },
+      {
+        link: "#",
+        title: "FAQ",
+      },
+    ],
+  },
+];

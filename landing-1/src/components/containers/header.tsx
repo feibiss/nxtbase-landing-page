@@ -4,17 +4,16 @@ import {
   NavigationMenuList,
   NavigationMenu,
 } from "@/components/ui/navigation-menu";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Cross1Icon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import { useState } from "react";
-import clsx from "clsx";
 
 export default function Header() {
   const [openMobileNav, setOpenMobileNav] = useState(false);
   return (
-    <header className="flex bg-background/80 left-0 h-[--navbar-height] w-full shrink-0 items-center z-50 md:px-28 px-4 sticky top-0 bg-opacity-90 backdrop-blur-md border-b border-gray-200">
+    <header className="flex bg-background/80 left-0 h-[--navbar-height] w-full shrink-0 items-center z-50 md:px-28 px-4 sticky top-0 bg-opacity-90 backdrop-blur-md border-b border-gray-200 dark:border-gray-700">
       <Link
         className="mr-6 w-fit h-full flex justify-start items-center"
         href="#"
