@@ -58,7 +58,7 @@ export default function Header() {
           variant={"secondary"}
           size={"sm"}
           rounded={"full"}
-          className="rounded-full hidden md:block px-3 py-1"
+          className="hidden md:block px-3 py-1"
         >
           Get Started
         </Button>
@@ -68,7 +68,7 @@ export default function Header() {
           size={"icon"}
           variant={"outline"}
           rounded={"full"}
-          className="ml-4 rounded-full md:hidden flex justify-center items-center"
+          className="ml-4 md:hidden flex justify-center items-center"
         >
           {openMobileNav ? <Cross1Icon /> : <HamburgerMenuIcon />}
         </Button>
