@@ -5,8 +5,11 @@ import { Typography } from "../ui/typography";
 export default function ContactCard() {
   return (
     <div className="flex flex-col justify-center items-center bg-gradient-to-b from-sky-300 dark:from-indigo-800  via-blue-200 dark:via-indigo-700/50 via-20% bottom-0  to-transparent h-[30rem] px-8 md:px-24 lg:px-72 rounded-t-[5rem] my-12 pt-10">
-      <Typography variant={"h2"} className="my-1 font-medium">
-        Grow with Nextbase
+      <Typography
+        variant={"h4"}
+        className="flex justify-center items-center text-center font-bold tracking-tighter"
+      >
+        Grow with NextBase
       </Typography>
       <Typography className="prose text-center text-pretty my-1 text-gray-800 dark:text-gray-300">
         Build your next SAAS project with a modern stack of Next.js 14+,
