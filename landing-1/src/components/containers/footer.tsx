@@ -7,7 +7,7 @@ import { FOOTER_LINKS } from "@/lib/enums";
 
 export default function Footer() {
   return (
-    <footer className=" bg-gray-900 lg:pt-8 md:pt-4 mt-8 md:mt-6 lg:h-[calc(100dvh-var(--navbar-height))]">
+    <footer className=" bg-gray-900 relative lg:pt-8 md:pt-8 mt-8 md:mt-6 lg:h-[calc(100dvh-var(--navbar-height))]">
       <div className="flex-col lg:flex-row flex justify-between items-start">
         <div className="grid grid-cols-3 md:grid-cols-5 w-full gap-4 md:gap-8 px-8 pt-12 order-2 lg:order-1 lg:w-2/3 md:w-full md:order-2 md:mt-8 lg:mt-0  md:mx-auto  md:max-w-3xl">
           {FOOTER_LINKS.map((details) => {
@@ -42,7 +42,7 @@ export default function Footer() {
           </form>
         </div>
       </div>
-      <div className="border-t-2 border-gray-700 py-8 px-8 lg:px-24 md:px-10 lg:mt-16 md:mt-0 mt-8">
+      <div className="border-t-2 lg:absolute bottom-0 left-0 w-full overflow-x-none border-gray-700 py-8 px-8 lg:px-24 md:px-10  md:mt-0 mt-8">
         <Typography variant={"mutedText"}>
           Disclaimer: This is just a template website and is not endorsed by or
           affiliated with any Corporation, registered in the U.S. and other
