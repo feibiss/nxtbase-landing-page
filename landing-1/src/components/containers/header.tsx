@@ -50,7 +50,7 @@ export default function Header() {
           variant={"outline"}
           size={"sm"}
           rounded={"full"}
-          className="rounded-full hidden md:block px-3 py-1"
+          className="hidden md:block px-3 py-1"
         >
           Login
         </Button>
