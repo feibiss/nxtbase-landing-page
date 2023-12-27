@@ -46,7 +46,7 @@ const TestimonyCard = ({ details }: { details: CardProps }) => {
           {details.review}
         </Typography>
       </CardContent>
-      <CardFooter className="mt-auto w-full ">
+      <CardFooter className="mt-auto pt-16 w-full ">
         <div className=" h-12 w-fit flex items-center justify-between">
           <Avatar className="mr-2">
             <AvatarImage
@@ -57,7 +57,10 @@ const TestimonyCard = ({ details }: { details: CardProps }) => {
             <AvatarFallback>{details.fallback}</AvatarFallback>
           </Avatar>
           <div className="flex flex-col justify-start items-start">
-            <Typography className="text-card-foreground">
+            <Typography
+              variant={"mutedText"}
+              className=" text-secondary-foreground"
+            >
               {details.author}
             </Typography>
             <Typography variant={"mutedText"}>

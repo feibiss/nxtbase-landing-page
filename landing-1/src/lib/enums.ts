@@ -7,7 +7,7 @@ export const TESTIMONIES = [
     profilePic:
       "https://res.cloudinary.com/dkqrmlxlg/image/upload/v1702967050/usenextbase/Avatars/testimony_1.webp",
     review:
-      "We've tried numerous SaaS solutions, but none compare to Company Z's platform. As our business expanded, the scalability of this SaaS became evident – it effortlessly grew with us. Highly recommend it to any business aiming for growth and adaptability.",
+      "We've tried numerous SaaS solutions, but none compare to Company Z's platform. As our business expanded, the scalability of this SaaS became evident – it effortlessly grew with us.",
   },
   {
     author: "James Parr",
@@ -17,7 +17,7 @@ export const TESTIMONIES = [
     profilePic:
       "https://res.cloudinary.com/dkqrmlxlg/image/upload/v1702967047/usenextbase/Avatars/testimony_3.webp",
     review:
-      "Implementing SaaS from Company Y has been a game-changer for us. The analytics tools provided have allowed us to make data-driven decisions, leading to smarter strategies and increased profitability. Plus, the regular updates and new features constantly add value to our subscription.",
+      "Implementing SaaS from Company Y has been a game-changer for us. The analytics tools provided have allowed us to make data-driven decisions, leading to smarter strategies and increased profitability.",
   },
   {
     author: "Michelle Dakota",
