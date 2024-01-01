@@ -13,7 +13,7 @@ import { useState } from "react";
 export default function Header() {
   const [openMobileNav, setOpenMobileNav] = useState(false);
   return (
-    <header className="flex bg-background/80 left-0 h-[--navbar-height] w-full shrink-0 items-center z-50 md:px-28 px-4 sticky top-0 bg-opacity-90 backdrop-blur-md border-b border-gray-200 dark:border-gray-700">
+    <header className="flex bg-background/80 left-0 h-[--navbar-height] w-full shrink-0 items-center z-50 px-8 sticky top-0 bg-opacity-90 backdrop-blur-md border-b border-gray-200 dark:border-gray-700">
       <Link
         className="mr-6 w-fit h-full flex justify-start items-center"
         href="#"
@@ -46,15 +46,7 @@ export default function Header() {
       </NavigationMenu>
       <div className="ml-auto flex items-center justify-center gap-3">
         <Button
-          variant={"outline"}
-          size={"sm"}
-          rounded={"full"}
-          className="hidden md:block px-3 py-1"
-        >
-          Login
-        </Button>
-        <Button
-          variant={"secondary"}
+          variant={"default"}
           size={"sm"}
           rounded={"full"}
           className="hidden md:block px-3 py-1"
