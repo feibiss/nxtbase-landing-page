@@ -7,8 +7,8 @@ import Container from "./container";
 export default function Testimonials() {
   return (
     <Container>
-      <section className=" col-span-12 snap-start w-full h-fit">
-        <div className="mx-auto text-center bg-background">
+      <section className="bg-transparent col-span-12 snap-start w-full h-fit">
+        <div className="mx-auto text-center bg-transparent">
           <Typography
             variant={"h2"}
             className=" text-card-foreground text-pretty tracking-tighter font-bold mb-8"

@@ -15,8 +15,7 @@ export default function Hero() {
   const STARS: number[] = new Array(5).fill(1);
   return (
     <Container>
-      <div className="text-center col-span-12 h-full lg:h-[calc(100dvh-var(--navbar-height))] md:h-[calc(100dvh-var(--navbar-height)*2.5)] gap-1 snap-start flex flex-col items-center justify-center">
-        <div className="absolute inset-0 -z-10 h-full w-full dark:bg-primary-foreground bg-primary-foreground bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] dark:bg-[radial-gradient(#4b5563_1px,transparent_1px)] [background-size:32px_32px]"></div>
+      <div className="text-center col-span-12 h-full gap-1 snap-start flex flex-col items-center justify-center md:mt-[var(--navbar-height)] lg`;mt-0">
         {/* ? Pill */}
         <div className="w-fit relative flex items-center mb-8 justify-center rounded-full gap-2 border-2 border-amber-400/20 dark:border-amber-300/50">
           <Link
@@ -37,10 +36,7 @@ export default function Hero() {
             </p>
           </Link>
         </div>
-        <Typography
-          variant="h1"
-          className="px-4 md:px-0 lg:max-w-5xl max-w-3xl"
-        >
+        <Typography variant="h1">
           A fancy looking hero text to catch your attention
         </Typography>
         <Typography
