@@ -7,14 +7,14 @@ import { FOOTER_LINKS, FooterCategory } from "@/lib/enums";
 
 export default function Footer() {
   return (
-    <footer className=" bg-gray-900 relative lg:pt-8 md:pt-8 mt-8 md:mt-6 lg:h-[calc(100dvh-var(--navbar-height))]">
-      <div className="flex-col lg:flex-row flex justify-between items-start">
-        <div className="grid grid-cols-3 md:grid-cols-5 w-full gap-4 md:gap-8 px-8 pt-12 order-2 lg:order-1 lg:w-2/3 md:w-full md:order-2 md:mt-8 lg:mt-0  md:mx-auto  md:max-w-3xl">
+    <footer className=" bg-gray-900 relative lg:pt-8 md:pt-8 mt-8 md:mt-6 lg:h-[calc(100dvh-var(--navbar-height))] px-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-40">
+        <div className="col-span-1 lg:col-span-2 grid grid-cols-3 md:grid-cols-5 w-full gap-4 md:gap-8 pt-12 order-2 lg:order-1 md:order-2 md:mt-8 lg:mt-0  md:mx-auto">
           {FOOTER_LINKS.map((details) => {
             return <FooterCategory key={details.id} footerDetails={details} />;
           })}
         </div>
-        <div className="w-full px-8 mx-auto pt-16 md:pt-8 lg:pt-12 lg:max-w-md space-y-4 md:px-10 md:max-w-2xl">
+        <div className="w-full col-span-1 mx-auto pt-16 md:pt-8 lg:pt-12 space-y-4 md:px-10">
           <div className="text-start space-y-2">
             <Typography variant={"h4"} className=" text-gray-200">
               Subscribe to our Newsletter
@@ -42,7 +42,7 @@ export default function Footer() {
           </form>
         </div>
       </div>
-      <div className="border-t-2 lg:absolute bottom-0 left-0 w-full overflow-x-none border-gray-700 py-8 px-8 lg:px-24 md:px-10  md:mt-0 mt-8">
+      <div className="border-t-2 lg:px-8 lg:absolute bottom-0 left-0 w-full overflow-x-none border-gray-700 py-8  md:mt-0 mt-8">
         <Typography variant={"mutedText"}>
           Disclaimer: This is just a template website and is not endorsed by or
           affiliated with any Corporation, registered in the U.S. and other
