@@ -2,24 +2,27 @@ import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { TESTIMONIES } from "@/lib/enums";
 import { Typography } from "../ui/typography";
+import Container from "./container";
 
 export default function Testimonials() {
   return (
-    <section className="snap-start w-full h-fit max-w-6xl my-8 md:my-6 pt-20 pb-10">
-      <div className="mx-auto text-center bg-background">
-        <Typography
-          variant={"h2"}
-          className=" text-card-foreground text-pretty tracking-tighter font-bold mb-8"
-        >
-          What Our Users Are Saying
-        </Typography>
-        <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-3 lg:grid-rows-1 md:grid-rows-2  gap-8 p-4">
-          {TESTIMONIES.map((testimony) => (
-            <TestimonyCard key={testimony.author} details={testimony} />
-          ))}
+    <Container>
+      <section className=" col-span-12 snap-start w-full h-fit">
+        <div className="mx-auto text-center bg-background">
+          <Typography
+            variant={"h2"}
+            className=" text-card-foreground text-pretty tracking-tighter font-bold mb-8"
+          >
+            What Our Users Are Saying
+          </Typography>
+          <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-3 lg:grid-rows-1 md:grid-rows-2  gap-8">
+            {TESTIMONIES.map((testimony) => (
+              <TestimonyCard key={testimony.author} details={testimony} />
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </Container>
   );
 }
 
@@ -46,7 +49,7 @@ const TestimonyCard = ({ details }: { details: CardProps }) => {
           {details.review}
         </Typography>
       </CardContent>
-      <CardFooter className="mt-auto pt-16 w-full ">
+      <CardFooter className="mt-auto pt-8 w-full ">
         <div className=" h-12 w-fit flex items-center justify-between">
           <Avatar className="mr-2">
             <AvatarImage
