@@ -15,7 +15,7 @@ type FeatureType = {
 };
 export default function FeatureCard({ feature }: { feature: FeatureType }) {
   return (
-    <div className="relative odd:bg-accent/50 w-full mx-auto md:px-28 md:py-8 py-4 group">
+    <div className="relative odd:bg-accent/50 w-full mx-auto md:px-14 md:py-8 py-4 group">
       <Card className="relative  z-10 w-full border-none shadow-none bg-transparent ">
         <CardContent
           className={"flex flex-col lg:flex-row items-start col-span-2 gap-8"}
