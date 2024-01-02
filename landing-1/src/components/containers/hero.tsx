@@ -15,7 +15,7 @@ export default function Hero() {
   const STARS: number[] = new Array(5).fill(1);
   return (
     <Container>
-      <div className="text-center col-span-12 h-full gap-1 snap-start flex flex-col items-center justify-center md:mt-[var(--navbar-height)] lg`;mt-0">
+      <div className="text-center mt-8 col-span-12 h-full gap-1 snap-start flex flex-col items-center justify-center md:mt-[var(--navbar-height)]">
         {/* ? Pill */}
         <div className="w-fit relative flex items-center mb-8 justify-center rounded-full gap-2 border-2 border-amber-400/20 dark:border-amber-300/50">
           <Link

@@ -7,7 +7,7 @@ import { FOOTER_LINKS, FooterCategory } from "@/lib/enums";
 
 export default function Footer() {
   return (
-    <footer className=" bg-gray-900 relative lg:pt-8 md:pt-8 mt-8 md:mt-6 lg:h-[calc(100dvh-var(--navbar-height))] px-8">
+    <footer className=" bg-gray-900 relative lg:pt-8 md:pt-8 lg:h-[calc(100dvh-var(--navbar-height))] px-8">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-40">
         <div className="col-span-1 lg:col-span-2 grid grid-cols-3 md:grid-cols-5 w-full gap-4 md:gap-8 pt-12 order-2 lg:order-1 md:order-2 md:mt-8 lg:mt-0  md:mx-auto">
           {FOOTER_LINKS.map((details) => {

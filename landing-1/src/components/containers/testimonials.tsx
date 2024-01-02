@@ -11,7 +11,7 @@ export default function Testimonials() {
         <div className="mx-auto text-center bg-transparent">
           <Typography
             variant={"h2"}
-            className=" text-card-foreground text-pretty tracking-tighter font-bold mb-8"
+            className=" text-card- dark:text-white text-pretty tracking-tighter font-bold mb-8"
           >
             What Our Users Are Saying
           </Typography>
