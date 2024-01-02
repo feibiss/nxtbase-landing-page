@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import { cva } from "class-variance-authority";
 import React from "react";
 
-const Spacer = (type?: "lg" | "xl" | "xs" | "sm" | "md") => {
+const Spacer = ({ type }: { type?: "lg" | "xl" | "xs" | "sm" | "md" }) => {
   const spaceVariants = cva("w-full", {
     variants: {
       type: {
