@@ -12,20 +12,14 @@ const Banner = () => {
   });
   const scale = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
   const rotateX = useTransform(scrollYProgress, [0, 0.5, 1], [15, 10, 0]);
-  const rotateY = useTransform(scrollYProgress, [0, 1], [-11, 0]);
 
   return (
     <Container>
-      <section
-        ref={targetRef}
-        className="h-[50dvh] md:h-[75vh]  snap-start rounded-xl relative flex justify-center md:items-start"
-      >
-        <div className="hidden lg:flex bg-gradient-to-b z-0 from-blue-400 via-indigo-100 bottom-0 mt-auto  to-transparent md:h-[70vh] lg:h-[60vh] md:w-[95vw] lg:w-[80vw] rounded-t-[5rem]"></div>
+      <div ref={targetRef} className="h-[50dvh] md:h-[75vh] w-full block">
         <motion.div
           style={{
             scale,
             rotateX,
-            rotateY,
             translateX: "-50%",
             translateY: "-50%",
             top: "50%",
@@ -47,7 +41,7 @@ const Banner = () => {
             src="https://res.cloudinary.com/dkqrmlxlg/image/upload/v1703582349/admin-dashboard_pzonvt.png"
           />
         </div>
-      </section>
+      </div>
     </Container>
   );
 };
