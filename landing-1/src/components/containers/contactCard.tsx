@@ -8,12 +8,12 @@ export default function ContactCard() {
     <Container>
       <div className=" col-span-12 w-full flex flex-col justify-center items-center bg-gradient-to-b from-sky-300 dark:from-indigo-800  via-blue-200 dark:via-indigo-700/50 via-20% bottom-0  to-transparent h-[30rem] rounded-t-[5rem]">
         <Typography
-          variant={"h4"}
+          variant={"h2"}
           className="flex justify-center items-center text-center font-bold tracking-tighter"
         >
           Grow with NextBase
         </Typography>
-        <Typography className="prose text-center text-pretty my-1 text-gray-800 dark:text-gray-300">
+        <Typography className="prose text-center text-pretty my-1 text-gray-800 dark:text-gray-300 px-4 md:px-0">
           Build your next SAAS project with a modern stack of Next.js 14+,
           Supabase, Stripe and Typescript, and save 4+ months of development
           time ~ $18000
