@@ -6,7 +6,7 @@ const Spacer = ({ type }: { type?: "lg" | "xl" | "xs" | "sm" | "md" }) => {
   const spaceVariants = cva("w-full", {
     variants: {
       type: {
-        xs: " min-h-2",
+        xs: "min-h-2",
         sm: "min-h-4",
         md: "min-h-14",
         lg: "min-h-20",

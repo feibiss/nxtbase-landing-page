@@ -16,13 +16,13 @@ export default function FeatureCarousel() {
   ];
 
   return (
-    <div className="flex flex-col items-start justify-start gap-12 w-full overflow-hidden mb-8">
-      <div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+    <div className="mb-8 flex w-full flex-col items-start justify-start gap-12 overflow-hidden">
+      <div className="inline-flex w-full flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
         <AnimatingList features={FEATURES} />
         <AnimatingList features={FEATURES} />
         <AnimatingList features={FEATURES} />
       </div>
-      <div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+      <div className="inline-flex w-full flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
         <AnimatingList features={FEATURES} direction="reverse" />
         <AnimatingList features={FEATURES} direction="reverse" />
         <AnimatingList features={FEATURES} direction="reverse" />
@@ -41,15 +41,15 @@ const AnimatingList = ({
   return (
     <ul
       className={clsx(
-        "flex items-center justify-center md:justify-start gap-6 will-change-transform mx-4 md:py-4 py-2",
+        "mx-4 flex items-center justify-center gap-6 py-2 will-change-transform md:justify-start md:py-4",
         direction === "default"
           ? "animate-infinite-scroll"
-          : "animate-reverse-infinite-scroll"
+          : "animate-reverse-infinite-scroll",
       )}
     >
       {features.map((feat: { src: string }) => (
         <li
-          className="min-w-[12rem] cursor-pointer bg-gradient-to-t from-gray-50 dark:from-gray-900 dark:bg-muted to-transparent bg-white text-gray-500 hover:text-gray-700 dark:hover:text-gray-400 over:from-gray-300/20   shadow-[1px_-0px_0px_1px,-1px_0px_0px_1px] shadow-gray-300/40 dark:shadow-gray-600/40 hover:shadow-slate-500/20 dark:hover:shadow-slate-300/20  md:py-4 py-2  w-full font-medium rounded-full flex-nowrap flex justify-center items-center"
+          className="over:from-gray-300/20 flex w-full min-w-[12rem] cursor-pointer flex-nowrap items-center justify-center rounded-full bg-white bg-gradient-to-t from-gray-50   to-transparent py-2 font-medium text-gray-500 shadow-[1px_-0px_0px_1px,-1px_0px_0px_1px]  shadow-gray-300/40 hover:text-gray-700  hover:shadow-slate-500/20 md:py-4 dark:bg-muted dark:from-gray-900 dark:shadow-gray-600/40 dark:hover:text-gray-400 dark:hover:shadow-slate-300/20"
           key={feat.src}
         >
           {feat.src}

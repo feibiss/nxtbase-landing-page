@@ -15,23 +15,23 @@ export default function Hero() {
   const STARS: number[] = new Array(5).fill(1);
   return (
     <Container>
-      <div className="text-center mt-8 col-span-12 h-full gap-1 snap-start flex flex-col items-center justify-center md:mt-[var(--navbar-height)]">
+      <div className="col-span-12 mt-8 flex h-full snap-start flex-col items-center justify-center gap-1 text-center md:mt-[var(--navbar-height)]">
         {/* ? Pill */}
-        <div className="w-fit relative flex items-center mb-8 justify-center rounded-full gap-2 border-2 border-amber-400/20 dark:border-amber-300/50">
+        <div className="relative mb-8 flex w-fit items-center justify-center gap-2 rounded-full border-2 border-amber-400/20 dark:border-amber-300/50">
           <Link
             href="#"
             className={clsx(
-              " rounded-full flex justify-start items-center h-6 gap-2 p-1 bg-amber-50 dark:bg-amber-900"
+              " flex h-6 items-center justify-start gap-2 rounded-full bg-amber-50 p-1 dark:bg-amber-900",
             )}
           >
             <p
               className={clsx(
-                "text-xs rounded-full bg-amber-400 w-fit h-full px-2 text-primary-foreground "
+                "h-full w-fit rounded-full bg-amber-400 px-2 text-xs text-primary-foreground ",
               )}
             >
               New
             </p>
-            <p className="text-amber-600 text-sm font-semibold ">
+            <p className="text-sm font-semibold text-amber-600 ">
               Latest update details hook here.
             </p>
           </Link>
@@ -41,7 +41,7 @@ export default function Hero() {
         </Typography>
         <Typography
           variant="p"
-          className="px-4 md:px-0 md:max-w-lg max-w-sm text-muted-foreground my-2"
+          className="my-2 max-w-sm px-4 text-muted-foreground md:max-w-lg md:px-0"
         >
           Great, now that we have your attention, we will actually talk about
           how we help you do the above. Mostly a brief description which
@@ -49,26 +49,26 @@ export default function Hero() {
         </Typography>
 
         <Button className="mb-4">
-          <div className="flex w-fit justify-between items-center gap-2">
+          <div className="flex w-fit items-center justify-between gap-2">
             <p className="">Get started for free</p>
 
-            <ArrowRightIcon className="w-4 h-4" />
+            <ArrowRightIcon className="h-4 w-4" />
           </div>
         </Button>
-        <div className="flex justify-center space-x-2 gap-4 md:flex-row flex-col items-center">
+        <div className="flex flex-col items-center justify-center gap-4 space-x-2 md:flex-row">
           <div className="flex w-fit items-center justify-start gap-2">
             {" "}
-            <CheckCircledIcon className="w-6 h-6 text-green-500" />
+            <CheckCircledIcon className="h-6 w-6 text-green-500" />
             <span className="text-muted-foreground">7-day free trial</span>
           </div>
           <div className="flex w-fit items-center justify-start gap-2">
-            <CheckCircledIcon className="w-6 h-6 text-green-500" />
+            <CheckCircledIcon className="h-6 w-6 text-green-500" />
             <span className="text-muted-foreground">
               No credit card required
             </span>
           </div>
         </div>
-        <div className="flex justify-center -space-x-2 my-2 ">
+        <div className="my-2 flex justify-center -space-x-2 ">
           {AVATARS.map(({ src, id }) => {
             return (
               <Avatar key={id} className="border-4 border-muted">
@@ -78,20 +78,20 @@ export default function Hero() {
             );
           })}
         </div>
-        <div className="flex justify-center items-center md:flex-row flex-col group mt-2">
-          <div className="flex justify-start gap-1 mb-4 md:mb-0">
+        <div className="group mt-2 flex flex-col items-center justify-center md:flex-row">
+          <div className="mb-4 flex justify-start gap-1 md:mb-0">
             {" "}
             {STARS.map((_, idx) => {
               return (
                 <StarFilledIcon
                   key={_ + idx}
-                  className="w-5 h-5 text-yellow-400 hover:fill-yellow-400"
+                  className="h-5 w-5 text-yellow-400 hover:fill-yellow-400"
                 />
               );
             })}
           </div>
 
-          <span className="text-muted-foreground ml-2">
+          <span className="ml-2 text-muted-foreground">
             Loved by 570+ professionals
           </span>
         </div>

@@ -6,32 +6,32 @@ import Container from "./container";
 export default function ContactCard() {
   return (
     <Container>
-      <div className=" col-span-12 w-full flex flex-col justify-center items-center bg-gradient-to-b from-sky-300 dark:from-indigo-800  via-blue-200 dark:via-indigo-700/50 via-20% bottom-0  to-transparent h-[30rem] rounded-t-[5rem]">
+      <div className=" bottom-0 col-span-12 flex h-[30rem] w-full flex-col items-center justify-center rounded-t-[5rem]  bg-gradient-to-b from-sky-300 via-blue-200 via-20%  to-transparent dark:from-indigo-800 dark:via-indigo-700/50">
         <Typography
           variant={"h2"}
-          className="flex justify-center items-center text-center font-bold tracking-tighter"
+          className="flex items-center justify-center text-center font-bold tracking-tighter"
         >
           Grow with NextBase
         </Typography>
-        <Typography className="prose text-center text-pretty my-1 text-gray-800 dark:text-gray-300 px-4 md:px-0">
+        <Typography className="prose my-1 text-pretty px-4 text-center text-gray-800 md:px-0 dark:text-gray-300">
           Build your next SAAS project with a modern stack of Next.js 14+,
           Supabase, Stripe and Typescript, and save 4+ months of development
           time ~ $18000
         </Typography>
-        <Button className="mt-8 my-4">
-          <div className="flex w-fit justify-between items-center gap-2">
+        <Button className="my-4 mt-8">
+          <div className="flex w-fit items-center justify-between gap-2">
             <p className="">Get started for free</p>
 
-            <ArrowRightIcon className="w-4 h-4" />
+            <ArrowRightIcon className="h-4 w-4" />
           </div>
         </Button>
-        <div className="flex justify-center mt-4">
-          <CheckIcon className="text-green-500 h-6 w-6 mr-2" />
-          <span className="text-foreground font-semibold mr-8">
+        <div className="mt-4 flex justify-center">
+          <CheckIcon className="mr-2 h-6 w-6 text-green-500" />
+          <span className="mr-8 font-semibold text-foreground">
             No credit card required
           </span>
-          <CheckIcon className="text-green-500 h-6 w-6 mr-2 " />
-          <span className="text-foreground font-semibold">
+          <CheckIcon className="mr-2 h-6 w-6 text-green-500 " />
+          <span className="font-semibold text-foreground">
             7-day free trial
           </span>
         </div>

@@ -13,9 +13,9 @@ import { useState } from "react";
 export default function Header() {
   const [openMobileNav, setOpenMobileNav] = useState(false);
   return (
-    <header className="flex bg-background/80 left-0 h-[--navbar-height] w-full shrink-0 items-center z-50 px-8 sticky top-0 bg-opacity-90 backdrop-blur-md border-b border-gray-200 dark:border-gray-700">
+    <header className="sticky left-0 top-0 z-50 flex h-[--navbar-height] w-full shrink-0 items-center border-b border-gray-200 bg-background/80 bg-opacity-90 px-8 backdrop-blur-md dark:border-gray-700">
       <Link
-        className="mr-6 w-fit h-full flex justify-start items-center"
+        className="mr-6 flex h-full w-fit items-center justify-start"
         href="#"
       >
         <span className="sr-only">Nextbase Template</span>
@@ -49,7 +49,7 @@ export default function Header() {
           variant={"default"}
           size={"sm"}
           rounded={"full"}
-          className="hidden md:block px-3 py-1"
+          className="hidden px-3 py-1 md:block"
         >
           Get Started
         </Button>
@@ -59,14 +59,14 @@ export default function Header() {
           size={"icon"}
           variant={"outline"}
           rounded={"full"}
-          className="ml-4 md:hidden flex justify-center items-center"
+          className="ml-4 flex items-center justify-center md:hidden"
         >
           {openMobileNav ? <Cross1Icon /> : <HamburgerMenuIcon />}
         </Button>
       </div>
       {openMobileNav && (
-        <div className="absolute bottom-0 h-fit shadow-md py-4 top-20 w-full left-0 bg-primary-foreground z-10">
-          <div className="w-full flex flex-col justify-start items-start">
+        <div className="absolute bottom-0 left-0 top-20 z-10 h-fit w-full bg-primary-foreground py-4 shadow-md">
+          <div className="flex w-full flex-col items-start justify-start">
             <MobileNavMenuItem href="#" content="Home" />
             <MobileNavMenuItem href="#" content="Pricing" />
             <MobileNavMenuItem href="#" content="Features" />
@@ -87,7 +87,7 @@ const NavMenuItem = ({
 }) => {
   return (
     <Link
-      className="group inline-flex h-9 w-max items-center justify-center rounded-md underline decoration-2 decoration-transparent hover:decoration-primary underline-offset-8 px-4 py-2 text-sm font-medium transition-colors   hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
+      className="group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium underline decoration-transparent decoration-2 underline-offset-8 transition-colors hover:text-gray-900   hover:decoration-primary focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
       href={href}
     >
       {content}
@@ -104,7 +104,7 @@ const MobileNavMenuItem = ({
 }) => {
   return (
     <Link href={href} className={"w-full justify-start pl-4"}>
-      <p className=" font-medium w-full text-base py-4 text-start text-gray-600 hover:text-primary ">
+      <p className=" w-full py-4 text-start text-base font-medium text-gray-600 hover:text-primary ">
         {content}
       </p>
     </Link>

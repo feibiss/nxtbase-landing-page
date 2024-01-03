@@ -5,7 +5,7 @@ import Container from "./container";
 const FeatureCardsList = () => {
   return (
     <Container classNames="bg-transparent overflow-visible">
-      <section className="col-span-12 w-full overflow-visible bg-transparent h-full grid row-auto gap-8">
+      <section className="col-span-12 row-auto grid h-full w-full gap-8 overflow-visible bg-transparent">
         {SHOWCASE_FEATURES.map((feature) => (
           <FeatureCard key={feature.title} feature={feature} />
         ))}

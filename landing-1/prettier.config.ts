@@ -1,5 +1,5 @@
 // prettier.config.ts
 module.exports = {
-  tailwindFunctions: ["clsx"],
+  tailwindFunctions: ["clsx", "twMerge"],
   plugins: ["prettier-plugin-tailwindcss"],
 };

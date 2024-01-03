@@ -7,15 +7,15 @@ import { FOOTER_LINKS, FooterCategory } from "@/lib/enums";
 
 export default function Footer() {
   return (
-    <footer className=" bg-gray-900 relative lg:pt-8 md:pt-8 lg:h-[calc(100dvh-var(--navbar-height))] px-8">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-40">
-        <div className="col-span-1 lg:col-span-2 grid grid-cols-3 md:grid-cols-5 w-full gap-4 md:gap-8 pt-12 order-2 lg:order-1 md:order-2 md:mt-8 lg:mt-0  md:mx-auto">
+    <footer className=" relative bg-gray-900 px-8 md:pt-8 lg:h-[calc(100dvh-var(--navbar-height))] lg:pt-8">
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-40">
+        <div className="order-2 col-span-1 grid w-full grid-cols-3 gap-4 pt-12 md:order-2 md:mx-auto md:mt-8 md:grid-cols-5 md:gap-8 lg:order-1 lg:col-span-2  lg:mt-0">
           {FOOTER_LINKS.map((details) => {
             return <FooterCategory key={details.id} footerDetails={details} />;
           })}
         </div>
-        <div className="w-full col-span-1 mx-auto pt-16 md:pt-8 lg:pt-12 space-y-4 md:px-10">
-          <div className="text-start space-y-2">
+        <div className="col-span-1 mx-auto w-full space-y-4 pt-16 md:px-10 md:pt-8 lg:pt-12">
+          <div className="space-y-2 text-start">
             <Typography variant={"h4"} className=" text-gray-200">
               Subscribe to our Newsletter
             </Typography>
@@ -29,7 +29,7 @@ export default function Footer() {
                 Email
               </Label>
               <Input
-                className=" bg-gray-800 border-gray-600 placeholder:text-gray-100"
+                className=" border-gray-600 bg-gray-800 placeholder:text-gray-100"
                 id="email"
                 placeholder="Enter your email"
                 required
@@ -42,7 +42,7 @@ export default function Footer() {
           </form>
         </div>
       </div>
-      <div className="border-t-2 lg:px-8 lg:absolute bottom-0 left-0 w-full overflow-x-none border-gray-700 py-8  md:mt-0 mt-8">
+      <div className="overflow-x-none bottom-0 left-0 mt-8 w-full border-t-2 border-gray-700 py-8 md:mt-0  lg:absolute lg:px-8">
         <Typography variant={"mutedText"}>
           Disclaimer: This is just a template website and is not endorsed by or
           affiliated with any Corporation, registered in the U.S. and other
@@ -62,19 +62,19 @@ const FooterCategory = ({
   footerDetails: FooterCategory;
 }) => {
   return (
-    <div className="flex flex-col mb-8 md:items-baseline">
+    <div className="mb-8 flex flex-col md:items-baseline">
       <Typography
         variant={"h5"}
-        className="text-lg font-bold text-gray-100 mb-4"
+        className="mb-4 text-lg font-bold text-gray-100"
       >
         {footerDetails.title}
       </Typography>
-      <ul className="space-y-2 flex flex-col w-fit">
+      <ul className="flex w-fit flex-col space-y-2">
         {footerDetails.links?.map(({ link, title }) => (
           <Link
             key={title}
             href={link}
-            className="text-gray-500 font-medium hover:text-gray-200 transition-colors prose"
+            className="prose font-medium text-gray-500 transition-colors hover:text-gray-200"
           >
             <li>{title}</li>
           </Link>

@@ -15,7 +15,7 @@ const Banner = () => {
 
   return (
     <Container>
-      <div ref={targetRef} className="h-[50dvh] md:h-[75vh] w-full block">
+      <div ref={targetRef} className="block h-[50dvh] w-full md:h-[75vh]">
         <motion.div
           style={{
             scale,
@@ -25,7 +25,7 @@ const Banner = () => {
             top: "50%",
             left: "50%",
           }}
-          className=" w-[768px] border-[1px] border-indigo-900/20 lg:w-[1024px] absolute antialiased hidden md:block [perspective:1200px] z-10 shadow-lg md:h-[578px] lg:h-[640px] mx-auto rounded-lg overflow-hidden  "
+          className=" absolute z-10 mx-auto hidden w-[768px] overflow-hidden rounded-lg border-[1px] border-indigo-900/20 antialiased shadow-lg [perspective:1200px] md:block md:h-[578px] lg:h-[640px] lg:w-[1024px]  "
         >
           <Image
             alt="Hero image"
@@ -34,7 +34,7 @@ const Banner = () => {
             src="https://res.cloudinary.com/dkqrmlxlg/image/upload/v1703582349/admin-dashboard_pzonvt.png"
           />
         </motion.div>
-        <div className="max-w-lg md:hidden w-[80vw] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute antialiased z-[2] shadow-[0_24px_48px_-12px_#0f17282e] h-[300px] rounded-lg overflow-hidden  ">
+        <div className="absolute left-1/2 top-1/2 z-[2] h-[300px] w-[80vw] max-w-lg -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-lg antialiased shadow-[0_24px_48px_-12px_#0f17282e] md:hidden  ">
           <Image
             alt="Hero image"
             fill

@@ -15,15 +15,15 @@ type FeatureType = {
 };
 export default function FeatureCard({ feature }: { feature: FeatureType }) {
   return (
-    <div className=" row-span-1 border-2 border-gray-200/50 dark:border-card/50 rounded-md relative bg-gradient-to-b from-card to-secondary/50 dark:to-secondary odd:to-bg-accent w-full mx-auto group shadow-sm">
-      <Card className="relative  z-10 w-full border-none shadow-none bg-transparent ">
+    <div className=" odd:to-bg-accent group relative row-span-1 mx-auto w-full rounded-md border-2 border-gray-200/50 bg-gradient-to-b from-card to-secondary/50 shadow-sm dark:border-card/50 dark:to-secondary">
+      <Card className="relative  z-10 w-full border-none bg-transparent shadow-none ">
         <CardContent
-          className={"flex flex-col lg:flex-row items-start col-span-2 gap-8"}
+          className={"col-span-2 flex flex-col items-start gap-8 lg:flex-row"}
         >
           <div className="order-2 lg:group-odd:order-1 lg:group-even:order-2">
             <Typography
               variant={"lead"}
-              className="text-sm font-bold mb-2 uppercase tracking-widest text-primary/80 mt-0"
+              className="mb-2 mt-0 text-sm font-bold uppercase tracking-widest text-primary/80"
             >
               {feature.subtitle}
             </Typography>
@@ -36,16 +36,16 @@ export default function FeatureCard({ feature }: { feature: FeatureType }) {
               eligendi nisi expedita quisquam deserunt nemo amet quo corrupti,
               accusamus consectetur nesciunt. Autem.
             </Typography>
-            <Typography variant={"ul"} className="list-none my-4">
+            <Typography variant={"ul"} className="my-4 list-none">
               {feature.features?.map((feature) => (
                 <li
                   key={feature}
-                  className="flex w-full overflow-hidden
-                   items-center justify-start text-secondary-foreground"
+                  className="flex w-full items-center
+                   justify-start overflow-hidden text-secondary-foreground"
                 >
-                  <CheckIcon className="text-green-500 mr-2 flex justify-center items-center h-6 w-6 capitalize" />
+                  <CheckIcon className="mr-2 flex h-6 w-6 items-center justify-center capitalize text-green-500" />
 
-                  <p className="text-wrap text-ellipsis">{feature}</p>
+                  <p className="text-ellipsis text-wrap">{feature}</p>
                 </li>
               ))}
             </Typography>
@@ -57,18 +57,18 @@ export default function FeatureCard({ feature }: { feature: FeatureType }) {
                   size: "sm",
                   rounded: "full",
                 }),
-                "text-xs px-2 rounded-full m-0 border-2 border-blue-400 mt-4 "
+                "m-0 mt-4 rounded-full border-2 border-blue-400 px-2 text-xs ",
               )}
             >
               Learn More
             </Link>
           </div>
-          <div className="order-0 lg:group-odd:order-2 lg:group-even:order-1 w-full h-full col-span-1 flex justify-center items-center">
+          <div className="order-0 col-span-1 flex h-full w-full items-center justify-center lg:group-odd:order-2 lg:group-even:order-1">
             <video
               autoPlay
               loop
               muted
-              className="rounded-lg shadow-lg w-full md:min-w-[600px] min-h-[260px] md:min-h-[400px] aspect-[4/3] lg:aspect-[600/400] object-cover object-center bg-gray-300"
+              className="aspect-[4/3] min-h-[260px] w-full rounded-lg bg-gray-300 object-cover object-center shadow-lg md:min-h-[400px] md:min-w-[600px] lg:aspect-[600/400]"
               src={feature.imgSrc}
               preload=""
             ></video>
