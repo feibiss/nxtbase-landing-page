@@ -55,9 +55,8 @@ export default function FeatureCard({ feature }: { feature: FeatureType }) {
                 buttonVariants({
                   variant: "outline",
                   size: "sm",
-                  rounded: "full",
                 }),
-                "m-0 mt-4 rounded-full border-2 border-blue-400 px-2 text-xs ",
+                "mt-4 text-xs "
               )}
             >
               Learn More
