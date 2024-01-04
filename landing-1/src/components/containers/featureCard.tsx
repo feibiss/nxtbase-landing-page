@@ -15,7 +15,7 @@ type FeatureType = {
 };
 export default function FeatureCard({ feature }: { feature: FeatureType }) {
   return (
-    <div className=" odd:to-bg-accent group relative row-span-1 mx-auto w-full rounded-md border-2 border-gray-200/50 bg-gradient-to-b from-card to-secondary/50 shadow-sm dark:border-card/50 dark:to-secondary">
+    <div className=" odd:to-bg-accent group relative row-span-1 mx-auto w-full rounded-md border-2 border-gray-200/50 bg-card shadow-sm">
       <Card className="relative  z-10 w-full border-none bg-transparent shadow-none ">
         <CardContent
           className={"col-span-2 flex flex-col items-start gap-8 lg:flex-row"}
