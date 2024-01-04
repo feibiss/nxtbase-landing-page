@@ -44,12 +44,12 @@ const TestimonyCard = ({ details }: { details: CardProps }) => {
       <CardContent className="">
         <Typography
           variant={"p"}
-          className="max-h-[18rem] text-pretty text-start"
+          className="max-h-[16rem] text-pretty text-start"
         >
           {details.review}
         </Typography>
       </CardContent>
-      <CardFooter className="mt-auto w-full pt-8 ">
+      <CardFooter className="mt-auto w-full ">
         <div className=" flex h-12 w-fit items-center justify-between">
           <Avatar className="mr-2">
             <AvatarImage
