@@ -5,8 +5,8 @@ import Container from "./container";
 
 export default function ContactCard() {
   return (
-    <Container>
-      <div className=" bottom-0 col-span-12 flex h-[30rem] w-full flex-col items-center justify-center rounded-t-[5rem]  bg-gradient-to-b from-sky-300 via-blue-200 via-20%  to-transparent dark:from-indigo-800 dark:via-indigo-700/50">
+    <div className="bg-gradient-to-b relative mx-auto grid h-full grid-cols-12 px-8 md:px-16 lg:px-32 overflow-x-hidden from-sky-300 via-blue-200 via-20%  to-transparent dark:from-indigo-800 dark:via-indigo-700/50 w-screen overflow-hidden">
+      <div className=" bottom-0 col-span-12 flex h-[30rem] w-full flex-col items-center justify-center  ">
         <Typography
           variant={"h2"}
           className="flex items-center justify-center text-center font-bold tracking-tighter"
@@ -36,6 +36,6 @@ export default function ContactCard() {
           </span>
         </div>
       </div>
-    </Container>
+    </div>
   );
 }
