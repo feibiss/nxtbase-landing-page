@@ -3,7 +3,7 @@ import Banner from "@/components/containers/banner";
 import ContactCard from "@/components/containers/contactCard";
 import Testimonials from "@/components/containers/testimonials";
 import FeatureCardsList from "@/components/containers/featureCardsList";
-import Spacer from "@/components/containers/spacer";
+import Spacer from "@/components/ui/spacer";
 
 export default function Home() {
   return (
