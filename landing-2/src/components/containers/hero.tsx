@@ -17,7 +17,7 @@ export default function Hero() {
     <Container>
       <div className="col-span-12 mt-8 flex h-full snap-start flex-col items-center justify-center gap-1 text-center md:mt-[var(--navbar-height)]">
         {/* ? Pill */}
-        <div className="relative mb-8 flex w-fit items-center justify-center gap-2 rounded-full border-2 border-amber-400/20 dark:border-amber-300/50">
+        <div className="relative mb-8 flex w-fit items-center justify-center gap-2 rounded-full">
           <Link
             href="#"
             className={clsx(
