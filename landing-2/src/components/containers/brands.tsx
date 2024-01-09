@@ -1,13 +1,89 @@
 import React from "react";
 import Container from "./container";
 import { Typography } from "../ui/typography";
+import Image from "next/image";
 
 const Brands = () => {
+  const BRANDS = [
+    {
+      id: "attio",
+      src: "/attio.svg",
+      alt: "Attio Logo",
+    },
+    {
+      id: "cal",
+      src: "/cal.svg",
+      alt: "Cal Logo",
+    },
+    {
+      id: "checkly",
+      src: "/checkly.svg",
+      alt: "Checkly Logo",
+    },
+    {
+      id: "chronicle",
+      src: "/chronicle.svg",
+      alt: "Chronicle Logo",
+    },
+    {
+      id: "crowd",
+      src: "/crowd.svg",
+      alt: "Crowd Logo",
+    },
+    {
+      id: "hashnode",
+      src: "/hashnode.svg",
+      alt: "Hashnode Logo",
+    },
+    {
+      id: "lugg",
+      src: "/lugg.svg",
+      alt: "Lugg Logo",
+    },
+    {
+      id: "perplexity",
+      src: "/perplexity.svg",
+      alt: "Perplexity Logo",
+    },
+    {
+      id: "prisma",
+      src: "/prisma.svg",
+      alt: "Prisma Logo",
+    },
+    {
+      id: "replicate",
+      src: "/replicate.svg",
+      alt: "Replicate Logo",
+    },
+    {
+      id: "super",
+      src: "/super.svg",
+      alt: "Super Logo",
+    },
+    {
+      id: "tinybird",
+      src: "/tinybird.svg",
+      alt: "Tinybird Logo",
+    },
+  ];
   return (
     <Container>
-      <div className="flex flex-col items-center justify-start">
+      <div className="flex flex-col  col-span-12 items-center h-40 justify-start w-full">
         <Typography>Brands with us</Typography>
-        <div className="grid grid-cols-6 grid-rows-2"></div>
+        <div className="mx-auto mt-8 grid w-full max-w-screen-lg grid-cols-2 items-center px-5 md:grid-cols-6 md:px-0">
+          {BRANDS.map(({ id, src, alt }) => {
+            return (
+              <Image
+                key={id}
+                src={src}
+                className="h-12 md:h-20 blur-0 grayscale hover:grayscale-0 col-span-1"
+                width={520}
+                height={182}
+                alt={alt}
+              />
+            );
+          })}
+        </div>
       </div>
     </Container>
   );
