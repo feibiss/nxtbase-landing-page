@@ -1,6 +1,8 @@
+"use client";
 import Image from "next/image";
 import Container from "./container";
 import { Typography } from "../ui/typography";
+import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 
 const featuredTestimonial = {
   body: "Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.",
@@ -150,29 +152,10 @@ export default function Testimonials() {
                     )}
                   >
                     {column.map((testimonial) => (
-                      <figure
-                        key={testimonial.author.handle}
-                        className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
-                      >
-                        <blockquote className="text-gray-900">
-                          <p>{`“${testimonial.body}”`}</p>
-                        </blockquote>
-                        <figcaption className="mt-6 flex items-center gap-x-4">
-                          <Image
-                            width={40}
-                            height={40}
-                            className="h-10 w-10 rounded-full bg-gray-50"
-                            src={testimonial.author.imageUrl}
-                            alt=""
-                          />
-                          <div>
-                            <div className="font-semibold">
-                              {testimonial.author.name}
-                            </div>
-                            <div className="text-gray-600">{`@${testimonial.author.handle}`}</div>
-                          </div>
-                        </figcaption>
-                      </figure>
+                      <TestimonialCard
+                        key={testimonial.body}
+                        testimonial={testimonial}
+                      />
                     ))}
                   </div>
                 ))}
@@ -184,3 +167,65 @@ export default function Testimonials() {
     </Container>
   );
 }
+
+const TestimonialCard = ({ testimonial }) => {
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+
+  const mouseXSpring = useSpring(x);
+  const mouseYSpring = useSpring(y);
+
+  const rotateX = useTransform(mouseYSpring, [-0.5, 0.5], ["-10deg", "10deg"]);
+
+  const rotateY = useTransform(mouseXSpring, [-0.5, 0.5], ["10deg", "-10deg"]);
+  const handelMouseMove = (e) => {
+    const rect = e.target.getBoundingClientRect();
+
+    const width = rect.width;
+    const height = rect.height;
+
+    const mouseX = e.clientX - rect.left;
+    const mouseY = e.clientY - rect.top;
+
+    const percX = mouseX / width - 0.5;
+    const percY = mouseY / height - 0.5;
+
+    x.set(percX);
+    y.set(percY);
+  };
+
+  const handleMouseLeave = () => {
+    x.set(0);
+    y.set(0);
+  };
+  return (
+    <motion.figure
+      style={{
+        rotateX,
+        rotateY,
+        transformStyle: "preserve-3d",
+      }}
+      onMouseMove={handelMouseMove}
+      onMouseLeave={handleMouseLeave}
+      key={testimonial.author.handle}
+      className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
+    >
+      <blockquote className="text-gray-900">
+        <p>{`“${testimonial.body}”`}</p>
+      </blockquote>
+      <figcaption className="mt-6 flex items-center gap-x-4">
+        <Image
+          width={40}
+          height={40}
+          className="h-10 w-10 rounded-full bg-gray-50"
+          src={testimonial.author.imageUrl}
+          alt=""
+        />
+        <div>
+          <div className="font-semibold">{testimonial.author.name}</div>
+          <div className="text-gray-600">{`@${testimonial.author.handle}`}</div>
+        </div>
+      </figcaption>
+    </motion.figure>
+  );
+};
