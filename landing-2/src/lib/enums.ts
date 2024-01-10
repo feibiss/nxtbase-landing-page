@@ -59,7 +59,7 @@ export const SHOWCASE_FEATURES = [
     title: "Feature-One",
     subtitle: "User Authentication",
     navigateTo: "#",
-    desc: "Nextbase supports a wide range of authentication providers such as Google, GitHub, Twitter, Facebook, Apple, Discord and many more. It also provides the flexibility for users to sign in with their email and password or even just with their email.",
+    desc: "Nextbase supports a wide range of authentication providers such as Google, GitHub, Twitter, Facebook, Apple, Discord and many more. ",
     features: [
       "Multi-provider authentication support",
       "Flexible sign-in options: Email and password",
@@ -72,7 +72,7 @@ export const SHOWCASE_FEATURES = [
     title: "Feature-Two",
     subtitle: "Admin Panel",
     navigateTo: "#",
-    desc: "Nextbase comes with a built-in admin panel that allows you to have a secret area within your app where you can manage users, teams, organizations and more. It provides a comprehensive and intuitive interface for managing all aspects of your application, from users to projects and organizations.",
+    desc: "Nextbase comes with a built-in admin panel that allows you to have a secret area within your app .",
     features: [
       "Integrated admin panel",
       "Secret area within the app for admin access.",
@@ -89,7 +89,7 @@ export const SHOWCASE_FEATURES = [
       "Mimic and view the app from any user's view",
       "Useful for troubleshooting complex problems",
     ],
-    desc: "Admin panel also comes with a powerful debugging feature called User Impersonation. This allows you to impersonate any user in your app and see what they see.Some issues are hard to reproduce and this feature will help you debug the issues and fix them.",
+    desc: "Admin panel also comes with a powerful debugging feature called User Impersonation.",
     imgSrc:
       "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702921499/usenextbase/tinywow_user-imp_43386586_xpo6pr.webm",
   },
@@ -102,7 +102,7 @@ export const SHOWCASE_FEATURES = [
       "Enhanced data fetching for performance.",
       "Exceptional UX through Next.js capabilities.",
     ],
-    desc: "Nextbase is designed to deliver incredible performance. It leverages Next.js 13's all-new app folder, layouts, server components, and server-side rendering to optimize data fetching and provide the best user experience. With Nextbase, you can build high-performance applications that meet the demands of today's users.",
+    desc: "Nextbase is designed to deliver incredible performance. With Nextbase, you can build high-performance applications that meet the demands of today's users.",
     imgSrc:
       "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702916928/usenextbase/tinywow_layouts_43381898_qpovdj.webm",
   },
