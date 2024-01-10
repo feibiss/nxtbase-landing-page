@@ -3,6 +3,7 @@ import Brands from "@/components/containers/brands";
 import Hero from "@/components/containers/hero";
 import { Showcase } from "@/components/containers/showcase";
 import Spacer from "@/components/ui/spacer";
+import FeatureList from "@/components/containers/featurelist";
 
 export default function Home() {
   return (
@@ -15,6 +16,8 @@ export default function Home() {
       <Brands />
       <Spacer type="lg" />
       <StatsCard />
+      <Spacer type="md" />
+      <FeatureList />
     </div>
   );
 }
