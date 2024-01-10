@@ -45,7 +45,7 @@ export default function Hero() {
           explains our service to convince you to keep scrolling down.
         </Typography>
 
-        <Button className="mb-4">
+        <Button variant={"default"} className="mb-4">
           <div className="flex w-fit items-center justify-between gap-2">
             <p className="">Get started for free</p>
 
