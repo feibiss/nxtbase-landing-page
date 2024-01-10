@@ -18,7 +18,7 @@ export default function Home() {
       <Brands />
       <Spacer type="lg" />
       <StatsCard />
-      <Spacer type="md" />
+      <Spacer type="lg" />
       <FeatureList />
       <Testimonials />
       <Spacer type="md" />

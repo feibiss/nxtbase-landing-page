@@ -68,9 +68,9 @@ const Brands = () => {
   ];
   return (
     <Container>
-      <div className="flex flex-col  col-span-12 items-center h-40 justify-start w-full">
+      <div className="flex flex-col  col-span-12 items-center md:h-40 justify-start w-full">
         <Typography>Brands with us</Typography>
-        <div className="mx-auto mt-8 grid w-full max-w-screen-lg grid-cols-2 items-center px-5 md:grid-cols-6 md:px-0">
+        <div className="mx-auto mt-8 grid w-full max-w-screen-lg grid-cols-2 items-center px-5 md:grid-cols-6 md:px-0 gap-4 md:gap-0">
           {BRANDS.map(({ id, src, alt }) => {
             return (
               <Image

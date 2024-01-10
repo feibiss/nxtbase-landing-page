@@ -16,7 +16,7 @@ const FeatureList = () => {
   return (
     <Container>
       <div className="flex flex-col justify-center items-center col-span-12">
-        <Typography variant={"h1"} className="mx-auto w-full text-center">
+        <Typography variant={"h2"} className="mx-auto w-full text-center">
           Powerful features for you<br></br> one-click away.
         </Typography>
         <Typography className="mx-auto w-2/3 text-center">
