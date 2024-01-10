@@ -5,6 +5,7 @@ import { Showcase } from "@/components/containers/showcase";
 import Spacer from "@/components/ui/spacer";
 import FeatureList from "@/components/containers/featurelist";
 import Testimonials from "@/components/containers/testimonials";
+import ContactCard from "@/components/containers/contact";
 
 export default function Home() {
   return (
@@ -20,6 +21,8 @@ export default function Home() {
       <Spacer type="md" />
       <FeatureList />
       <Testimonials />
+      <Spacer type="md" />
+      <ContactCard />
     </div>
   );
 }
