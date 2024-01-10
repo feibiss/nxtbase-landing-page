@@ -6,6 +6,7 @@ import Spacer from "@/components/ui/spacer";
 import FeatureList from "@/components/containers/featurelist";
 import Testimonials from "@/components/containers/testimonials";
 import ContactCard from "@/components/containers/contact";
+import Globe from "@/components/containers/globe";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
       <Showcase />
       <Spacer type="md" />
       <Brands />
-      <Spacer type="lg" />
+      <Globe />
       <StatsCard />
       <Spacer type="lg" />
       <FeatureList />
