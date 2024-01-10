@@ -34,7 +34,10 @@ export default function Hero() {
           </Link>
         </div>
         <Typography variant="h1">
-          A fancy looking hero text to catch your attention
+          With great design comes &gt; &gt;{" "}
+          <span className=" bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent">
+            hero text.
+          </span>{" "}
         </Typography>
         <Typography
           variant="p"

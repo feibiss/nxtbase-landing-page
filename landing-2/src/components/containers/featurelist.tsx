@@ -17,7 +17,14 @@ const FeatureList = () => {
     <Container>
       <div className="flex flex-col justify-center items-center col-span-12">
         <Typography variant={"h2"} className="mx-auto w-full text-center">
-          Powerful features for you<br></br> one-click away.
+          <span className=" bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent">
+            Powerful features
+          </span>{" "}
+          for you<br></br>{" "}
+          <span className=" bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent">
+            one click
+          </span>{" "}
+          away.
         </Typography>
         <Typography className="mx-auto w-2/3 text-center">
           We built Nextbase with the goal of making it easy for you to build
