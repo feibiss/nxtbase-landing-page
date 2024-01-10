@@ -78,9 +78,14 @@ export default function Testimonials() {
     <Container>
       <div className="relative col-span-12 isolate bg-transparent md:pb-32   pt-24 sm:pt-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-xl text-center flex flex-col gap-4">
-            <Typography variant={"h1"}>Testimonials</Typography>
-            <Typography variant={"h5"}>
+          <div className="mx-auto max-w-xl text-center flex flex-col justify-start items-center gap-4">
+            <Typography variant={"h2"}>
+              Loved by{" "}
+              <span className="bg-gradient-to-r from-red-600 to-amber-600 bg-clip-text text-transparent">
+                10k users
+              </span>
+            </Typography>
+            <Typography variant={"p"} className="">
               We have worked with thousands of amazing people
             </Typography>
           </div>
