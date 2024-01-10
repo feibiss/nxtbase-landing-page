@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRightIcon, CheckIcon } from "@radix-ui/react-icons";
 import { Typography } from "../ui/typography";
-import Container from "./container";
 
 export default function ContactCard() {
   return (
