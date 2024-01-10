@@ -34,7 +34,7 @@ const FeatureList = () => {
 export default FeatureList;
 
 export function FeaturesAccordion() {
-  const [currTab, setCurrTab] = useState<string>("");
+  const [currTab, setCurrTab] = useState<string>(SHOWCASE_FEATURES[0].title);
 
   const ImageSrc =
     SHOWCASE_FEATURES.find(({ title }) => title === currTab)?.imgSrc ||
@@ -44,14 +44,13 @@ export function FeaturesAccordion() {
     <div className="grid p-5 grid-cols-1 lg:grid-cols-3 w-full gap-10 ">
       <Accordion
         type="single"
-        collapsible
-        className="w-full"
+        className="w-full h-full col-span-1"
         value={currTab}
         onValueChange={setCurrTab}
       >
-        {SHOWCASE_FEATURES.map(({ title, desc }) => {
+        {SHOWCASE_FEATURES.map(({ title, desc }, idx) => {
           return (
-            <AccordionItem key={title} value={title}>
+            <AccordionItem defaultChecked={idx === 0} key={title} value={title}>
               <AccordionTrigger>{title}</AccordionTrigger>
               <AccordionContent>
                 <div className="flex flex-col items-start justify-start gap-4">
