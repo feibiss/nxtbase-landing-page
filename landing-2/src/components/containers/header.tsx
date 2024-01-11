@@ -31,7 +31,7 @@ export default function Header() {
           width={100}
           className="dark:invert"
           height={64}
-          src="/brand.svg"
+          src="/vercel.svg"
         />
       </Link>
       <NavigationMenuDemo />
