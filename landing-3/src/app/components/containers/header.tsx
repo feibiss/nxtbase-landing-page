@@ -7,6 +7,7 @@ import * as React from "react";
 import {
   NavigationMenu,
   NavigationMenuContent,
+  NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
@@ -142,7 +143,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavigationMenuDemo() {
   return (
-    <NavigationMenu>
+    <NavigationMenuIndicator>
       <NavigationMenuList>
         <NavigationMenuItem>
           <Link href="#" legacyBehavior passHref>
