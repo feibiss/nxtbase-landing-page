@@ -13,9 +13,9 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
+} from "@components/ui/navigation-menu";
 import { Button } from "../ui/button";
-import { cn } from "@/app/lib/utils";
+import { cn } from "@lib/utils";
 
 export default function Header() {
   const [openMobileNav, setOpenMobileNav] = useState(false);
