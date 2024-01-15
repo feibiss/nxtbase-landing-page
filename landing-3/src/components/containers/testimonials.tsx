@@ -3,6 +3,7 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { TESTIMONIES } from "@/lib/enums";
 import { Typography } from "../ui/typography";
 import Container from "./container";
+import Image from "next/image";
 
 export default function Testimonials() {
   return (
@@ -15,7 +16,7 @@ export default function Testimonials() {
           >
             What Our Users Are Saying
           </Typography>
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-6 md:grid-rows-2 lg:grid-cols-3  lg:grid-rows-1">
+          <div className="grid grid-cols-1 gap-8">
             {TESTIMONIES.map((testimony) => (
               <TestimonyCard key={testimony.author} details={testimony} />
             ))}
@@ -36,42 +37,40 @@ type CardProps = {
 };
 const TestimonyCard = ({ details }: { details: CardProps }) => {
   return (
-    <Card className="group relative z-[1] flex cursor-pointer flex-col items-start justify-start overflow-hidden p-4 shadow-md md:col-span-3 md:last:col-span-4 md:last:col-start-2 lg:col-span-1 lg:last:col-span-1 lg:last:col-start-3">
-      <div
-        aria-hidden
-        className="group:hover:bottom-0 absolute -bottom-72 -left-40 -z-[1] h-[20rem] w-full  rounded-tr-3xl bg-transparent blur-xl transition-all group-hover:left-0 group-hover:bg-primary/10"
-      ></div>
-      <CardContent className="">
-        <Typography
-          variant={"p"}
-          className="max-h-[16rem] text-pretty text-start"
-        >
-          {details.review}
-        </Typography>
-      </CardContent>
-      <CardFooter className="mt-auto w-full ">
-        <div className=" flex h-12 w-fit items-center justify-between">
-          <Avatar className="mr-2">
-            <AvatarImage
-              alt={details.author}
+    <section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
+      <div className="mx-auto max-w-2xl lg:max-w-4xl">
+        <figure className="mt-10">
+          <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
+            <p>{details.review}</p>
+          </blockquote>
+          <figcaption className="mt-10">
+            <Image
+              width={40}
+              height={40}
+              className="mx-auto h-10 w-10 rounded-full"
               src={details.profilePic}
-              className="object-cover"
+              alt={details.author}
             />
-            <AvatarFallback>{details.fallback}</AvatarFallback>
-          </Avatar>
-          <div className="flex flex-col items-start justify-start">
-            <Typography
-              variant={"mutedText"}
-              className=" text-secondary-foreground"
-            >
-              {details.author}
-            </Typography>
-            <Typography variant={"mutedText"}>
-              {details.role + ", " + details.brand}
-            </Typography>
-          </div>
-        </div>
-      </CardFooter>
-    </Card>
+            <div className="mt-4 flex items-center justify-center space-x-3 text-base">
+              <div className="font-semibold text-gray-900">
+                {details.author}
+              </div>
+              <svg
+                viewBox="0 0 2 2"
+                width={3}
+                height={3}
+                aria-hidden="true"
+                className="fill-gray-900"
+              >
+                <circle cx={1} cy={1} r={1} />
+              </svg>
+              <div className="text-gray-600">
+                {details.role}, {details.brand}
+              </div>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
   );
 };
