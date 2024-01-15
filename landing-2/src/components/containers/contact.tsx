@@ -5,7 +5,7 @@ import Container from "./container";
 
 export default function ContactCard() {
   return (
-    <Container classNames="mt-20 border-t border-gray-200 bg-white/10 py-20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur">
+    <Container classNames="mt-20 border-t border-gray-200 bg-white/10">
       <div className="col-span-12 relative mx-auto h-fullflex flex-col justify-start items-center overflow-x-hidden w-full overflow-hidden">
         <div className=" bottom-0 flex h-[30rem] w-full flex-col items-center justify-center  ">
           <Typography
