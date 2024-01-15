@@ -9,26 +9,6 @@ export const TESTIMONIES = [
     review:
       "We've tried numerous SaaS solutions, but none compare to Company Z's platform. As our business expanded, the scalability of this SaaS became evident – it effortlessly grew with us.",
   },
-  {
-    author: "James Parr",
-    role: "CEO",
-    brand: "Another",
-    fallback: "JP",
-    profilePic:
-      "https://res.cloudinary.com/dkqrmlxlg/image/upload/v1702967047/usenextbase/Avatars/testimony_3.webp",
-    review:
-      "Implementing SaaS from Company Y has been a game-changer for us. The analytics tools provided have allowed us to make data-driven decisions, leading to smarter strategies and increased profitability.",
-  },
-  {
-    author: "Michelle Dakota",
-    role: "CEO",
-    brand: "SAAS",
-    fallback: "MD",
-    profilePic:
-      "https://res.cloudinary.com/dkqrmlxlg/image/upload/v1702967097/usenextbase/Avatars/testimony_2.webp",
-    review:
-      "Company X's SaaS has completely transformed the way we operate. Tasks that used to take hours are now accomplished in minutes. Our business wouldn't be where it is today without this game-changing solution.",
-  },
 ];
 
 export const AVATARS = [
@@ -66,7 +46,7 @@ export const SHOWCASE_FEATURES = [
       "Comprehensive user authentication system",
     ],
     imgSrc:
-      "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702921481/usenextbase/tinywow_signup_43386486_t9iuny.webm",
+      "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702921481/usenextbase/tinywow_signup_43386486_t9iuny.webp",
   },
   {
     title: "Feature-Two",
@@ -78,7 +58,7 @@ export const SHOWCASE_FEATURES = [
       "Secret area within the app for admin access.",
     ],
     imgSrc:
-      "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702915076/usenextbase/tinywow_admin-panel-gif_43379830_tltcqi.webm",
+      "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702915076/usenextbase/tinywow_admin-panel-gif_43379830_tltcqi.webp",
   },
   {
     title: "Feature-Three",
@@ -91,7 +71,7 @@ export const SHOWCASE_FEATURES = [
     ],
     desc: "Admin panel also comes with a powerful debugging feature called User Impersonation.",
     imgSrc:
-      "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702921499/usenextbase/tinywow_user-imp_43386586_xpo6pr.webm",
+      "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702921499/usenextbase/tinywow_user-imp_43386586_xpo6pr.webp",
   },
   {
     title: "Feature-Four",
@@ -104,7 +84,7 @@ export const SHOWCASE_FEATURES = [
     ],
     desc: "Nextbase is designed to deliver incredible performance. With Nextbase, you can build high-performance applications that meet the demands of today's users.",
     imgSrc:
-      "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702916928/usenextbase/tinywow_layouts_43381898_qpovdj.webm",
+      "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702916928/usenextbase/tinywow_layouts_43381898_qpovdj.webp",
   },
   {
     title: "Feature-Five",
@@ -117,7 +97,7 @@ export const SHOWCASE_FEATURES = [
     ],
     desc: "Nextbase is pre-configured with Stripe, a leading online payment processing platform. Your database will be in sync with all customer activity in Stripe via Webhooks. ",
     imgSrc:
-      "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702916692/usenextbase/tinywow_stripe-payments-gif_43381706_by2uhy.webm",
+      "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702916692/usenextbase/tinywow_stripe-payments-gif_43381706_by2uhy.webp",
   },
 ];
 

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRightIcon, CheckIcon } from "@radix-ui/react-icons";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { Typography } from "../ui/typography";
 
 export default function ContactCard() {
@@ -17,23 +17,13 @@ export default function ContactCard() {
           Supabase, Stripe and Typescript, and save 4+ months of development
           time ~ $18000
         </Typography>
-        <Button className="my-4 mt-8">
+        <Button size={"lg"} className="my-4 mt-8">
           <div className="flex w-fit items-center justify-between gap-2">
             <p className="">Get started for free</p>
 
             <ArrowRightIcon className="h-4 w-4" />
           </div>
         </Button>
-        <div className="mt-4 flex justify-center">
-          <CheckIcon className="mr-2 h-6 w-6 text-green-500" />
-          <span className="mr-8 font-semibold text-foreground">
-            No credit card required
-          </span>
-          <CheckIcon className="mr-2 h-6 w-6 text-green-500 " />
-          <span className="font-semibold text-foreground">
-            7-day free trial
-          </span>
-        </div>
       </div>
     </div>
   );
