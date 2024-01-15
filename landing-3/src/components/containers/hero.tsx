@@ -15,18 +15,18 @@ export default function Hero() {
   const STARS: number[] = new Array(5).fill(1);
   return (
     <Container>
-      <div className="col-span-12 mt-8 flex h-full snap-start flex-col items-center justify-center gap-1 text-center md:mt-[var(--navbar-height)]">
+      <div className="col-span-12 mt-8 flex h-full snap-start flex-col items-start justify-center gap-1 text-start md:mt-[var(--navbar-height)]">
         {/* ? Pill */}
         <div className="relative mb-8 flex w-fit items-center justify-center gap-2 rounded-full border-2 border-amber-400/20 dark:border-amber-300/50">
           <Link
             href="#"
             className={clsx(
-              " flex h-6 items-center justify-start gap-2 rounded-full bg-amber-50 p-1 dark:bg-amber-900",
+              " flex h-6 items-center justify-start gap-2 rounded-full bg-amber-50 p-1 dark:bg-amber-900"
             )}
           >
             <p
               className={clsx(
-                "h-full w-fit rounded-full bg-amber-400 px-2 text-xs text-primary-foreground ",
+                "h-full w-fit rounded-full bg-amber-400 px-2 text-xs text-primary-foreground "
               )}
             >
               New
@@ -48,30 +48,17 @@ export default function Hero() {
           explains our service to convince you to keep scrolling down.
         </Typography>
 
-        <Button className="mb-4">
+        <Button size={"lg"} className="mb-6 mt-2">
           <div className="flex w-fit items-center justify-between gap-2">
             <p className="">Get started for free</p>
 
             <ArrowRightIcon className="h-4 w-4" />
           </div>
         </Button>
-        <div className="flex flex-col items-center justify-center gap-4 space-x-2 md:flex-row">
-          <div className="flex w-fit items-center justify-start gap-2">
-            {" "}
-            <CheckCircledIcon className="h-6 w-6 text-green-500" />
-            <span className="text-muted-foreground">7-day free trial</span>
-          </div>
-          <div className="flex w-fit items-center justify-start gap-2">
-            <CheckCircledIcon className="h-6 w-6 text-green-500" />
-            <span className="text-muted-foreground">
-              No credit card required
-            </span>
-          </div>
-        </div>
         <div className="my-2 flex justify-center -space-x-2 ">
           {AVATARS.map(({ src, id }) => {
             return (
-              <Avatar key={id} className="border-4 border-muted">
+              <Avatar key={id} className="border-4 border-gray-400/50">
                 <AvatarImage src={src} className="object-cover" />
                 <AvatarFallback>CN</AvatarFallback>
               </Avatar>
@@ -90,10 +77,6 @@ export default function Hero() {
               );
             })}
           </div>
-
-          <span className="ml-2 text-muted-foreground">
-            Loved by 570+ professionals
-          </span>
         </div>
       </div>
     </Container>
