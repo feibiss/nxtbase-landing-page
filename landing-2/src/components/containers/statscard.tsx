@@ -34,7 +34,7 @@ export const StatsCard = () => {
               >
                 {metric}
               </Typography>
-              <Typography className="uppercase font-semibold text-gray-500">
+              <Typography className="uppercase line-clamp-1 font-semibold text-gray-500">
                 {label}
               </Typography>
             </div>
