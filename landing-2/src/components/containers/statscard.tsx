@@ -20,7 +20,7 @@ export const StatsCard = () => {
     },
   ];
   return (
-    <div className="mt-20 border-t border-gray-200 bg-white/10 py-20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur w-full flex justify-center items-center  border-y-2 border-gray-100">
+    <div className=" border-t bg-white/10 py-0 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur w-full flex justify-center items-center  border-y-2 border-gray-200">
       <div className="w-full grid grid-cols-3 justify-center items-center max-w-7xl px-8 md:px-16 lg:px-32">
         {STATS.map(({ id, metric, label }) => {
           return (
