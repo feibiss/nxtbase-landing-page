@@ -5,7 +5,7 @@ import Image from "next/image";
 const Globe = () => {
   return (
     <Container>
-      <div className="aspect-square w-full col-span-12 mx-auto max-w-[1000px]">
+      <div className="aspect-square w-full col-span-12 mx-auto max-w-[1000px] flex justify-center items-center">
         <Image
           width={820}
           height={820}
