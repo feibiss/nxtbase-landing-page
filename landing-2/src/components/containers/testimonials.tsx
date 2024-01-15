@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Container from "./container";
 import { Typography } from "../ui/typography";
-import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import { useMotionValue, useSpring, useTransform, motion } from "framer-motion";
 import { featuredTestimonial, testimonials } from "@/lib/enums";
 
 function classNames(...classes: string[]) {
@@ -12,7 +12,7 @@ function classNames(...classes: string[]) {
 export default function Testimonials() {
   return (
     <Container>
-      <div className="relative col-span-12 isolate bg-transparent md:pb-32   pt-24 sm:pt-32">
+      <div className="relative col-span-12 isolate bg-transparent pt-24 sm:pt-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-xl text-center flex flex-col justify-start items-center gap-4">
             <Typography variant={"h2"}>
@@ -46,35 +46,33 @@ export default function Testimonials() {
                 </div>
               </figcaption>
             </figure>
-            {[...testimonials, ...testimonials, ...testimonials].map(
-              (columnGroup, columnGroupIdx) => (
-                <div
-                  key={columnGroupIdx}
-                  className="space-y-8 xl:contents xl:space-y-0"
-                >
-                  {columnGroup.map((column, columnIdx) => (
-                    <div
-                      key={columnIdx}
-                      className={classNames(
-                        (columnGroupIdx === 0 && columnIdx === 0) ||
-                          (columnGroupIdx === testimonials.length - 1 &&
-                            columnIdx === columnGroup.length - 1)
-                          ? "xl:row-span-2"
-                          : "xl:row-start-1",
-                        "space-y-8"
-                      )}
-                    >
-                      {column.map((testimonial) => (
-                        <TestimonialCard
-                          key={testimonial.body}
-                          testimonial={testimonial}
-                        />
-                      ))}
-                    </div>
-                  ))}
-                </div>
-              )
-            )}
+            {testimonials.map((columnGroup, columnGroupIdx) => (
+              <div
+                key={columnGroupIdx}
+                className="space-y-8 xl:contents xl:space-y-0"
+              >
+                {columnGroup.map((column, columnIdx) => (
+                  <div
+                    key={columnIdx}
+                    className={classNames(
+                      (columnGroupIdx === 0 && columnIdx === 0) ||
+                        (columnGroupIdx === testimonials.length - 1 &&
+                          columnIdx === columnGroup.length - 1)
+                        ? "xl:row-span-2"
+                        : "xl:row-start-1",
+                      "space-y-8"
+                    )}
+                  >
+                    {column.map((testimonial) => (
+                      <TestimonialCard
+                        key={testimonial.body}
+                        testimonial={testimonial}
+                      />
+                    ))}
+                  </div>
+                ))}
+              </div>
+            ))}
           </div>
         </div>
       </div>
