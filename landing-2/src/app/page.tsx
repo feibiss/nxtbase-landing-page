@@ -17,6 +17,7 @@ export default function Home() {
       <Showcase />
       <Spacer type="md" />
       <Brands />
+      <Spacer type="lg" />
       <Globe />
       <StatsCard />
       <Spacer type="lg" />
