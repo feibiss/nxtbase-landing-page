@@ -76,7 +76,7 @@ const Brands = () => {
               <Image
                 key={id}
                 src={src}
-                className="h-12 md:h-20 blur-0 grayscale hover:grayscale-0 col-span-1"
+                className="h-12 md:h-20 blur-0 grayscale text-transparent dark:invert dark:hover:invert-0 transition-all hover:grayscale-0 col-span-1"
                 width={520}
                 height={182}
                 alt={alt}

@@ -20,7 +20,7 @@ import {
 export default function Header() {
   const [openMobileNav, setOpenMobileNav] = useState(false);
   return (
-    <header className="sticky top-0 inset-x-0 z-50 flex h-[--navbar-height] w-full items-center border-b px-8 bg-white/80 backdrop-blur-md mx-auto">
+    <header className="sticky top-0 inset-x-0 z-50 flex h-[--navbar-height] w-full items-center border-b px-8 bg-white/80 dark:bg-black/80 backdrop-blur-md mx-auto">
       <Link
         className="mr-6 flex h-full w-fit items-center justify-start"
         href="#"
