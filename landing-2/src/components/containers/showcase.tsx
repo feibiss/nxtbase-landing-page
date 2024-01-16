@@ -39,11 +39,14 @@ export function Showcase() {
         align: "center",
         loop: "true",
       }}
-      className="w-full mx-auto max-w-screen"
+      className="w-full mx-auto max-w-screen py-8 bg-gradient-to-b from-transparent to-gray-200/20"
     >
       <CarouselContent>
         {CAROUSAL_IMAGES.map((_, index) => (
-          <CarouselItem key={_.id} className="md:basis-1/2 lg:basis-1/3">
+          <CarouselItem
+            key={_.id}
+            className="md:basis-1/2 lg:basis-1/3 rounded-md overflow-hidden"
+          >
             <div className="p-1">
               <Card>
                 <CardContent className="flex aspect-video items-center justify-center p-0 rounded overflow-hidden">
