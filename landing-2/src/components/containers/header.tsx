@@ -143,7 +143,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavigationMenuDemo() {
   return (
-    <NavigationMenu>
+    <NavigationMenu className="md:block hidden">
       <NavigationMenuList>
         <NavigationMenuItem>
           <Link href="#" legacyBehavior passHref>
