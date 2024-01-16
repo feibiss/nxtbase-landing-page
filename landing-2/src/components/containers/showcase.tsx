@@ -8,7 +8,30 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Image from "next/image";
 
+const CAROUSAL_IMAGES = [
+  {
+    id: 1,
+    src: "https://res.cloudinary.com/dkqrmlxlg/image/upload/v1705432514/usenextbase/orgs-teams_1_zzemcg.webp",
+  },
+  {
+    id: 2,
+    src: "https://res.cloudinary.com/dkqrmlxlg/image/upload/v1705432528/usenextbase/user-impersonation_h77zul.webp",
+  },
+  {
+    id: 4,
+    src: "https://res.cloudinary.com/dkqrmlxlg/image/upload/v1705432517/usenextbase/stripe-integration_rham5f.webp",
+  },
+  {
+    id: 3,
+    src: "https://res.cloudinary.com/dkqrmlxlg/image/upload/v1705432513/usenextbase/auth_yhrpj6.webp",
+  },
+  {
+    id: 5,
+    src: "https://res.cloudinary.com/dkqrmlxlg/image/upload/v1705432519/usenextbase/layouts_wmhadw.webp",
+  },
+];
 export function Showcase() {
   return (
     <Carousel
@@ -19,12 +42,18 @@ export function Showcase() {
       className="w-full mx-auto max-w-screen"
     >
       <CarouselContent>
-        {Array.from({ length: 5 }).map((_, index) => (
-          <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+        {CAROUSAL_IMAGES.map((_, index) => (
+          <CarouselItem key={_.id} className="md:basis-1/2 lg:basis-1/3">
             <div className="p-1">
               <Card>
-                <CardContent className="flex aspect-video items-center justify-center p-6">
-                  <span className="text-3xl font-semibold">{index + 1}</span>
+                <CardContent className="flex aspect-video items-center justify-center p-0 rounded overflow-hidden">
+                  <Image
+                    alt={"Carousal-Image-"}
+                    width={600}
+                    height={400}
+                    src={_.src}
+                    className="object-cover aspect-video"
+                  />
                 </CardContent>
               </Card>
             </div>
