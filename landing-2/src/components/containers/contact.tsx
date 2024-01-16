@@ -8,11 +8,11 @@ export default function ContactCard() {
     <Container classNames="mt-20 border-t border-gray-200 dark:border-gray-800 bg-card/20">
       <div className="col-span-12 relative mx-auto h-fullflex flex-col justify-start items-center overflow-x-hidden w-full overflow-hidden">
         <div className=" bottom-0 flex h-[30rem] w-full flex-col items-center justify-center  ">
-          <Typography
-            variant={"h2"}
-            className="flex items-center justify-center text-center font-bold tracking-tighter"
-          >
-            Grow with NextBase
+          <Typography variant={"h2"}>
+            Grow with{" "}
+            <span className="bg-gradient-to-r from-red-600 to-amber-600 bg-clip-text text-transparent">
+              Nextbase.
+            </span>
           </Typography>
           <Typography className="prose my-1 text-pretty px-4 text-center text-gray-800 md:px-0 dark:text-gray-300">
             Build your next SAAS project with a modern stack of Next.js 14+,
