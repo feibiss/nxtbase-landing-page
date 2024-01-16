@@ -28,7 +28,8 @@ const FeatureList = () => {
         </Typography>
         <Typography className="mx-auto w-2/3 text-center">
           We built Nextbase with the goal of making it easy for you to build
-          your next SAAS. We focus on the minor details so you won't have to.
+          your next SAAS. We focus on the minor details so you won&apos;t have
+          to.
         </Typography>
       </div>
       <div className="my-10 col-span-12 w-full overflow-hidden rounded-xl border border-gray-200 bg-white/10 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur lg:h-[540px]">
