@@ -11,7 +11,7 @@ const Container = ({
   return (
     <section
       className={cn(
-        "relative mx-auto grid h-fit w-full max-w-7xl grid-cols-12 px-8 md:px-16 lg:px-32 ",
+        "relative mx-auto grid h-fit w-full max-w-7xl md:max-w-2xl grid-cols-12 ",
         classNames
       )}
     >
