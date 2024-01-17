@@ -7,7 +7,7 @@ import * as React from "react";
 
 export default function Header() {
   return (
-    <header className="sticky inset-x-0 z-50 flex h-[--navbar-height] w-full items-center border-b lg:px-8 px-0 bg-card backdrop-blur-md mx-auto">
+    <header className="sticky max-w-screen-2xl  inset-x-0 z-50 flex h-[--navbar-height] w-full items-center border-b lg:px-8 px-0 bg-card backdrop-blur-md mx-auto">
       <div className=" hidden lg:flex justify-around items-center gap-4">
         <Button>How it works</Button>
         <Button>Pricing</Button>
