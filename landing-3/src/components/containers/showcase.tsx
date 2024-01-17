@@ -39,7 +39,7 @@ export function Showcase() {
         align: "center",
         loop: "true",
       }}
-      className="w-full mx-auto max-w-screen py-8 bg-gradient-to-b from-transparent to-gray-200/20"
+      className="w-full mx-auto max-w-screen "
     >
       <CarouselContent>
         {CAROUSAL_IMAGES.map((_, index) => (
@@ -49,13 +49,13 @@ export function Showcase() {
           >
             <div className="p-1">
               <Card>
-                <CardContent className="flex aspect-video items-center justify-center p-0 rounded overflow-hidden">
+                <CardContent className="flex aspect-video lg:border lg:border-white/5 items-center justify-center p-0 rounded overflow-hidden">
                   <Image
                     alt={"Carousal-Image-"}
                     width={600}
-                    height={400}
+                    height={600}
                     src={_.src}
-                    className="object-cover aspect-video"
+                    className="object-cover aspect-video  "
                   />
                 </CardContent>
               </Card>
