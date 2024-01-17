@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Manrope } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/containers/header";
 import Footer from "@/components/containers/footer";
-import BackgroundBanner from "@/components/ui/bg";
 
-const inter = Inter({ subsets: ["latin"] });
+const manrope = Manrope({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Clubbed",
@@ -19,8 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <BackgroundBanner />
+      <body className={manrope.className}>
         <Header />
         {children}
         <Footer />
