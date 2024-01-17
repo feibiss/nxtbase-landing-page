@@ -1,26 +1,26 @@
 "use client";
+
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Cross1Icon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import { useState } from "react";
 import * as React from "react";
+import { cn } from "@/lib/utils";
 import {
   NavigationMenu,
   NavigationMenuContent,
-  NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "@components/ui/navigation-menu";
-import { Button } from "../ui/button";
-import { cn } from "@lib/utils";
+} from "@/components/ui/navigation-menu";
 
 export default function Header() {
   const [openMobileNav, setOpenMobileNav] = useState(false);
   return (
-    <header className="sticky inset-x-0 z-50 flex h-[--navbar-height] w-full items-center border-b px-8 backdrop-blur-md max-w-screen-xl mx-auto">
+    <header className="sticky top-0 inset-x-0 z-50 flex h-[--navbar-height] w-full items-center border-b px-8 bg-white/80 dark:bg-black/80 backdrop-blur-md mx-auto">
       <Link
         className="mr-6 flex h-full w-fit items-center justify-start"
         href="#"
@@ -143,7 +143,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavigationMenuDemo() {
   return (
-    <NavigationMenu>
+    <NavigationMenu className="md:block hidden">
       <NavigationMenuList>
         <NavigationMenuItem>
           <Link href="#" legacyBehavior passHref>

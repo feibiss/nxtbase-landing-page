@@ -15,29 +15,29 @@ export default function Hero() {
   const STARS: number[] = new Array(5).fill(1);
   return (
     <Container>
-      <div className="col-span-12 mt-8 flex h-full snap-start flex-col items-start justify-center gap-1 text-start md:mt-[var(--navbar-height)]">
+      <div className="col-span-12 mt-8 flex h-full snap-start flex-col items-center justify-center gap-1 text-center md:mt-[var(--navbar-height)]">
         {/* ? Pill */}
-        <div className="relative mb-8 flex w-fit items-center justify-center gap-2 rounded-full border-2 border-amber-400/20 dark:border-amber-300/50">
+        <div className="relative mb-8 flex w-fit items-center justify-center gap-2 rounded-full">
           <Link
             href="#"
             className={clsx(
-              " flex h-6 items-center justify-start gap-2 rounded-full bg-amber-50 p-1 dark:bg-amber-900"
+              "group mx-auto flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-200 bg-white px-7 py-2 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.1)] backdrop-blur transition-all hover:border-gray-300 hover:bg-white/50"
             )}
           >
             <p
               className={clsx(
-                "h-full w-fit rounded-full bg-amber-400 px-2 text-xs text-primary-foreground "
+                "text-sm font-semibold text-gray-700 [text-wrap:balance]"
               )}
             >
-              New
-            </p>
-            <p className="text-sm font-semibold text-amber-600 ">
               Latest update details hook here.
             </p>
           </Link>
         </div>
         <Typography variant="h1">
-          A fancy looking hero text to catch your attention
+          With great design comes &gt; &gt;{" "}
+          <span className=" bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent">
+            hero text.
+          </span>{" "}
         </Typography>
         <Typography
           variant="p"
@@ -48,17 +48,30 @@ export default function Hero() {
           explains our service to convince you to keep scrolling down.
         </Typography>
 
-        <Button size={"lg"} className="mb-6 mt-2">
+        <Button variant={"default"} className="mb-4">
           <div className="flex w-fit items-center justify-between gap-2">
             <p className="">Get started for free</p>
 
             <ArrowRightIcon className="h-4 w-4" />
           </div>
         </Button>
+        <div className="flex flex-col items-center justify-center gap-4 space-x-2 md:flex-row">
+          <div className="flex w-fit items-center justify-start gap-2">
+            {" "}
+            <CheckCircledIcon className="h-6 w-6 text-green-500" />
+            <span className="text-muted-foreground">7-day free trial</span>
+          </div>
+          <div className="flex w-fit items-center justify-start gap-2">
+            <CheckCircledIcon className="h-6 w-6 text-green-500" />
+            <span className="text-muted-foreground">
+              No credit card required
+            </span>
+          </div>
+        </div>
         <div className="my-2 flex justify-center -space-x-2 ">
           {AVATARS.map(({ src, id }) => {
             return (
-              <Avatar key={id} className="border-4 border-gray-400/50">
+              <Avatar key={id} className="border-4 border-muted">
                 <AvatarImage src={src} className="object-cover" />
                 <AvatarFallback>CN</AvatarFallback>
               </Avatar>
@@ -77,6 +90,10 @@ export default function Hero() {
               );
             })}
           </div>
+
+          <span className="ml-2 text-muted-foreground">
+            Loved by 570+ professionals
+          </span>
         </div>
       </div>
     </Container>

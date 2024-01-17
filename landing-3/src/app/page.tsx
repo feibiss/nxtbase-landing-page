@@ -1,22 +1,29 @@
-import Hero from "@components/containers/hero";
-import Banner from "@components/containers/banner";
-import ContactCard from "@components/containers/contactCard";
-import Testimonials from "@components/containers/testimonials";
-import FeatureCardsList from "@components/containers/featureCardsList";
-import Spacer from "@components/ui/spacer";
+import { StatsCard } from "@/components/containers/statscard";
+import Brands from "@/components/containers/brands";
+import Hero from "@/components/containers/hero";
+import { Showcase } from "@/components/containers/showcase";
+import Spacer from "@/components/ui/spacer";
+import FeatureList from "@/components/containers/featurelist";
+import Testimonials from "@/components/containers/testimonials";
+import ContactCard from "@/components/containers/contact";
+import Globe from "@/components/containers/globe";
 
 export default function Home() {
   return (
-    <main className="relative flex flex-col items-center justify-between">
-      <div className="absolute inset-0 -z-10 h-full w-full bg-primary-foreground bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:32px_32px] dark:bg-primary-foreground dark:bg-[radial-gradient(#4b5563_1px,transparent_1px)]"></div>
+    <div className="flex flex-col items-start justify-start">
+      <Spacer type="md" />
       <Hero />
       <Spacer type="md" />
-      <Banner />
+      <Showcase />
+      <Spacer type="md" />
+      <Brands />
+      <Spacer type="lg" />
+      <Globe />
+      <StatsCard />
+      <Spacer type="lg" />
+      <FeatureList />
       <Testimonials />
-      <Spacer type="lg" />
-      <FeatureCardsList />
-      <Spacer type="lg" />
       <ContactCard />
-    </main>
+    </div>
   );
 }
