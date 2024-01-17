@@ -14,19 +14,19 @@ import Container from "./container";
 export default function Hero() {
   const STARS: number[] = new Array(5).fill(1);
   return (
-    <Container>
-      <div className="col-span-12 mt-8 flex h-full snap-start flex-col items-center justify-center gap-1 text-center md:mt-[var(--navbar-height)]">
+    <Container classNames="">
+      <div className="col-span-12 w-full row-auto flex h-full snap-start flex-col items-center justify-start gap-1 text-center">
         {/* ? Pill */}
-        <div className="relative mb-8 flex w-fit items-center justify-center gap-2 rounded-full">
+        <div className="relative mb-4 flex w-fit items-center justify-center">
           <Link
             href="#"
             className={clsx(
-              "group mx-auto flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-200 bg-white px-7 py-2 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.1)] backdrop-blur transition-all hover:border-gray-300 hover:bg-white/50"
+              "group mx-auto flex max-w-fit items-center justify-center space-x-2 overflow-hidden px-7 py-2 transition-all"
             )}
           >
             <p
               className={clsx(
-                "text-sm font-semibold text-gray-700 [text-wrap:balance]"
+                "text-sm font-base text-gray-400 [text-wrap:balance]"
               )}
             >
               Latest update details hook here.
@@ -34,14 +34,11 @@ export default function Hero() {
           </Link>
         </div>
         <Typography variant="h1">
-          With great design comes &gt; &gt;{" "}
-          <span className=" bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent">
-            hero text.
-          </span>{" "}
+          We build top notch websites that help your brand grow supafast
         </Typography>
         <Typography
           variant="p"
-          className="my-2 max-w-sm px-4 text-muted-foreground md:max-w-lg md:px-0"
+          className=" text-base/6 max-w-[50%] mx-auto font-normal text-white/60 md:text-xl/7 lg:text-2xl/8"
         >
           Great, now that we have your attention, we will actually talk about
           how we help you do the above. Mostly a brief description which
