@@ -45,44 +45,25 @@ export default function Hero() {
           explains our service to convince you to keep scrolling down.
         </Typography>
 
-        <Button variant={"default"} className="mb-4">
+        <Button
+          variant={"default"}
+          className="inline-flex text-md items-center w-fit cta-btn justify-center overflow-hidden whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 shadow-[inset_0_-4px_0_0_rgba(0,0,0,.25)] h-fit min-h-10 mb-4 rounded-xl bg-white p-3.5 lg:p-4 px-10 lg:px-16 text-md lg:text-lg font-bold text-primary tracking-tight cta-btn cursor-pointer hover:scale-105 transition duration-300 ease-out"
+        >
           <div className="flex w-fit items-center justify-between gap-2">
             <p className="">Get started for free</p>
 
             <ArrowRightIcon className="h-4 w-4" />
           </div>
         </Button>
-        <div className="flex flex-col items-center justify-center gap-4 space-x-2 md:flex-row">
-          <div className="flex w-fit items-center justify-start gap-2">
-            {" "}
-            <CheckCircledIcon className="h-6 w-6 text-green-500" />
-            <span className="text-muted-foreground">7-day free trial</span>
-          </div>
-          <div className="flex w-fit items-center justify-start gap-2">
-            <CheckCircledIcon className="h-6 w-6 text-green-500" />
-            <span className="text-muted-foreground">
-              No credit card required
-            </span>
-          </div>
-        </div>
-        <div className="my-2 flex justify-center -space-x-2 ">
-          {AVATARS.map(({ src, id }) => {
-            return (
-              <Avatar key={id} className="border-4 border-muted">
-                <AvatarImage src={src} className="object-cover" />
-                <AvatarFallback>CN</AvatarFallback>
-              </Avatar>
-            );
-          })}
-        </div>
-        <div className="group mt-2 flex flex-col items-center justify-center md:flex-row">
+
+        <div className="group mt-2 flex flex-col items-center justify-center space-y-2">
           <div className="mb-4 flex justify-start gap-1 md:mb-0">
             {" "}
             {STARS.map((_, idx) => {
               return (
                 <StarFilledIcon
                   key={_ + idx}
-                  className="h-5 w-5 text-yellow-400 hover:fill-yellow-400"
+                  className=" size-5 text-white transition-all hover:text-gray-200 hover:size-6"
                 />
               );
             })}
