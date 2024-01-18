@@ -1,7 +1,7 @@
 import React from "react";
-import Container from "./container";
 import { Typography } from "../ui/typography";
 import Image from "next/image";
+import Marquee from "@components/ui/marquee";
 
 const Brands = () => {
   const BRANDS = [
@@ -67,25 +67,23 @@ const Brands = () => {
     },
   ];
   return (
-    <Container>
-      <div className="flex flex-col row-span-1 col-span-12 items-center md:h-fit justify-start w-full">
-        <Typography variant={"h2"}>Brands with us</Typography>
-        <div className="mx-auto mt-8 grid w-full max-w-screen-lg grid-cols-2 max-h-fit items-center px-5 md:grid-cols-6 md:px-0 gap-4 md:gap-0">
-          {BRANDS.map(({ id, src, alt }) => {
-            return (
-              <Image
-                key={id}
-                src={src}
-                className="h-12 md:h-20 blur-0 grayscale text-transparent dark:invert dark:hover:invert-0 transition-all hover:grayscale-0 col-span-1"
-                width={520}
-                height={182}
-                alt={alt}
-              />
-            );
-          })}
-        </div>
-      </div>
-    </Container>
+    <div className="flex flex-col row-span-1 col-span-12 items-center md:h-fit justify-start w-full space-y-4">
+      <Typography variant={"p"}>Trusted by top companies</Typography>
+      <Marquee reverse fade pauseOnHover className="w-full max-w-screen">
+        {BRANDS.map(({ id, src, alt }) => {
+          return (
+            <Image
+              key={id}
+              src={src}
+              className="h-12 md:h-20 blur-0 grayscale text-transparent invert transition-all hover:grayscale-0 col-span-1"
+              width={220}
+              height={182}
+              alt={alt}
+            />
+          );
+        })}
+      </Marquee>
+    </div>
   );
 };
 
