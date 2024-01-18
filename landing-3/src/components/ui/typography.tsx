@@ -6,7 +6,7 @@ import { Slot } from "@radix-ui/react-slot";
 const typographyVariants = cva("text-foreground", {
   variants: {
     variant: {
-      h1: " text-6xl font-bold tracking-tighter leading-5 lg:text-7xl/[1.375]",
+      h1: " text-6xl font-bold tracking-tighter lg:text-7xl/[1.375]",
       h2: " pb-2 text-4xl md:text-5xl font-bold tracking-tight first:mt-0",
       h3: " text-4xl font-semibold tracking-tight",
       h4: " text-3xl font-semibold sm:text-4xl md:text-3xl tracking-tight",
