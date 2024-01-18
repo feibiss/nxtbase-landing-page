@@ -47,7 +47,7 @@ export default function Hero() {
 
         <Button
           variant={"default"}
-          className="inline-flex text-md items-center w-fit cta-btn justify-center overflow-hidden whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 shadow-[inset_0_-4px_0_0_rgba(0,0,0,.25)] h-fit min-h-10 mb-4 rounded-xl bg-white p-3.5 lg:p-4 px-10 lg:px-16 text-md lg:text-lg font-bold text-primary tracking-tight cta-btn cursor-pointer hover:scale-105 transition duration-300 ease-out"
+          className="inline-flex mt-4 text-md items-center w-fit cta-btn justify-center overflow-hidden whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 shadow-[inset_0_-4px_0_0_rgba(0,0,0,.25)] h-fit min-h-10 mb-4 rounded-xl bg-white p-3.5 lg:p-4 px-10 lg:px-16 text-md lg:text-lg font-bold text-primary tracking-tight cta-btn cursor-pointer hover:scale-105 transition duration-300 ease-out"
         >
           <div className="flex w-fit items-center justify-between gap-2">
             <p className="">Get started for free</p>
