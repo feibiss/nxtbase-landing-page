@@ -8,11 +8,11 @@ import React from "react";
 
 const ScrollingTestimonies = () => {
   return (
-    <div>
+    <div className="pt-10 lg:pt-20">
       {testimonials.map((columnGroup, columnGroupIdx) => (
         <div
           key={columnGroupIdx}
-          className="space-y-8 xl:contents xl:space-y-0"
+          className="space-y-8 xl:contents xl:space-y-4"
         >
           {columnGroup.map((column, columnIdx) => (
             <div
