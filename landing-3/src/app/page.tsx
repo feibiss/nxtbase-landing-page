@@ -19,7 +19,6 @@ export default function Home() {
       <Spacer type="lg" />
       <Testimonials />
       <Spacer type="lg" />
-      <ScrollingTestimonies />
       <FeatureList />
       <ContactCard />
     </div>
