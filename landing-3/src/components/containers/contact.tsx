@@ -12,23 +12,13 @@ export default function ContactCard() {
             Build your next SAAS project with a modern stack and save 4+ months
             of development time ~ $18000
           </Typography>
-          <Button className="my-4 bg-black mt-8 rounded-xl border p-4 h-[4rem] md:h-[7rem] lg:px-16 text-2xl font-bold text-white cta-btn cursor-pointer hover:scale-105 transition duration-300 ease-out w-full hover:bg-white hover:text-primary">
+          <Button className="my-4 bg-gray-800 mt-8 rounded-xl border p-4 h-[4rem] md:h-[7rem] lg:px-16 text-2xl font-bold text-white cta-btn cursor-pointer hover:scale-105 transition duration-300 ease-out w-full hover:bg-white hover:text-primary">
             <div className="flex w-fit items-center justify-between gap-2">
               <p className="">Get started for free</p>
 
               <ArrowRightIcon className="h-4 w-4" />
             </div>
           </Button>
-          <div className="mt-4 flex justify-center">
-            <CheckIcon className="mr-2 h-6 w-6 text-green-500" />
-            <span className="mr-8 font-semibold text-foreground">
-              No credit card required
-            </span>
-            <CheckIcon className="mr-2 h-6 w-6 text-green-500 " />
-            <span className="font-semibold text-foreground">
-              7-day free trial
-            </span>
-          </div>
         </div>
       </div>
     </Container>
