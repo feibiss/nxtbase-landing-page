@@ -6,6 +6,7 @@ import FeatureList from "@/components/containers/featurelist";
 import Testimonials from "@/components/containers/testimonials";
 import ContactCard from "@/components/containers/contact";
 import WalkThrough from "@components/containers/walkthrough";
+import ShowcaseFeatures from "@components/containers/showcaseFeatures";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Showcase />
       <Spacer type="md" />
       <WalkThrough />
+      <ShowcaseFeatures />
       <Brands />
       <Spacer type="lg" />
       <Testimonials />
