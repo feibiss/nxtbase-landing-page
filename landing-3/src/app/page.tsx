@@ -7,6 +7,7 @@ import Testimonials from "@/components/containers/testimonials";
 import ContactCard from "@/components/containers/contact";
 import WalkThrough from "@components/containers/walkthrough";
 import ShowcaseFeatures from "@components/containers/showcaseFeatures";
+import Questions from "@components/ui/question";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <WalkThrough />
       <ShowcaseFeatures />
       <Brands />
+      <Questions />
       <Spacer type="lg" />
       <Testimonials />
       <Spacer type="lg" />
