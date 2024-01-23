@@ -5,7 +5,7 @@ import Spacer from "@/components/ui/spacer";
 import FeatureList from "@/components/containers/featurelist";
 import Testimonials from "@/components/containers/testimonials";
 import ContactCard from "@/components/containers/contact";
-import ScrollingTestimonies from "@components/containers/scrollingTestimonies";
+import WalkThrough from "@components/containers/walkthrough";
 
 export default function Home() {
   return (
@@ -15,6 +15,7 @@ export default function Home() {
       <Spacer type="md" />
       <Showcase />
       <Spacer type="md" />
+      <WalkThrough />
       <Brands />
       <Spacer type="lg" />
       <Testimonials />
