@@ -16,7 +16,7 @@ const FeatureList = () => {
   return (
     <Container>
       <div className="flex flex-col justify-center items-center col-span-12">
-        <Typography variant={"h2"} className="mx-auto w-full text-center">
+        <Typography variant={"h1"} className="mx-auto w-full text-center">
           <span className=" bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent">
             Powerful features
           </span>{" "}

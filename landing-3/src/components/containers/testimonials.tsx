@@ -14,7 +14,7 @@ export default function Testimonials() {
       <div className="relative col-span-12 isolate bg-transparent pt-24 sm:pt-32">
         <div className="mx-auto max-w-8xl space-y-10">
           <div className="mx-auto text-center flex flex-col justify-start items-center gap-4">
-            <Typography variant={"h2"}>
+            <Typography variant={"h1"}>
               Loved
               <span className="inline-block pl-2 pr-2 xl:pl-5 xl:pr-5">
                 <Image
