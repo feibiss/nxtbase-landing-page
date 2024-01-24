@@ -9,6 +9,7 @@ import WalkThrough from "@components/containers/walkthrough";
 import ShowcaseFeatures from "@components/containers/showcaseFeatures";
 import Questions from "@components/ui/question";
 import FAQ from "@components/ui/faq";
+import Pricing from "@components/containers/pricing";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <Testimonials />
       <Spacer type="lg" />
       <FAQ />
+      <Pricing />
       <ContactCard />
     </div>
   );
