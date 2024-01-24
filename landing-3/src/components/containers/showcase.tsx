@@ -63,8 +63,8 @@ export function Showcase() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="absolute left-10" />
-      <CarouselNext className="absolute right-10" />
+      <CarouselPrevious className="absolute text-white fill-white left-10" />
+      <CarouselNext className="absolute text-white fill-white right-10" />
     </Carousel>
   );
 }
