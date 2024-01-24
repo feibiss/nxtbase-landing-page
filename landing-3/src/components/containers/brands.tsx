@@ -67,7 +67,7 @@ const Brands = () => {
     },
   ];
   return (
-    <div className="flex flex-col row-span-1 col-span-12 items-center md:h-fit justify-start w-full space-y-4">
+    <div className="flex flex-col row-span-1 col-span-12 items-center md:h-fit pt-20 lg:pt-[6rem] justify-start w-full space-y-4">
       <Typography variant={"p"}>Trusted by top companies</Typography>
       <Marquee reverse fade pauseOnHover className="w-full max-w-screen">
         {BRANDS.map(({ id, src, alt }) => {
