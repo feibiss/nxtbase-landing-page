@@ -26,7 +26,7 @@ ongoing support, we&apos;ve got you covered.`,
 const WalkThrough = () => {
   return (
     <Container classNames="bg-transparent">
-      <div className="col-span-12 max-w-7xl xl:max-w-[1400px] mt-20  lg:mt-[12rem] mx-auto flex flex-col items-center justify-center space-y-6 lg:space-y-12 bg-gradient-to-b from-[#1a1a1a] to-transparent rounded-2xl p-10">
+      <div className="col-span-12 w-3/4 md:max-w-7xl xl:max-w-[1400px] mt-20  lg:mt-[12rem] mx-auto flex flex-col items-center justify-center space-y-6 lg:space-y-12 bg-gradient-to-b from-[#1a1a1a] to-transparent rounded-2xl p-10">
         <p
           className={
             "text-sm uppercase font-base text-gray-400x [text-wrap:balance]"
@@ -81,9 +81,7 @@ const WalkThrough = () => {
           ))}
         </div>
         <div className="pt-10 flex justify-between items-center space-x-4">
-          <p>payment securely done with stripe</p>
-          <p>payment securely done with stripe</p>
-          <p>payment securely done with stripe</p>
+          <p className="hidden lg:block">payment securely done with stripe</p>
         </div>
       </div>
     </Container>

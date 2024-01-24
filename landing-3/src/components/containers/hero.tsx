@@ -40,7 +40,7 @@ export default function Hero() {
               src="diamond-scribble.svg"
             />
           </span>{" "}
-          notch websites that help your brand grow supafast{" "}
+          notch websites that<br></br> help your brand grow supafast{" "}
           <span className="inline-block pl-2 pr-2">
             <Image
               alt="scribble"
@@ -53,18 +53,15 @@ export default function Hero() {
           </span>{" "}
         </Typography>
         <Typography
-          variant="p"
-          className=" text-base/6 max-w-[50%] mx-auto font-normal text-white/60 md:text-xl/7 lg:text-2xl/8"
+          variant="subheading"
+          className=" w-3/4 lg:max-w-[50%] my-6 mx-auto text-white/60"
         >
           Great, now that we have your attention, we will actually talk about
           how we help you do the above. Mostly a brief description which
           explains our service to convince you to keep scrolling down.
         </Typography>
 
-        <Button
-          variant={"default"}
-          className="inline-flex mt-4 text-md items-center w-fit cta-btn justify-center overflow-hidden whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 shadow-[inset_0_-4px_0_0_rgba(0,0,0,.25)] h-fit min-h-10 mb-4 rounded-xl bg-white p-3.5 lg:p-4 px-10 lg:px-16 text-md lg:text-lg font-bold text-primary tracking-tight cta-btn cursor-pointer hover:scale-105 transition duration-300 ease-out"
-        >
+        <Button variant={"default"}>
           <div className="flex w-fit items-center justify-between gap-2">
             <p className="">Get started for free</p>
 
@@ -73,7 +70,7 @@ export default function Hero() {
         </Button>
 
         <div className="group mt-2 flex flex-col items-center justify-center space-y-2">
-          <div className="mb-4 flex justify-start gap-1 md:mb-0">
+          <div className="mb-4 flex justify-start h-6 items-baseline gap-1 md:mb-0">
             {" "}
             {STARS.map((_, idx) => {
               return (
