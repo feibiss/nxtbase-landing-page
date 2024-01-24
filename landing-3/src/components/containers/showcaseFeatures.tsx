@@ -13,8 +13,8 @@ const ShowcaseFeatures = () => {
   ];
   return (
     <Container>
-      <div className="w-full col-span-12 pt-20 lg:pt-[12rem] flex justify-between items-center">
-        <div className="bg-[linear-gradient(180deg,#353535,hsla(0,0%,54%,0)_114.95%)] bg-clip-text flex flex-col justify-start items-start space-y-2">
+      <div className="w-full col-span-12 pt-20 lg:pt-[12rem] flex flex-col md:flex-row justify-between items-center">
+        <div className="bg-[linear-gradient(180deg,#353535,hsla(0,0%,54%,0)_114.95%)] bg-clip-text flex flex-col justify-start items-center md:items-start space-y-2">
           {FEATURES_ONE.map((text) => (
             <Typography key={text} variant={"h4"} className="text-transparent">
               {text}
@@ -26,7 +26,7 @@ const ShowcaseFeatures = () => {
             You name it, we ship it supafast
           </Typography>
         </div>
-        <div className="bg-[linear-gradient(180deg,#353535,hsla(0,0%,54%,0)_114.95%)] bg-clip-text flex flex-col justify-start items-end space-y-2">
+        <div className="bg-[linear-gradient(180deg,#353535,hsla(0,0%,54%,0)_114.95%)] bg-clip-text flex flex-col justify-start items-center md:items-end text-end space-y-2">
           {FEATURES_ONE.map((text) => (
             <Typography key={text} variant={"h4"} className="text-transparent">
               {text}
