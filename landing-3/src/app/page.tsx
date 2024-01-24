@@ -8,6 +8,7 @@ import ContactCard from "@/components/containers/contact";
 import WalkThrough from "@components/containers/walkthrough";
 import ShowcaseFeatures from "@components/containers/showcaseFeatures";
 import Questions from "@components/ui/question";
+import FAQ from "@components/ui/faq";
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
       <Spacer type="lg" />
       <Testimonials />
       <Spacer type="lg" />
-      <FeatureList />
+      <FAQ />
       <ContactCard />
     </div>
   );
