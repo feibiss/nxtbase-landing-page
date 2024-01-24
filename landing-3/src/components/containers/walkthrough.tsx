@@ -35,7 +35,7 @@ const WalkThrough = () => {
           Latest update details hook here.
         </p>
         <Typography
-          variant={"h2"}
+          variant={"h1"}
           className="max-w-7xl relative mx-auto text-center"
         >
           Supafast,{" "}
