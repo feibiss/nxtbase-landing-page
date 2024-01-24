@@ -34,7 +34,10 @@ const WalkThrough = () => {
         >
           Latest update details hook here.
         </p>
-        <Typography variant={"h2"} className="max-w-7xl relative">
+        <Typography
+          variant={"h2"}
+          className="max-w-7xl relative mx-auto text-center"
+        >
           Supafast,{" "}
           <span className="inline-flex">
             Supaeasy
@@ -55,7 +58,7 @@ const WalkThrough = () => {
             src="random-scribble.svg"
           />
         </Typography>
-        <div className="flex justify-between w-full pt-10">
+        <div className="flex justify-between lg:flex-row flex-col items-center space-y-4 w-full pt-10">
           {STEPS?.map(({ id, title, content }) => (
             <>
               <WalkThroughCard

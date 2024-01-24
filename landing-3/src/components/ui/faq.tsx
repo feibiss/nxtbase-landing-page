@@ -31,7 +31,7 @@ export function FeaturesAccordion() {
     <div className="flex flex-col lg:flex-row items-start lg:space-x-20 lg:pt-10 space-y-10 lg:space-y-0 ">
       <Accordion
         type="multiple"
-        className="grid md:w-2/3 divide-y divide-white/10"
+        className="grid lg:w-2/3 w-full divide-y divide-white/10"
       >
         {SHOWCASE_FEATURES.map(({ title, desc }, idx) => {
           return (
@@ -53,7 +53,7 @@ export function FeaturesAccordion() {
 
       {/* Preview Images */}
 
-      <div className="relative lg:w-1/3 h-full">
+      <div className="relative lg:w-1/3 w-full h-full">
         <Image
           alt="Contact us"
           src={"bolt-bg.svg"}
