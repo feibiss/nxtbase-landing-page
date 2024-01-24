@@ -7,11 +7,26 @@ import * as React from "react";
 
 export default function Header() {
   return (
-    <header className="sticky max-w-screen-2xl  inset-x-0 z-50 flex h-[--navbar-height] w-full items-center border-b lg:px-8 px-0 bg-card backdrop-blur-md mx-auto">
+    <header className="sticky max-w-screen-2xl  inset-x-0 z-50 flex h-[--navbar-height] w-full items-center justify-evenly border-b-2 lg:px-8 px-0 bg-card backdrop-blur-md mx-auto">
       <div className=" hidden lg:flex justify-around items-center gap-4">
-        <Button>How it works</Button>
-        <Button>Pricing</Button>
-        <Button>FAQ</Button>
+        <Link
+          href="#howitworks"
+          className="rounded-xl hover:bg-white/20 w-fit p-4 text-nowrap flex justify-center items-center"
+        >
+          How it works
+        </Link>
+        <Link
+          href="#pricing"
+          className="rounded-xl hover:bg-white/20 w-fit p-4 text-nowrap flex justify-center items-center"
+        >
+          Pricing
+        </Link>
+        <Link
+          href="#faq"
+          className="rounded-xl hover:bg-white/20 w-fit p-4 text-nowrap flex justify-center items-center"
+        >
+          FAQ
+        </Link>
       </div>
       <Link
         className="mr-6 flex h-full w-full flex-grow items-center justify-center"
@@ -27,15 +42,8 @@ export default function Header() {
         />
       </Link>
 
-      <div className="ml-auto hidden lg:flex  items-center justify-center gap-3">
-        <Button
-          variant={"default"}
-          size={"sm"}
-          rounded={"full"}
-          className="hidden px-3 py-1 md:block"
-        >
-          Get Started
-        </Button>
+      <div className=" hidden lg:flex justify-around items-center gap-4">
+        <Button variant={"default"}>Get Started</Button>
       </div>
     </header>
   );

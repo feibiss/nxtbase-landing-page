@@ -4,14 +4,15 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex text-md p-3.5  px-10  font-bold items-center w-fit tracking-tight cursor-pointer hover:scale-105 duration-300 ease-out justify-center overflow-hidden whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 shadow-[inset_0_-4px_0_0_rgba(0,0,0,.25)] h-fit min-h-10 mb-4",
+  "inline-flex text-md p-3.5  px-10  font-bold items-center w-fit rounded-xl tracking-tight cursor-pointer hover:scale-105 duration-300 ease-out justify-center overflow-hidden whitespace-nowrap ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 shadow-[inset_0_-4px_0_0_rgba(0,0,0,.25)] h-fit min-h-10",
   {
     variants: {
       variant: {
         default: "bg-white text-primary",
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "text-white hover:bg-white hover:text-primary font-semibold",
+        outline:
+          "text-white hover:bg-white hover:text-primary bg-transparent border-2 p-4 border-white",
         secondary:
           "bg-gray-800 mt-8 rounded-xl border p-4 outline outline-white text-white w-full hover:bg-white hover:text-primary",
         ghost: "hover:bg-accent hover:text-accent-foreground",
@@ -20,13 +21,13 @@ const buttonVariants = cva(
       size: {
         default: "h-fit min-h-10",
         sm: "h-9",
-        lg: "max-w-5xl lg:py-4 lg:px-16 lg:text-lg h-[4rem] md:h-[7rem] text-2xl font-bold",
+        lg: "my-4 w-full lg:py-4 lg:px-16 lg:text-lg h-[4rem] md:h-[7rem] text-2xl font-semibold",
         icon: "h-10 w-10",
       },
       rounded: {
         default: "rounded-xl",
         sm: "rounded-md",
-        lg: "rounded-xl lg:px-16 lg:text-lg",
+        lg: "rounded-xl",
         full: "rounded-full",
       },
     },

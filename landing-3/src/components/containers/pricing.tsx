@@ -34,7 +34,7 @@ const PricingCard = () => {
         variant={"h3"}
         className="mt-5 text-4xl font-extrabold text-white tracking-tight"
       >
-        Rs.2497
+        $699
       </Typography>
       <p className="text-white/50 tracking-wider text-xs">
         High-converting landing page, Branding, Copy
