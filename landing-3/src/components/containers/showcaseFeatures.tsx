@@ -22,7 +22,7 @@ const ShowcaseFeatures = () => {
           ))}
         </div>
         <div className="md:w-[400px] xl:w-[600px]">
-          <Typography variant={"h1"} className="text-center">
+          <Typography variant={"h2"} className="text-center">
             You name it, we ship it supafast
           </Typography>
         </div>
