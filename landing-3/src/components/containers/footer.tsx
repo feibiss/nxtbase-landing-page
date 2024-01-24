@@ -7,7 +7,7 @@ import { FOOTER_LINKS, FooterCategory } from "@/lib/enums";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col justify-start items-center relative bg-gray-950 px-8 md:pt-8 lg:pt-8">
+    <footer className="flex flex-col  max-w-7xl xl:max-w-[1400px] mx-auto justify-start items-center relative bg-gray-950 px-8 md:pt-8 lg:pt-8">
       <div className="grid grid-cols-1 h-full gap-8 lg:grid-cols-3 lg:gap-10">
         <div className="order-2 col-span-1 flex flex-wrap justify-between lg:justify-normal items-start w-full content-start gap-4 pt-12 md:order-2 md:mx-auto md:mt-8 md:gap-8 lg:col-span-2  lg:mt-0">
           {FOOTER_LINKS.map((details) => {
@@ -42,7 +42,7 @@ export default function Footer() {
           </form>
         </div>
       </div>
-      <div className="overflow-x-none mt-8 w-full border-t-2 border-gray-700 py-8 md:mt-0  lg:px-8">
+      <div className="overflow-x-none max-w-7xl mx-auto mt-8 w-full border-t-2 border-gray-700 py-8 md:mt-0">
         <Typography variant={"mutedText"}>
           Disclaimer: This is just a template website and is not endorsed by or
           affiliated with any Corporation, registered in the U.S. and other
