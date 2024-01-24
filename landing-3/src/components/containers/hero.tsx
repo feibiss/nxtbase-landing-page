@@ -1,15 +1,10 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "../ui/button";
-import {
-  ArrowRightIcon,
-  CheckCircledIcon,
-  StarFilledIcon,
-} from "@radix-ui/react-icons";
+import { ArrowRightIcon, StarFilledIcon } from "@radix-ui/react-icons";
 import clsx from "clsx";
 import Link from "next/link";
-import { AVATARS } from "@/lib/enums";
 import { Typography } from "../ui/typography";
 import Container from "./container";
+import Image from "next/image";
 
 export default function Hero() {
   const STARS: number[] = new Array(5).fill(1);
@@ -33,8 +28,29 @@ export default function Hero() {
             </p>
           </Link>
         </div>
-        <Typography variant="h1">
-          We build top notch websites that help your brand grow supafast
+        <Typography variant="h1" className="lg:max-w-7xl xl:w-[1400px]">
+          We build top
+          <span className="inline-block pl-2 pr-2">
+            <Image
+              alt="scribble"
+              loading="eager"
+              width="50"
+              height="300"
+              className="w-[30px] lg:w-[40px] xl:w-[50px]"
+              src="diamond-scribble.svg"
+            />
+          </span>{" "}
+          notch websites that help your brand grow supafast{" "}
+          <span className="inline-block pl-2 pr-2">
+            <Image
+              alt="scribble"
+              loading="eager"
+              width="50"
+              height="300"
+              className="w-[16px] lg:w-[20px] xl:w-[30px]"
+              src="bolt-scribble-hero.svg"
+            />
+          </span>{" "}
         </Typography>
         <Typography
           variant="p"
