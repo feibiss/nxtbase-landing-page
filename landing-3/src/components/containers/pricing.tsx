@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "./container";
 import { Typography } from "@components/ui/typography";
-import { CheckIcon, CheckboxIcon } from "@radix-ui/react-icons";
+import { CheckIcon } from "@radix-ui/react-icons";
 import { Button } from "@components/ui/button";
 
 const Pricing = () => {
@@ -9,10 +9,10 @@ const Pricing = () => {
     <Container classNames="py-0">
       <div className="pt-20 lg:max-w-7xl xl:w-[1400px] mx-auto col-span-12 lg:pt-[15rem] space-y-6 ">
         <Typography className="text-center w-full">PRICING</Typography>
-        <Typography className="text-center" variant={"h1"}>
+        <Typography className="text-center" variant={"h2"}>
           Use our world-class dev talent to supafast your conversions
         </Typography>
-        <div className="   lg:max-w-7xl xl:w-[1400px] px-6 lg:px-8 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="mt-6 py-10 lg:max-w-7xl xl:w-[1400px] px-6 lg:px-8 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
           <PricingCard />
           <PricingCard />
           <PricingCard />

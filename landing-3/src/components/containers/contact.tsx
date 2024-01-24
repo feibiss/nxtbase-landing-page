@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRightIcon, CheckIcon } from "@radix-ui/react-icons";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { Typography } from "../ui/typography";
 import Container from "./container";
 
@@ -8,7 +8,7 @@ export default function ContactCard() {
     <Container classNames="mt-20 pt-20 lg:pt-[12rem]  bg-card/20">
       <div className="col-span-12 relative mx-auto h-fullflex flex-col justify-start items-center overflow-x-hidden w-full overflow-hidden">
         <div className=" bottom-0 flex min-h-[30rem] max-w-5xl mx-auto flex-col items-center justify-center px-4  ">
-          <Typography variant={"h1"} className="text-center mx-auto">
+          <Typography variant={"h2"} className="text-center mx-auto">
             Build your next SAAS project with a modern stack and save 4+ months
             of development time ~ $18000
           </Typography>

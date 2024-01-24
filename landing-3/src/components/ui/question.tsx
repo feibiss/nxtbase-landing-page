@@ -37,7 +37,7 @@ const Questions = () => {
     <Container>
       <div className="flex flex-col items-center col-span-12 pt-20 justify-between ">
         <div className="flex flex-row items-center justify-center text-center mb-10 lg:w-1/2 w-full">
-          <Typography variant={"h1"}>
+          <Typography variant={"h2"}>
             Can&apos;t I just hire a full time developer?
           </Typography>
         </div>

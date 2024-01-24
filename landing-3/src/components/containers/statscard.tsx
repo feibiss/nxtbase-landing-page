@@ -29,7 +29,7 @@ export const StatsCard = () => {
               className="flex w-full h-full py-6 gap-0 flex-col justify-center items-center"
             >
               <Typography
-                variant={"h1"}
+                variant={"h2"}
                 className="font-semibold text-gray-600 dark:text-gray-300"
               >
                 {metric}

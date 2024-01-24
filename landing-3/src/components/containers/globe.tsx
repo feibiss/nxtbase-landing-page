@@ -7,7 +7,7 @@ const Globe = () => {
   return (
     <Container>
       <div className="mx-auto max-w-xl h-fit col-span-12 text-center flex flex-col justify-start items-center gap-4">
-        <Typography variant={"h1"}>
+        <Typography variant={"h2"}>
           Built to scale{" "}
           <span className="bg-gradient-to-r from-red-600 to-amber-600 bg-clip-text text-transparent">
             with you.
