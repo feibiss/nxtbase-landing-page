@@ -9,8 +9,8 @@ import {
   AccordionTrigger,
 } from "./accordion";
 import { Button } from "./button";
-import { SHOWCASE_FEATURES } from "@lib/enums";
 import Image from "next/image";
+import { FAQ_QUESTIONS } from "@lib/enums";
 
 const FAQ = () => {
   return (
@@ -33,16 +33,19 @@ export function FeaturesAccordion() {
         type="multiple"
         className="grid lg:w-2/3 w-full divide-y divide-white/10"
       >
-        {SHOWCASE_FEATURES.map(({ title, desc }, idx) => {
+        {FAQ_QUESTIONS.map(({ question, answer }) => {
           return (
-            <AccordionItem key={title} value={title}>
+            <AccordionItem key={question} value={question}>
               <AccordionTrigger className="lg:text-2xl text-white font-medium ">
-                {title}
+                {question}
               </AccordionTrigger>
               <AccordionContent>
                 <div className="text-white/60 text-start leading-7 w-full text-lg">
                   <Typography className="text-white/60 text-start leading-7 w-full text-lg">
-                    {desc}
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Animi repudiandae eaque quam sit, blanditiis iure fugiat rem
+                    totam a aliquid adipisci sint placeat eligendi delectus
+                    ducimus facere! Voluptas, necessitatibus culpa.
                   </Typography>
                 </div>
               </AccordionContent>

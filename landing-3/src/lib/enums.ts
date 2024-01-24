@@ -304,3 +304,26 @@ export const testimonials = [
     ],
   ],
 ];
+
+export const FAQ_QUESTIONS = [
+  {
+    id: 1,
+    question: "Question One",
+    answer: "",
+  },
+  {
+    id: 2,
+    question: "Question Two",
+    answer: "",
+  },
+  {
+    id: 3,
+    question: "Question Three",
+    answer: "",
+  },
+  {
+    id: 4,
+    question: "Question Four",
+    answer: "",
+  },
+];
