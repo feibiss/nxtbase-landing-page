@@ -14,8 +14,8 @@ import Image from "next/image";
 
 const FAQ = () => {
   return (
-    <Container>
-      <div className="col-span-12 lg:pt-[12rem] space-y-6 p-10  bg-gradient-to-t from-[#1a1a1a] to-white/15 rounded-2xl ">
+    <Container classNames="py-0">
+      <div className="col-span-12 lg:pt-[12rem] space-y-6 p-10  bg-gradient-to-t from-[#1a1a1a] to-transparent rounded-2xl ">
         <Typography variant={"h1"}>Questions? Answers.</Typography>
 
         <FeaturesAccordion />
