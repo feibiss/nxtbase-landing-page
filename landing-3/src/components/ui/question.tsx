@@ -11,8 +11,8 @@ type QuestionType = {
 
 const QuestionsArr: QuestionType[] = [
   {
-    question: "Full-time designers are expensive.",
-    answer: `Full-time designers can be expensive due to high salaries (over
+    question: "Full-time developers are expensive.",
+    answer: `Full-time developers can be expensive due to high salaries (over
         $100k), plus benefits and vacation days.`,
     logo: "scribble-dollar.svg",
   },
@@ -23,7 +23,7 @@ const QuestionsArr: QuestionType[] = [
   },
   {
     question: "Onboarding takes months",
-    answer: `Traditional hiring means weeks, even months, before a designer can start actual work. We cut through the extensive onboarding, SOWs, and contracts.`,
+    answer: `Traditional hiring means weeks, even months, before a developer can start actual work. We cut through the extensive onboarding, SOWs, and contracts.`,
     logo: "onboarding-scribble.svg",
   },
   {
