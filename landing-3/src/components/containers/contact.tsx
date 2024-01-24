@@ -7,7 +7,7 @@ export default function ContactCard() {
   return (
     <Container classNames="mt-20 pt-20 lg:pt-[12rem]  bg-card/20">
       <div className="col-span-12 relative mx-auto h-fullflex flex-col justify-start items-center overflow-x-hidden w-full overflow-hidden">
-        <div className=" bottom-0 flex h-[30rem] w-full flex-col items-center justify-center px-4  ">
+        <div className=" bottom-0 flex min-h-[30rem] max-w-5xl mx-auto flex-col items-center justify-center px-4  ">
           <Typography variant={"h1"} className="text-center mx-auto">
             Build your next SAAS project with a modern stack and save 4+ months
             of development time ~ $18000
@@ -17,7 +17,7 @@ export default function ContactCard() {
             variant={"outline"}
             className="mt-8 hover:rounded-xl"
           >
-            <div className="flex w-full items-center justify-center gap-2">
+            <div className="flex w-full items-center justify-center gap-2 h-[7rem]">
               <p className="">Get started for free</p>
 
               <ArrowRightIcon className="h-4 w-4" />

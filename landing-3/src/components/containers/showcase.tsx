@@ -63,8 +63,8 @@ export function Showcase() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="absolute hidden lg:block text-white fill-white left-10" />
-      <CarouselNext className="absolute hidden lg:block text-white fill-white right-10" />
+      <CarouselPrevious className="hidden lg:block left-10" />
+      <CarouselNext className="hidden lg:block right-10" />
     </Carousel>
   );
 }

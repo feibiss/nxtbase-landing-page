@@ -12,7 +12,7 @@ const buttonVariants = cva(
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:
-          "text-white hover:bg-white hover:text-primary bg-transparent border-2 p-4 border-white",
+          "text-white bg-black hover:bg-white hover:text-primary bg-transparent border-2 p-4 border-white",
         secondary:
           "bg-gray-800 mt-8 rounded-xl border p-4 outline outline-white text-white w-full hover:bg-white hover:text-primary",
         ghost: "hover:bg-accent hover:text-accent-foreground",
@@ -22,7 +22,7 @@ const buttonVariants = cva(
         default: "h-fit min-h-10",
         sm: "h-9",
         lg: "my-4 w-full lg:py-4 lg:px-16 lg:text-lg h-[4rem] md:h-[7rem] text-2xl font-semibold",
-        icon: "h-10 w-10",
+        icon: "h-10 w-10 p-4 flex justify-center items-center text-black fill-black",
       },
       rounded: {
         default: "rounded-xl",
