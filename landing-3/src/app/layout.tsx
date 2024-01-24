@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Inter, Manrope } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/containers/header";
 import Footer from "@/components/containers/footer";
+import { TailwindIndicator } from "@components/ui/tailwindIndicator";
 
 const manrope = Manrope({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <TailwindIndicator />
       </body>
     </html>
   );
