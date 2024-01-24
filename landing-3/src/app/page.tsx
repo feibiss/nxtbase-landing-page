@@ -10,6 +10,7 @@ import ShowcaseFeatures from "@components/containers/showcaseFeatures";
 import Questions from "@components/ui/question";
 import FAQ from "@components/ui/faq";
 import Pricing from "@components/containers/pricing";
+import FeaturedTestimonial from "@components/containers/featuresTestimonial";
 
 export default function Home() {
   return (
@@ -19,15 +20,15 @@ export default function Home() {
       <Spacer type="md" />
       <Showcase />
       <Spacer type="md" />
-      <WalkThrough />
-      <ShowcaseFeatures />
       <Brands />
-      <Questions />
       <Spacer type="lg" />
-      <Testimonials />
-      <Spacer type="lg" />
-      <FAQ />
+      <WalkThrough />
+      <FeaturedTestimonial />
+      <ShowcaseFeatures />
       <Pricing />
+      <Questions />
+      <Testimonials />
+      <FAQ />
       <ContactCard />
     </div>
   );
