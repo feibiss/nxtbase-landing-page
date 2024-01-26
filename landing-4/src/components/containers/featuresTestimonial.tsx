@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "./container";
 import Image from "next/image";
-import { featuredTestimonial } from "@lib/enums";
+import { featuredTestimonial } from "@/lib/enums";
 
 const FeaturedTestimonial = ({}) => {
   return (
