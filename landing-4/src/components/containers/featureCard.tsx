@@ -1,8 +1,4 @@
-import { buttonVariants } from "@/components/ui/button";
-import { CardContent, Card } from "@/components/ui/card";
 import { CheckIcon } from "@radix-ui/react-icons";
-import clsx from "clsx";
-import Link from "next/link";
 import { Typography } from "../ui/typography";
 
 type FeatureType = {
@@ -13,20 +9,23 @@ type FeatureType = {
   navigateTo: string;
   imgSrc: string;
 };
-export default function FeatureCard({ feature }: { feature: FeatureType }) {
+export default function FeatureCard({
+  feature,
+  id,
+}: {
+  feature: FeatureType;
+  id: number;
+}) {
   return (
-    <div className=" odd:to-bg-accent group relative row-span-1 mx-auto w-full rounded-md border-2 border-gray-200/50 bg-card shadow-sm">
-      <Card className="relative  z-10 w-full border-none bg-transparent shadow-none ">
-        <CardContent
-          className={"col-span-2 flex flex-col items-start gap-8 lg:flex-row"}
+    <div className=" group relative h-[100vh] row-span-1 mx-auto w-full rounded-md bg-inherit flex justify-center items-center">
+      <div className="relative h-3/4 max-h-none  z-10 w-full border-none bg-transparent  ">
+        <div
+          className={"col-span-1 flex flex-col  items-center gap-8 lg:flex-row"}
         >
-          <div className="order-2 lg:group-odd:order-1 lg:group-even:order-2">
-            <Typography
-              variant={"lead"}
-              className="mb-2 mt-0 text-sm font-bold uppercase tracking-widest text-primary/80"
-            >
-              {feature.subtitle}
-            </Typography>
+          <div className="order-0 w-1/3 flex flex-col justify-center items-start space-y-4">
+            <div className="flex justify-center items-center size-14 rounded-full bg-secondary">
+              <p className="w-fit hfit font-semibold">{id}</p>
+            </div>
             <Typography variant={"h3"} className="">
               {feature.title}
             </Typography>
@@ -49,31 +48,19 @@ export default function FeatureCard({ feature }: { feature: FeatureType }) {
                 </li>
               ))}
             </Typography>
-            <Link
-              href={"#"}
-              className={clsx(
-                buttonVariants({
-                  variant: "outline",
-                  size: "sm",
-                }),
-                "mt-4 text-xs "
-              )}
-            >
-              Learn More
-            </Link>
           </div>
-          <div className="order-0 col-span-1 flex h-full w-full items-center justify-center lg:group-odd:order-2 lg:group-even:order-1">
+          <div className="order-2 w-2/3 col-span-2 flex h-full items-center justify-center">
             <video
               autoPlay
               loop
               muted
-              className="aspect-[4/3] min-h-[260px] w-full rounded-lg bg-gray-300 object-cover object-center shadow-lg md:min-h-[400px] md:min-w-[600px] lg:aspect-[600/400]"
+              className="aspect-[4/3] min-h-[260px] w-full rounded-lg bg-gray-300 object-cover object-center shadow-lg md:min-h-[400px] md:min-w-[600px] lg:aspect-[900/700]"
               src={feature.imgSrc}
               preload=""
             ></video>
           </div>
-        </CardContent>
-      </Card>
+        </div>
+      </div>
     </div>
   );
 }
