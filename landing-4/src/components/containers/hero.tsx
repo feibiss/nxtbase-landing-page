@@ -5,37 +5,16 @@ import {
   CheckCircledIcon,
   StarFilledIcon,
 } from "@radix-ui/react-icons";
-import clsx from "clsx";
-import Link from "next/link";
 import { AVATARS } from "@/lib/enums";
 import { Typography } from "../ui/typography";
 import Container from "./container";
+import Banner from "./banner";
 
 export default function Hero() {
   const STARS: number[] = new Array(5).fill(1);
   return (
     <Container>
-      <div className="col-span-12 mt-8 flex h-full snap-start flex-col items-center justify-center gap-1 text-center md:mt-[var(--navbar-height)]">
-        {/* ? Pill */}
-        <div className="relative mb-8 flex w-fit items-center justify-center gap-2 rounded-full border-2 border-amber-400/20 dark:border-amber-300/50">
-          <Link
-            href="#"
-            className={clsx(
-              " flex h-6 items-center justify-start gap-2 rounded-full bg-amber-50 p-1 dark:bg-amber-900"
-            )}
-          >
-            <p
-              className={clsx(
-                "h-full w-fit rounded-full bg-amber-400 px-2 text-xs text-primary-foreground "
-              )}
-            >
-              New
-            </p>
-            <p className="text-sm font-semibold text-amber-600 ">
-              Latest update details hook here.
-            </p>
-          </Link>
-        </div>
+      <div className="col-span-12 mt-8 flex h-full snap-start flex-col items-center justify-center gap-1 text-center md:mt-[var(--navbar-height)] pt-20">
         <Typography variant="h1">
           A fancy looking hero text to catch your attention
         </Typography>
@@ -43,9 +22,8 @@ export default function Hero() {
           variant="p"
           className="my-2 max-w-sm px-4 text-muted-foreground md:max-w-lg md:px-0"
         >
-          Great, now that we have your attention, we will actually talk about
-          how we help you do the above. Mostly a brief description which
-          explains our service to convince you to keep scrolling down.
+          Attention-grabbing alert! Brace yourself for an epic description of
+          how we rock at helping you out. Keep scrolling to be convinced.
         </Typography>
 
         <Button className="mb-4">
@@ -96,6 +74,7 @@ export default function Hero() {
           </span>
         </div>
       </div>
+      <Banner />
     </Container>
   );
 }
