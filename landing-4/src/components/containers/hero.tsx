@@ -1,15 +1,13 @@
 import { Button } from "../ui/button";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
-
 import { Typography } from "../ui/typography";
 import Container from "./container";
 import Banner from "./banner";
 import Brands from "./brands";
 
 export default function Hero() {
-  const STARS: number[] = new Array(5).fill(1);
   return (
-    <Container>
+    <Container classNames="bg-primary">
       <div className="col-span-12 mt-8 flex h-full snap-start flex-col items-center justify-center gap-1 text-center md:mt-[var(--navbar-height)] pt-20">
         <Typography variant="h1">
           A fancy looking hero text to catch your attention

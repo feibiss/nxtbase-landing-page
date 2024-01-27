@@ -5,9 +5,9 @@ import { featuredTestimonial } from "@/lib/enums";
 
 const FeaturedTestimonial = ({}) => {
   return (
-    <Container>
-      <div className="mx-auto col-span-12  pt-20 lg:pt-[12rem] flex flex-col items-center justify-center gap-8 text-sm leading-6 text-gray-900 dark:text-gray-300 xl:mx-0 xl:max-w-none">
-        <figure className="col-span-2 w-4/5 md:w-full max-w-6xl mx-auto space-y-16 ">
+    <Container classNames="bg-secondary">
+      <div className="mx-auto bg-secondary col-span-12 py-16 lg:py-32 flex flex-col items-center justify-center gap-8 text-sm leading-6 text-gray-900 dark:text-gray-300 xl:mx-0 xl:max-w-none">
+        <figure className="col-span-2 w-4/5 md:w-full max-w-6xl mx-auto space-y-8">
           <blockquote className=" font-normal text-2xl lg:text-4xl xl:text-4xl leading-normal w-full text-center lg:leading-relaxed xl:leading-normal ">
             {`“${featuredTestimonial.body}”`}
           </blockquote>
