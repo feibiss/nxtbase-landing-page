@@ -8,9 +8,7 @@ export default function Home() {
     <>
       {" "}
       <Hero />
-      <Spacer type={"lg"} />
       <FeaturedTestimonial />
-      <Spacer />
       <FeatureCardsList />
     </>
   );
