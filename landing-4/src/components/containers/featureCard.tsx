@@ -17,12 +17,12 @@ export default function FeatureCard({
   id: number;
 }) {
   return (
-    <div className=" group relative h-[100vh] row-span-1 mx-auto w-full rounded-md bg-inherit flex justify-center items-center">
-      <div className="relative h-3/4 max-h-none  z-10 w-full border-none bg-transparent  ">
+    <div className=" group relative h-[75vh] md:h-[85vh] lg:h-[100vh] row-span-1 mx-auto w-full rounded-md bg-inherit flex justify-center items-center">
+      <div className="relative lg:h-3/4 h-full max-h-none  z-10 w-full border-none bg-transparent  ">
         <div
           className={"col-span-1 flex flex-col  items-center gap-8 lg:flex-row"}
         >
-          <div className="order-0 w-1/3 flex flex-col justify-center items-start space-y-4">
+          <div className="order-0 lg:w-1/3 w-full flex flex-col justify-center items-start space-y-4">
             <div className="flex justify-center items-center size-14 rounded-full bg-secondary">
               <p className="w-fit hfit font-semibold">{id}</p>
             </div>
@@ -49,7 +49,7 @@ export default function FeatureCard({
               ))}
             </Typography>
           </div>
-          <div className="order-2 w-2/3 col-span-2 flex h-full items-center justify-center">
+          <div className="order-2 w-full md:w-2/3 col-span-2 flex h-full items-center justify-center">
             <video
               autoPlay
               loop
