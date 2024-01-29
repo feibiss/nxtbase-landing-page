@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/containers/header";
 import { TailwindIndicator } from "@/components/ui/tailwindIndicator";
+import Footer from "@/components/containers/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
         <Header />
         <TailwindIndicator />
         {children}
+        <Footer />
       </body>
     </html>
   );
