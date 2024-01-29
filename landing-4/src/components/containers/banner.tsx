@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useRef } from "react";
-import { useScroll, motion, useTransform } from "framer-motion";
+import { useScroll, motion } from "framer-motion";
 
 const Banner = () => {
   const targetRef = useRef(null);

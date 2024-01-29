@@ -7,44 +7,41 @@ import * as React from "react";
 
 export default function Header() {
   return (
-    <header className="sticky max-w-screen-2xl  inset-x-0 z-50 flex h-[--navbar-height] w-full items-center justify-evenly border-b-2 lg:px-8 px-0 bg-card backdrop-blur-md mx-auto">
-      <div className=" hidden lg:flex justify-around items-center gap-4">
-        <Link
-          href="#howitworks"
-          className="rounded-xl hover:bg-white/20 w-fit p-4 text-nowrap flex justify-center items-center"
-        >
-          How it works
-        </Link>
-        <Link
-          href="#pricing"
-          className="rounded-xl hover:bg-white/20 w-fit p-4 text-nowrap flex justify-center items-center"
-        >
-          Pricing
-        </Link>
-        <Link
-          href="#faq"
-          className="rounded-xl hover:bg-white/20 w-fit p-4 text-nowrap flex justify-center items-center"
-        >
-          FAQ
-        </Link>
-      </div>
-      <Link
-        className="mr-6 flex h-full w-full flex-grow items-center justify-center"
-        href="#"
-      >
-        <span className="sr-only">Nextbase Template</span>
-        <Image
-          alt="brand-logo"
-          width={100}
-          className="invert"
-          height={64}
-          src="/vercel.svg"
-        />
-      </Link>
+    <header className="sticky max-w-screen  inset-x-0 z-50 flex h-[--navbar-height] py-4 w-full items-center justify-evenly lg:px-8 px-0 bg-primary backdrop-blur-md mx-auto">
+      <nav className="max-w-screen-2xl flex justify-between items-center w-full">
+        <div className="  gap-4">
+          <Link
+            className="mr-6 flex h-full w-full flex-grow items-center justify-center"
+            href="#"
+          >
+            <span className="sr-only">Nextbase Template</span>
+            <Image
+              alt="brand-logo"
+              width={100}
+              className=""
+              height={64}
+              src="/vercel.svg"
+            />
+          </Link>
+        </div>
+        <div className="hidden lg:flex justify-around items-center ml-auto mr-4 space-x-4">
+          <Button size="sm" variant={"link"} asChild>
+            <Link href="#howitworks">How it works</Link>
+          </Button>
 
-      <div className=" hidden lg:flex justify-around items-center gap-4">
-        <Button variant={"default"}>Get Started</Button>
-      </div>
+          <Button size="sm" variant={"link"} asChild>
+            <Link href="#howitworks">Pricing</Link>
+          </Button>
+          <Button size="sm" variant={"link"} asChild>
+            <Link href="#howitworks">FAQ</Link>
+          </Button>
+        </div>
+        <div className=" hidden lg:flex justify-around items-center gap-4">
+          <Button size="sm" variant={"outline"}>
+            Get Started
+          </Button>
+        </div>
+      </nav>
     </header>
   );
 }
