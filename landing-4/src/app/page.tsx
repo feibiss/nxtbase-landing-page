@@ -1,7 +1,8 @@
+import ContactCard from "@/components/containers/contact";
+import FAQ from "@/components/containers/faq";
 import FeatureCardsList from "@/components/containers/featureCardsList";
 import FeaturedTestimonial from "@/components/containers/featuresTestimonial";
 import Hero from "@/components/containers/hero";
-import Spacer from "@/components/ui/spacer";
 
 export default function Home() {
   return (
@@ -10,6 +11,8 @@ export default function Home() {
       <Hero />
       <FeaturedTestimonial />
       <FeatureCardsList />
+      <ContactCard />
+      <FAQ />
     </>
   );
 }
