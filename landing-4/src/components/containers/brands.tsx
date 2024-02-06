@@ -46,7 +46,7 @@ const Brands = () => {
       <Typography className="text-xs text-muted-foreground">
         Trusted by top companies
       </Typography>
-      <div className="flex justify-evenly items-center w-full mx-auto">
+      <div className="flex justify-evenly items-center w-full flex-wrap lg:flex-nowrap mx-auto">
         {BRANDS.map(({ id, src, alt }) => {
           return (
             <Image
