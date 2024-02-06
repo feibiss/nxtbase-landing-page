@@ -17,7 +17,7 @@ export default function FeatureCard({
   id: number;
 }) {
   return (
-    <div className=" group relative h-[75vh] md:h-[85vh] lg:h-[100vh] row-span-1 mx-auto w-full rounded-md bg-inherit flex justify-center items-center">
+    <div className=" group relative h-fit lg:py-0 py-8 md:py-10 lg:h-[100vh] row-span-1 mx-auto w-full rounded-md bg-inherit flex justify-center items-center">
       <div className="relative lg:h-3/4 h-full max-h-none  z-10 w-full border-none bg-transparent  ">
         <div
           className={"col-span-1 flex flex-col  items-center gap-8 lg:flex-row"}
@@ -49,7 +49,7 @@ export default function FeatureCard({
               ))}
             </Typography>
           </div>
-          <div className="order-2 w-full md:w-2/3 col-span-2 flex h-full items-center justify-center">
+          <div className="order-2 w-full lg:w-2/3 col-span-2 flex h-full items-center justify-center">
             <video
               autoPlay
               loop
