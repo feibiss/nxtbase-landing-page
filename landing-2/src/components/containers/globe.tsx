@@ -19,14 +19,6 @@ const Globe = () => {
           need.
         </Typography>
       </div>
-      <div className="aspect-square w-full row-span-1 col-span-12 mx-auto max-w-[820px] flex justify-center items-start">
-        <Image
-          width={820}
-          height={820}
-          src={"/globe.png"}
-          alt="Users around the globe"
-        />
-      </div>
     </Container>
   );
 };
