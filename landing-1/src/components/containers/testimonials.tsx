@@ -11,7 +11,7 @@ export default function Testimonials() {
         <div className="mx-auto bg-transparent text-center">
           <Typography
             variant={"h2"}
-            className=" text-card- mb-8 text-pretty font-bold tracking-tighter dark:text-white"
+            className=" text-card mb-8 text-pretty font-bold tracking-tighter dark:text-white"
           >
             What Our Users Are Saying
           </Typography>
@@ -36,7 +36,7 @@ type CardProps = {
 };
 const TestimonyCard = ({ details }: { details: CardProps }) => {
   return (
-    <Card className="group relative z-[1] flex cursor-pointer flex-col items-start justify-start overflow-hidden p-4 shadow-md md:col-span-3 md:last:col-span-4 md:last:col-start-2 lg:col-span-1 lg:last:col-span-1 lg:last:col-start-3">
+    <Card className="group relative z-[1] flex flex-col cursor-default items-start justify-start overflow-hidden p-4 shadow-md md:col-span-3 md:last:col-span-4 md:last:col-start-2 lg:col-span-1 lg:last:col-span-1 lg:last:col-start-3">
       <div
         aria-hidden
         className="absolute -bottom-72 -left-40 -z-[1] h-[20rem] w-full  rounded-tr-3xl bg-transparent blur-xl transition-all"
