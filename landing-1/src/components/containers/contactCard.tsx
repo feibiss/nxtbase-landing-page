@@ -4,7 +4,7 @@ import { Typography } from "../ui/typography";
 
 export default function ContactCard() {
   return (
-    <div className="bg-gradient-to-b relative mx-auto grid h-full grid-cols-12 px-8 md:px-16 lg:px-32 overflow-x-hidden from-sky-300 via-blue-200 via-20%  to-transparent dark:from-indigo-800 dark:via-indigo-700/50 w-screen overflow-hidden">
+    <div className="bg-gradient-to-b relative mx-auto grid h-full grid-cols-12 px-8 md:px-16 lg:px-32 overflow-x-hidden from-sky-300 via-blue-200 via-20%  to-transparent dark:from-indigo-800 dark:via-indigo-700 w-screen overflow-hidden">
       <div className=" bottom-0 col-span-12 flex h-[30rem] w-full flex-col items-center justify-center  ">
         <Typography
           variant={"h2"}
