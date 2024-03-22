@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className="flex flex-col  max-w-7xl xl:max-w-[1400px] mx-auto justify-start items-center relative bg-gray-950 px-8 md:pt-8 lg:pt-8">
       <div className="grid grid-cols-1 h-full gap-8 lg:grid-cols-3 lg:gap-10">
-        <div className="order-2 col-span-1 flex flex-wrap justify-between lg:justify-normal items-start w-full content-start gap-4 pt-12 md:order-2 md:mx-auto md:mt-8 md:gap-8 lg:col-span-2  lg:mt-0">
+        <div className="order-2 col-span-1 flex flex-wrap place-content-stretch lg:justify-normal items-start w-full content-start gap-4 pt-12 md:order-2 md:mx-auto md:mt-8 md:gap-8 lg:col-span-2  lg:mt-0">
           {FOOTER_LINKS.map((details) => {
             return <FooterCategory key={details.id} footerDetails={details} />;
           })}
@@ -25,11 +25,11 @@ export default function Footer() {
           </div>
           <form className="space-y-4">
             <div className="space-y-2">
-              <Label className="text-gray-300" htmlFor="email">
+              <Label className="text-gray-300 text-base" htmlFor="email">
                 Email
               </Label>
               <Input
-                className=" border-gray-600 bg-gray-800 placeholder:text-gray-100"
+                className=" border-gray-800 bg-gray-900 text-base placeholder:text-gray-600"
                 id="email"
                 placeholder="Enter your email"
                 required
@@ -62,7 +62,7 @@ const FooterCategory = ({
   footerDetails: FooterCategory;
 }) => {
   return (
-    <div className="mb-8 flex lg:w-1/4 flex-col md:items-baseline">
+    <div className="mb-8 flex w-1/3 lg:w-1/4 flex-col md:items-baseline">
       <Typography
         variant={"h5"}
         className="mb-4 text-lg font-bold text-gray-100"
