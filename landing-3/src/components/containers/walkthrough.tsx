@@ -8,28 +8,26 @@ const STEPS = [
     id: 1,
     title: "Pick a Plan",
     content: `Choose the perfect package for your needs. From one-time projects to
-ongoing support, we&apos;ve got you covered.`,
+ongoing support, we've got you covered.`,
   },
   {
     id: 2,
-    title: "Pick a Plan",
-    content: `Choose the perfect package for your needs. From one-time projects to
-ongoing support, we&apos;ve got you covered.`,
+    title: "Drool over it",
+    content: `We know that no matter which pack you choose you would be beaming with happiness.`,
   },
   {
     id: 3,
-    title: "Pick a Plan",
-    content: `Choose the perfect package for your needs. From one-time projects to
-ongoing support, we&apos;ve got you covered.`,
+    title: "Ka-ching!!",
+    content: `Happiness deposited right back to you from your's truly. Now go enjoy the little details bundled in.`,
   },
 ];
 const WalkThrough = () => {
   return (
     <Container classNames="bg-transparent">
-      <div className="col-span-12 w-3/4 md:max-w-7xl xl:max-w-[1400px] mt-20  lg:mt-[12rem] mx-auto flex flex-col items-center justify-center space-y-6 lg:space-y-12 bg-gradient-to-b from-[#1a1a1a] to-transparent rounded-2xl p-10">
+      <div className="col-span-12 md:w-3/4 md:max-w-7xl xl:max-w-[1400px] mt-20  lg:mt-[12rem] mx-auto flex flex-col items-center justify-center space-y-6 lg:space-y-12 bg-gradient-to-b from-[#1a1a1a] to-transparent rounded-2xl md:p-10 p-10 px-6 ">
         <p
           className={
-            "text-sm uppercase font-base text-gray-400x [text-wrap:balance]"
+            "text-sm uppercase line-clamp-1 text-nowrap font-base text-gray-400x"
           }
         >
           Latest update details hook here.
@@ -55,7 +53,7 @@ const WalkThrough = () => {
             src="random-scribble.svg"
           />
         </Typography>
-        <div className="flex justify-between lg:flex-row flex-col items-center space-y-4 w-full pt-10">
+        <div className="flex justify-between lg:flex-row flex-col gap-4 items-center place-content-baseline space-y-4 w-full pt-10">
           {STEPS?.map(({ id, title, content }) => (
             <>
               <WalkThroughCard
@@ -95,7 +93,7 @@ const WalkThroughCard = ({
   content: string;
 }) => {
   return (
-    <div className="relative flex flex-col items-center text-center w-[300px] xl:w-[400px]">
+    <div className="relative w-full h-full flex flex-col items-center text-center w-[300px] xl:w-[400px]">
       <Image
         alt={`image-${id}`}
         width={40}
