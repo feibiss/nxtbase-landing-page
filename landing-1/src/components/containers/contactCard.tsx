@@ -12,19 +12,19 @@ export default function ContactCard() {
         >
           Grow with NextBase
         </Typography>
-        <Typography className="prose my-1 text-pretty px-4 text-center text-gray-800 md:px-0 dark:text-gray-300">
+        <Typography className="prose text-pretty px-4 text-center text-gray-800 md:px-0 dark:text-gray-300">
           Build your next SAAS project with a modern stack of Next.js 14+,
           Supabase, Stripe and Typescript, and save 4+ months of development
           time ~ $18000
         </Typography>
-        <Button className="my-4 mt-8">
+        <Button className="my-4">
           <div className="flex w-fit items-center justify-between gap-2">
             <p className="">Get started for free</p>
 
             <ArrowRightIcon className="h-4 w-4" />
           </div>
         </Button>
-        <div className="mt-4 flex justify-center">
+        <div className="mt-2 flex justify-center">
           <CheckIcon className="mr-2 h-6 w-6 text-green-500" />
           <span className="mr-8 font-semibold text-foreground">
             No credit card required
