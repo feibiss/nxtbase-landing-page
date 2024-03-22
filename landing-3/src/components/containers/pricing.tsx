@@ -36,7 +36,7 @@ const PricingCard = () => {
       >
         $699
       </Typography>
-      <p className="text-white/50 tracking-wider text-xs">
+      <p className="text-white/50 mt-4 tracking-wider text-xs">
         High-converting landing page, Branding, Copy
       </p>
       <Typography className="text-white mt-5 text-md">
