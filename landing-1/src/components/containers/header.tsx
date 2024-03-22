@@ -13,7 +13,7 @@ import { useState } from "react";
 export default function Header() {
   const [openMobileNav, setOpenMobileNav] = useState(false);
   return (
-    <header className="sticky left-0 top-0 z-50 flex h-[--navbar-height] w-full shrink-0 items-center border-b border-gray-200 bg-background/80 bg-opacity-90 px-8 backdrop-blur-md dark:border-gray-700">
+    <header className="sticky left-0 top-0 z-50 flex h-[--navbar-height] w-full shrink-0 items-center border-b border-gray-200 bg-background/80 bg-opacity-90 md:px-8 px-4 backdrop-blur-md dark:border-gray-700">
       <Link
         className="mr-6 flex h-full w-fit items-center justify-start"
         href="#"
@@ -44,7 +44,7 @@ export default function Header() {
           </NavigationMenuLink>
         </NavigationMenuList>
       </NavigationMenu>
-      <div className="ml-auto flex items-center justify-center gap-3">
+      <div className="ml-auto flex items-center justify-center">
         <Button
           variant={"default"}
           size={"sm"}
@@ -56,17 +56,20 @@ export default function Header() {
 
         <Button
           onClick={() => setOpenMobileNav((prev) => !prev)}
-          size={"icon"}
           variant={"outline"}
           rounded={"full"}
-          className="ml-4 flex items-center justify-center md:hidden"
+          className="ml-4 flex items-center justify-center md:hidden fill-gray-800 text-gray-800"
         >
-          {openMobileNav ? <Cross1Icon /> : <HamburgerMenuIcon />}
+          {openMobileNav ? (
+            <Cross1Icon className="size-4" />
+          ) : (
+            <HamburgerMenuIcon className="size-4" />
+          )}
         </Button>
       </div>
       {openMobileNav && (
-        <div className="absolute bottom-0 left-0 top-20 z-10 h-fit w-full bg-primary-foreground py-4 shadow-md">
-          <div className="flex w-full flex-col items-start justify-start">
+        <div className="absolute md:hidden bottom-0 left-0 top-20 z-10 h-fit w-full bg-primary-foreground pb-4 shadow-md">
+          <div className="flex w-full flex-col items-start justify-start pl-4">
             <MobileNavMenuItem href="#" content="Home" />
             <MobileNavMenuItem href="#" content="Pricing" />
             <MobileNavMenuItem href="#" content="Features" />
@@ -103,7 +106,10 @@ const MobileNavMenuItem = ({
   content: string;
 }) => {
   return (
-    <Link href={href} className={"w-full justify-start pl-4"}>
+    <Link
+      href={href}
+      className={"w-full justify-start pl-4 hover:bg-gray-100/50"}
+    >
       <p className=" w-full py-4 text-start text-base font-medium text-gray-600 hover:text-primary ">
         {content}
       </p>
