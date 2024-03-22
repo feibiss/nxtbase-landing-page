@@ -11,14 +11,14 @@ import Globe from "@/components/containers/globe";
 export default function Home() {
   return (
     <div className="flex flex-col items-start justify-start">
-      <Spacer type="md" />
       <Hero />
       <Spacer type="md" />
       <Showcase />
       <Spacer type="md" />
       <Brands />
-      <Spacer type="lg" />
+      <Spacer type="xl" />
       <Globe />
+      <Spacer type="lg" />
       <StatsCard />
       <Spacer type="lg" />
       <FeatureList />
