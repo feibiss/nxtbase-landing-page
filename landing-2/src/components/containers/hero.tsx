@@ -41,14 +41,14 @@ export default function Hero() {
         </Typography>
         <Typography
           variant="p"
-          className="my-2 max-w-sm px-4 text-muted-foreground md:max-w-lg md:px-0"
+          className="my-2 max-w-md px-4 text-muted-foreground md:max-w-lg md:px-0"
         >
           Great, now that we have your attention, we will actually talk about
           how we help you do the above. Mostly a brief description which
           explains our service to convince you to keep scrolling down.
         </Typography>
 
-        <Button variant={"default"} className="mb-4">
+        <Button variant={"default"} className="my-4">
           <div className="flex w-fit items-center justify-between gap-2">
             <p className="">Get started for free</p>
 

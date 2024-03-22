@@ -26,15 +26,19 @@ export default function ContactCard() {
               <ArrowRightIcon className="h-4 w-4" />
             </div>
           </Button>
-          <div className="mt-4 flex justify-center">
-            <CheckIcon className="mr-2 h-6 w-6 text-green-500" />
-            <span className="mr-8 font-semibold text-foreground">
-              No credit card required
-            </span>
-            <CheckIcon className="mr-2 h-6 w-6 text-green-500 " />
-            <span className="font-semibold text-foreground">
-              7-day free trial
-            </span>
+          <div className="mt-4 space-y-4 flex flex-col md:flex-row justify-center">
+            <div className="flex items-center">
+              <CheckIcon className="mr-2 h-6 w-6 text-green-500" />
+              <span className="mr-8 font-semibold text-foreground">
+                No credit card required
+              </span>
+            </div>
+            <div className="flex items-center">
+              <CheckIcon className="mr-2 h-6 w-6 text-green-500 " />
+              <span className="font-semibold text-foreground">
+                7-day free trial
+              </span>
+            </div>
           </div>
         </div>
       </div>

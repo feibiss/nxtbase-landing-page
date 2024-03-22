@@ -57,7 +57,7 @@ export default function Header() {
         </Button>
       </div>
       {openMobileNav && (
-        <div className="absolute bottom-0 left-0 top-20 z-10 h-fit w-full bg-primary-foreground py-4 shadow-md">
+        <div className="absolute md:hidden bottom-0 left-0 top-20 z-10 h-fit w-full bg-primary-foreground pb-4 shadow-md">
           <div className="flex w-full flex-col items-start justify-start">
             <MobileNavMenuItem href="#" content="Home" />
             <MobileNavMenuItem href="#" content="Pricing" />
@@ -96,7 +96,7 @@ const MobileNavMenuItem = ({
 }) => {
   return (
     <Link href={href} className={"w-full justify-start pl-4"}>
-      <p className=" w-full py-4 text-start text-base font-medium text-gray-600 hover:text-primary ">
+      <p className=" w-full p-4 text-start text-base font-medium text-gray-600 hover:text-primary ">
         {content}
       </p>
     </Link>
