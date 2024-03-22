@@ -230,7 +230,7 @@ export const FOOTER_LINKS: FooterCategory[] = [
 ];
 
 export const featuredTestimonial = {
-  body: "Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.",
+  body: "It's like we're living in a parallel universe where Dunder Mifflin is just around the corner.I swear, sometimes I half expect Michael Scott to walk through that door.",
   author: {
     name: "Brenna Goyette",
     handle: "brennagoyette",
