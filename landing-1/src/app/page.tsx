@@ -12,6 +12,7 @@ export default function Home() {
       <Hero />
       <Spacer type="md" />
       <Banner />
+      <Spacer type="md" />
       <Testimonials />
       <Spacer type="lg" />
       <FeatureCardsList />
