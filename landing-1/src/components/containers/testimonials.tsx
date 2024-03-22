@@ -39,7 +39,7 @@ const TestimonyCard = ({ details }: { details: CardProps }) => {
     <Card className="group relative z-[1] flex cursor-pointer flex-col items-start justify-start overflow-hidden p-4 shadow-md md:col-span-3 md:last:col-span-4 md:last:col-start-2 lg:col-span-1 lg:last:col-span-1 lg:last:col-start-3">
       <div
         aria-hidden
-        className="group:hover:bottom-0 absolute -bottom-72 -left-40 -z-[1] h-[20rem] w-full  rounded-tr-3xl bg-transparent blur-xl transition-all group-hover:left-0 group-hover:bg-primary/10"
+        className="absolute -bottom-72 -left-40 -z-[1] h-[20rem] w-full  rounded-tr-3xl bg-transparent blur-xl transition-all"
       ></div>
       <CardContent className="">
         <Typography
