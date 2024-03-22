@@ -17,21 +17,21 @@ export default function Hero() {
     <Container>
       <div className="col-span-12 mt-8 flex h-full snap-start flex-col items-center justify-center gap-1 text-center md:mt-[var(--navbar-height)]">
         {/* ? Pill */}
-        <div className="relative mb-8 flex w-fit items-center justify-center gap-2 rounded-full border-2 border-amber-400/20 dark:border-amber-300/50">
+        <div className="relative mb-8 flex w-fit items-center justify-center gap-2 rounded-full border-2 border-gray-400/20 dark:border-gray-800/50">
           <Link
             href="#"
             className={clsx(
-              " flex h-6 items-center justify-start gap-2 rounded-full bg-amber-50 p-1 dark:bg-amber-900",
+              " flex h-8 min-w-[10rem] items-center justify-between gap-4 p-1 rounded-full bg-gray-900 dark:bg-amber-900"
             )}
           >
             <p
               className={clsx(
-                "h-full w-fit rounded-full bg-amber-400 px-2 text-xs text-primary-foreground ",
+                "h-full w-fit rounded-full bg-gray-100 py-1 px-1.5 flex justify-center items-center text-xs text-secondary-foreground "
               )}
             >
               New
             </p>
-            <p className="text-sm font-semibold text-amber-600 ">
+            <p className="text-sm font-medium text-gray-100 pr-6">
               Latest update details hook here.
             </p>
           </Link>
