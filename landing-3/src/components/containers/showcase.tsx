@@ -45,17 +45,17 @@ export function Showcase() {
         {CAROUSAL_IMAGES.map((_, index) => (
           <CarouselItem
             key={_.id}
-            className="md:basis-1/2 lg:basis-1/3 rounded-md overflow-hidden"
+            className="md:basis-1/2 px-8 md:px-0 lg:basis-1/3 rounded-md overflow-hidden"
           >
             <div className="p-1">
               <Card>
-                <CardContent className="flex aspect-video lg:border lg:border-white/5 items-center justify-center p-0 rounded overflow-hidden">
+                <CardContent className="flex aspect-square md:aspect-video lg:border lg:border-white/5 items-center justify-center p-0 rounded overflow-hidden">
                   <Image
                     alt={"Carousal-Image-"}
                     width={600}
                     height={600}
                     src={_.src}
-                    className="object-cover aspect-video  "
+                    className=" md:object-cover aspect-square md:aspect-video  "
                   />
                 </CardContent>
               </Card>
