@@ -7,7 +7,10 @@ import { FOOTER_LINKS, FooterCategory } from "@/lib/enums";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col mx-auto justify-start items-center relative bg-gray-950 px-8 md:pt-8 lg:pt-8">
+    <footer className="flex flex-col mx-auto justify-start items-center relative bg-white dark:bg-gray-950 px-8 md:pt-8 lg:pt-8">
+      <h1 className="max-w-7xl xl:max-w-[1400px] text-9xl font-semibold w-full text-start md:px-8 lg:px-0 mt-10">
+        fou4.
+      </h1>
       <div className=" max-w-7xl xl:max-w-[1400px]">
         <div className="grid grid-cols-1 h-full gap-8 lg:grid-cols-3 lg:gap-10">
           <div className="order-2 col-span-1 flex flex-wrap justify-between lg:justify-normal items-start w-full content-start gap-4 pt-12 md:order-2 md:mx-auto md:mt-8 md:gap-8 lg:col-span-2  lg:mt-0">
@@ -19,20 +22,26 @@ export default function Footer() {
           </div>
           <div className="col-span-1 lg:order-2 order-1 mx-auto w-full space-y-4 pt-16 md:px-10 md:pt-8 lg:pt-12">
             <div className="space-y-2 text-start">
-              <Typography variant={"h5"} className=" text-gray-200">
+              <Typography
+                variant={"h5"}
+                className=" text-gray-800 dark:text-gray-200"
+              >
                 Subscribe to our Newsletter
               </Typography>
-              <Typography className=" text-gray-400">
+              <Typography className=" text-gray-600 dark:text-gray-400">
                 Stay updated with our latest news, articles, and updates.
               </Typography>
             </div>
             <form className="space-y-4">
               <div className="space-y-2">
-                <Label className="text-gray-300" htmlFor="email">
+                <Label
+                  className="text-gray-700 dark:text-gray-300"
+                  htmlFor="email"
+                >
                   Email
                 </Label>
                 <Input
-                  className=" border-gray-600 bg-gray-800 placeholder:text-gray-100"
+                  className=" border-gray-400 dark:border-gray-600 bg-gray-200 dark:bg-gray-800 dark:placeholder:text-gray-100 placeholder:text-gray-400"
                   id="email"
                   placeholder="Enter your email"
                   required
@@ -69,7 +78,7 @@ const FooterCategory = ({
     <div className="mb-8 flex lg:w-1/4 flex-col md:items-baseline">
       <Typography
         variant={"h5"}
-        className="mb-4 text-lg font-bold text-gray-100"
+        className="mb-4 text-lg font-bold text-gray-900 dark:text-gray-100"
       >
         {footerDetails.title}
       </Typography>
@@ -78,7 +87,7 @@ const FooterCategory = ({
           <Link
             key={title}
             href={link}
-            className="prose font-medium text-gray-500 transition-colors hover:text-gray-200"
+            className="prose font-medium text-gray-500 transition-colors dark:hover:text-gray-200 hover:text-gray-400"
           >
             <li>{title}</li>
           </Link>
