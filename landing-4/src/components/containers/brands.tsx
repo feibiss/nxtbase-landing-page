@@ -1,6 +1,7 @@
 import React from "react";
 import { Typography } from "../ui/typography";
 import Image from "next/image";
+import Marquee from "../ui/marquee";
 
 const Brands = () => {
   const BRANDS = [
@@ -46,7 +47,7 @@ const Brands = () => {
       <Typography className="text-xs text-muted-foreground">
         Trusted by top companies
       </Typography>
-      <div className="flex justify-evenly items-center w-full flex-wrap lg:flex-nowrap mx-auto">
+      <div className="hidden md:flex justify-evenly items-center w-full lg:flex-nowrap mx-auto">
         {BRANDS.map(({ id, src, alt }) => {
           return (
             <Image
@@ -60,6 +61,20 @@ const Brands = () => {
           );
         })}
       </div>
+      <Marquee className="md:hidden">
+        {BRANDS.map(({ id, src, alt }) => {
+          return (
+            <Image
+              key={id}
+              src={src}
+              className="h-8 md:h-12 blur-0 text-transparent transition-all"
+              width={120}
+              height={182}
+              alt={alt}
+            />
+          );
+        })}
+      </Marquee>
     </div>
   );
 };
