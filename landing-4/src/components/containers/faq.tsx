@@ -13,7 +13,7 @@ import { Typography } from "../ui/typography";
 
 const FAQ = () => {
   return (
-    <Container classNames="py-0 bg-primary">
+    <Container classNames="py-0 bg-primary h-[75vh]">
       <div className="col-span-12 flex justify-center items-center flex-col space-y-6 p-10 ">
         <Typography variant={"h2"}>Frequently asked questions.</Typography>
         <FeaturesAccordion />
