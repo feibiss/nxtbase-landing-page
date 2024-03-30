@@ -7,7 +7,7 @@ import { FOOTER_LINKS, FooterCategory } from "@/lib/enums";
 
 export default function Footer() {
   return (
-    <footer className=" relative bg-gray-900 px-8 md:pt-8 lg:h-[calc(100dvh-var(--navbar-height))] lg:pt-8">
+    <footer className=" relative bg-gray-900 px-8 md:pt-8 md:pb-10 lg:pb-40 lg:pt-8">
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-10">
         <div className="order-2 col-span-1 flex flex-wrap justify-between lg:justify-normal items-center w-full  gap-4 pt-12 md:order-2 md:mx-auto md:mt-8 md:gap-8 lg:col-span-2  lg:mt-0">
           {FOOTER_LINKS.map((details) => {
@@ -62,7 +62,7 @@ const FooterCategory = ({
   footerDetails: FooterCategory;
 }) => {
   return (
-    <div className="mb-8 flex lg:w-1/4 flex-col md:items-baseline">
+    <div className="mb-8 flex flex-1 md:flex-none lg:w-1/4 flex-col md:items-baseline">
       <Typography
         variant={"h5"}
         className="mb-4 text-lg font-bold text-gray-100"
