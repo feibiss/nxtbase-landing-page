@@ -28,10 +28,17 @@ export default function Header() {
         <span className="sr-only">Nextbase Template</span>
         <Image
           alt="brand-logo"
+          width={40}
+          className=" size-8 mr-2"
+          height={64}
+          src="/duex_logo.svg"
+        />
+        <Image
+          alt="brand-logo"
           width={100}
           className="dark:invert"
           height={64}
-          src="/vercel.svg"
+          src="/duex_title.svg"
         />
       </Link>
       <NavigationMenuDemo />
