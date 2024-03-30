@@ -36,9 +36,8 @@ export default function Header() {
         <Image
           alt="brand-logo"
           width={100}
-          className="invert"
           height={64}
-          src="/vercel.svg"
+          src="/trois_title.svg"
         />
       </Link>
 
