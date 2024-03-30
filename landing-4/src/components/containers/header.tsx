@@ -17,10 +17,10 @@ export default function Header() {
             <span className="sr-only">Nextbase Template</span>
             <Image
               alt="brand-logo"
-              width={100}
-              className=""
-              height={64}
-              src="/vercel.svg"
+              width={40}
+              className="size-10 ml-5 md:ml-0"
+              height={40}
+              src="/quad_logo.svg"
             />
           </Link>
         </div>
