@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className="flex flex-col justify-start items-center relative bg-gray-950 px-8 md:pt-8 lg:pt-8">
       <div className="grid grid-cols-1 h-full gap-8 lg:grid-cols-3 lg:gap-10">
-        <div className="order-2 col-span-1 flex flex-wrap justify-between lg:justify-normal items-start w-full content-start gap-4 pt-12 md:order-2 md:mx-auto md:mt-8 md:gap-8 lg:col-span-2  lg:mt-0">
+        <div className="order-2 col-span-1 flex flex-wrap justify-start lg:justify-normal items-start w-full content-start gap-4 pt-12 md:order-2 md:mx-auto md:mt-8 md:gap-8 lg:col-span-2  lg:mt-0">
           {FOOTER_LINKS.map((details) => {
             return <FooterCategory key={details.id} footerDetails={details} />;
           })}
@@ -62,7 +62,7 @@ const FooterCategory = ({
   footerDetails: FooterCategory;
 }) => {
   return (
-    <div className="mb-8 flex lg:w-1/4 flex-col md:items-baseline">
+    <div className="mb-8 flex flex-1 lg:w-1/4 flex-col md:items-baseline">
       <Typography
         variant={"h5"}
         className="mb-4 text-lg font-bold text-gray-100"
