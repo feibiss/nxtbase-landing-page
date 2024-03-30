@@ -28,7 +28,10 @@ export default function Hero() {
             </p>
           </Link>
         </div>
-        <Typography variant="h1" className="lg:max-w-7xl xl:w-[1400px]">
+        <Typography
+          variant="h1"
+          className="lg:max-w-7xl text-balance xl:w-[1400px]"
+        >
           We build top
           <span className="inline-block pl-2 pr-2">
             <Image
@@ -54,7 +57,7 @@ export default function Hero() {
         </Typography>
         <Typography
           variant="subheading"
-          className=" w-3/4 lg:max-w-[50%] my-6 mx-auto text-white/60"
+          className=" w-3/4 lg:max-w-[50%] my-6 mx-auto text-balance text-white/60"
         >
           Great, now that we have your attention, we will actually talk about
           how we help you do the above. Mostly a brief description which
