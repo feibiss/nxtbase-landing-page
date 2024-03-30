@@ -13,7 +13,7 @@ export default function Footer() {
       </h1>
       <div className=" max-w-7xl xl:max-w-[1400px]">
         <div className="grid grid-cols-1 h-full gap-8 lg:grid-cols-3 lg:gap-10">
-          <div className="order-2 col-span-1 flex flex-wrap justify-between lg:justify-normal items-start w-full content-start gap-4 pt-12 md:order-2 md:mx-auto md:mt-8 md:gap-8 lg:col-span-2  lg:mt-0">
+          <div className="order-2 col-span-1 flex flex-wrap justify-start lg:justify-normal items-start w-full content-start gap-4 pt-12 md:order-2 md:mx-auto md:mt-8 md:gap-8 lg:col-span-2  lg:mt-0">
             {FOOTER_LINKS.map((details) => {
               return (
                 <FooterCategory key={details.id} footerDetails={details} />
