@@ -62,7 +62,7 @@ const FooterCategory = ({
   footerDetails: FooterCategory;
 }) => {
   return (
-    <div className="mb-8 flex w-1/3 lg:w-1/4 flex-col md:items-baseline">
+    <div className="mb-8 flex w-1/3 md:w-1/4 flex-col md:items-baseline">
       <Typography
         variant={"h5"}
         className="mb-4 text-lg font-bold text-gray-100"
