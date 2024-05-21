@@ -10,7 +10,7 @@ const FeatureCardsList = () => {
         <div className="flex w-full justify-center items-center">
           <Typography
             variant={"h2"}
-            className=" text-card-foreground text-center mb-8 text-pretty font-bold tracking-tighter dark:text-white"
+            className=" text-blue-900 text-center mb-4 text-pretty font-bold tracking-tighter dark:text-white"
           >
             Features
           </Typography>

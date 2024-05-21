@@ -1,8 +1,5 @@
-import { buttonVariants } from "@/components/ui/button";
 import { CardContent, Card } from "@/components/ui/card";
-import { CheckIcon, ChevronRightIcon } from "@radix-ui/react-icons";
-import clsx from "clsx";
-import Link from "next/link";
+import { CheckCircledIcon, CubeIcon } from "@radix-ui/react-icons";
 import { Typography } from "../ui/typography";
 
 type FeatureType = {
@@ -22,13 +19,7 @@ export default function FeatureCard({ feature }: { feature: FeatureType }) {
         >
           <div className="order-2 lg:group-odd:order-1 lg:group-even:order-2">
             <div className="md:min-h-[400px] min-h-[260px]">
-              {" "}
-              <Typography
-                variant={"lead"}
-                className="mb-2 mt-0 text-sm font-bold uppercase tracking-widest text-primary/80"
-              >
-                {feature.subtitle}
-              </Typography>
+              <CubeIcon className="text-blue-900 bg-blue-50 h-4 w-4 mb-4" />
               <Typography variant={"h3"} className="">
                 {feature.title}
               </Typography>
@@ -44,26 +35,13 @@ export default function FeatureCard({ feature }: { feature: FeatureType }) {
                     className="flex w-full items-center
                    justify-start overflow-hidden text-secondary-foreground"
                   >
-                    <CheckIcon className="mr-2 flex h-6 w-6 items-center justify-center capitalize text-green-500" />
+                    <CheckCircledIcon className="mr-2 flex h-4 w-4 items-center justify-center capitalize text-blue-900" />
 
                     <p className="text-ellipsis text-wrap">{feature}</p>
                   </li>
                 ))}
               </Typography>
             </div>
-            <Link
-              href={"#"}
-              className={clsx(
-                buttonVariants({
-                  variant: "link",
-                  size: "sm",
-                }),
-                "text-xs p-0 mt-4 "
-              )}
-            >
-              Learn More
-              <ChevronRightIcon className="size-4" />
-            </Link>
           </div>
           <div className="order-0 col-span-1 flex h-full w-full items-center justify-center lg:group-odd:order-2 lg:group-even:order-1">
             <video

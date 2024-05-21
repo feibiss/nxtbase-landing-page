@@ -174,7 +174,7 @@ export const FOOTER_LINKS: FooterCategory[] = [
   },
   {
     id: 5,
-    title: "Other",
+    title: "Others",
     links: [
       {
         link: "#",

@@ -13,7 +13,7 @@ import { useState } from "react";
 export default function Header() {
   const [openMobileNav, setOpenMobileNav] = useState(false);
   return (
-    <header className="sticky left-0 top-0 z-50 flex h-[--navbar-height] w-full shrink-0 items-center border-b border-gray-200 bg-background/80 bg-opacity-90 md:px-8 px-4 backdrop-blur-md dark:border-gray-700">
+    <header className="sticky left-0 top-0 z-50 flex h-[--navbar-height] shrink-0 items-center bg-blue-50 md:px-8 px-4 backdrop-blur-md dark:border-gray-700">
       <Link
         className="mr-6 flex h-full w-fit items-center justify-start"
         href="#"
@@ -28,19 +28,19 @@ export default function Header() {
         />
       </Link>
 
-      <NavigationMenu className="hidden md:flex">
+      <NavigationMenu className="hidden md:flex text-center ml-auto justify-center">
         <NavigationMenuList>
           <NavigationMenuLink asChild>
             <NavMenuItem href="#" content="Home" />
-          </NavigationMenuLink>
-          <NavigationMenuLink asChild>
-            <NavMenuItem href="#" content="Pricing" />
           </NavigationMenuLink>
           <NavigationMenuLink asChild>
             <NavMenuItem href="#" content="Features" />
           </NavigationMenuLink>
           <NavigationMenuLink asChild>
             <NavMenuItem href="#" content="Contact" />
+          </NavigationMenuLink>
+          <NavigationMenuLink asChild>
+            <NavMenuItem href="#" content="Pricing" />
           </NavigationMenuLink>
         </NavigationMenuList>
       </NavigationMenu>
@@ -51,7 +51,7 @@ export default function Header() {
           rounded={"full"}
           className="hidden px-3 py-1 md:block"
         >
-          Get Started
+          Get started for free
         </Button>
 
         <Button
