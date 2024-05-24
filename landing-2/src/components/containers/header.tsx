@@ -3,7 +3,6 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Cross1Icon, HamburgerMenuIcon } from "@radix-ui/react-icons";
-import Image from "next/image";
 import { useState } from "react";
 import * as React from "react";
 import { cn } from "@/lib/utils";
@@ -16,30 +15,21 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { Typography } from "../ui/typography";
 
 export default function Header() {
   const [openMobileNav, setOpenMobileNav] = useState(false);
   return (
-    <header className="sticky top-0 inset-x-0 z-50 flex h-[--navbar-height] w-full items-center border-b px-8 bg-white/80 dark:bg-black/80 backdrop-blur-md mx-auto">
+    <header className="sticky top-0 inset-x-0 z-50 flex h-[--navbar-height] items-center px-8 bg-lime-50 dark:bg-gray-950 mx-auto">
       <Link
         className="mr-6 flex h-full w-fit items-center justify-start"
         href="#"
       >
         <span className="sr-only">Nextbase Template</span>
-        <Image
-          alt="brand-logo"
-          width={40}
-          className=" size-8 mr-2"
-          height={64}
-          src="/duex_logo.svg"
-        />
-        <Image
-          alt="brand-logo"
-          width={100}
-          className="dark:invert"
-          height={64}
-          src="/duex_title.svg"
-        />
+        <span className="mr-2 bg-lime-900 rounded-full h-4 w-4 flex align-middle justify-center dark:invert"></span>
+        <Typography className="text-center !mt-0" variant={"p"}>
+          Duex
+        </Typography>
       </Link>
       <NavigationMenuDemo />
 
@@ -50,7 +40,7 @@ export default function Header() {
           rounded={"full"}
           className="hidden px-3 py-1 md:block"
         >
-          Get Started
+          Get started for free
         </Button>
 
         <Button
@@ -67,9 +57,9 @@ export default function Header() {
         <div className="absolute md:hidden bottom-0 left-0 top-20 z-10 h-fit w-full bg-primary-foreground pb-4 shadow-md">
           <div className="flex w-full flex-col items-start justify-start">
             <MobileNavMenuItem href="#" content="Home" />
-            <MobileNavMenuItem href="#" content="Pricing" />
             <MobileNavMenuItem href="#" content="Features" />
             <MobileNavMenuItem href="#" content="Contact" />
+            <MobileNavMenuItem href="#" content="Pricing" />
           </div>
         </div>
       )}
@@ -150,7 +140,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavigationMenuDemo() {
   return (
-    <NavigationMenu className="md:block hidden">
+    <NavigationMenu className="md:block hidden text-center ml-auto justify-center">
       <NavigationMenuList>
         <NavigationMenuItem>
           <Link href="#" legacyBehavior passHref>
@@ -175,18 +165,17 @@ export function NavigationMenuDemo() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-
         <NavigationMenuItem>
           <Link href="#" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Pricing
+              Contact
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="#" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Contact
+              Pricing
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
