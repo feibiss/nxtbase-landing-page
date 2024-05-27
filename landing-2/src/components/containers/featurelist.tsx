@@ -16,23 +16,18 @@ const FeatureList = () => {
   return (
     <Container>
       <div className="flex flex-col justify-center items-center col-span-12">
-        <Typography variant={"h2"} className="mx-auto w-full text-center">
-          <span className=" bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent">
-            Powerful features
-          </span>{" "}
-          for you<br></br>{" "}
-          <span className=" bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent">
-            one click
-          </span>{" "}
-          away.
+        <Typography
+          variant={"h2"}
+          className="mx-auto w-full text-center"
+        >
+          Nextbase makes your life easy
         </Typography>
         <Typography className="mx-auto w-2/3 text-center">
-          We built Nextbase with the goal of making it easy for you to build
-          your next SAAS. We focus on the minor details so you won&apos;t have
-          to.
+          Nextbase is built for scale. Whether you are building a small app or a
+          huge app, Nextbase has all the tools you need.
         </Typography>
       </div>
-      <div className="my-10 col-span-12 w-full overflow-hidden rounded-xl border border-gray-200 bg-white/10 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur lg:h-[540px]">
+      <div className="my-10 col-span-12 w-full overflow-hidden rounded bg-white border border-gray-200 lg:h-[540px]">
         <FeaturesAccordion />
       </div>
     </Container>
