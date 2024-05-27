@@ -14,20 +14,20 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const FeatureList = () => {
   return (
-    <Container>
-      <div className="flex flex-col justify-center items-center col-span-12">
+    <Container classNames="bg-lime-900">
+      <div className="flex flex-col justify-center items-center col-span-12 mt-16">
         <Typography
           variant={"h2"}
-          className="mx-auto w-full text-center"
+          className="mx-auto w-full text-center text-card"
         >
           Nextbase makes your life easy
         </Typography>
-        <Typography className="mx-auto w-2/3 text-center">
+        <Typography className="mx-auto w-2/3 text-center text-lime-100">
           Nextbase is built for scale. Whether you are building a small app or a
           huge app, Nextbase has all the tools you need.
         </Typography>
       </div>
-      <div className="my-10 col-span-12 w-full overflow-hidden rounded bg-white border border-gray-200 lg:h-[540px]">
+      <div className="my-10 col-span-12 w-full overflow-hidden rounded bg-card border border-gray-200 lg:h-[540px]">
         <FeaturesAccordion />
       </div>
     </Container>
