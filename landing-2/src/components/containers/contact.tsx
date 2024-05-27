@@ -7,7 +7,7 @@ export default function ContactCard() {
   return (
     <Container classNames="bg-card/20">
       <div className="col-span-12 relative mx-auto h-full flex flex-col justify-start items-center overflow-x-hidden w-full overflow-hidden">
-        <div className=" bottom-0 flex h-[30rem] w-full flex-col items-center justify-center  ">
+        <div className=" bottom-0 flex h-[30rem] w-full flex-col items-center justify-center ">
           <Typography
             variant={"h2"}
             className="w-full text-center mx-auto text-lime-900"

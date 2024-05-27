@@ -9,7 +9,7 @@ import { CubeIcon } from "@radix-ui/react-icons";
 export default function Footer() {
   return (
     <footer className="flex flex-col justify-start relative bg-gray-950 px-8 md:pt-8 lg:pt-8">
-      <div className="text-white flex items-center justify-between">
+      <div className="text-white flex items-center justify-between pt-8">
         <div className="flex items-center">
           <div className="bg-white rounded-full h-6 w-6 flex items-center justify-center"></div>
           <span className="ml-2">Nextbase</span>
@@ -32,8 +32,8 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <div className="grid grid-cols-1 h-full gap-8 lg:grid-cols-3 lg:gap-10">
-        <div className="order-2 col-span-1 flex flex-wrap justify-start lg:justify-normal items-start w-full content-start gap-4 pt-12 md:order-2 md:mx-auto md:mt-8 md:gap-8 lg:col-span-2  lg:mt-0">
+      <div className="grid grid-cols-1 h-full gap-8 lg:grid-cols-2 lg:gap-10">
+        <div className="col-span-1 flex flex-wrap justify-start lg:justify-normal items-start w-full content-start gap-4 pt-12 md:mx-auto md:mt-8 md:gap-8 lg:col-span-1 lg:mt-0">
           {FOOTER_LINKS.map((details) => {
             return <FooterCategory key={details.id} footerDetails={details} />;
           })}
@@ -86,11 +86,8 @@ const FooterCategory = ({
   footerDetails: FooterCategory;
 }) => {
   return (
-    <div className="mb-8 flex flex-1 lg:w-1/4 flex-col md:items-baseline">
-      <Typography
-        variant={"h5"}
-        className="mb-4 text-lg font-bold text-[#94A3B8]"
-      >
+    <div className="mb-8 flex flex-auto lg:w-1/4 flex-col md:items-baseline">
+      <Typography variant={"h5"} className="mb-4 text-lg text-[#94A3B8]">
         {footerDetails.title}
       </Typography>
       <ul className="flex w-fit flex-col space-y-2">
@@ -98,7 +95,7 @@ const FooterCategory = ({
           <Link
             key={title}
             href={link}
-            className="prose font-medium text-[#F8FAFC] transition-colors hover:text-gray-200"
+            className="text-lg text-[#F8FAFC] transition-colors hover:text-gray-200"
           >
             <li>{title}</li>
           </Link>
