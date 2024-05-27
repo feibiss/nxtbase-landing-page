@@ -7,8 +7,15 @@ import Image from "next/image";
 const Testimonials = ({}) => {
   return (
     <Container classNames="flex flex-col w-full text-center justify-center items-center lg:mb-44">
-      <Typography variant={"h2"} className="w-full text-center mx-auto">
-        What Our Partners Say
+      <Typography variant={"h2"} className="w-full text-center mx-auto text-lime-900">
+        What our users are saying
+      </Typography>
+      <Typography
+        variant="p"
+        className="my-2 mb-4 max-w-sm px-4 text-slate-950 md:max-w-lg md:px-0"
+      >
+        Great, now that we have your attention, we will actually talk about how
+        we help you
       </Typography>
       <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {[...TESTIMONIES, ...TESTIMONIES, ...TESTIMONIES].map(
