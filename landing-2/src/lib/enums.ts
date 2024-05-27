@@ -173,7 +173,7 @@ export const FOOTER_LINKS: FooterCategory[] = [
     ],
   },
   {
-    id: 5,
+    id: 3,
     title: "Other",
     links: [
       {
@@ -210,7 +210,7 @@ export const FOOTER_LINKS: FooterCategory[] = [
   },
 
   {
-    id: 3,
+    id: 5,
     title: "Support",
     links: [
       {
@@ -224,6 +224,28 @@ export const FOOTER_LINKS: FooterCategory[] = [
       {
         link: "#",
         title: "FAQ",
+      },
+    ],
+  },
+  {
+    id: 6,
+    title: "Other",
+    links: [
+      {
+        link: "#",
+        title: "Resources",
+      },
+      {
+        link: "#",
+        title: "Services",
+      },
+      {
+        link: "#",
+        title: "Contact Us",
+      },
+      {
+        link: "#",
+        title: "Affliates",
       },
     ],
   },
