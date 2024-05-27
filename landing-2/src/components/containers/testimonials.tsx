@@ -6,8 +6,11 @@ import Image from "next/image";
 
 const Testimonials = ({}) => {
   return (
-    <Container classNames="flex flex-col w-full text-center justify-center items-center lg:mb-44">
-      <Typography variant={"h2"} className="w-full text-center mx-auto text-lime-900">
+    <Container classNames="flex flex-col w-full text-center justify-center items-center">
+      <Typography
+        variant={"h2"}
+        className="w-full text-center mx-auto text-lime-900"
+      >
         What our users are saying
       </Typography>
       <Typography

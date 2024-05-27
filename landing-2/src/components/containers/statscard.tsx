@@ -21,20 +21,20 @@ export const StatsCard = () => {
   ];
   return (
     <div className="dark:bg-gray-800/10 py-0 w-full flex justify-center items-center dark:border-gray-700">
-      <div className="w-full grid grid-cols-3 justify-center items-center max-w-7xl px-8 md:px-16 lg:px-32">
+      <div className="w-full flex flex-wrap gap-8 md:gap-16 justify-center items-center px-8 md:px-16 lg:px-32">
         {STATS.map(({ id, metric, label }) => {
           return (
             <div
               key={id}
-              className="flex w-full h-full py-6 gap-0 flex-col justify-center items-center"
+              className="bg-card dark:bg-slate-900/80 border border-slate-500/10 rounded-md max-w-[366px] flex w-full h-full py-6 flex-col justify-around items-center"
             >
               <Typography
                 variant={"h2"}
-                className="font-semibold dark:text-gray-300"
+                className="font-semibold dark:text-gray-300 text-center"
               >
                 {metric}
               </Typography>
-              <Typography className="line-clamp-1 font-semibold dark:text-gray-400">
+              <Typography className="font-semibold dark:text-gray-400 text-center">
                 {label}
               </Typography>
             </div>
