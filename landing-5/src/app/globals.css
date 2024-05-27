@@ -106,3 +106,7 @@
 .btn-brand-primary {
   background-color: var(--primary-darker-hex);
 }
+
+.text-brand-primary {
+  color: var(--primary-darker-hex);
+}
