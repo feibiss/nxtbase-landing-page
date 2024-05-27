@@ -1,6 +1,5 @@
 import React from "react";
 import Container from "./container";
-import { Typography } from "../ui/typography";
 import Image from "next/image";
 
 const Brands = () => {
@@ -69,7 +68,6 @@ const Brands = () => {
   return (
     <Container>
       <div className="flex flex-col row-span-1 col-span-12 items-center md:h-fit justify-start w-full">
-        <Typography variant={"h2"}>Brands with us</Typography>
         <div className="mx-auto mt-8 flex overflow-x-scroll md:overflow-auto w-[90vw] md:grid md:w-full max-w-screen-lg max-h-fit items-center px-5 md:grid-cols-6 md:px-0 gap-4 md:gap-0">
           {BRANDS.map(({ id, src, alt }) => {
             return (
