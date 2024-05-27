@@ -28,7 +28,7 @@ export default function Header() {
         <span className="sr-only">Nextbase Template</span>
         <span className="mr-2 bg-lime-900 rounded-full h-4 w-4 flex align-middle justify-center dark:invert"></span>
         <Typography className="text-center !mt-0" variant={"p"}>
-          Duex
+          duex
         </Typography>
       </Link>
       <NavigationMenuDemo />
