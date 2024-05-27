@@ -9,9 +9,9 @@ import { CubeIcon } from "@radix-ui/react-icons";
 export default function Footer() {
   return (
     <footer className="flex flex-col justify-start relative bg-gray-950 px-8 md:pt-8 lg:pt-8">
-      <div className="text-white flex items-center justify-between pt-8">
+      <div className="text-card flex items-center justify-between pt-8">
         <div className="flex items-center">
-          <div className="bg-white rounded-full h-6 w-6 flex items-center justify-center"></div>
+          <div className="bg-card rounded-full h-6 w-6 flex items-center justify-center"></div>
           <span className="ml-2">Nextbase</span>
           <span className="text-slate-50 ml-10">
             The future of computing starts now
