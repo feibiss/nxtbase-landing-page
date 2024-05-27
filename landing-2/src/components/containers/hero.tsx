@@ -16,7 +16,7 @@ export default function Hero() {
           <Link
             href="#"
             className={clsx(
-              "group mx-auto flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-200 bg-[#3653141A] px-7 py-2 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.1)] backdrop-blur transition-all hover:border-gray-300 hover:bg-white/50"
+              "group mx-auto flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-200 bg-[#3653141A] px-3 py-2 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.1)] backdrop-blur transition-all hover:border-gray-300 hover:bg-white/50"
             )}
           >
             <CubeIcon className="color-black" />
@@ -27,6 +27,7 @@ export default function Hero() {
             >
               Latest update details hook here.
             </p>
+            <ArrowRightIcon className="h-4 w-4" />
           </Link>
         </div>
         <Typography variant="h1" className="text-lime-900 text-center">
@@ -39,17 +40,16 @@ export default function Hero() {
           Great, now that we have your attention, we will actually talk about
           how we help you
         </Typography>
-        <div className="flex gap-4 my-6 px-6">
-          <Button variant={"outline"} className="">
+        <div className="flex gap-4 my-6">
+          <Button variant={"outline"} className="px-4">
             Learn more
           </Button>
-          <Button variant={"default"} className="">
+          <Button variant={"default"} className="px-4">
             <p>Get started for free</p>
           </Button>
         </div>
         <div className="flex flex-col items-center justify-center gap-4 space-x-2 md:flex-row">
           <div className="flex w-fit items-center justify-start gap-2 text[#020817]">
-            {" "}
             <CheckCircledIcon className="h-6 w-6" />
             <span>7-day free trial</span>
           </div>
