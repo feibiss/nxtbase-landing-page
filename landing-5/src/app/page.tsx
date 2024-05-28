@@ -23,7 +23,7 @@ export default function Home() {
       <ContactCard />
       <FeatureCardsList2/>
       <Testimonials />
-      <SecondShowcase />
+      
       <Pricing />
       <FAQ />
     
