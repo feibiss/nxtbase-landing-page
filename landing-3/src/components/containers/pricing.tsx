@@ -46,9 +46,6 @@ const PricingCard = () => {
       <p className="text-white/50 mt-4 tracking-wider text-xs">
         High-converting landing page, Branding, Copy
       </p>
-      <Typography className="text-white mt-5 text-md">
-        Perfect for single, high-impact, conversion-focused landing page.
-      </Typography>
       <div className="w-full h-[0.01rem] mt-5 mb-5 bg-[#F8FAFC] opacity-50"></div>
       <ul className="text-gray-300 mt-4 space-y-1 text-sm">
         <li className="flex gap-2 text-base  p-0 py-1 hover:bg-transparent items-center  ">

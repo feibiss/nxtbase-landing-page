@@ -13,7 +13,7 @@ import { FAQ_QUESTIONS } from "@lib/enums";
 const FAQ = () => {
   return (
     <Container classNames="py-0">
-      <div className="col-span-12 lg:pt-[12rem] space-y-6 p-10  bg-gradient-to-t from-[#1a1a1a] to-transparent rounded-2xl ">
+      <div className="col-span-12 lg:pt-[12rem] space-y-6 p-10 bg-gradient-to-t from-[#1a1a1a] to-transparent rounded-2xl ">
         <Typography variant={"h2"} className="text-center w-full">
           Frequently asked questions
         </Typography>
@@ -37,7 +37,7 @@ export function FeaturesAccordion() {
     <div className="flex flex-col lg:flex-row items-start lg:space-x-20 lg:pt-10 space-y-10 lg:space-y-0 ">
       <Accordion
         type="multiple"
-        className="grid w-full divide-y divide-white/10"
+        className="grid w-2/3 divide-y divide-white/10 mx-auto"
       >
         {FAQ_QUESTIONS.map(({ question, answer }) => {
           return (
@@ -48,10 +48,7 @@ export function FeaturesAccordion() {
               <AccordionContent>
                 <div className="text-white/60 text-start leading-7 w-full text-lg">
                   <Typography className="text-white/60 text-start leading-7 w-full text-lg">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Animi repudiandae eaque quam sit, blanditiis iure fugiat rem
-                    totam a aliquid adipisci sint placeat eligendi delectus
-                    ducimus facere! Voluptas, necessitatibus culpa.
+                    {answer}
                   </Typography>
                 </div>
               </AccordionContent>

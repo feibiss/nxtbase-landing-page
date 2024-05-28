@@ -35,12 +35,7 @@ export default function Header() {
         href="#"
       >
         <span className="sr-only">Nextbase Template</span>
-        <Image
-          alt="brand-logo"
-          width={80}
-          height={64}
-          src="/trois_title.svg"
-        />
+        <Image alt="brand-logo" width={80} height={64} src="/trois_title.svg" />
       </Link>
       <NavigationMenu className="hidden md:flex text-center ml-auto justify-center">
         <NavigationMenuList>
@@ -59,9 +54,9 @@ export default function Header() {
         </NavigationMenuList>
       </NavigationMenu>
 
-      <div className=" ml-auto flex items-center justify-center">
-        <Button variant={"default"}>Get started for free</Button>
-      </div>
+      <Button variant={"default"} className="ml-auto">
+        Get started for free
+      </Button>
     </header>
   );
 }
