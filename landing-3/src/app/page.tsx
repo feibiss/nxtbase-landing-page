@@ -6,6 +6,7 @@ import ContactCard from "@/components/containers/contact";
 import FAQ from "@components/ui/faq";
 import Pricing from "@components/containers/pricing";
 import FeaturedTestimonial from "@components/containers/featuresTestimonial";
+import Features from "@components/containers/featuresCard";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Spacer type="md" />
       <Brands />
       <Spacer type="lg" />
+      <Features />
       <FeaturedTestimonial />
       <Pricing />
       <FAQ />
