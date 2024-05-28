@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
+import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 import Header from "@/components/containers/header";
 import Footer from "@/components/containers/footer";
 import { TailwindIndicator } from "@components/ui/tailwindIndicator";
-
-const manrope = Manrope({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Clubbed",
@@ -19,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={manrope.className}>
+      <body className={GeistSans.className}>
         <Header />
         {children}
         <Footer />

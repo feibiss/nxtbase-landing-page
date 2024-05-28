@@ -1,10 +1,10 @@
 import { Button } from "../ui/button";
-import { ArrowRightIcon, StarFilledIcon } from "@radix-ui/react-icons";
 import clsx from "clsx";
 import Link from "next/link";
 import { Typography } from "../ui/typography";
 import Container from "./container";
-import Image from "next/image";
+import { ArrowRightIcon, CheckCircledIcon } from "@radix-ui/react-icons";
+import { CubeIcon } from "@radix-ui/react-icons";
 
 export default function Hero() {
   const STARS: number[] = new Array(5).fill(1);
@@ -16,78 +16,44 @@ export default function Hero() {
           <Link
             href="#"
             className={clsx(
-              "group mx-auto flex max-w-fit items-center justify-center space-x-2 overflow-hidden px-7 py-2 transition-all"
+              "group mx-auto flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full bg-muted px-3 py-2"
             )}
           >
-            <p
-              className={clsx(
-                "text-sm font-base text-gray-400 [text-wrap:balance]"
-              )}
-            >
-              Latest update details hook here.
+            <CubeIcon />
+            <p className={clsx("text-sm font-semibold [text-wrap:balance]")}>
+              Latest update details hook here
             </p>
+            <ArrowRightIcon className="h-4 w-4" />
           </Link>
         </div>
         <Typography
           variant="h1"
-          className="lg:max-w-7xl text-balance xl:w-[1400px]"
+          className="w-3/4 lg:max-w-[50%] my-6 mx-auto text-balance"
         >
-          We build top
-          <span className="inline-block pl-2 pr-2">
-            <Image
-              alt="scribble"
-              loading="eager"
-              width="50"
-              height="300"
-              className="w-[30px] lg:w-[40px] xl:w-[50px]"
-              src="diamond-scribble.svg"
-            />
-          </span>{" "}
-          notch websites that<br></br> help your brand grow supafast{" "}
-          <span className="inline-block pl-2 pr-2">
-            <Image
-              alt="scribble"
-              loading="eager"
-              width="50"
-              height="300"
-              className="w-[16px] lg:w-[20px] xl:w-[30px]"
-              src="bolt-scribble-hero.svg"
-            />
-          </span>{" "}
+          A fancy looking hero text to catch your attention
         </Typography>
         <Typography
           variant="subheading"
-          className=" w-3/4 lg:max-w-[50%] my-6 mx-auto text-balance text-white/60"
+          className="w-3/4 lg:max-w-[50%] my-6 mx-auto text-balance text-white/60"
         >
           Great, now that we have your attention, we will actually talk about
           how we help you do the above. Mostly a brief description which
           explains our service to convince you to keep scrolling down.
         </Typography>
 
-        <Button variant={"default"}>
-          <div className="flex w-fit items-center justify-between gap-2">
-            <p className="">Get started for free</p>
-
-            <ArrowRightIcon className="h-4 w-4" />
+        <div className="flex gap-4 my-6">
+          <Button variant={"ghost"}>Learn more</Button>
+          <Button variant={"default"}>Get started for free</Button>
+        </div>
+        <div className="flex flex-col items-center justify-center gap-4 space-x-2 md:flex-row">
+          <div className="flex w-fit items-center justify-start gap-2 text[#020817]">
+            <CheckCircledIcon className="h-6 w-6" />
+            <span>7-day free trial</span>
           </div>
-        </Button>
-
-        <div className="group mt-2 flex flex-col items-center justify-center space-y-2">
-          <div className="mb-4 flex justify-start h-6 items-baseline gap-1 md:mb-0">
-            {" "}
-            {STARS.map((_, idx) => {
-              return (
-                <StarFilledIcon
-                  key={_ + idx}
-                  className=" size-5 text-white transition-all hover:text-gray-200 hover:size-6"
-                />
-              );
-            })}
+          <div className="flex w-fit items-center justify-start gap-2">
+            <CheckCircledIcon className="h-6 w-6" />
+            <span>No credit card required</span>
           </div>
-
-          <span className="ml-2 text-muted-foreground">
-            Loved by 570+ professionals
-          </span>
         </div>
       </div>
     </Container>

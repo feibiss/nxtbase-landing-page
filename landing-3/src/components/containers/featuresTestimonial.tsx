@@ -2,11 +2,22 @@ import React from "react";
 import Container from "./container";
 import Image from "next/image";
 import { featuredTestimonial } from "@lib/enums";
+import { Typography } from "@components/ui/typography";
 
 const FeaturedTestimonial = ({}) => {
   return (
     <Container>
       <div className="mx-auto col-span-12  pt-20 lg:pt-[12rem] flex flex-col items-center justify-center gap-8 text-sm leading-6 text-gray-900 dark:text-gray-300 xl:mx-0 xl:max-w-none">
+        <Typography className="text-center w-full" variant={"h2"}>
+          Loved by industry leaders
+        </Typography>
+        <Typography
+          variant="subheading"
+          className="w-3/4 lg:max-w-[50%] mx-auto text-balance text-white/60 text-center"
+        >
+          Great, now that we have your attention, we will actually talk about
+          how we help you
+        </Typography>
         <figure className="col-span-2 w-4/5 md:w-full max-w-6xl mx-auto rounded-2xl shadow-lg ring-1 ring-gray-900/5 space-y-10">
           <blockquote className="text-white/60 font-normal text-balance text-2xl lg:text-4xl xl:text-4xl leading-normal w-full text-center lg:leading-relaxed xl:leading-normal ">
             {`“${featuredTestimonial.body}”`}

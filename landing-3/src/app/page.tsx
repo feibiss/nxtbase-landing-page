@@ -2,15 +2,11 @@ import Brands from "@/components/containers/brands";
 import Hero from "@/components/containers/hero";
 import { Showcase } from "@/components/containers/showcase";
 import Spacer from "@/components/ui/spacer";
-import FeatureList from "@/components/containers/featurelist";
-import Testimonials from "@/components/containers/testimonials";
 import ContactCard from "@/components/containers/contact";
-import WalkThrough from "@components/containers/walkthrough";
-import ShowcaseFeatures from "@components/containers/showcaseFeatures";
-import Questions from "@components/ui/question";
 import FAQ from "@components/ui/faq";
 import Pricing from "@components/containers/pricing";
 import FeaturedTestimonial from "@components/containers/featuresTestimonial";
+import Features from "@components/containers/featuresCard";
 
 export default function Home() {
   return (
@@ -22,12 +18,9 @@ export default function Home() {
       <Spacer type="md" />
       <Brands />
       <Spacer type="lg" />
-      <WalkThrough />
+      <Features />
       <FeaturedTestimonial />
-      <ShowcaseFeatures />
       <Pricing />
-      <Questions />
-      <Testimonials />
       <FAQ />
       <ContactCard />
     </div>

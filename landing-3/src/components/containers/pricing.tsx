@@ -8,9 +8,16 @@ const Pricing = () => {
   return (
     <Container classNames="py-0">
       <div className="pt-20 lg:max-w-7xl xl:w-[1400px] mx-auto col-span-12 lg:pt-[15rem] space-y-6 ">
-        <Typography className="text-center w-full">PRICING</Typography>
-        <Typography className="text-center" variant={"h2"}>
-          Use our world-class dev talent to supafast your conversions
+        <Typography className="text-center w-full" variant={"h2"}>
+          Simple and transparent pricing
+        </Typography>
+        <Typography
+          variant="subheading"
+          className="w-3/4 lg:max-w-[50%] my-6 mx-auto text-balance text-white/60"
+        >
+          Great, now that we have your attention, we will actually talk about
+          how we help you do the above. Mostly a brief description which
+          explains our service to convince you to keep scrolling down.
         </Typography>
         <div className="mt-6 py-10 lg:max-w-7xl xl:w-[1400px] px-6 lg:px-8 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
           <PricingCard />
@@ -26,8 +33,8 @@ export default Pricing;
 
 const PricingCard = () => {
   return (
-    <div className="rounded-3xl p-8  xl:p-10 bg-[#181818]">
-      <Typography className="text-white text-lg font-medium tracking-tight leading-8">
+    <div className="rounded-3xl p-8 xl:p-10 bg-muted">
+      <Typography className="text-white text-lg font-medium tracking-tight leading-8 bg-background px-2 rounded-md">
         One-off
       </Typography>
       <Typography
@@ -39,10 +46,7 @@ const PricingCard = () => {
       <p className="text-white/50 mt-4 tracking-wider text-xs">
         High-converting landing page, Branding, Copy
       </p>
-      <Typography className="text-white mt-5 text-md">
-        Perfect for single, high-impact, conversion-focused landing page.
-      </Typography>
-      <div className="w-full h-[0.01rem] mt-5 mb-5 bg-white/10"></div>
+      <div className="w-full h-[0.01rem] mt-5 mb-5 bg-[#F8FAFC] opacity-50"></div>
       <ul className="text-gray-300 mt-4 space-y-1 text-sm">
         <li className="flex gap-2 text-base  p-0 py-1 hover:bg-transparent items-center  ">
           <CheckIcon className="text-white size-4 flex-none" />
@@ -69,7 +73,7 @@ const PricingCard = () => {
           Updates delivered every 24-72 hours
         </li>
       </ul>
-      <Button className="mt-4 w-full">Get started today</Button>
+      <Button className="mt-4 w-full">Get started</Button>
     </div>
   );
 };
