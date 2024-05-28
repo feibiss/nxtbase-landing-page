@@ -20,110 +20,35 @@ const FeatureShowcase = () => {
   return (
     <Container>
       <div className="max-w-7xl w-full mx-auto col-span-12 h-full flex flex-col py-20 items-center space-y-20">
-        <div className="w-full flex flex-col justify-start items-center text-center space-y-4">
-          <Typography variant={"h1"}>
+        <div className="w-full flex flex-col justify-start items-center text-center space-y-4 ">
+          <Typography variant={"h1"} className="text-primary md:text-4xl font-bold">
             Get an overview of what&apos;s inside
           </Typography>
-          <Typography>
+          <Typography className=" md:text-lg font-base">
             Leverage decades of web development experience to get a head start
             on your next project.
           </Typography>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 w-full h-full">
-          <GridChild type="lg">
-            <LargePlaceholder title="Authentication" icon={"LockClosedIcon"} />
-          </GridChild>
-          <GridChild type="md">
-            <MediumPlaceholder title="Social Security" icon="GitHubLogoIcon" />
-          </GridChild>
-          <GridChild type="sm">
-            <>
-              <GridChild type="xs">
-                <ExtraSmallPlaceholder>NextJS</ExtraSmallPlaceholder>
-              </GridChild>
-              <GridChild type="xs">
-                {" "}
-                <ExtraSmallPlaceholder>Typescript</ExtraSmallPlaceholder>
-              </GridChild>
-              <GridChild type="xs">
-                {" "}
-                <ExtraSmallPlaceholder>React Query</ExtraSmallPlaceholder>
-              </GridChild>
-            </>
-          </GridChild>
-          {/* 2nd Row */}
-          <GridChild type="md">
-            {" "}
-            <MediumPlaceholder title="Projects" icon="FolderIcon" />
-          </GridChild>
-          <GridChild type="sm">
-            <>
-              <GridChild type="xs">
-                <ExtraSmallPlaceholder>App Router</ExtraSmallPlaceholder>
-              </GridChild>
-              <GridChild type="xs">
-                {" "}
-                <ExtraSmallPlaceholder>RSC</ExtraSmallPlaceholder>
-              </GridChild>
-              <GridChild type="xs">
-                {" "}
-                <ExtraSmallPlaceholder>Layouts</ExtraSmallPlaceholder>
-              </GridChild>
-            </>
-          </GridChild>
-          <GridChild type="lg">
-            <LargePlaceholder title="Security" icon={"EyeOpenIcon"} />
-          </GridChild>
-          {/* 3rd Row */}
-          <GridChild>
+        <GridChild>
             <DefaultPlaceholder title="Subscription" icon="CalendarIcon" />
           </GridChild>
           <GridChild>
             <DefaultPlaceholder title="Lifetime updates" icon="LoopIcon" />
           </GridChild>
           <GridChild>
-            <DefaultPlaceholder title="Clear Docs" icon="ReaderIcon" />
-          </GridChild>
-          {/* 4th Row */}
-          <GridChild type="sm">
-            <>
-              <GridChild type="xs">
-                <ExtraSmallPlaceholder>MDX blogs</ExtraSmallPlaceholder>
-              </GridChild>
-              <GridChild type="xs">
-                {" "}
-                <ExtraSmallPlaceholder>Edge Functions</ExtraSmallPlaceholder>
-              </GridChild>
-              <GridChild type="xs">
-                {" "}
-                <ExtraSmallPlaceholder>Supabase</ExtraSmallPlaceholder>
-              </GridChild>
-            </>
-          </GridChild>
-          <GridChild type="md">
-            {" "}
-            <MediumPlaceholder title="Upload Media" icon="ImageIcon" />
+            <DefaultPlaceholder title="Lifetime updates" icon="LoopIcon" />
           </GridChild>
           <GridChild type="lg">
-            <LargePlaceholder title="Pre-built components" icon={"GearIcon"} />
+            <LargePlaceholder title="Authentication" icon={"LockClosedIcon"} />
           </GridChild>
-          {/* 5th Row */}
-          <GridChild type="xl">
-            <ExtralargePlaceholder />
+          <GridChild type="lg">
+            <LargePlaceholder title="Authentication" icon={"LockClosedIcon"} />
           </GridChild>
-          <GridChild type="md">
-            {" "}
-            <MediumPlaceholder title="Storage" icon="CardStackIcon" />
-          </GridChild>
+         
         </div>
 
-        <div className="w-full flex flex-col justify-start items-center text-center space-y-4">
-          <Typography>
-            And hundreds more features. We did the hard work so you don&apos;t
-            have to.
-          </Typography>
-          <Button variant={"outline"}>See how it works</Button>
-        </div>
+        
       </div>
     </Container>
   );
@@ -139,18 +64,18 @@ const GridChild = ({
   return (
     <div
       className={cn(
-        "h-full w-full rounded-md col-span-1 text-5xl font-semibold drop-shadow shadow-sm",
+        "h-full w-full rounded-md col-span-1 text-5xl font-semibold drop-shadow shadow-sm bg-white p-8",
         type === "xl" &&
           "h-[20rem]  from-primary-100/10 dark:from-primary-900/10 dark:via-secondary-900/10 via-secondary-100/10 to-white dark:to-neutral-900 bg-gradient-to-t lg:col-span-9",
         type === "lg" &&
           "h-[20rem] bg-fuchsia-50  lg:col-span-6 text-fuchsia-100 dark:text-fuchsia-700",
         type === "md" &&
-          "h-[20rem] bg-gradient-to-t from-neutral-50 dark:from-neutral-950 to-white dark:to-neutral-800 lg:col-span-3 text-neutral-100 dark:text-neutral-700",
-        type === "sm" && "h-[20rem] lg:col-span-3 grid grid-rows-3 gap-8",
+          "h-[20rem] bg-gradient-to-t from-neutral-50 dark:from-neutral-950 to-white dark:to-neutral-800 lg:col-span-3 text-neutral-100 dark:text-neutral-700 ",
+        type === "sm" && "h-[20rem] lg:col-span-3 grid grid-rows-3 gap-8 ",
         type === "xs" &&
-          "bg-gradient-to-t from-secondary-300/20 dark:from-secondary-500/20 dark:to-secondary-300/10 to-secondary-100/10 shadow-sm row-span-1 text-4xl font-semibold",
+          "bg-gradient-to-t from-secondary-300/20 dark:from-secondary-500/20 dark:to-secondary-300/10 to-secondary-100/10 shadow-sm row-span-1 text-4xl font-semibold ",
         type === "default" &&
-          "h-[20rem] bg-gradient-to-t from-neutral-900 to-neutral-700 lg:col-span-4 text-neutral-900"
+          "h-[20rem] bg-gradient-to-t bg-white p-8 to-neutral-700 lg:col-span-4 text-neutral-900"
       )}
     >
       {children}
@@ -235,18 +160,10 @@ const DefaultPlaceholder = ({
   icon: "CalendarIcon" | "LoopIcon" | "ReaderIcon";
 }) => {
   return (
+    <div>
     <div className="w-full group transition-all h-full flex flex-col justify-center p-6 items-center relative overflow-hidden">
       <div className="inset-0 absolute bottom-0 transition-all duration-500 bg-gradient-to-t from-neutral-300/40 to-transparent"></div>
-      <Typography
-        variant={"h2"}
-        className="w-full text-start bg-gradient-to-t  transition-all duration-500 translate-y-0 from-neutral-100/30 to-white bg-clip-text text-transparent"
-      >
-        {title}
-      </Typography>
-      <Typography className="w-full text-pretty translate-y-0 transition-all duration-500 text-neutral-50/80">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
-        accusamus magnam dolores qui minus nobis iste totam impedit rem unde.
-      </Typography>
+     
       {icon === "CalendarIcon" && (
         <CalendarIcon className="transition-all duration-500 size-64 font-bold -z-10 absolute top-40 group-hover:top-10 fill-inherit" />
       )}
@@ -256,6 +173,19 @@ const DefaultPlaceholder = ({
       {icon === "ReaderIcon" && (
         <ReaderIcon className="transition-all duration-500 size-64 font-bold -z-10 absolute top-40 group-hover:top-10 fill-inherit" />
       )}
+    </div>
+    <div className="mt-5">
+    <Typography
+        variant={"p"}
+        className="w-full text-start  from-neutral-100/30 to-white bg-clip-text"
+      >
+        {title}
+      </Typography>
+      <Typography className="w-full text-pretty  text-neutral-900">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere 
+      </Typography>
+    </div>
+
     </div>
   );
 };

@@ -9,7 +9,7 @@ type FeatureType = {
   navigateTo: string;
   imgSrc: string;
 };
-export default function FeatureCard({
+export default function FeatureCard2({
   feature,
   id,
 }: {
@@ -22,7 +22,7 @@ export default function FeatureCard({
         <div
           className={"col-span-1 flex flex-col mx-auto items-center gap-8 lg:flex-row"}
         >
-          <div className="order-0 w-full md:w-2/4 col-span-2 flex h-full items-center justify-center">
+          <div className="order-2 w-full md:w-2/4 col-span-2 flex h-full items-center justify-center">
             <video
               autoPlay
               loop
@@ -32,7 +32,7 @@ export default function FeatureCard({
               preload=""
             ></video>
           </div>
-          <div className="order-2 md:w-2/4 w-full flex flex-col justify-center items-start space-y-4">
+          <div className="order-0 md:w-2/4 w-full flex flex-col justify-center items-start space-y-4">
             <div className="text-sm flex  ">
               <Typography variant={"p"} className="text-sm  font-semibold">
               {feature.title} {id}

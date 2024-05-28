@@ -3,6 +3,7 @@ import CallToAction from "@/components/containers/callToAction";
 import ContactCard from "@/components/containers/contact";
 import FAQ from "@/components/containers/faq";
 import FeatureCardsList from "@/components/containers/featureCardsList";
+import FeatureCardsList2 from "@/components/containers/featureCardsList2";
 import FeatureShowcase from "@/components/containers/featureShowcase";
 import Hero from "@/components/containers/hero";
 import Pricing from "@/components/containers/pricing";
@@ -18,12 +19,14 @@ export default function Home() {
       <CompanyShowcase/>
       <Showcase />
       <FeatureShowcase />
+      <FeatureCardsList/>
       <ContactCard />
+      <FeatureCardsList2/>
       <Testimonials />
       <SecondShowcase />
       <Pricing />
       <FAQ />
-      <CallToAction />
+    
     </main>
   );
 }
