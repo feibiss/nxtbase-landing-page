@@ -9,7 +9,7 @@ import Marquee from "../ui/marquee";
 export default function CompanyShowcase() {
   return (
     <Container classNames="relative">
-      <div className="col-span-12 row-span-1 pt-5- pb-5 md:pt-56 md:pb-40 flex flex-col justify-start items-start space-y-16 ">
+      <div className="col-span-12 row-span-1 pt-5 pb-2 md:pt-56 md:pb-10 flex flex-col justify-start items-start space-y-16 ">
         <div className="flex flex-col items-start justify-start max-w-[100vw] space-y-8 overflow-hidden">
           <Marquee numberOfCopies={companyShowcase.length - 1} pauseOnHover fade className="py-2">
             {companyShowcase.map((companyItem, index) => (
