@@ -8,8 +8,8 @@
     --primary-lighter: 240 171 252;
     --primary-light-hex: #e879f9;
     --primary-light: 232 121 249;
-    --primary-main-hex: #d946ef;
-    --primary-main: 217 70 239;
+    --primary-main-hex: #701a75;
+    --primary-main: 112 26 117;
     --primary: 217 70 239;
     --primary-dark-hex: #c026d3;
     --primary-dark: 192 38 211;
@@ -101,12 +101,4 @@
         var(--primary-light-hex) var(--fancy-y) var(--fancy-y),
         var(--secondary-light-hex) var(--fancy-x) var(--fancy-x));
   }
-}
-
-.btn-brand-primary {
-  background-color: var(--primary-darker-hex);
-}
-
-.text-brand-primary {
-  color: var(--primary-darker-hex);
 }

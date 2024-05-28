@@ -12,7 +12,7 @@ export default function Hero() {
     <Container classNames="" size="full">
       <div className=" max-w-4xl  col-span-12 flex h-full snap-start flex-col items-start justify-start space-y-8 py-4 text-center md:mt-[var(--navbar-height)] pt-20">
         <div className="flex flex-col items-start justify-start text-start space-y-2">
-          <Typography variant="h1" className="font-bold text-brand-primary">
+          <Typography variant="h1" className="font-bold text-primary">
             A fancy looking hero text to catch your attention{" "}
           </Typography>
           <Typography
@@ -24,7 +24,7 @@ export default function Hero() {
         </div>
         <div className="w-full flex lg:flex-row flex-col  justify-between items-start gap-8 lg:items-center">
           <div className="relative group">
-            <Button className="mt-0 scroll-m-0 relative btn-brand-primary">
+            <Button className="mt-0 scroll-m-0 relative bg-primary">
             Get started for free
             </Button>
            

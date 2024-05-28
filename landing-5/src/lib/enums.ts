@@ -405,3 +405,37 @@ export const FAQ_QUESTIONS = [
     answer: "",
   },
 ];
+
+export const companyShowcase = [
+  {
+    company: {
+      name: "Company A",
+      logo: "/vercel.svg"
+    }
+  },
+  {
+    company: {
+      name: "Company B",
+      logo: "/penta_logo.svg"
+    }
+  },
+  {
+    company: {
+      name: "Company C",
+      logo: "/prisma.svg"
+    }
+  },
+  {
+    company: {
+      name: "Company D",
+      logo: "/tailwindcss.svg"
+    }
+  },
+  {
+    company: {
+      name: "Company E",
+      logo: "/perplexity.svg"
+    }
+  },
+  // Add more companies as needed
+];

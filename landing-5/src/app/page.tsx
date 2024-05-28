@@ -10,11 +10,12 @@ import Promotion from "@/components/containers/promotion";
 import Showcase from "@/components/containers/showcase";
 import SecondShowcase from "@/components/containers/showcasev2";
 import Testimonials from "@/components/containers/testimonials";
-
+import CompanyShowcase from "@/components/containers/companyShowcase";
 export default function Home() {
   return (
     <main>
       <Hero />
+      <CompanyShowcase/>
       <Showcase />
       <FeatureShowcase />
       <ContactCard />

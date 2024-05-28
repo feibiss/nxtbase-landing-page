@@ -45,12 +45,12 @@ export default function Header() {
           </NavigationMenuLink>
         </NavigationMenuList>
       </NavigationMenu>
-      <div className="ml-auto flex items-center justify-end">
+      <div className="ml-auto flex items-center justify-end mt-3">
         <Button
           // variant={"default"}
           size={"sm"}
           rounded={"full"}
-          className="hidden px-4 py-1 md:block  btn-brand-primary text-sm font-medium leading-5"
+          className="hidden px-4 py-1 md:block  bg-primary text-sm font-medium leading-5"
         >
           Get started for free
         </Button>
