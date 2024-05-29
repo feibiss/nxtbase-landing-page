@@ -1,55 +1,82 @@
+"use client";
+
 import { Button } from "../ui/button";
-import { ArrowRightIcon } from "@radix-ui/react-icons";
+import { ArrowRightIcon, CheckCircledIcon } from "@radix-ui/react-icons";
 import { Typography } from "../ui/typography";
 import Container from "./container";
-import Brands from "./brands";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import * as Separator from '@radix-ui/react-separator';
+import Banner from "./banner";
 
 export default function Hero() {
-  const STARS: number[] = new Array(5).fill(1);
+  const avatars = [
+    { src: "https://github.com/shadcn.png", fallback: "CN" },
+    { src: "https://github.com/shadcn.png", fallback: "CN" },
+    { src: "https://github.com/shadcn.png", fallback: "CN" },
+    { src: "https://github.com/shadcn.png", fallback: "CN" },
+    { src: "https://github.com/shadcn.png", fallback: "CN" },
+  ];
+
   return (
-    <Container className="min-h-[100dvh] bg-gray-100 relative">
-      <video
-        autoPlay
-        className="absolute inset-0 mix-blend-darken bg-blend-darken h-full w-full object-cover z-10"
-        controls={false}
-        muted
-        loop
-        preload=""
-        src="https://res.cloudinary.com/dkqrmlxlg/video/upload/v1709148172/Free_4K_Stock_Videos_Full_HD_Video_Clips_to_Download_dj2tjh.mp4"
-      />
-      <div className="absolute inset-0 bg-blend-darken bg-gradient-to-t z-20 from-emerald-900/50 dark:from-emerald-500/60 via-black/50 to-transparent"></div>
-      <div className="col-span-12 relative text-white z-40 lg:max-w-5xl mx-auto w-full row-auto flex h-full snap-start flex-col items-start justify-center  lg:justify-center gap-1 md:px-6 lg:px-0 text-center">
-        <div className="h-12 absolute top-0 z-30 w-full flex items-end justify-center">
-          <p className="font-semibold text-xl">Decadant.</p>
+    <Container className="bg-primary bg-[url('/assets/hero.jpeg')] bg-cover bg-center">
+      <div className="flex snap-start flex-col items-start md:justify-start space-y-8 py-4 md:pt-20 md:mt-[var(--navbar-height)] md:min-h-[42rem] md:space-y-10 min-h-[26rem]">
+        
+        {/* Avatars and Separator */}
+        <div className="mt-4 flex flex-col md:flex-row items-center justify-start md:justify-start w-full px-4 md:px-24 space-y-2 md:space-y-0">
+          <div className="flex -space-x-2">
+            {avatars.map((avatar, index) => (
+              <Avatar key={index} className="border-2 border-white">
+                <AvatarImage src={avatar.src} />
+                <AvatarFallback>{avatar.fallback}</AvatarFallback>
+              </Avatar>
+            ))}
+          </div>
+          
+          <Separator.Root
+            className="h-6 w-px bg-white/60 dark:bg-white/60 mx-2 md:mx-4 hidden md:block"
+            decorative
+            orientation="vertical"
+          />
+          
+          <p className="text-primary-foreground/60 text-center md:text-start dark:text-primary-foreground/60 leading-7 text-[14px] md:text-lg font-medium">
+            Loved by 570+ Professionals
+          </p>
         </div>
-        <div className="flex flex-col items-start justify-start">
+        
+        {/* Hero Text */}
+        <div className="flex flex-col items-start space-y-2 md:space-y-6 text-left px-4 md:px-24">
           <Typography
-            variant="h1"
-            className="pt-32 text-inherit w-1/2 md:w-full text-start lg:mx-auto lg:max-w-5xl"
+            variant="h2"
+            className="text-left text-3xl leading-tight md:leading-10 line-clamp-2 font-medium text-primary-foreground"
           >
-            <span className="text-primary">Own</span> the change
+            A fancy looking hero text to<br /> catch your attention
           </Typography>
           <Typography
-            variant="subheading"
-            className=" w-3/4 text-white/80 lg:max-w-[50%] text-start my-6"
+            variant="p"
+            className="max-w-full md:max-w-lg text-lg font-thin text-left leading-6 text-primary-foreground md:font-normal md:text-lg"
           >
-            We design, build, and scale all things digital for startups,
-            scale-ups, and enterprises
+            Great, now that we have your attention, we will actually talk about how we help you
           </Typography>
+        </div>
 
-          <Button variant={"default"}>
-            <div className="flex w-fit items-center justify-between gap-2">
-              <p className="">Get started for free</p>
-
-              <ArrowRightIcon className="h-4 w-4" />
-            </div>
+        {/* Buttons */}
+        <div className="flex flex-col md:flex-row items-center justify-start gap-4 w-full px-4 md:px-24">
+          <Button className="w-full md:w-auto">Learn more</Button>
+          <Button size={"lg"} variant={"outline"} className="w-full md:w-auto">
+            Get Started for free
+            <ArrowRightIcon className="h-4 w-4 ml-2" />
           </Button>
-
-          <div className="group mt-4 flex flex-col items-start justify-center gap-6">
-            <span className="text-white/60 text-start w-full dark:text-white/60">
-              Trusted By
-            </span>
-            <Brands />
+        </div>
+        
+       {/* Features */}
+        <div className="flex flex-row gap-4 w-full px-4 md:px-24 md:pt-4">
+          <div className="flex flex-row items-center gap-2 w-full md:w-auto">
+            <CheckCircledIcon className="text-primary-foreground"/>
+            <Typography variant="p" className="text-primary-foreground text-sm md:text-base">7-day free trial</Typography>
+          </div>
+          <div className="flex flex-row items-center gap-2 w-full md:w-auto">
+            <CheckCircledIcon className="text-primary-foreground"/>
+            <Typography variant="p" className="text-primary-foreground text-sm md:text-base">No Credit card required</Typography>
           </div>
         </div>
       </div>

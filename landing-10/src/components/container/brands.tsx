@@ -65,15 +65,15 @@ const Brands = () => {
     },
   ];
   return (
-    <div className="flex items-center md:h-fit justify-start w-full">
+    <div className="flex items-center justify-center space-x-4 md:space-x-8 w-full md:h-[186px]">
       {BRANDS.slice(0, 4).map(({ id, src, alt }) => {
         return (
           <Image
             key={id}
             src={src}
-            className="h-12 md:h-20 blur-0 grayscale text-transparent invert transition-all hover:grayscale-0 col-span-1"
-            width={100}
-            height={182}
+            className="h-12 md:h-20 blur-0 transition-all hover:scale-110 col-span-1"
+            width={180}
+            height={180}
             alt={alt}
           />
         );

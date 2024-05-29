@@ -83,7 +83,7 @@ export const AVATARS = [
 
 export const SHOWCASE_FEATURES = [
   {
-    title: "Feature-One",
+    title: "Feature",
     subtitle: "User Authentication",
     navigateTo: "#",
     desc: "Nextbase supports a wide range of authentication providers such as Google, GitHub, Twitter, Facebook, Apple, Discord and many more. ",
@@ -96,7 +96,7 @@ export const SHOWCASE_FEATURES = [
       "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702921481/usenextbase/tinywow_signup_43386486_t9iuny.webm",
   },
   {
-    title: "Feature-Two",
+    title: "Feature",
     subtitle: "Admin Panel",
     navigateTo: "#",
     desc: "Nextbase comes with a built-in admin panel that allows you to have a secret area within your app .",
@@ -108,7 +108,7 @@ export const SHOWCASE_FEATURES = [
       "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702915076/usenextbase/tinywow_admin-panel-gif_43379830_tltcqi.webm",
   },
   {
-    title: "Feature-Three",
+    title: "Feature",
     subtitle: "User Impersonation",
     navigateTo: "#",
     features: [
@@ -121,7 +121,7 @@ export const SHOWCASE_FEATURES = [
       "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702921499/usenextbase/tinywow_user-imp_43386586_xpo6pr.webm",
   },
   {
-    title: "Feature-Four",
+    title: "Feature",
     subtitle: "Incredible performance",
     navigateTo: "#",
     features: [
