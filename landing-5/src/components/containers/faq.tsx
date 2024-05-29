@@ -13,8 +13,8 @@ import { Typography } from "../ui/typography";
 
 const FAQ = () => {
   return (
-    <Container classNames="py-0 bg-primary-100/20 dark:bg-primary-900/30 min-h-[75vh] md:min-h-[100vh] lg:min-h-[85vh] lg:h-fit pt-20 items-start">
-      <div className="col-span-12 max-w-7xl w-full mx-auto flex justify-center items-center flex-col space-y-6 p-10 ">
+    <Container classNames="py-0  min-h-[75vh] md:min-h-[100vh] lg:min-h-[85vh] lg:h-fit md:pt-20 items-start">
+      <div className="col-span-12 max-w-7xl w-full mx-auto flex justify-center items-center flex-col space-y-6 md:p-10 ">
         <Typography variant={"h2"} className="font-bold  md:text-[40px] md:leading-[48px] ">Frequently asked questions.</Typography>
         <FeaturesAccordion />
       </div>
@@ -34,7 +34,7 @@ export function FeaturesAccordion() {
               defaultChecked={true}
               key={question}
               value={question}
-              className="bg-white my-4 rounded-lg"
+              className="bg-white my-3 md:my-4 rounded-lg"
             >
               <AccordionTrigger
                 value={question}

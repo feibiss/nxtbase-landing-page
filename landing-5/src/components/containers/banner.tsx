@@ -34,7 +34,7 @@ const Banner = () => {
   const rotateX = useTransform(scrollYProgress, [0, 0.5, 1], [15, 10, 0]);
 
   return (
-    <Container>
+    <Container classNames="">
       <div ref={targetRef} className="block h-[50dvh] w-full md:h-[75vh]">
         <motion.div
           style={{

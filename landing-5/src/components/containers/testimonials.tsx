@@ -8,18 +8,18 @@ import Marquee from "../ui/marquee";
 
 export default function Testimonials() {
   return (
-    <Container classNames="py-10 relative">
+    <Container classNames="py-4 md:py-8 relative">
       <div className="col-span-12 row-span-1 min-h-[32rem] flex flex-col justify-start items-start space-y-16 pt-20 pb-10">
-        <div className="flex w-full flex-col justify-start items-center space-y-4">
+        <div className="flex w-full flex-col justify-start items-center  space-y-4">
         <Typography variant="h1" className="font-bold text-primary md:text-[40px] md:leading-[48px] ">
         Loved by industry leaders
             </Typography>
-            <Typography className=" text-lg font-normal text-pretty text-secondary-foreground">
+            <Typography className=" text-lg font-normal hidden md:block text-pretty text-secondary-foreground">
             Great, now that we have your attention, we will actually talk about how we help you
             </Typography>
         
         </div>
-        <div className="flex flex-col items-start justify-start max-w-[100vw] space-y-8 absolute bottom-20 inset-x-0 overflow-hidden">
+        <div className="flex flex-col  items-start justify-start max-w-[100vw] space-y-8 absolute bottom-20 inset-x-0 overflow-hidden">
           <Marquee numberOfCopies={testimonials.flat().length - 1} pauseOnHover fade className="py-2">
             {testimonials.flat().map((testimony, testimonyIdx) => (
               <TestimonialCard

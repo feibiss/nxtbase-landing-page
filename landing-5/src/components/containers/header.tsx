@@ -69,7 +69,7 @@ export default function Header() {
         </Button>
       </div>
       {openMobileNav && (
-        <div className="absolute md:hidden bottom-0 left-0 top-20 z-10 h-fit w-full bg-primary-foreground pb-4 shadow-md ">
+        <div className="absolute md:hidden bottom-0 left-0 top-20 z-10 h-fit w-full bg-white pb-4 shadow-md ">
           <div className="flex w-full flex-col items-start justify-start pl-4">
             <MobileNavMenuItem href="#" content="Home" />
             <MobileNavMenuItem href="#" content="Pricing" />

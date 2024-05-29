@@ -10,7 +10,7 @@ export default function Hero() {
   const STARS: number[] = new Array(5).fill(1);
   return (
     <Container classNames="" size="full">
-      <div className=" max-w-4xl  col-span-12 flex h-full snap-start flex-col items-start justify-start space-y-8 py-4 text-center md:mt-[var(--navbar-height)] pt-20">
+      <div className=" max-w-4xl  col-span-12 flex h-full snap-start flex-col items-start justify-start space-y-8 py-4 text-center md:mt-[var(--navbar-height)] pt-10 md:pt-20">
         <div className="flex flex-col items-start justify-start text-start space-y-2">
           <Typography variant="h1" className="font-bold text-primary">
             A fancy looking hero text to catch your attention{" "}
@@ -29,8 +29,8 @@ export default function Hero() {
             </Button>
            
           </div>
-          <div className="w-full h-fit md:flex space-x-4 lg:items-center items-start gap-2 justify-basline md:ml-5">
-            <div className="flex justify-center -space-x-2 ">
+          <div className="w-full h-fit md:flex md:space-x-4 lg:items-center items-start gap-2 justify-basline md:ml-5">
+            <div className="flex justify-start -space-x-2 ">
               {AVATARS.map(({ src, id }) => {
                 return (
                   <Avatar key={id} className="border-4 border-primary-100/50">
@@ -40,7 +40,7 @@ export default function Hero() {
                 );
               })}
             </div>
-            <div className="group flex flex-col items-center md:items-start justify-start">
+            <div className="group flex flex-col items-start md:items-start justify-start">
               <span className="text-primary-foreground text-base">
                 Loved by 570+ professionals
               </span>

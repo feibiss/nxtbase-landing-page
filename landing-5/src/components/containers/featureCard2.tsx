@@ -17,7 +17,7 @@ export default function FeatureCard2({
   id: number;
 }) {
   return (
-    <div className=" group relative h-[75vh] md:h-[85vh] lg:h-[100vh] row-span-1 mx-auto w-full rounded-md bg-inherit flex justify-center items-center">
+    <div className=" group relative mt-8 md:mt-0 md:h-[85vh]  row-span-1 mx-auto w-full rounded-md bg-inherit flex justify-center items-center">
       <div className="relative lg:h-3/4 h-full max-h-none  z-10 w-full border-none bg-transparent  ">
         <div
           className={"col-span-1 flex flex-col mx-auto items-center gap-8 lg:flex-row"}

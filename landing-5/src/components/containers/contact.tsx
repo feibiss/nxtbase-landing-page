@@ -8,8 +8,8 @@ import { Button } from "../ui/button";
 
 export default function ContactCard() {
   return (
-    <Container classNames="py-14 bg-primary">
-      <div className="col-span-12 w-full max-w-7xl mx-auto h-full px-5 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 ">
+    <Container classNames="md:my-10 py-20 bg-primary">
+      <div className="col-span-12 w-full max-w-7xl mx-auto h-full px-5 grid grid-cols-1 lg:grid-cols-12  lg:gap-12 ">
         <div className="flex col-span-11 md:col-span-8 flex-col justify-center items-start text-start">
         <div className="flex flex-col items-start justify-start text-start space-y-2">
           <Typography variant="h1" className="font-bold text-fuchsia-50 md:text-[40px] md:leading-[48px] ">
@@ -27,7 +27,7 @@ export default function ContactCard() {
             <Button className="mt-0 scroll-m-0 relative bg-fuchsia-50 text-primary font-medium">
             Get started for free
             </Button>
-            <Button className="md:ms-5 mt-0 scroll-m-0 relative bg-transparent font-medium border border-fushia-50 text-fuchsia-50">
+            <Button className="my-3 md:my-0 px-16  md:ms-5  scroll-m-0 relative bg-transparent font-medium border border-fushia-50 text-fuchsia-50">
             Watch Video
             </Button>
            
