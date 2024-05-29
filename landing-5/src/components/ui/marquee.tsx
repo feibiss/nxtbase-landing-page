@@ -29,22 +29,22 @@ const Marquee = ({
         className
       )}
       style={{
-        maskImage: fade
-          ? `linear-gradient(${
-              direction === "left" ? "to right" : "to bottom"
-            }, transparent 0%, rgba(0,0,0,1.0) 90%, rgba(0,0,0,1.0) 10%, transparent 0%), linear-gradient(${
-              direction === "left" ? "to left" : "to top"
-            }, transparent 0%, rgba(0,0,0,1.0) 90%, rgba(0,0,0,1.0) 10%, transparent 0%)`
-          : "",
-        WebkitMaskImage: fade
-          ? `linear-gradient(${
-              direction === "left" ? "to right" : "to bottom"
-            }, transparent 0%, rgba(0,0,0,1.0) 10%, rgba(0,0,0,1.0) 90%, transparent 100%) ,
-            linear-gradient(${
-              direction === "left" ? "to left" : "to top"
-            }, transparent 0%, rgba(0,0,0,1.0) 10%, rgba(0,0,0,1.0) 90%, transparent 100%)
-            `
-          : "",
+        // maskImage: fade
+        //   ? `linear-gradient(${
+        //       direction === "left" ? "to right" : "to bottom"
+        //     }, transparent 0%, rgba(0,0,0,1.0) 90%, rgba(0,0,0,1.0) 10%, transparent 0%), linear-gradient(${
+        //       direction === "left" ? "to left" : "to top"
+        //     }, transparent 0%, rgba(0,0,0,1.0) 90%, rgba(0,0,0,1.0) 10%, transparent 0%)`
+        //   : "",
+        // WebkitMaskImage: fade
+        //   ? `linear-gradient(${
+        //       direction === "left" ? "to right" : "to bottom"
+        //     }, transparent 0%, rgba(0,0,0,1.0) 10%, rgba(0,0,0,1.0) 90%, transparent 100%) ,
+        //     linear-gradient(${
+        //       direction === "left" ? "to left" : "to top"
+        //     }, transparent 0%, rgba(0,0,0,1.0) 10%, rgba(0,0,0,1.0) 90%, transparent 100%)
+        //     `
+        //   : "",
       }}
       {...rest}
     >

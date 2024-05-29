@@ -1,84 +1,119 @@
 import React from "react";
-import Container from "@ui/container";
-import { Typography } from "@ui/typography";
-import { CheckCircledIcon, CheckIcon } from "@radix-ui/react-icons";
-import { Button } from "@ui/button";
+import { Typography } from "../ui/typography";
+import { CheckIcon } from "@radix-ui/react-icons";
+import { Button } from "../ui/button";
 
-const Pricing = () => {
+interface PricingCardProps {
+  title: string;
+  price: string;
+  features: string[];
+  dark?: boolean;
+  popular?: boolean;
+}
+
+const PricingCard: React.FC<PricingCardProps> = ({
+  title,
+  price,
+  features,
+  dark,
+  popular,
+}) => {
   return (
-    <Container classNames="py-0 bg-fuchsia-100 dark:bg-primary-900/30">
-      <div className="lg:max-w-7xl xl:w-[1400px] mx-auto col-span-12 py-20  space-y-6 flex flex-col">
-        <Typography className="text-center w-full mx-auto" variant={"h1"}>
-          PRICING
-        </Typography>
-        <Typography className="text-center w-full">
-          Use our world-class dev talent to supafast your conversions
-        </Typography>
-        <div className="mt-6 py-10 lg:max-w-5xl xl:w-[1400px] px-6 lg:px-8 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
-          <PricingCard />
-          <PricingCard />
-          <PricingCard />
+    <div
+      className={`relative rounded-lg p-6 max-w-3/4 mx-auto h-full shadow-lg my-5 md:my-0  ${dark ? "bg-gray-900 text-white" : "bg-white text-black"}`}
+    >
+      {popular && (
+        <div
+          className={` ${dark ? "text-black" : "text-white"} absolute top-2 right-2 px-3 py-1 mt-2 mr-2 bg-white text-sm font-semibold rounded`}
+        >
+          Most popular
         </div>
-      </div>
-    </Container>
-  );
-};
-
-export default Pricing;
-
-const CUSTOM_RULES = [
-  "Branding",
-  "Boilerplate builder app",
-  "Deploy to Verel with 1 click",
-  "Blog with MDX & SEO",
-  "2x revisions",
-  "Landing pagge components",
-  "Next 14 & Typescript",
-  "Updates delivered every 24-72 hours",
-  "Unlimited stock images",
-  "AI content generation",
-  "Customize iwth 30+ themes",
-  "UI & icon library",
-  "Pricing, terms & Privacy pages",
-  "Automatic favicon, meta tags & sitemap",
-];
-
-const PricingCard = () => {
-  return (
-    <div className="relative group first:bg-gradient-to-tr first:to-white dark:to-gray-800 dark:first:to-gray-950/20 first:via-primary-100/40 dark:first:via-gray-800/40 first:from-primary-700/10 dark:first:from-gray-900/10 first:bg-white bg-gray-900 dark:bg-gray-50 first:dark:bg-gray-900/10  mx-auto space-y-4 max-w-xs ring-1 ring-primary-700/50 dark:ring-primary-100/50 rounded-3xl p-8 xl:p-10">
-      <Typography className="group-first:text-black dark:group-first:text-gray-100 dark:text-gray-800 z-10 text-lg font-medium tracking-tight leading-8">
-        One-off
+      )}
+      <Typography
+        variant={"h5"}
+        className={`mt-4 ${dark ? "text-white" : "text-black"} `}
+      >
+        {title}
       </Typography>
-      <p className="group-first:text-black/50 dark:group-first:text-white/50 text-gray-50 dark:text-gray-900 tracking-wider text-xs">
-        Generate unlimited custom boilerplates for 1 month. All generated code
-        is yours forever.
-      </p>
       <Typography
         variant={"h3"}
-        className="text-4xl font-extrabold group-first:text-black dark:group-first:text-white text-gray-100 dark:text-gray-800 tracking-tight"
+        className={`mt-4 ${dark ? "text-white" : "text-black"} `}
       >
-        $699
+        {price}
       </Typography>
+      <Typography
+        variant={"p"}
+        className={`mt-2 ${dark ? "text-white" : "text-black"}`}
+      >
+        Suitable for solo-preneurs, and freelancers
+      </Typography>
+      <hr className="my-4 border-gray-300" />
+      <ul className="mt-6 space-y-2">
+        {features.map((feature: any, index: number) => (
+          <li key={index} className="flex items-center">
+            <CheckIcon className="w-6 h-6 mr-2 text-inherit size-4 flex-none" />
+            {feature}
+          </li>
+        ))}
+      </ul>
       <Button
-        className="w-full bg-primary-500 outline-primary-500 dark:outline-primary-100/20 dark:bg-primary-700"
+        className={`w-full mt-8 ${dark ? "bg-blue-50 text-white" : "bg-black text-white"} ${popular ? "bg-white text-black" : ""}`}
         variant={"secondary"}
         size="sm"
       >
         Get started today
       </Button>
-
-      <div className="w-full h-[0.01rem] mt-5 mb-5 bg-white/10"></div>
-      <ul className="group-first:text-gray-700 dark:group-first:text-gray-100 dark:text-gray-700 text-gray-300 mt-4 space-y-1 text-sm">
-        {CUSTOM_RULES.map((feature) => (
-          <li
-            key={feature}
-            className="flex gap-2 text-base  p-0 py-1 hover:bg-transparent items-center  "
-          >
-            <CheckCircledIcon className="text-inherit size-4 flex-none" />
-            {feature}
-          </li>
-        ))}
-      </ul>
     </div>
   );
 };
+
+const Pricing = () => {
+  const features = [
+    "No credit card required",
+    "No credit card required",
+    "No credit card required",
+    "No credit card required",
+    "No credit card required",
+  ];
+
+  return (
+    <>
+        <div className="flex w-full flex-col justify-start items-center space-y-4 pb-4">
+        <Typography variant="h1" className="font-bold  md:text-[40px] md:leading-[48px] ">
+        Simple and transparent pricing
+            </Typography>
+            <Typography className=" text-lg font-normal text-pretty text-secondary-foreground px-5 md:px-0">
+            Great, now that we have your attention, we will actually talk about how we help you
+            </Typography>
+        
+        </div>
+  
+
+      <div className="md:flex flex-row  p-6 bg-blue-50">
+        <PricingCard
+          title="Freelancer"
+          price="$799"
+          features={features}
+          dark={false}
+        
+          
+        />
+        <PricingCard
+          title="Startup"
+          price="$899"
+          features={features}
+          dark={true}
+          popular={true}
+        />
+        <PricingCard
+          title="Enterprise"
+          price="$1099"
+          features={features}
+          dark={false}
+        />
+      </div>
+    </>
+  );
+};
+
+export default Pricing;

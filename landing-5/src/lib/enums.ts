@@ -68,57 +68,7 @@ export const SHOWCASE_FEATURES = [
     imgSrc:
       "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702921481/usenextbase/tinywow_signup_43386486_t9iuny.webm",
   },
-  {
-    title: "Feature-Two",
-    subtitle: "Admin Panel",
-    navigateTo: "#",
-    desc: "Nextbase comes with a built-in admin panel that allows you to have a secret area within your app .",
-    features: [
-      "Integrated admin panel",
-      "Secret area within the app for admin access.",
-    ],
-    imgSrc:
-      "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702915076/usenextbase/tinywow_admin-panel-gif_43379830_tltcqi.webm",
-  },
-  {
-    title: "Feature-Three",
-    subtitle: "User Impersonation",
-    navigateTo: "#",
-    features: [
-      "Simplified debugging of user-facing issues",
-      "Mimic and view the app from any user's view",
-      "Useful for troubleshooting complex problems",
-    ],
-    desc: "Admin panel also comes with a powerful debugging feature called User Impersonation.",
-    imgSrc:
-      "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702921499/usenextbase/tinywow_user-imp_43386586_xpo6pr.webm",
-  },
-  {
-    title: "Feature-Four",
-    subtitle: "Incredible performance",
-    navigateTo: "#",
-    features: [
-      "Leverages Next.js 13's latest features",
-      "Enhanced data fetching for performance.",
-      "Exceptional UX through Next.js capabilities.",
-    ],
-    desc: "Nextbase is designed to deliver incredible performance. With Nextbase, you can build high-performance applications that meet the demands of today's users.",
-    imgSrc:
-      "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702916928/usenextbase/tinywow_layouts_43381898_qpovdj.webm",
-  },
-  {
-    title: "Feature-Five",
-    subtitle: "Simplified Payment flow",
-    navigateTo: "#",
-    features: [
-      "Always in sync with stripe",
-      "Pre-configured integration with Stripe",
-      "Real-time updates on customer activities",
-    ],
-    desc: "Nextbase is pre-configured with Stripe, a leading online payment processing platform. Your database will be in sync with all customer activity in Stripe via Webhooks. ",
-    imgSrc:
-      "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702916692/usenextbase/tinywow_stripe-payments-gif_43381706_by2uhy.webm",
-  },
+
 ];
 
 export type FooterCategory = {
@@ -404,4 +354,38 @@ export const FAQ_QUESTIONS = [
     question: "Question Four",
     answer: "",
   },
+];
+
+export const companyShowcase = [
+  {
+    company: {
+      name: "Company A",
+      logo: "/vercel.svg"
+    }
+  },
+  {
+    company: {
+      name: "Company B",
+      logo: "/penta_logo.svg"
+    }
+  },
+  {
+    company: {
+      name: "Company C",
+      logo: "/prisma.svg"
+    }
+  },
+  {
+    company: {
+      name: "Company D",
+      logo: "/tailwindcss.svg"
+    }
+  },
+  {
+    company: {
+      name: "Company E",
+      logo: "/perplexity.svg"
+    }
+  },
+  // Add more companies as needed
 ];
