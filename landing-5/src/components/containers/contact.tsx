@@ -24,7 +24,7 @@ export default function ContactCard() {
         </div>
         <div className="w-full flex lg:flex-row flex-col  justify-between items-start gap-8 lg:items-center my-10">
           <div className="relative group">
-            <Button className="mt-0 scroll-m-0 relative bg-fuchsia-50 text-primary font-medium">
+            <Button className="mt-0 scroll-m-0 relative bg-fuchsia-50 text-primary hover:text-fuchsia-50 font-medium">
             Get started for free
             </Button>
             <Button className="my-3 md:my-0 px-16  md:ms-5  scroll-m-0 relative bg-transparent font-medium border border-fushia-50 text-fuchsia-50">
