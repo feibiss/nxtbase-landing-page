@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header className="sticky max-w-screen inset-x-0 z-50 flex h-[--navbar-height] py-4 w-full items-center justify-evenly lg:px-8 px-0 bg-cyan-50 mx-auto">
       <nav className="max-w-screen-2xl flex justify-between items-center w-full">
-        <div className="  gap-4">
+        <div className="gap-4">
           <Link
             className="mr-6 flex h-full w-full flex-grow items-center justify-center"
             href="#"
