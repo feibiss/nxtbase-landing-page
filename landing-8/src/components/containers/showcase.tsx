@@ -51,7 +51,7 @@ const Showcase = () => {
           {/* Second card */}
           <div className="grid grid-rows-[auto_1fr] rounded-lg gap-8 md:gap-10 overflow-hidden bg-gradient-to-b from-amber-400/10 to-rose-400/15">
             <div className="pt-11 px-8 md:px-10">
-              <p className="text-2xl font-semibold mb-5">Feature One</p>
+              <p className="text-2xl font-semibold mb-5">Feature Two</p>
               <p className="text-lg mb-7 font-medium dark:text-slate-300 text-slate-700">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro,
                 maiores.
@@ -82,7 +82,7 @@ const Showcase = () => {
           {/* Third card */}
           <div className="grid grid-rows-[auto_1fr] rounded-lg gap-8 md:gap-10 overflow-hidden bg-gradient-to-br from-blue-400/20 to-orange-200/20">
             <div className="pt-11 px-8 md:px-10">
-              <p className="text-2xl font-semibold mb-5">Feature One</p>
+              <p className="text-2xl font-semibold mb-5">Feature Three</p>
               <p className="text-lg mb-7 font-medium dark:text-slate-300 text-slate-700">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro,
                 maiores.
@@ -113,7 +113,7 @@ const Showcase = () => {
           {/* Fourth card */}
           <div className="md:col-span-2 rounded-2xl overflow-hidden xl:min-h-[420px] px-8 pt-12 lg:pt-0 lg:px-16 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-[40%_1fr] gap-8 md:gap-8 lg:gap-24 items-center bg-gradient-to-bl from-indigo-500/40 to-cyan-200/40">
             <div className="md:pb-8 lg:py-12 lg:pb-12">
-              <p className="text-2xl font-semibold mb-5">Feature One</p>
+              <p className="text-2xl font-semibold mb-5">Feature Four</p>
               <p className="text-lg mb-7 font-medium dark:text-slate-300 text-slate-700">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro,
                 maiores.
