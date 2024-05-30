@@ -8,7 +8,7 @@ import * as Separator from "@radix-ui/react-separator";
 
 const Pricing = () => {
   return (
-    <Container className="py-20 mb-12" id="pricing">
+    <Container className="md:py-20 py-10 mb-12" id="pricing">
       <div className="px-4 md:px-24">
         <Typography
           className="text-left w-full pb-5 text-primary"

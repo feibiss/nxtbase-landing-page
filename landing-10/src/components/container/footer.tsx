@@ -56,8 +56,8 @@ export default function Footer() {
             return <FooterCategory key={details.id} footerDetails={details} />;
           })}
         </div>
-        <div className="lg:order-2 max-w-[380px] md:max-w-full space-y-4 pt-16 md:px-10 md:pt-8 lg:pt-12">
-          <div className="space-y-2 text-start mb-7 ml-4">
+        <div className="lg:order-2 max-w-[380px] md:max-w-full space-y-4 md:px-10 md:pt-8 lg:pt-12">
+          <div className="space-y-2 text-start mb-12 ml-4">
             <Typography variant={"h5"} className=" font-semibold">
               Subscribe to Newsletter
             </Typography>
@@ -88,7 +88,7 @@ export default function Footer() {
           </form>
 
           <div className="flex flex-col md:hidden items-stretch justify-around">
-            <div className="flex items-center mt-8 ml-4">
+            <div className="flex items-center my-12 ml-4">
               <div className="bg-[#a6f2cf] rounded-full h-6 w-6 flex items-center justify-center"></div>
               <span className="ml-2">Nextbase</span>
               <div className=" h-6 w-[1px] ml-6 bg-gray-300"></div>
@@ -97,7 +97,7 @@ export default function Footer() {
               </span>
             </div>
 
-            <div className="flex space-x-6 mr-1 mt-8 justify-evenly">
+            <div className="flex space-x-6 mr-1 justify-center">
               <div className="bg-[#a6f2cf] rounded-full h-6 w-6 flex items-center justify-center">
                 <a href="https://twitter.com" aria-label="Twitter">
                   <TwitterLogoIcon />

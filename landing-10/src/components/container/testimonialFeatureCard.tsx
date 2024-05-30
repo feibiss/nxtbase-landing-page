@@ -5,7 +5,7 @@ import Container from "./container";
 
 const TestimonialFeatureCard = () => {
   return (
-    <Container className="py-12 px-6 mb-12 md:px-28">
+    <Container className="md:py-12 py-6 px-6 mb-12 md:px-28">
       <div className="flex flex-col mb-14 items-start justify-start">
         <Typography
           variant="h3"

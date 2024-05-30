@@ -15,7 +15,7 @@ const FeatureSection = () => {
       <div className="px-4 md:px-24">
         <Typography
           variant={"h3"}
-          className="w-full flex items-center justify-start text-start pt-20 pb-2 font-bold text-primary"
+          className="w-full flex items-center justify-start text-start md:pt-20 pb-2 font-bold text-primary"
         >
           Features
         </Typography>
