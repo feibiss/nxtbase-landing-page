@@ -1,5 +1,4 @@
 import Brands from "@/components/containers/brands";
-import Community from "@/components/containers/community";
 import ContactCard from "@/components/containers/contact";
 import FeaturedTestimonial from "@/components/containers/featuredTestimonial";
 import Features from "@/components/containers/features";
