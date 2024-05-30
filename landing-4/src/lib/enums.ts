@@ -44,80 +44,113 @@ export const AVATARS = [
     id: 3,
     src: "https://res.cloudinary.com/dkqrmlxlg/image/upload/v1702966909/usenextbase/Avatars/avatar_5.webp",
   },
-  {
-    id: 4,
-    src: "https://res.cloudinary.com/dkqrmlxlg/image/upload/v1702966958/usenextbase/Avatars/avatar_2.webp",
-  },
-  {
-    id: 5,
-    src: "https://res.cloudinary.com/dkqrmlxlg/image/upload/v1702966963/usenextbase/Avatars/avatar_1.webp",
-  },
 ];
 
 export const SHOWCASE_FEATURES = [
   {
-    title: "Feature-One",
-    subtitle: "User Authentication",
+    title: "A fancy looking hero text to catch your attention",
+    subtitle:
+      "Great, now that we have your attention, we will actually talk about how we help you",
     navigateTo: "#",
     desc: "Nextbase supports a wide range of authentication providers such as Google, GitHub, Twitter, Facebook, Apple, Discord and many more. ",
     features: [
       "Multi-provider authentication support",
       "Flexible sign-in options: Email and password",
       "Comprehensive user authentication system",
+      "Lorem ipsum dolor sit amet, consectetur",
     ],
     imgSrc:
       "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702921481/usenextbase/tinywow_signup_43386486_t9iuny.webm",
   },
   {
-    title: "Feature-Two",
-    subtitle: "Admin Panel",
+    title: "A fancy looking hero text to catch your attention",
+    subtitle:
+      "Great, now that we have your attention, we will actually talk about how we help you",
     navigateTo: "#",
     desc: "Nextbase comes with a built-in admin panel that allows you to have a secret area within your app .",
     features: [
+      "Lorem ipsum dolor sit amet, consectetur",
       "Integrated admin panel",
       "Secret area within the app for admin access.",
+      "Lorem ipsum dolor sit amet, consectetur",
     ],
     imgSrc:
       "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702915076/usenextbase/tinywow_admin-panel-gif_43379830_tltcqi.webm",
   },
   {
-    title: "Feature-Three",
-    subtitle: "User Impersonation",
+    title: "A fancy looking hero text to catch your attention",
+    subtitle:
+      "Great, now that we have your attention, we will actually talk about how we help you",
     navigateTo: "#",
     features: [
       "Simplified debugging of user-facing issues",
       "Mimic and view the app from any user's view",
       "Useful for troubleshooting complex problems",
+      "Lorem ipsum dolor sit amet, consectetur",
     ],
     desc: "Admin panel also comes with a powerful debugging feature called User Impersonation.",
     imgSrc:
       "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702921499/usenextbase/tinywow_user-imp_43386586_xpo6pr.webm",
   },
   {
-    title: "Feature-Four",
-    subtitle: "Incredible performance",
+    title: "A fancy looking hero text to catch your attention",
+    subtitle:
+      "Great, now that we have your attention, we will actually talk about how we help you",
     navigateTo: "#",
     features: [
       "Leverages Next.js 13's latest features",
       "Enhanced data fetching for performance.",
       "Exceptional UX through Next.js capabilities.",
+      "Lorem ipsum dolor sit amet, consectetur",
     ],
     desc: "Nextbase is designed to deliver incredible performance. With Nextbase, you can build high-performance applications that meet the demands of today's users.",
     imgSrc:
       "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702916928/usenextbase/tinywow_layouts_43381898_qpovdj.webm",
   },
   {
-    title: "Feature-Five",
-    subtitle: "Simplified Payment flow",
+    title: "A fancy looking hero text to catch your attention",
+    subtitle:
+      "Great, now that we have your attention, we will actually talk about how we help you",
     navigateTo: "#",
     features: [
       "Always in sync with stripe",
       "Pre-configured integration with Stripe",
       "Real-time updates on customer activities",
+      "Lorem ipsum dolor sit amet, consectetur",
     ],
     desc: "Nextbase is pre-configured with Stripe, a leading online payment processing platform. Your database will be in sync with all customer activity in Stripe via Webhooks. ",
     imgSrc:
       "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702916692/usenextbase/tinywow_stripe-payments-gif_43381706_by2uhy.webm",
+  },
+];
+
+export const PROCESS_FEATURES = [
+  {
+    title: "Step One",
+    features: [
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+    ],
+  },
+  {
+    title: "Step Two",
+    features: [
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+    ],
+  },
+  {
+    title: "Step Three",
+    features: [
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+    ],
   },
 ];
 
@@ -230,7 +263,7 @@ export const FOOTER_LINKS: FooterCategory[] = [
 ];
 
 export const featuredTestimonial = {
-  body: "Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.",
+  body: "It's like we're living in a parallel universe where Dunder Mifflin is just around the corner.I swear, sometimes I half expect Michael Scott to walk through that door.",
   author: {
     name: "Brenna Goyette",
     handle: "brennagoyette",

@@ -4,13 +4,34 @@ import { Typography } from "../ui/typography";
 import { Input } from "../ui/input";
 import { Label } from "../ui/label";
 import { FOOTER_LINKS, FooterCategory } from "@/lib/enums";
+import { CubeIcon } from "@radix-ui/react-icons";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col mx-auto justify-start items-center relative bg-white dark:bg-gray-950 px-8 md:pt-8 lg:pt-8">
-      <h1 className="max-w-7xl xl:max-w-[1400px] text-9xl font-semibold w-full text-start md:px-8 lg:px-0 mt-10">
-        fou4.
-      </h1>
+    <footer className="flex flex-col mx-auto justify-start relative bg-[#020817] dark:bg-gray-950 px-8 md:pt-8 lg:pt-8">
+      <div className="text-card flex items-center justify-between pt-8">
+        <div className="flex items-center">
+          <div className="bg-card rounded-full h-6 w-6 flex items-center justify-center"></div>
+          <span className="ml-2">Nextbase</span>
+          <span className="text-slate-50 ml-10">
+            The future of computing starts now
+          </span>
+        </div>
+        <div className="flex space-x-4">
+          <a href="https://twitter.com" aria-label="Twitter">
+            <CubeIcon className="text-gray-400 hover:text-white" />
+          </a>
+          <a href="https://facebook.com" aria-label="Facebook">
+            <CubeIcon className="text-gray-400 hover:text-white" />
+          </a>
+          <a href="https://instagram.com" aria-label="Instagram">
+            <CubeIcon className="text-gray-400 hover:text-white" />
+          </a>
+          <a href="https://github.com" aria-label="GitHub">
+            <CubeIcon className="text-gray-400 hover:text-white" />
+          </a>
+        </div>
+      </div>
       <div className=" max-w-7xl xl:max-w-[1400px]">
         <div className="grid grid-cols-1 h-full gap-8 lg:grid-cols-3 lg:gap-10">
           <div className="order-2 col-span-1 flex flex-wrap justify-start lg:justify-normal items-start w-full content-start gap-4 pt-12 md:order-2 md:mx-auto md:mt-8 md:gap-8 lg:col-span-2  lg:mt-0">
@@ -24,18 +45,18 @@ export default function Footer() {
             <div className="space-y-2 text-start">
               <Typography
                 variant={"h5"}
-                className=" text-gray-800 dark:text-gray-200"
+                className="text-card dark:text-gray-200"
               >
                 Subscribe to our Newsletter
               </Typography>
-              <Typography className=" text-gray-600 dark:text-gray-400">
+              <Typography className=" text-gray-400 dark:text-gray-400">
                 Stay updated with our latest news, articles, and updates.
               </Typography>
             </div>
             <form className="space-y-4">
               <div className="space-y-2">
                 <Label
-                  className="text-gray-700 dark:text-gray-300"
+                  className="text-gray-400 dark:text-gray-300"
                   htmlFor="email"
                 >
                   Email
@@ -78,7 +99,7 @@ const FooterCategory = ({
     <div className="mb-8 flex lg:w-1/4 flex-col md:items-baseline">
       <Typography
         variant={"h5"}
-        className="mb-4 text-lg font-bold text-gray-900 dark:text-gray-100"
+        className="mb-4 text-lg font-bold text-card dark:text-gray-100"
       >
         {footerDetails.title}
       </Typography>

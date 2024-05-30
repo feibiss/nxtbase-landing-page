@@ -1,4 +1,4 @@
-import { CheckIcon } from "@radix-ui/react-icons";
+import { CheckCircledIcon, ChevronRightIcon } from "@radix-ui/react-icons";
 import { Typography } from "../ui/typography";
 
 type FeatureType = {
@@ -18,22 +18,17 @@ export default function FeatureCard({
 }) {
   return (
     <div className=" group relative h-fit lg:py-0 py-8 md:py-10 lg:h-[100vh] row-span-1 mx-auto w-full rounded-md bg-inherit flex justify-center items-center">
-      <div className="relative lg:h-3/4 h-full max-h-none  z-10 w-full border-none bg-transparent  ">
+      <div className="relative lg:h-3/4 h-full max-h-none z-10 w-full border-none bg-transparent">
         <div
           className={"col-span-1 flex flex-col  items-center gap-8 lg:flex-row"}
         >
           <div className="order-0 lg:w-1/3 w-full flex flex-col justify-center items-start space-y-4">
-            <div className="flex justify-center items-center size-14 rounded-full bg-secondary">
-              <p className="w-fit hfit font-semibold">{id}</p>
-            </div>
-            <Typography variant={"h3"} className="">
+            <Typography variant={"p"}>FEATURE {id}</Typography>
+            <Typography variant={"h3"} className="text-cyan-900">
               {feature.title}
             </Typography>
             <Typography className="text-pretty text-secondary-foreground">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
-              impedit qui autem pariatur architecto distinctio voluptates vero
-              eligendi nisi expedita quisquam deserunt nemo amet quo corrupti,
-              accusamus consectetur nesciunt. Autem.
+              {feature.subtitle}
             </Typography>
             <Typography variant={"ul"} className="my-4 list-none">
               {feature.features?.map((feature) => (
@@ -42,14 +37,19 @@ export default function FeatureCard({
                   className="flex w-full items-center
                    justify-start overflow-hidden text-secondary-foreground"
                 >
-                  <CheckIcon className="mr-2 flex h-6 w-6 items-center justify-center capitalize text-green-500" />
+                  <CheckCircledIcon className="mr-2 flex h-6 w-6 items-center justify-center capitalize text-cyan-600" />
 
                   <p className="text-ellipsis text-wrap">{feature}</p>
                 </li>
               ))}
             </Typography>
+
+            <div className="py-6 flex items-center">
+              <Typography variant={"p"}>Learn more</Typography>
+              <ChevronRightIcon className="ml-4" />
+            </div>
           </div>
-          <div className="order-2 w-full lg:w-2/3 col-span-2 flex h-full items-center justify-center">
+          <div className="order-2 w-full lg:w-1/2 col-span-2 flex h-full items-center justify-center">
             <video
               autoPlay
               loop

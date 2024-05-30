@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const FeaturedTestimonial = ({ testimony }) => {
   return (
-    <Wrapper classNames="my-32 lg:my-44">
+    <Wrapper classNames="my-16 lg:my-16">
       <div className="mx-auto  z-10 flex items-center justify-center gap-8 text-sm leading-6 text-inherit xl:mx-0 xl:max-w-none">
         <figure
           className={`w-fit relative  md:max-w-3xl mx-auto py-16 md:px-16 flex flex-col items-center justify-center gap-8`}

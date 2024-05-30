@@ -1,5 +1,4 @@
 import React from "react";
-import { Typography } from "../ui/typography";
 import Image from "next/image";
 import Marquee from "../ui/marquee";
 
@@ -44,9 +43,6 @@ const Brands = () => {
   ];
   return (
     <div className="flex flex-col row-span-1 col-span-12 items-center md:h-fit justify-start w-full space-y-4">
-      <Typography className="text-xs text-muted-foreground">
-        Trusted by top companies
-      </Typography>
       <div className="hidden md:flex justify-evenly items-center w-full lg:flex-nowrap mx-auto">
         {BRANDS.map(({ id, src, alt }) => {
           return (

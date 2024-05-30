@@ -7,9 +7,9 @@ import * as React from "react";
 
 export default function Header() {
   return (
-    <header className="sticky max-w-screen  inset-x-0 z-50 flex h-[--navbar-height] py-4 w-full items-center justify-evenly lg:px-8 px-0 bg-primary backdrop-blur-md mx-auto">
+    <header className="sticky max-w-screen inset-x-0 z-50 flex h-[--navbar-height] py-4 w-full items-center justify-evenly lg:px-8 px-0 bg-cyan-50 mx-auto">
       <nav className="max-w-screen-2xl flex justify-between items-center w-full">
-        <div className="  gap-4">
+        <div className="gap-4">
           <Link
             className="mr-6 flex h-full w-full flex-grow items-center justify-center"
             href="#"
@@ -26,21 +26,25 @@ export default function Header() {
         </div>
         <div className="hidden lg:flex justify-around items-center ml-auto mr-4 space-x-4">
           <Button size="sm" variant={"link"} asChild>
-            <Link href="#howitworks">How it works</Link>
-          </Button>
-
-          <Button size="sm" variant={"link"} asChild>
-            <Link href="#howitworks">Pricing</Link>
+            <Link href="#home">Home</Link>
           </Button>
           <Button size="sm" variant={"link"} asChild>
-            <Link href="#howitworks">FAQ</Link>
+            <Link href="#features">Features</Link>
+          </Button>
+          <Button size="sm" variant={"link"} asChild>
+            <Link href="#contact">Contact</Link>
+          </Button>
+          <Button size="sm" variant={"link"} asChild>
+            <Link href="#pricing">Pricing</Link>
           </Button>
         </div>
-        <div className=" hidden lg:flex justify-around items-center gap-4">
-          <Button size="sm" variant={"outline"}>
-            Get Started
-          </Button>
-        </div>
+        <Button
+          size="sm"
+          variant={"default"}
+          className="ml-auto hidden lg:flex justify-around items-center gap-4 "
+        >
+          Get started for free
+        </Button>
       </nav>
     </header>
   );

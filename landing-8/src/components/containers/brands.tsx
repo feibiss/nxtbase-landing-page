@@ -1,7 +1,5 @@
 import React from "react";
-import { Typography } from "../ui/typography";
 import Image from "next/image";
-import { Button } from "../ui/button";
 import Marquee from "../ui/marquee";
 
 const Brands = () => {
@@ -39,9 +37,8 @@ const Brands = () => {
     },
   ];
   return (
-    <div className="flex mx-auto  flex-col row-span-1 gap-16 col-span-12 items-center md:h-fit justify-start w-full lg:max-w-screen-2xl m-auto px-6 md:px-10 lg:px-20 relative z-10 max-w-4xl my-20 lg:my-36 mb-20 lg:mb-40 xl:mb-52">
-      <Typography variant={"smallText"}>Trusted by the likes of</Typography>
-      <div className="hidden md:flex flex-wrap space-x-4 pt-10 w-full max-w-screen-md lg:max-w-screen-xl justify-center  items-center mx-auto">
+    <div className="flex mx-auto flex-col row-span-1 gap-16 col-span-12 items-center md:h-fit justify-start w-full lg:max-w-screen-2xl m-auto px-6 md:px-10 lg:px-20 relative z-10 max-w-4xl lg:my-36 mb-20 lg:mb-40 xl:mb-52">
+      <div className="hidden md:flex space-x-4 w-full max-w-screen-md lg:max-w-screen-xl justify-center items-center mx-auto">
         {[...BRANDS].map(({ id, src, alt }, idx) => {
           return (
             <Image
@@ -71,7 +68,6 @@ const Brands = () => {
         })}
       </Marquee>
 
-      <Button variant={"secondary"}>Read Customer case studies</Button>
     </div>
   );
 };
