@@ -25,22 +25,23 @@ export default function Header() {
             />
           </Link>
         </div>
-        <div className="hidden lg:flex justify-around items-center mr-auto ml-4 space-x-4">
+        <div className="hidden lg:flex justify-around items-center mr-auto space-x-4 ml-auto">
           <Button variant={"link"} className="text-white" asChild>
-            <Link href="#howitworks">How it works</Link>
-          </Button>
-
-          <Button variant={"link"} className="text-white" asChild>
-            <Link href="#howitworks">Pricing</Link>
+            <Link href="#home">Home</Link>
           </Button>
           <Button variant={"link"} className="text-white" asChild>
-            <Link href="#howitworks">FAQ</Link>
+            <Link href="#features">Features</Link>
+          </Button>
+          <Button variant={"link"} className="text-white" asChild>
+            <Link href="#contact">Contact</Link>
+          </Button>
+          <Button variant={"link"} className="text-white" asChild>
+            <Link href="#pricing">Pricing</Link>
           </Button>
         </div>
-        <div className=" hidden lg:flex justify-around items-center gap-4">
-          <Button variant={"ghost"}>Sign In</Button>
-          <Button variant={"default"} className="px-6 py-2 rounded-full">
-            Sign Up
+        <div className="hidden lg:flex justify-around items-center gap-4">
+          <Button variant={"default"} className="bg-white text-black">
+            Get started for free
           </Button>
         </div>
       </nav>
