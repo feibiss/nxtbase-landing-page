@@ -15,10 +15,10 @@ import {
 
 const HEADER_ITEMS = [
   { id: "#features ", label: "Features", icon: <SquareKanban /> },
-  { id: "#steps", label: "Steps", icon: <FolderArchive /> },
-  { id: "#reviews", label: "Reviews", icon: <ListChecks /> },
+  { id: "#recent_work", label: "Works", icon: <ListChecks /> },
   { id: "#blogs", label: "Blogs", icon: <BanknoteIcon /> },
-  { id: "#works", label: "Works", icon: <HelpCircle /> },
+  { id: "#custom_plan", label: "Contact", icon: <HelpCircle /> },
+  { id: "#pricing", label: "Pricing", icon: <HelpCircle /> },
 ];
 export default function Header() {
   return (

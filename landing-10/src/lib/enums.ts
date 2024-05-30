@@ -34,19 +34,19 @@ export const TESTIMONIES = [
 export const CAROUSAL_IMAGES = [
   {
     id: 1,
-    src: "https://res.cloudinary.com/dkqrmlxlg/image/upload/v1705432514/usenextbase/orgs-teams_1_zzemcg.webp",
+    src: "https://images.unsplash.com/photo-1568992687947-868a62a9f521?q=80&w=3432&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: 2,
-    src: "https://res.cloudinary.com/dkqrmlxlg/image/upload/v1705432528/usenextbase/user-impersonation_h77zul.webp",
+    src: "https://images.unsplash.com/photo-1604328698692-f76ea9498e76?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: 4,
-    src: "https://res.cloudinary.com/dkqrmlxlg/image/upload/v1705432517/usenextbase/stripe-integration_rham5f.webp",
+    src: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: 3,
-    src: "https://res.cloudinary.com/dkqrmlxlg/image/upload/v1705432513/usenextbase/auth_yhrpj6.webp",
+    src: "https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: 5,
@@ -86,7 +86,7 @@ export const SHOWCASE_FEATURES = [
     title: "Feature",
     subtitle: "User Authentication",
     navigateTo: "#",
-    desc: "Nextbase supports a wide range of authentication providers such as Google, GitHub, Twitter, Facebook, Apple, Discord and many more. ",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta elit vel turpis vehicula semper. In sagittis imperdiet nisi, vel ",
     features: [
       "Multi-provider authentication support",
       "Flexible sign-in options: Email and password",
@@ -99,7 +99,7 @@ export const SHOWCASE_FEATURES = [
     title: "Feature",
     subtitle: "Admin Panel",
     navigateTo: "#",
-    desc: "Nextbase comes with a built-in admin panel that allows you to have a secret area within your app .",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta elit vel turpis vehicula semper. In sagittis imperdiet nisi, vel ",
     features: [
       "Integrated admin panel",
       "Secret area within the app for admin access.",
@@ -116,7 +116,7 @@ export const SHOWCASE_FEATURES = [
       "Mimic and view the app from any user's view",
       "Useful for troubleshooting complex problems",
     ],
-    desc: "Admin panel also comes with a powerful debugging feature called User Impersonation.",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta elit vel turpis vehicula semper. In sagittis imperdiet nisi, vel ",
     imgSrc:
       "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702921499/usenextbase/tinywow_user-imp_43386586_xpo6pr.webm",
   },
@@ -129,12 +129,12 @@ export const SHOWCASE_FEATURES = [
       "Enhanced data fetching for performance.",
       "Exceptional UX through Next.js capabilities.",
     ],
-    desc: "Nextbase is designed to deliver incredible performance. With Nextbase, you can build high-performance applications that meet the demands of today's users.",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta elit vel turpis vehicula semper. In sagittis imperdiet nisi, vel ",
     imgSrc:
       "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702916928/usenextbase/tinywow_layouts_43381898_qpovdj.webm",
   },
   {
-    title: "Feature-Five",
+    title: "Feature",
     subtitle: "Simplified Payment flow",
     navigateTo: "#",
     features: [
@@ -142,15 +142,15 @@ export const SHOWCASE_FEATURES = [
       "Pre-configured integration with Stripe",
       "Real-time updates on customer activities",
     ],
-    desc: "Nextbase is pre-configured with Stripe, a leading online payment processing platform. Your database will be in sync with all customer activity in Stripe via Webhooks. ",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta elit vel turpis vehicula semper. In sagittis imperdiet nisi, vel ",
     imgSrc:
       "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702916692/usenextbase/tinywow_stripe-payments-gif_43381706_by2uhy.webm",
   },
   {
-    title: "Feature-Six",
+    title: "Feature",
     subtitle: "User Authentication",
     navigateTo: "#",
-    desc: "Nextbase supports a wide range of authentication providers such as Google, GitHub, Twitter, Facebook, Apple, Discord and many more. ",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta elit vel turpis vehicula semper. In sagittis imperdiet nisi, vel ",
     features: [
       "Multi-provider authentication support",
       "Flexible sign-in options: Email and password",
@@ -161,13 +161,13 @@ export const SHOWCASE_FEATURES = [
   },
 ];
 
-export type FooterCategory = {
+export type CategoryFooter = {
   id: number;
   title: string;
   links: { link: string; title: string }[];
 };
 
-export const FOOTER_LINKS: FooterCategory[] = [
+export const FOOTER_LINKS: CategoryFooter[] = [
   {
     id: 1,
     title: "Product",

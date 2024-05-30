@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const CoreFeatures = () => {
   return (
-    <Container id="features" className="pb-10 h-fit">
+    <Container id="features" className="pb-10 h-fit mb-14">
       
       <div className="px-4 md:px-24">
         <Typography
@@ -22,28 +22,33 @@ const CoreFeatures = () => {
           </Typography>
       </div>
 
-      <div className="flex flex-col md:flex-row max-w-[70%] px-4 md:px-24">
-        <div className="w-full md:w-full">
-         
-          {SHOWCASE_FEATURES.slice(0, 4).map((feature, idx) => (
+      <div className="flex flex-col md:flex-row justify-between max-w-full px-4 md:px-24">
+        <div className="w-full md:w-1/2 space-y-2 mt-4">
+          {SHOWCASE_FEATURES.slice(0, 5).map((feature, idx) => (
             <div key={idx} className="pb-8">
-              
               <Typography
                 variant={"h5"}
-                className="w-full flex items-center justify-start text-start gap-2 font-medium"
+                className="w-full flex items-center justify-start text-start gap-4 font-medium"
               >
                 <CubeIcon className="w-6 h-6"/>
                 {feature.title}
               </Typography>
-              <Typography variant={"p"} className="w-full mt-2 md:w-4/5 font-light">
+              <Typography variant={"p"} className="w-full mt-2 font-light">
                 {feature.desc}
               </Typography>
             </div>
           ))}
         </div>
-        <div className="hidden w-full md:w-fit md:flex items-start justify-center mt-10 md:mt-0 md:mx-auto">
-          <div className="top-20">
-            <Image src="/public/assets/hero.png" alt="Core Features" width={561} height={668} className="w-auto h-auto"/>
+
+        <div className="w-full md:w-1/2 flex items-start justify-center mt-10 md:mt-0">
+          <div className="w-full h-auto md:h-[668px] md:w-[561px] relative">
+            <Image 
+              src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?q=80&w=2432&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90oy1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+              alt="Core Features" 
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg"
+            />
           </div>
         </div>
       </div>

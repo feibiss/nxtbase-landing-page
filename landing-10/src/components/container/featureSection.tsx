@@ -4,13 +4,14 @@ import Container from "./container";
 import { Typography } from "../ui/typography";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { SHOWCASE_FEATURES } from "@/lib/enums";
+import { CubeIcon } from "@radix-ui/react-icons";
 
 const FeatureSection = () => {
   const { scrollYProgress } = useScroll();
   const transformX = useTransform(scrollYProgress, [0, 1], [0, -1000]);
 
   return (
-    <Container id="features" className="pb-10 h-fit">
+    <Container id="features" className="pb-10 h-fit mb-12">
       <div className="px-4 md:px-24">
         <Typography
           variant={"h3"}
@@ -27,15 +28,12 @@ const FeatureSection = () => {
             key={idx}
             className="w-[300px] md:w-[350px] px-0 py-4 ml-12 flex-none"
           >
-            <div className="h-[200px] md:h-[250px] relative scale-100 transition-all group-hover:scale-10 w-full">
-              <video
-                src={feature.imgSrc}
-                className="object-cover rounded-lg h-full w-full"
-              />
+            <div className="h-[200px] md:h-[250px] w-full rounded-lg flex items-center justify-center bg-[#A6F2CF]">
+              <CubeIcon className="w-16 h-16" />
             </div>
 
               <Typography variant={"p"} className="text-lg mt-4 font-bold">
-                {feature.subtitle}
+                {feature.title}
               </Typography>
               <Typography variant={"lead"} className="font-light text-xs md:text-lg group-hover:underline group-hover:underline-offset-4 mt-2">
                 {feature.desc}

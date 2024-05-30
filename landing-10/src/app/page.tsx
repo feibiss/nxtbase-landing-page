@@ -4,9 +4,12 @@ import ContactCard from "@/components/container/contact";
 import CoreFeatures from "@/components/container/corefeatures";
 import FeatureSection from "@/components/container/featureSection";
 import Hero from "@/components/container/hero";
+import RecentWork from "@/components/container/recentWork";
 import Showcase from "@/components/container/showcase";
 import Testimonials from "@/components/container/testimonials";
-import Walkthrough from "@/components/container/walkthrough";
+
+import Pricing from "@/components/container/pricing";
+import TestimonialFeatureCard from "@/components/container/testimonialFeatureCard";
 
 export default function Home() {
   return (
@@ -17,9 +20,13 @@ export default function Home() {
       <Testimonials />
       <CoreFeatures/>
       <FeatureSection/>
-      {/* <Walkthrough /> */}
+      <RecentWork/>
+      <TestimonialFeatureCard/>
+      <ContactCard customPlan={false}/>
+      <Pricing />
+      <ContactCard customPlan={true} />
       <Blogs />
-      <ContactCard />
+      <ContactCard customPlan={false}/>
     </main>
   );
 }

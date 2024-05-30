@@ -65,8 +65,8 @@ const Brands = () => {
     },
   ];
   return (
-    <div className="flex items-center justify-center space-x-4 md:space-x-8 w-full md:h-[186px]">
-      {BRANDS.slice(0, 4).map(({ id, src, alt }) => {
+    <div className="flex items-center justify-center space-x-4 md:space-x-8 w-full md:h-[186px] my-10 md:my-4">
+      {BRANDS.slice(0, 10).map(({ id, src, alt }) => {
         return (
           <Image
             key={id}

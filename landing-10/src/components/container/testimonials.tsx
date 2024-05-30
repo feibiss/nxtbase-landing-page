@@ -25,7 +25,7 @@ const Testimonials = () => {
   const currentTestimony = TESTIMONIES[currentIndex];
 
   return (
-    <Container id="reviews" className="pb-20 m-14">
+    <Container id="reviews" className="pb-6 m-14">
       <div className="mx-auto max-w-5xl text-center">
 
         <div className="flex items-start justify-center gap-10 mx-14">
@@ -33,7 +33,7 @@ const Testimonials = () => {
             <ArrowLeftIcon className="w-8 h-8" />
           </button>
 
-          <div className="flex flex-col items-center justify-center gap-4">
+          <div className="flex flex-col items-center justify-center gap-4 text-start">
             <Typography className="text-lg md:text-xl">
               &rdquo;{currentTestimony.review}&rdquo;
             </Typography>

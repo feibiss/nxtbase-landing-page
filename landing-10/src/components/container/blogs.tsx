@@ -36,38 +36,23 @@ const Blogs = () => {
       label: "Innovative Green Technologies: Our Startup's Focus",
     },
   ];
-  const SECOND_PARALLAX_PERC = -2;
-  const firstTransformY = useTransform(
-    scrollYProgress,
-    [0, 1],
-    [0, -1.1 * 100]
-  );
 
-  const secondTransformY = useTransform(
-    scrollYProgress,
-    [0, 0.75],
-    [600, -1.2 * 100]
-  );
+  const firstTransformY = useTransform(scrollYProgress, [0, 1], [0, -1.1 * 100]);
+  const secondTransformY = useTransform(scrollYProgress, [0, 0.75], [600, -1.2 * 100]);
+  const thirdTransformY = useTransform(scrollYProgress, [0, 0.75], [900, -1.3 * 100]);
 
-  const thirdTransformY = useTransform(
-    scrollYProgress,
-    [0, 0.75],
-    [900, -1.3 * 100]
-  );
   return (
-    <Container id="blogs" className="pb-10 bg-gray-100 dark:bg-gray-900">
-      <div className="mx-auto max-w-5xl">
-        <Typography
-          variant={"h3"}
-          className="w-full text-start flex justify-start items-start text-nowrap py-20"
-        >
-          What have we{" "}
-          <div className="relative px-4 w-fit h-fit items-center justify-center flex">
-            <p className="z-10 font-bold h-full w-full">been upto</p>
-          </div>
+    <Container id="blogs" className="pb-10 mt-20">
+      <div className="text-left w-full pb-1 md:px-24 px-4">
+        <Typography className="text-left w-full pb-2" variant={"h3"}>
+          Our Blog posts
         </Typography>
-        <div className="flex lg:hidden items-center justify-start gap-8 min-w-screen pt-6 pl-[600px]">
-          {LARGE_BLOGS.slice(0.3).map((_, idx) => (
+        <Typography variant="p" className="md:w-[30%] w-fit font-light">
+          Great, now that we have your attention, we will actually talk about how we help you do the above.
+        </Typography>
+      
+        <div className="flex lg:hidden items-center justify-start gap-8 min-w-screen mt-10 pl-[600px]">
+          {LARGE_BLOGS.map((_, idx) => (
             <motion.div
               style={{ translateX: transformX }}
               key={idx}
@@ -85,50 +70,37 @@ const Blogs = () => {
               <div className="flex justify-start items-start pl-4 py-8 flex-col gap-4 w-full">
                 <Typography className="capitalize">{_.label}</Typography>
                 <Typography variant={"mutedText"}>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Deleniti illum iure ut veniam aliquam, voluptate natus optio
-                  quas harum odio.
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti illum iure ut veniam aliquam, voluptate natus optio quas harum odio.
                 </Typography>
               </div>
             </motion.div>
           ))}
         </div>
-        <div className="hidden lg:grid [&>*:nth-child(3n+1)]:mt-8 [&>*:nth-child(3n+2)]:mt-16 [&>*:nth-child(3n+3)]:mt-24 grid-cols-[repeat(20,1fr)] justify-start gap-8 min-w-screen pt-6">
-          {LARGE_BLOGS.map((_, idx) => (
-            <motion.div
-              style={{
-                translateY: [0, 3].includes(idx)
-                  ? firstTransformY
-                  : [1, 4].includes(idx)
-                  ? secondTransformY
-                  : thirdTransformY,
-              }}
+        <div className="hidden lg:grid mt-8 grid-cols-2 xl:grid-cols-3 gap-8 pt-6">
+          {LARGE_BLOGS.map((item, idx) => (
+            <div
               key={idx}
-              className="col-span-6 group w-full h-fit bg-white dark:bg-transparent min-w-72 flex flex-col items-start justify-start gap-4"
+              className="col-span-1 group w-full h-auto bg-white dark:bg-transparent min-w-72 flex flex-col items-start gap-2"
             >
               <div className="min-h-40 bg-rose-50 w-full relative">
                 <Image
-                  src={_.img}
+                  src={item.img}
                   width={600}
                   height={400}
                   className="object-cover"
-                  alt={_.label}
+                  alt={item.label}
                 />
               </div>
-              <div className="flex justify-start items-start px-4 py-8 flex-col gap-4 w-full">
-                <Typography className="capitalize">{_.label}</Typography>
+              <div className="flex justify-start items-start px-4 py-4 flex-col gap-4 w-full">
+                <Typography className="capitalize font-bold" variant={"p"}>Blog post</Typography>
                 <Typography variant={"mutedText"}>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Deleniti illum iure ut veniam aliquam, voluptate natus optio
-                  quas harum odio.
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti illum iure ut veniam aliquam, voluptate natus optio quas harum odio.
                 </Typography>
+                <Button variant={"ghost"} className="font-thin px-0">Read More</Button>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
-        <Button className="pt-20" variant={"link"}>
-          More case studies
-        </Button>
       </div>
     </Container>
   );
