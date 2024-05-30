@@ -30,7 +30,7 @@ const Testimonials = () => {
         <div className="flex flex-col items-center justify-center gap-4 mx-auto md:flex-col md:items-center md:justify-center">
           <div className="flex flex-col items-center justify-center gap-8 text-balance md:flex-row md:w-2/4">
             <button onClick={handlePrev} className="p-2 md:p-1 bg-white">
-              <ArrowLeftIcon className="w-6 h-6 md:w-8 md:h-8" />
+              <ArrowLeftIcon className="w-8 h-8 md:w-6 md:h-6" />
             </button>
             <Typography className="text-lg md:flex-grow text-balance px-12">
               &rdquo;{currentTestimony.review}&rdquo;
