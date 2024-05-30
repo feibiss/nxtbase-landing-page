@@ -7,21 +7,20 @@ import { SHOWCASE_FEATURES } from "@/lib/enums";
 
 const Preview = () => {
   return (
-    <Container classNames="bg-primary-muted">
-      <div className="col-span-12 flex flex-col justify-start items-center py-20 max-w-screen-lg mx-auto">
-        <div>
+    <Container classNames="w-4/4 overflow-x-hidden px-1">
+      <div className="col-span-12 flex flex-col justify-start py-10 md:py-20 max-w-screen-lg mx-auto">
+        <div className="">
           <Typography variant={"h2"}>Built for SAAS creators</Typography>
-          <Typography>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui vero
-            quos sequi natus iure expedita laboriosam placeat at ducimus
-            aspernatur.
+          <Typography className="w-3/4 ">
+          Great, now that we have your attention, we will actually talk about how we help you
           </Typography>
         </div>
         <Tabs
           defaultValue={SHOWCASE_FEATURES[0].title}
           className="w-full mx-auto"
         >
-          <TabsList className="max-w-screen-sm bg-secondary/5 mt-6 flex flex-grow">
+          <div className="w-4/5 md:w-100 overflow-x-hidden">
+          <TabsList className="max-w-screen-sm mt-6 flex flex-grow overflow-x-scroll no-scrollbar ps-12 pe-8 md:pe-0 md:ps-0">
             {SHOWCASE_FEATURES.slice(0, 3).map((feat, idx) => (
               <TabsTrigger
                 key={feat.title}
@@ -32,21 +31,35 @@ const Preview = () => {
               </TabsTrigger>
             ))}
           </TabsList>
+          </div>
           {SHOWCASE_FEATURES.map((feat) => (
             <TabsContent key={feat.title} value={feat.title}>
-              <div className="w-full h-full flex flex-col lg:flex-row justify-between items-center lg:space-x-24 space-y-8 py-10">
+              <div className="w-4/5 md:w-full h-full flex flex-col lg:flex-row justify-between item-start md:items-center lg:space-x-24 space-y-8 py-5 md:py-10">
+              <div className="hidden md:block ">
                 <Image
-                  width={400}
+                  width={600}
                   height={200}
                   alt={feat.subtitle}
                   className="rounded"
-                  src={feat.imgSrc}
+                  src={feat.imgSrc} 
                 />
-                <div className="flex flex-col w-full items-start text-start justify-start space-y-4">
+              </div>
+              <div className="block md:hidden ">
+                <Image
+                  width={300}
+                  height={200}
+                  alt={feat.subtitle}
+                  className="rounded"
+                  src={feat.imgSrc} 
+                />
+              </div>
+              
+               
+              <div className="flex flex-col w-4/5 md:w-full items-start text-start justify-start space-y-4">
                   <Typography variant={"h4"} className="w-fit">
-                    {feat.title}
+                    {feat.subtitle}
                   </Typography>
-                  <Typography className="w-2/3">{feat.desc}</Typography>
+                  <Typography className="w-5/5 md:w-3/3 font-base">{feat.desc}</Typography>
                 </div>
               </div>
             </TabsContent>

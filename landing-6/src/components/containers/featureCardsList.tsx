@@ -22,24 +22,24 @@ import { cn } from "@/lib/utils";
 import { Typography } from "../ui/typography";
 
 const LOGOS = [
-  <GitHubLogoIcon key="github" className="size-8 text-green-700" />,
-  <FigmaLogoIcon key="figma" className="size-8 text-green-700" />,
-  <CodeSandboxLogoIcon key="csb" className="size-8 text-green-700" />,
-  <TwitterLogoIcon key="twitter" className="size-8 text-green-700" />,
-  <DiscordLogoIcon key="discord" className="size-8 text-green-700" />,
-  <NotionLogoIcon key="notion" className="size-8 text-green-700" />,
+  <GitHubLogoIcon key="github" className="size-8 text-teal-50" />,
+  <FigmaLogoIcon key="figma" className="size-8 text-teal-50" />,
+  <CodeSandboxLogoIcon key="csb" className="size-8 text-teal-50" />,
+  <TwitterLogoIcon key="twitter" className="size-8 text-teal-50" />,
+  <DiscordLogoIcon key="discord" className="size-8 text-teal-50" />,
+  <NotionLogoIcon key="notion" className="size-8 text-teal-50" />,
 ];
 const FeatureCardsList = () => {
   return (
-    <div className="flex relative w-full flex-col justify-start items-start bg-secondary py-20 ">
+    <div className="flex relative w-full flex-col justify-start items-start bg-primary py-10 md:py-20 ">
       <Container>
         <section className="col-span-12 row-auto grid h-full w-full overflow-visible bg-inherit space-y-8">
-          <div className="flex flex-col justify-start items-center mx-auto space-y-4 text-white">
-            <Typography variant={"h2"} className="text-inherit">
+          <div className="flex flex-col w-100 justify-start items-start  text-white">
+            <Typography variant={"h2"} className="text-inherit text-start">
               Features Portfolio
             </Typography>
-            <Typography className="text-inherit">
-              Explore the range of features you get in one package.
+            <Typography className="w-4/4 md:w-2/4 text-inherit font-extralight">
+            Nextbase is built for scale. Whether you are building a small app or a huge app, Nextbase has all the tools you need.
             </Typography>
           </div>
 
@@ -54,7 +54,7 @@ const FeatureCardsList = () => {
                       "bg-transparent border-tr border-white/20 text-white"
                     )}
                   >
-                    <div className="h-40 rounded-t-lg bg-emerald-950 flex justify-center items-center fill-primary text-primary">
+                    <div className="h-40 rounded-t-lg bg-teal-800 flex justify-center items-center fill-primary text-primary">
                       {LOGOS[idx]}
                     </div>
                     <CardContent>
@@ -69,7 +69,7 @@ const FeatureCardsList = () => {
                     <CardFooter>
                       <Button
                         variant={"link"}
-                        className="text-start justify-start px-0 decoration-primary text-secondary-foreground/80 hover:text-primary text-sm font-normal"
+                        className="text-start justify-start px-0 decoration-primary text-secondary-foreground/80 hover:text-secondary text-sm font-normal "
                         size={"sm"}
                       >
                         Read more <ChevronRightIcon className="size-4" />
