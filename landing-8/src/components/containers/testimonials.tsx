@@ -6,9 +6,16 @@ import Image from "next/image";
 
 const Testimonials = ({}) => {
   return (
-    <Wrapper classNames="flex flex-col w-full text-center justify-center items-center lg:mb-44">
+    <Wrapper classNames="flex flex-col w-full text-center justify-center items-center lg:mb-44 mt-8">
       <Typography variant={"h2"} className="w-full text-center mx-auto">
-        What Our Partners Say
+        What our users are saying
+      </Typography>
+      <Typography
+        variant="subheading"
+        className="w-3/4 lg:max-w-[50%] my-6 mx-auto text-balance text-center"
+      >
+        Great, now that we have your attention, we will actually talk about how
+        we help you
       </Typography>
       <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {[...TESTIMONIES, ...TESTIMONIES, ...TESTIMONIES].map(
