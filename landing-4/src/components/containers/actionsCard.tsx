@@ -1,7 +1,5 @@
 import React from "react";
 import { Typography } from "../ui/typography";
-import { CheckCircledIcon } from "@radix-ui/react-icons";
-import { Button } from "../ui/button";
 type FeatureType = {
   title: string;
   subtitle: string;
