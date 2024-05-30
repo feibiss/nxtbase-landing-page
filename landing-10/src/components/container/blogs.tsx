@@ -37,20 +37,36 @@ const Blogs = () => {
     },
   ];
 
-  const firstTransformY = useTransform(scrollYProgress, [0, 1], [0, -1.1 * 100]);
-  const secondTransformY = useTransform(scrollYProgress, [0, 0.75], [600, -1.2 * 100]);
-  const thirdTransformY = useTransform(scrollYProgress, [0, 0.75], [900, -1.3 * 100]);
+  const firstTransformY = useTransform(
+    scrollYProgress,
+    [0, 1],
+    [0, -1.1 * 100]
+  );
+  const secondTransformY = useTransform(
+    scrollYProgress,
+    [0, 0.75],
+    [600, -1.2 * 100]
+  );
+  const thirdTransformY = useTransform(
+    scrollYProgress,
+    [0, 0.75],
+    [900, -1.3 * 100]
+  );
 
   return (
     <Container id="blogs" className="pb-10 mt-20">
       <div className="text-left w-full pb-1 md:px-24 px-4">
-        <Typography className="text-left w-full pb-2" variant={"h3"}>
+        <Typography
+          className="text-left w-full pb-2 text-primary"
+          variant={"h3"}
+        >
           Our Blog posts
         </Typography>
         <Typography variant="p" className="md:w-[30%] w-fit font-light">
-          Great, now that we have your attention, we will actually talk about how we help you do the above.
+          Great, now that we have your attention, we will actually talk about
+          how we help you do the above.
         </Typography>
-      
+
         <div className="flex lg:hidden items-center justify-start gap-8 min-w-screen mt-10 pl-[600px]">
           {LARGE_BLOGS.map((_, idx) => (
             <motion.div
@@ -70,7 +86,9 @@ const Blogs = () => {
               <div className="flex justify-start items-start pl-4 py-8 flex-col gap-4 w-full">
                 <Typography className="capitalize">{_.label}</Typography>
                 <Typography variant={"mutedText"}>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti illum iure ut veniam aliquam, voluptate natus optio quas harum odio.
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Deleniti illum iure ut veniam aliquam, voluptate natus optio
+                  quas harum odio.
                 </Typography>
               </div>
             </motion.div>
@@ -92,11 +110,17 @@ const Blogs = () => {
                 />
               </div>
               <div className="flex justify-start items-start px-4 py-4 flex-col gap-4 w-full">
-                <Typography className="capitalize font-bold" variant={"p"}>Blog post</Typography>
-                <Typography variant={"mutedText"}>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti illum iure ut veniam aliquam, voluptate natus optio quas harum odio.
+                <Typography className="capitalize font-bold" variant={"p"}>
+                  Blog post
                 </Typography>
-                <Button variant={"ghost"} className="font-thin px-0">Read More</Button>
+                <Typography variant={"mutedText"}>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Deleniti illum iure ut veniam aliquam, voluptate natus optio
+                  quas harum odio.
+                </Typography>
+                <Button variant={"ghost"} className="font-thin px-0">
+                  Read More
+                </Button>
               </div>
             </div>
           ))}

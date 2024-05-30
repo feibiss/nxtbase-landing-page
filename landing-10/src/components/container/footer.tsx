@@ -147,7 +147,7 @@ const FooterCategory = ({
   footerDetails: FooterCategory;
 }) => {
   return (
-    <div className="mb-8 flex w-1/3 md:w-1/4 flex-col md:items-baseline ml-4 items-start">
+    <div className="mb-4 flex w-1/3 md:w-1/4 flex-col md:items-baseline ml-4 items-start">
       <Typography variant={"h5"} className="mb-4 text-lg font-bold">
         {footerDetails.title}
       </Typography>

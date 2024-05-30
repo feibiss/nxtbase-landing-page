@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useState } from "react";
 import Container from "./container";
@@ -25,41 +25,35 @@ const Testimonials = () => {
   const currentTestimony = TESTIMONIES[currentIndex];
 
   return (
-    <Container id="reviews" className="pb-6 m-14">
-      <div className="mx-auto max-w-5xl text-center">
-
-        <div className="flex items-start justify-center gap-10 mx-14">
-          <button onClick={handlePrev} className="p-2">
-            <ArrowLeftIcon className="w-8 h-8" />
-          </button>
-
-          <div className="flex flex-col items-center justify-center gap-4 text-start">
-            <Typography className="text-lg md:text-xl">
+    <Container id="reviews" className="flex justify-center items-center">
+      <div className="w-full p-6 shadow-lg rounded-lg">
+        <div className="flex flex-col items-center justify-center gap-4 mx-auto md:flex-col md:items-center md:justify-center">
+          <div className="flex flex-col items-center justify-center gap-4 text-center md:flex-row md:w-2/4">
+            <button onClick={handlePrev} className="p-1 bg-white">
+              <ArrowLeftIcon className="w-6 h-6" />
+            </button>
+            <Typography className="text-lg md:flex-grow text-balance px-12">
               &rdquo;{currentTestimony.review}&rdquo;
             </Typography>
-
-            <div className="flex flex-col items-center justify-center mt-10">
-              <div className="relative w-16 h-16 md:w-24 md:h-24">
-                <Image
-                  src={currentTestimony.profilePic}
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-full"
-                  alt={`Picture of ${currentTestimony.author}`}
-                />
-              </div>
-
-              <Typography className="mt-2">
-                @{currentTestimony.author.split(" ")[0]}
-              </Typography>
-            </div>
+            <button onClick={handleNext} className="p-1 bg-white">
+              <ArrowRightIcon className="w-6 h-6" />
+            </button>
           </div>
-
-          <button onClick={handleNext} className="p-2">
-            <ArrowRightIcon className="w-8 h-8" />
-          </button>
+          <div className="flex flex-col items-center justify-center mt-10 md:mt-4">
+            <div className="relative w-24 h-24">
+              <Image
+                src={currentTestimony.profilePic}
+                layout="fill"
+                objectFit="cover"
+                className="rounded-full"
+                alt={`Picture of ${currentTestimony.author}`}
+              />
+            </div>
+            <Typography className="mt-2">
+              @{currentTestimony.author.split(" ")[0]}
+            </Typography>
+          </div>
         </div>
-
       </div>
     </Container>
   );

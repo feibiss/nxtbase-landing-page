@@ -1,8 +1,8 @@
-'use client'
-import Image from 'next/image'
-import Container from './container'
-import { Typography } from '../ui/typography'
-import { ImageIcon } from '@radix-ui/react-icons'
+"use client";
+import Image from "next/image";
+import Container from "./container";
+import { Typography } from "../ui/typography";
+import { ImageIcon } from "@radix-ui/react-icons";
 
 const RecentWork = () => {
   return (
@@ -10,7 +10,7 @@ const RecentWork = () => {
       <div className="px-4 md:px-24">
         <Typography
           variant="h3"
-          className="w-full flex items-center justify-start text-start pb-2"
+          className="w-full flex items-center justify-start text-start pb-2 text-primary"
         >
           Recent Work
         </Typography>
@@ -56,7 +56,7 @@ const RecentWork = () => {
         </div>
       </div>
     </Container>
-  )
-}
+  );
+};
 
-export default RecentWork
+export default RecentWork;

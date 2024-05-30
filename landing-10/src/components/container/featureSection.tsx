@@ -15,7 +15,7 @@ const FeatureSection = () => {
       <div className="px-4 md:px-24">
         <Typography
           variant={"h3"}
-          className="w-full flex items-center justify-start text-start pt-20 pb-2 font-bold text-[#064e3b]"
+          className="w-full flex items-center justify-start text-start pt-20 pb-2 font-bold text-primary"
         >
           Features
         </Typography>
@@ -32,13 +32,15 @@ const FeatureSection = () => {
               <CubeIcon className="w-16 h-16" />
             </div>
 
-              <Typography variant={"p"} className="text-lg mt-4 font-bold">
-                {feature.title}
-              </Typography>
-              <Typography variant={"lead"} className="font-light text-xs md:text-lg group-hover:underline group-hover:underline-offset-4 mt-2">
-                {feature.desc}
-              </Typography>
-        
+            <Typography variant={"p"} className="text-lg mt-4 font-bold">
+              {feature.title}
+            </Typography>
+            <Typography
+              variant={"lead"}
+              className="font-light text-xs md:text-lg group-hover:underline group-hover:underline-offset-4 mt-2"
+            >
+              {feature.desc}
+            </Typography>
           </motion.div>
         ))}
       </div>

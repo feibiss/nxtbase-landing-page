@@ -52,7 +52,7 @@ export default function Hero() {
             orientation="vertical"
           />
 
-          <p className="text-primary-foreground/60 text-center md:text-start dark:text-primary-foreground/60 leading-7 text-[14px] md:text-lg font-medium">
+          <p className="text-primary-foreground/90 text-center md:text-start dark:text-primary-foreground/60 leading-7 text-[14px] md:text-lg font-thin">
             Loved by 570+ Professionals
           </p>
         </div>
@@ -68,7 +68,7 @@ export default function Hero() {
           </Typography>
           <Typography
             variant="p"
-            className="max-w-full md:max-w-lg text-lg font-thin text-left leading-6 text-primary-foreground md:font-normal md:text-lg"
+            className="max-w-full md:max-w-lg text-lg font-thin text-left leading-6 text-primary-foreground/80 md:font-normal md:text-lg"
           >
             Great, now that we have your attention, we will actually talk about
             how we help you
