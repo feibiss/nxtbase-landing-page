@@ -1,8 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { Typography } from "../ui/typography";
-import Container from "./container";
-import Image from "next/image";
+
 
 export default function ContactCard() {
   return (
@@ -11,7 +10,7 @@ export default function ContactCard() {
       <div className="my-10">
         <Typography
           variant={"h2"}
-          className="text-start text-primary-foreground dark:text-white"
+          className="text-start tracking-tighter text-primary-foreground dark:text-white"
         >
           Grow with Nextbase
         </Typography>

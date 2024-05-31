@@ -11,7 +11,7 @@ const FeatureCardsList = () => {
       <Container>
         <section className="col-span-12 row-auto grid h-full w-full overflow-visible bg-inherit space-y-8">
           <div className="flex flex-col justify-start items-start space-y-4 ">
-            <Typography variant={"h2"} className="text-3xl md:text-4xl lg:text-4xl font-body text-inherit font-bold">
+            <Typography variant={"h2"} className="text-3xl md:text-4xl lg:text-4xl font-body text-inherit font-bold tracking-tighter">
               Features Portfolio
             </Typography>
             <Typography variant={"p"} className="text-[#020817] font-light text-base lg:text-lg md:text-lg  md:w-2/4">Nextbase is built for scale. Whether you are building a small app or a huge app, Nextbase has all the tools you need.</Typography>

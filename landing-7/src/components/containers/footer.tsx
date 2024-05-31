@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className=" relative bg-gray-900 px-8 pt-10 md:pt-8 md:pb-10 lg:pb-40 lg:pt-20 lg:px-20">
       <div className="text-white md:flex items-center justify-between">
         <div className="flex items-center">
-          <div className="bg-white rounded-full h-6 w-10 flex md:flex items-center justify-center ">
+          <div className="bg-white rounded-full  h-6 w-10 md:h-6 md:w-6  flex md:flex items-center justify-center ">
           </div>
           <span className="ml-2">Nextbase</span>
           <span className="text-slate-50 ml-10 my-auto">

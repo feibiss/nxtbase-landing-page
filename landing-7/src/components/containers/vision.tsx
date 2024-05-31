@@ -6,7 +6,9 @@ import Image from "next/image";
 
 const Vision = () => {
   return (
+    
     <Container classNames="flex bg-primary py-3 dark:bg-card dark:text-white flex justify-between items-center overflow-hidden">
+      
       <div className=" md:flex ">
         <div className="my-10">
           <Typography

@@ -20,7 +20,7 @@ export default function Hero() {
       </div>
       <div className=" col-span-12  lg:col-span-6 flex h-[100vh] lg:h-[60vh] z-20 snap-start flex-col items-start justify-start lg:items-start space-y-8 py-4 text-start md:mt-[var(--navbar-height)] pt-40">
         <div className="flex flex-col items-start justify-start space-y-2 w-full md:w-1/2 text-black">
-          <Typography variant="h1" className="text-black z-20 font-display">
+          <Typography variant="h1" className="text-black z-20 font-display ">
             A fancy looking hero text to catch your attention
           </Typography>
           <Typography

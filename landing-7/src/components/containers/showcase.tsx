@@ -15,7 +15,7 @@ const Showcase = () => {
   return (
     <Container>
       <div className="col-span-12 flex flex-col  space-y-4 pt-10 pb-20">
-        <Typography variant={"h2"} className="text-start items-start pb-0 mb-0">Our commitment</Typography>
+        <Typography variant={"h2"} className="text-start items-start pb-0 mb-0 tracking-tighter">Our commitment</Typography>
         <Typography variant={"p"} className="md:w-3/5 text-start items-start text-base mt-0 pt-0">Great, now that we have your attention, we will actually talk about how we help you</Typography>
         <div className="max-w-screen-xl grid grid-cols-1 lg:grid-cols-3 gap-8 pt-8">
           {Array(3)
