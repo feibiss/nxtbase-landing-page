@@ -14,9 +14,9 @@ import {
 } from "lucide-react";
 
 const HEADER_ITEMS = [
-  { id: "#benefits", label: "Benefits", icon: <SquareKanban /> },
-  { id: "#recent", label: "Recent Works", icon: <FolderArchive /> },
-  { id: "#scope", label: "Scope of Work", icon: <ListChecks /> },
+  { id: "#features", label: "Features", icon: <SquareKanban /> },
+  { id: "#recent_work", label: "Recent Works", icon: <FolderArchive /> },
+  { id: "#testimonial", label: "Testimonial", icon: <ListChecks /> },
   { id: "#pricing", label: "Pricing", icon: <BanknoteIcon /> },
   { id: "#faq", label: "FAQs", icon: <HelpCircle /> },
 ];
@@ -48,7 +48,7 @@ export default function Header() {
         ))}
         <Link
           className="p-0 flex justify-center items-center px-4 md:px-8 min-h-14 h-full py-2 bg-gray-700 rounded-full hover:bg-emerald-700"
-          href="#"
+          href="#custom_plan"
         >
           Login
         </Link>
