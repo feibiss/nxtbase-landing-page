@@ -190,3 +190,30 @@ export const featuredTestimonial = {
     logoUrl: "https://tailwindui.com/img/logos/savvycal-logo-gray-900.svg",
   },
 };
+
+export const FAQ_QUESTIONS = [
+  {
+    id: 1,
+    question: "Why should I use Nextbase?",
+    answer:
+      "Nextbase is a starter kit that comes with everything you need to build your next SaaS. It's built on top of Next.js, Supabase and React Query. It comes with authentication, payments, subscriptions, user settings, edge functions, pre-built components and more. Because Nextbase comes with authentication, payments and just about everything you need to build your next SaaS, you can just focus on building your product.",
+  },
+  {
+    id: 2,
+    question: "Why can't I just use an open-source starter kit?",
+    answer:
+      "You can and there are some great open-source boilerplates out there. But since they are open-source, most of them are side-projects and are not actively maintained. Open source developers are also not incentivized to build a great product or with providing support. Nextbase is built by a team of developers who are invested in your success. We are constantly improving Nextbase and adding new features to it. We are also available to help you out if you get stuck. We also have a Discord community where you can ask questions and get help from other developers who are using Nextbase. We also have a roadmap for Nextbase and we are constantly adding new features to it. We also offer paid support and custom builds if you need help with your project.",
+  },
+  {
+    id: 3,
+    question: "Who is Nextbase for?",
+    answer:
+      "Nextbase is for any developer who wants to build a SaaS. It's a great starting point for your next project. The only requirement is that you know React and Next.js. Supabase is easy to learn and the code is in Javascript, so that shouldn't be hard to get used to. Ideally Nextbase is best suited for you if 1. You are an experienced React.js developer 2. You are familiar with Next.js and React 3. You can write basic Postgres and can hence navigate Supabase.",
+  },
+  {
+    id: 4,
+    question: "How do I get support?",
+    answer:
+      "You can get support by emailing us at admin[at]arni[hyphen]creative[dot]com. We'll get back to you as soon as possible. We're also available on Discord. You will also be invited to join our Discord server once you purchase the product.",
+  },
+];
