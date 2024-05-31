@@ -12,7 +12,8 @@ const typographyVariants = cva(
         h2: `text-2xl/[1.3] bg-gradient-to-br from-black  dark:from-white to-slate-300 bg-clip-text text-transparent md:text-5xl/[1.3] leading-snug`,
         h3: ` font-medium leading-loose text-sm sm:text-base md:text-lg text-slate-700/90 dark:text-indigo-100/90`,
         h4: ` text-3xl font-semibold sm:text-4xl md:text-3xl tracking-tight`,
-
+        h5: "scroll-m-20 text-lg font-semibold tracking-tight",
+        h6: "scroll-m-20 text-base font-semibold tracking-tight",
         p: `font-normal leading-7`,
         blockquote: "mt-6 border-l-2 pl-6 italic",
         ul: "my-6 list-disc [&>li]:mt-2",

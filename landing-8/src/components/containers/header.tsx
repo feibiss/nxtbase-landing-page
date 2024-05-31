@@ -40,7 +40,10 @@ export default function Header() {
           </Button>
         </div>
         <div className="hidden lg:flex justify-around items-center gap-4">
-          <Button variant={"default"} className="bg-white text-black">
+          <Button
+            variant={"default"}
+            className="bg-white text-black hover:bg-[#1E293B80]/50 hover:text-white"
+          >
             Get started for free
           </Button>
         </div>

@@ -18,7 +18,7 @@ export default function ContactCard() {
             Supabase, Stripe and Typescript, and save 4+ months of development
             time ~ $18000
           </Typography>
-          <Button variant={"secondary"} className="mx-auto bg-white text-black">
+          <Button variant={"secondary"} className="mx-auto bg-white text-black hover:text-white">
             Get started for free
           </Button>
         </div>
