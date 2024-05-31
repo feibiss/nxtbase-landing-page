@@ -35,7 +35,7 @@ const FeatureCardsList = () => {
       <Container>
         <section className="col-span-12 row-auto grid h-full w-full overflow-visible bg-inherit space-y-8">
           <div className="flex flex-col w-100 justify-start items-start  text-white">
-            <Typography variant={"h2"} className="text-inherit text-start">
+            <Typography variant={"h2"} className="text-inherit text-start tracking-tighter">
               Features Portfolio
             </Typography>
             <Typography className="w-4/4 md:w-2/4 text-inherit font-extralight">

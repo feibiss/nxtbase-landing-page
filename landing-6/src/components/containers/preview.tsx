@@ -7,10 +7,10 @@ import { SHOWCASE_FEATURES } from "@/lib/enums";
 
 const Preview = () => {
   return (
-    <Container classNames="w-4/4 overflow-x-hidden px-1">
-      <div className="col-span-12 flex flex-col justify-start py-10 md:py-20 max-w-screen-lg mx-auto">
+    <Container classNames="overflow-x-hidden px-1">
+      <div className="col-span-12 flex flex-col justify-start py-10 md:py-20 max-w-screen-xl mx-auto">
         <div className="">
-          <Typography variant={"h2"}>Built for SAAS creators</Typography>
+          <Typography variant={"h2"} className="tracking-tighter">Built for SAAS creators</Typography>
           <Typography className="w-3/4 ">
           Great, now that we have your attention, we will actually talk about how we help you
           </Typography>

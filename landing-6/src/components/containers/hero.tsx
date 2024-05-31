@@ -9,7 +9,7 @@ export default function Hero() {
     <Container classNames="bg-background flex flex-col lg:flex-row justify-start lg:justify-between items-center md:mt-10">
       <div className=" col-span-12 lg:col-span-6 flex h-[50vh] lg:h-[80vh] z-10 snap-start flex-col items-start justify-start lg:items-start space-y-8 py-4 text-start md:mt-[var(--navbar-height)]">
         <div className="flex flex-col items-start justify-start space-y-2">
-          <Typography variant="h1" className=" text-[#0F172A] leading-10">
+          <Typography variant="h1" className=" text-[#0F172A] leading-10 tracking-tighter">
             A fancy looking hero text to catch your attention
           </Typography>
           <Typography
