@@ -22,15 +22,11 @@ const Showcase = () => {
             <div className="md:pb-8 lg:py-12 lg:pb-12">
               <p className="text-2xl font-semibold mb-5">Feature One</p>
               <p className="text-lg mb-7 font-medium dark:text-slate-300 text-slate-700">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro,
-                maiores.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Maiores corrupti ea minima sequi ullam facere fugiat suscipit
+                molestias quam voluptates cum magnam laborum, error deserunt
+                totam! Natus qui nisi dolore!
               </p>
-              <Button
-                variant={"link"}
-                className="mt-4 font-medium dark:text-slate-200 text-slate-800 pl-0 underline decoration-dotted underline-offset-4 decoration-slate-50/30 hover:text-slate-900 hover:decoration-primary dark:hover:text-white dark:hover:decoration-white/50"
-              >
-                Learn More
-              </Button>
             </div>
             <div className="flex flex-col justify-end h-full md:pt-8">
               <Image
@@ -49,19 +45,15 @@ const Showcase = () => {
             </div>
           </div>
           {/* Second card */}
-          <div className="grid grid-rows-[auto_1fr] rounded-lg gap-8 md:gap-10 overflow-hidden bg-gradient-to-b from-amber-400/10 to-rose-400/15">
+          <div className="grid grid-rows-[auto_1fr] rounded-lg gap-8 md:gap-10 overflow-hidden bg-gradient-to-br from-emerald-400/10 to-cyan-400/10">
             <div className="pt-11 px-8 md:px-10">
               <p className="text-2xl font-semibold mb-5">Feature Two</p>
               <p className="text-lg mb-7 font-medium dark:text-slate-300 text-slate-700">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro,
-                maiores.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Maiores corrupti ea minima sequi ullam facere fugiat suscipit
+                molestias quam voluptates cum magnam laborum, error deserunt
+                totam! Natus qui nisi dolore!
               </p>
-              <Button
-                variant={"link"}
-                className="mt-4 font-medium dark:text-slate-200 text-slate-800 pl-0 underline decoration-dotted underline-offset-4 decoration-slate-50/30 hover:text-slate-900 hover:decoration-primary dark:hover:text-white dark:hover:decoration-white/50"
-              >
-                Learn More
-              </Button>
             </div>
             <div className="flex flex-col justify-end h-full md:pt-8">
               <Image
@@ -80,19 +72,15 @@ const Showcase = () => {
             </div>
           </div>
           {/* Third card */}
-          <div className="grid grid-rows-[auto_1fr] rounded-lg gap-8 md:gap-10 overflow-hidden bg-gradient-to-br from-blue-400/20 to-orange-200/20">
+          <div className="grid grid-rows-[auto_1fr] rounded-lg gap-8 md:gap-10 overflow-hidden bg-gradient-to-br from-emerald-400/10 to-cyan-400/10">
             <div className="pt-11 px-8 md:px-10">
               <p className="text-2xl font-semibold mb-5">Feature Three</p>
               <p className="text-lg mb-7 font-medium dark:text-slate-300 text-slate-700">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro,
-                maiores.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Maiores corrupti ea minima sequi ullam facere fugiat suscipit
+                molestias quam voluptates cum magnam laborum, error deserunt
+                totam! Natus qui nisi dolore!
               </p>
-              <Button
-                variant={"link"}
-                className="mt-4 font-medium dark:text-slate-200 text-slate-800 pl-0 underline decoration-dotted underline-offset-4 decoration-slate-50/30 hover:text-slate-900 hover:decoration-primary dark:hover:text-white dark:hover:decoration-white/50"
-              >
-                Learn More
-              </Button>
             </div>
             <div className="flex flex-col justify-end h-full md:pt-8">
               <Image
@@ -111,19 +99,15 @@ const Showcase = () => {
             </div>
           </div>
           {/* Fourth card */}
-          <div className="md:col-span-2 rounded-2xl overflow-hidden xl:min-h-[420px] px-8 pt-12 lg:pt-0 lg:px-16 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-[40%_1fr] gap-8 md:gap-8 lg:gap-24 items-center bg-gradient-to-bl from-indigo-500/40 to-cyan-200/40">
+          <div className="md:col-span-2 rounded-2xl overflow-hidden xl:min-h-[420px] px-8 pt-12 lg:pt-0 lg:px-16 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-[40%_1fr] gap-8 md:gap-8 lg:gap-24 items-center bg-gradient-to-br from-emerald-400/10 to-cyan-400/10">
             <div className="md:pb-8 lg:py-12 lg:pb-12">
               <p className="text-2xl font-semibold mb-5">Feature Four</p>
               <p className="text-lg mb-7 font-medium dark:text-slate-300 text-slate-700">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro,
-                maiores.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Maiores corrupti ea minima sequi ullam facere fugiat suscipit
+                molestias quam voluptates cum magnam laborum, error deserunt
+                totam! Natus qui nisi dolore!
               </p>
-              <Button
-                variant={"link"}
-                className="mt-4 font-medium dark:text-slate-200 text-slate-800 pl-0 underline decoration-dotted underline-offset-4 decoration-slate-50/30 hover:text-slate-900 hover:decoration-primary dark:hover:text-white dark:hover:decoration-white/50"
-              >
-                Learn More
-              </Button>
             </div>
             <div className="flex flex-col justify-end h-full md:pt-8">
               <Image

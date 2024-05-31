@@ -34,7 +34,7 @@ const Features = () => {
 
 const FeatureCard = () => {
   return (
-    <div className="bg-[#1E293B80]/50 p-4 border rounded-md flex col-span-1 flex-col gap-6 text-sm text-slate-800 dark:text-slate-300 tracking-normal font-medium leading-normal">
+    <div className="bg-gradient-to-br from-emerald-400/10 to-cyan-400/10 p-4 border rounded-md flex col-span-1 flex-col gap-6 text-sm text-slate-800 dark:text-slate-300 tracking-normal font-medium leading-normal">
       <div className="flex flex-col gap-3 items-start text-slate-800/80 dark:text-slate-900">
         <CubeIcon className="text-gray-400 hover:text-white" />
         <span className="text-lg font-semibold text-slate-900 dark:text-slate-50">

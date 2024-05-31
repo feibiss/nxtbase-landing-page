@@ -4,14 +4,16 @@ import { Typography } from "../ui/typography";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import Image from "next/image";
 import { SHOWCASE_FEATURES } from "@/lib/enums";
-import { CheckCircledIcon, CubeIcon } from "@radix-ui/react-icons";
+import { CheckCircledIcon } from "@radix-ui/react-icons";
 
 const Preview = () => {
   return (
     <Container classNames="overflow-x-hidden px-1">
       <div className="col-span-12 flex flex-col justify-center py-10 md:py-20">
         <div className="">
-          <Typography variant={"h2"} className="text-center w-full">Core features</Typography>
+          <Typography variant={"h2"} className="text-center w-full">
+            Core features
+          </Typography>
           <Typography
             variant="subheading"
             className="w-3/4 lg:max-w-[50%] my-6 mx-auto text-balance text-center"
@@ -25,7 +27,7 @@ const Preview = () => {
           className="w-full mx-auto"
         >
           <div className="w-1/2 mx-auto md:w-100 overflow-x-hidden">
-            <TabsList className="bg-[#1E293B80]/50 mt-6 mb-6 flex flex-grow overflow-x-hidden overflow-y-hidden no-scrollbar ps-12 pe-8 md:pe-0 md:ps-0">
+            <TabsList className="bg-gradient-to-br from-emerald-400/10 to-cyan-400/10 mt-6 mb-6 flex flex-grow overflow-x-hidden overflow-y-hidden no-scrollbar ps-12 pe-8 md:pe-0 md:ps-0">
               {SHOWCASE_FEATURES.slice(0, 3).map((feat, idx) => (
                 <TabsTrigger
                   key={feat.title}
@@ -39,7 +41,7 @@ const Preview = () => {
           </div>
           {SHOWCASE_FEATURES.map((feat) => (
             <TabsContent key={feat.title} value={feat.title}>
-              <div className="bg-[#1E293B80]/50 w-full mx-auto h-full flex flex-col lg:flex-row justify-center item-center md:items-center lg:space-x-24 space-y-8 p-8 md:py-8">
+              <div className="bg-gradient-to-br from-emerald-400/10 to-cyan-400/10 w-full mx-auto h-full flex flex-col lg:flex-row justify-center item-center md:items-center lg:space-x-24 space-y-8 p-8 md:py-8">
                 <div className="flex flex-col w-1/2 md:w-1/2 items-start text-start justify-start space-y-4">
                   <Typography variant={"h4"} className="w-fit">
                     {feat.title}
