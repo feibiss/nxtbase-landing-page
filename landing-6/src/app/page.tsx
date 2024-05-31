@@ -18,9 +18,8 @@ export default function Home() {
       <Preview />
       <BottomWave type="curved-up" />
       <FeatureCardsList />
-      
       <Showcase />
-      <TopWave />
+   
       <FeaturedTestimonial />
       <WorkingBrands />
       <ContactCard />

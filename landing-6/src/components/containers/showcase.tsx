@@ -14,9 +14,10 @@ const HEADINGS = ["Secure", "Reliable", "Fast"];
 const Showcase = () => {
   return (
     <Container>
-      <div className="col-span-12 flex flex-col justify-center items-center space-y-16 pt-20 pb-10">
-        <Typography variant={"h2"}>Our commitment</Typography>
-        <div className="max-w-screen-lg grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="col-span-12 flex flex-col justify-center space-y-4 pt-20 pb-10">
+        <Typography variant={"h2"} className=" text-start items-start pb-0 mb-0">Process</Typography>
+        <Typography variant={"p"} className="md:w-3/5 text-start items-start mt-0 pt-0">Great, now that we have your attention, we will actually talk about how we help you</Typography>
+        <div className="max-w-screen-xl grid grid-cols-1 lg:grid-cols-3 gap-8">
           {Array(3)
             .fill(1)
             .map((_, idx) => (
@@ -28,7 +29,9 @@ const Showcase = () => {
                 <CardHeader className="pb-0">
                   <div className="flex basis-1 lg:basis-1/3 space-x-4 items-center justify-start">
                     {" "}
-                    {ICONS[idx]}
+                    <div className="bg-muted p-3 rounded-lg">
+                    {ICONS[idx] }
+                    </div>
                     <Typography
                       variant={"subheading"}
                       className="uppercase font-semibold text-nowrap line-clamp-1"

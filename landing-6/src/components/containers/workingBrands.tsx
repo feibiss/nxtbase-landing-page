@@ -64,9 +64,7 @@ const WorkingBrands = () => {
   ];
   return (
     <Container classNames="flex flex-col col-span-12 items-center md:h-fit justify-start space-y-4 py-20">
-      <Typography variant={"h6"} className=" text-muted-foreground uppercase">
-        Partners who worked with us
-      </Typography>
+    
       <div className="flex flex-wrap w-full h-full justify-center mx-auto">
         {[...BRANDS].map(({ id, src, alt }, idx) => {
           return (
