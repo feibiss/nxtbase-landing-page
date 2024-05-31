@@ -33,10 +33,10 @@ export const TESTIMONIES = [
 
 export const SHOWCASE_FEATURES = [
   {
-    title: "Feature-One",
-    subtitle: "User Authentication",
+    title: "Feature One",
+    subtitle: "Tab 1",
     navigateTo: "#",
-    desc: "Nextbase supports a wide range of authentication providers such as Google, GitHub, Twitter, Facebook, Apple, Discord and many more. ",
+    desc: "Lorem ipsum adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. ",
     features: [
       "Multi-provider authentication support",
       "Flexible sign-in options: Email and password",
@@ -46,10 +46,10 @@ export const SHOWCASE_FEATURES = [
       "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702921481/usenextbase/tinywow_signup_43386486_t9iuny.webp",
   },
   {
-    title: "Feature-Two",
-    subtitle: "Admin Panel",
+    title: "Feature Two",
+    subtitle: "Tab 2",
     navigateTo: "#",
-    desc: "Nextbase comes with a built-in admin panel that allows you to have a secret area within your app .",
+    desc: "Lorem ipsum dolor consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. ",
     features: [
       "Integrated admin panel",
       "Secret area within the app for admin access.",
@@ -58,43 +58,17 @@ export const SHOWCASE_FEATURES = [
       "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702915076/usenextbase/tinywow_admin-panel-gif_43379830_tltcqi.webp",
   },
   {
-    title: "Feature-Three",
-    subtitle: "User Impersonation",
+    title: "Feature Three",
+    subtitle: "Tab 3",
     navigateTo: "#",
     features: [
       "Simplified debugging of user-facing issues",
       "Mimic and view the app from any user's view",
       "Useful for troubleshooting complex problems",
     ],
-    desc: "Admin panel also comes with a powerful debugging feature called User Impersonation.",
+    desc: "Lorem ipsum dolor sit amet, scing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. ",
     imgSrc:
       "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702921499/usenextbase/tinywow_user-imp_43386586_xpo6pr.webp",
-  },
-  {
-    title: "Feature-Four",
-    subtitle: "Incredible performance",
-    navigateTo: "#",
-    features: [
-      "Leverages Next.js 13's latest features",
-      "Enhanced data fetching for performance.",
-      "Exceptional UX through Next.js capabilities.",
-    ],
-    desc: "Nextbase is designed to deliver incredible performance. With Nextbase, you can build high-performance applications that meet the demands of today's users.",
-    imgSrc:
-      "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702916928/usenextbase/tinywow_layouts_43381898_qpovdj.webp",
-  },
-  {
-    title: "Feature-Five",
-    subtitle: "Simplified Payment flow",
-    navigateTo: "#",
-    features: [
-      "Always in sync with stripe",
-      "Pre-configured integration with Stripe",
-      "Real-time updates on customer activities",
-    ],
-    desc: "Nextbase is pre-configured with Stripe, a leading online payment processing platform. Your database will be in sync with all customer activity in Stripe via Webhooks. ",
-    imgSrc:
-      "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702916692/usenextbase/tinywow_stripe-payments-gif_43381706_by2uhy.webp",
   },
 ];
 
