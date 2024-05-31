@@ -1,9 +1,10 @@
 import Brands from "@/components/containers/brands";
 import ContactCard from "@/components/containers/contact";
+import Preview from "@/components/containers/coreFeatures";
 import FeaturedTestimonial from "@/components/containers/featuredTestimonial";
 import Features from "@/components/containers/features";
 import Hero from "@/components/containers/hero";
-import Primitives from "@/components/containers/primitives";
+// import Primitives from "@/components/containers/primitives";
 import Showcase from "@/components/containers/showcase";
 import Testimonials from "@/components/containers/testimonials";
 import { featuredTestimonial } from "@/lib/enums";
@@ -14,7 +15,8 @@ export default function Home() {
       <div className="absolute top-0 z-[-2] h-screen w-screen bg-white dark:bg-transparent bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(99,102,241,0.5),rgba(255,255,255,0))]"></div>
       <Hero />
       <Brands />
-      <Primitives />
+      <Preview />
+      {/* <Primitives /> */}
       <Features />
       <FeaturedTestimonial testimony={featuredTestimonial} />
       <Showcase />
