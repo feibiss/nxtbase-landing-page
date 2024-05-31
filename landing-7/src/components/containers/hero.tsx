@@ -12,13 +12,13 @@ export default function Hero() {
       <Header />
       <div className="absolute inset-0 h-full bg-blend-darken w-full items-center px-5 py-24 ">
         <Image
-          src="/dddepth-4.jpg"
+          src="/image.png"
           fill
           alt="Hero Image"
           className="bg-blend-darken object-cover"
         />
       </div>
-      <div className=" col-span-12  lg:col-span-6 flex h-[80vh] lg:h-[60vh] z-20 snap-start flex-col items-start justify-start lg:items-start space-y-8 py-4 text-start md:mt-[var(--navbar-height)] pt-40">
+      <div className=" col-span-12  lg:col-span-6 flex h-[100vh] lg:h-[60vh] z-20 snap-start flex-col items-start justify-start lg:items-start space-y-8 py-4 text-start md:mt-[var(--navbar-height)] pt-40">
         <div className="flex flex-col items-start justify-start space-y-2 w-full md:w-1/2 text-black">
           <Typography variant="h1" className="text-black z-20 font-display">
             A fancy looking hero text to catch your attention
@@ -32,19 +32,14 @@ export default function Hero() {
           </Typography>
         </div>
 
-        <Button variant={"secondary"}>
+        <Button className="bg-primary">
           <div className="flex w-fit items-center justify-between gap-2">
             <p className=" font-semibold">Get started for free</p>
 
-            <ArrowRightIcon className="h-4 w-4" />
           </div>
         </Button>
 
-        <Button>
-          <div className="flex w-fit items-center justify-between gap-2">
-            <p className="">All Services</p>
-          </div>
-        </Button>
+     
       </div>
       <Brands />
     </Container>
