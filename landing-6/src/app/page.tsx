@@ -9,16 +9,17 @@ import Showcase from "@/components/containers/showcase";
 import TopWave from "@/components/containers/topwave";
 import WorkingBrands from "@/components/containers/workingBrands";
 
+
 export default function Home() {
   return (
     <>
       <Hero />
       <Brands />
+      <Preview />
       <BottomWave type="curved-up" />
       <FeatureCardsList />
-      <Preview />
       <Showcase />
-      <TopWave />
+   
       <FeaturedTestimonial />
       <WorkingBrands />
       <ContactCard />

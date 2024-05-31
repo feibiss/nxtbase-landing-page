@@ -42,10 +42,8 @@ const Brands = () => {
     },
   ];
   return (
-    <div className="flex flex-col row-span-1 col-span-12 items-center md:h-fit justify-start w-full space-y-4 py-10">
-      <Typography className="text-xs text-muted-foreground uppercase">
-        Trusted by the likes of
-      </Typography>
+    <div className="flex flex-col row-span-1 col-span-12 items-center md:h-fit justify-start w-full space-y-4 py-10 md:mt-10">
+    
       <div className="flex flex-wrap w-full max-w-screen-md lg:max-w-screen-xl justify-center mx-auto">
         {[...BRANDS].map(({ id, src, alt }, idx) => {
           return (

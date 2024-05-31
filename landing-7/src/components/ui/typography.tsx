@@ -2,18 +2,18 @@ import * as React from "react";
 import { VariantProps, cva } from "class-variance-authority";
 import { cn } from "@lib/utils";
 import { Slot } from "@radix-ui/react-slot";
-import { inter, roboto_slab } from "@/lib/fonts";
+
 
 const typographyVariants = cva("text-foreground text-start w-fit h-fit", {
   variants: {
     variant: {
-      h1: `text-5xl ${roboto_slab.className} font-bold tracking-loose md:tracking-none lg::tracking-tight`,
-      h2: ` font-semibold ${roboto_slab.className} first:mt-0 text-4xl`,
-      h3: ` text-3xl ${roboto_slab.className} font-semibold tracking-tight`,
-      h4: ` text-3xl ${roboto_slab.className} font-semibold sm:text-4xl md:text-3xl tracking-tight`,
-      h5: ` text-2xl ${roboto_slab.className} font-semibold tracking-tight`,
-      h6: ` text-base ${roboto_slab.className} font-semibold tracking-tight`,
-      p: `leading-7 ${inter.className}`,
+      h1: `text-5xl  font-bold tracking-loose md:tracking-none lg::tracking-tight`,
+      h2: ` font-semibold  first:mt-0 text-4xl`,
+      h3: ` text-3xl  font-semibold tracking-tight`,
+      h4: ` text-3xl  font-semibold sm:text-4xl md:text-3xl tracking-tight`,
+      h5: ` text-2xl  font-semibold tracking-tight`,
+      h6: ` text-base  font-semibold tracking-tight`,
+      p: `leading-7 `,
       blockquote: "mt-6 border-l-2 pl-6 italic",
       ul: "my-6 list-disc [&>li]:mt-2",
       inlineCode:

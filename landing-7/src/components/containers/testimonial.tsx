@@ -7,7 +7,11 @@ import { Card, CardContent } from "../ui/card";
 const Testimonials = ({}) => {
   return (
     <Container classNames="bg-background py-20">
-      <Typography variant={"h2"}>What Our Partners Say</Typography>
+       <Typography variant={"h2"} className="tracking-tighter mb-3">Loved by industry leaders</Typography>
+          <Typography>
+          Great, now that we have your attention, we will actually talk about how we help you
+          </Typography>
+     
       <div className="grid grid-cols-1 gap-8 pt-5 lg:grid-cols-3">
         {TESTIMONIES.map((testimonial) => {
           return (
@@ -16,10 +20,10 @@ const Testimonials = ({}) => {
                 <Typography className="mb-8 h-40 lg:h-64">
                   {testimonial.review}
                 </Typography>
-                <Typography variant={"lead"} className="font-semibold">
+                <Typography variant={"lead"} className="font-semibold pt-10 md:pt-0">
                   {testimonial.author}
                 </Typography>
-                <Typography>{testimonial.role}</Typography>
+                <Typography className="">{testimonial.role}</Typography>
                 <Typography>{testimonial.brand}</Typography>
               </CardContent>
             </Card>

@@ -1,24 +1,28 @@
 import React from "react";
 import Container from "./container";
 import { Typography } from "../ui/typography";
-import { Card } from "../ui/card";
+import { Card, CardFooter } from "../ui/card";
 import Image from "next/image";
+import { Button } from "../ui/button";
+import { CubeIcon,ChevronRightIcon } from "@radix-ui/react-icons";
 
 const BLOGS = [
-  "https://res.cloudinary.com/dkqrmlxlg/image/upload/v1708335146/photo-1534670007418-fbb7f6cf32c3_ty8euj.webp",
-  "https://res.cloudinary.com/dkqrmlxlg/image/upload/v1708335117/photo-1601445638532-3c6f6c3aa1d6_q6uiun.webp",
-  "https://res.cloudinary.com/dkqrmlxlg/image/upload/v1708335115/photo-1558655146-d09347e92766_pct3tg.webp",
+  "/gradient.png",
+  "/gradient.png",
 ];
+
 const Blogs = () => {
   return (
-    <Container classNames="bg-muted">
+    <Container classNames="">
       <div className="flex w-full flex-col justify-start items-start py-20 mx-auto">
-        <div className="flex justify-between items-center w-full">
-          <Typography variant={"h2"}>Blogs</Typography>
-          <Typography>Stay in the know for all things hepta.</Typography>
+        <div className="items-center w-full">
+          <Typography variant={"h2"} className="tracking-tighter">Our Blog posts</Typography>
+          <Typography>
+            Great, now that we have your attention, we will actually talk about how we help you
+          </Typography>
         </div>
         <div className="w-full flex flex-col lg:flex-row justify-between gap-8 pt-10 items-center">
-          {BLOGS.map((blog) => (
+          {BLOGS.slice(0, 2).map((blog) => (
             <BlogCard key={blog} src={blog} />
           ))}
         </div>
@@ -29,28 +33,37 @@ const Blogs = () => {
 
 const BlogCard = ({ src }: { src: string }) => {
   return (
-    <Card className="flex w-full lg:w-1/2 rounded-sm flex-col items-center justify-start border-2 hover:border-transparent overflow-hidden transition-all shadow-none hover:shadow-lg">
-      <div className="w-full overflow-hidden h-64">
+    <Card className="relative flex w-full lg:w-1/2 rounded-lg flex-col items-center justify-start border-2 hover:border-transparent overflow-hidden transition-all shadow-none hover:shadow-lg">
+      <div className="w-full relative overflow-hidden h-64 cursor-pointer">
         <Image
           src={src}
-          className="object-cover w-full"
+          className="object-cover w-full h-full"
           width={600}
           height={400}
-          alt="Image"
+          alt="Blog Image"
         />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <CubeIcon className="text-white opacity-75 w-12 h-12" />
+        </div>
       </div>
-      <div className="flex flex-col items-start justify-start space-y-4 p-8">
-        <Typography variant={"mutedText"} className="text-primary text-sm">
-          Brand Name
+      <div className="flex flex-col items-start justify-start space-y-4 p-4">
+     
+        <Typography variant={"h3"} className="tracking-tight font-medium hover:underline">
+        Feature
         </Typography>
-        <Typography variant={"h5"} className="font-medium hover:underline">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus,
-          assumenda?
+        <Typography variant={"p"} className="tracking-tight font-normal hover:underline">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores corrupti ea minima sequi ullam facere fugiat suscipit 
         </Typography>
-        <Typography>Author</Typography>
-        <Typography variant={"smallText"} className="text-primary font-light">
-          February 14, 2024 • 4 min read
-        </Typography>
+        
+        <CardFooter className="p-0">
+            <Button
+            variant={"link"}
+            className="text-start justify-start px-0 decoration-primary text-secondary-foreground/80 hover:text-primary text-sm font-normal "
+            size={"sm"}
+            >
+            Read more <ChevronRightIcon className="size-4" />
+            </Button>
+        </CardFooter>
       </div>
     </Card>
   );

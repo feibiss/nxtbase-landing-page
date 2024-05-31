@@ -59,26 +59,26 @@ export const SHOWCASE_FEATURES = [
     title: "Feature-One",
     subtitle: "User Authentication",
     navigateTo: "#",
-    desc: "Nextbase supports a wide range of authentication providers such as Google, GitHub, Twitter, Facebook, Apple, Discord and many more. ",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. ",
     features: [
       "Multi-provider authentication support",
       "Flexible sign-in options: Email and password",
       "Comprehensive user authentication system",
     ],
     imgSrc:
-      "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702921481/usenextbase/tinywow_signup_43386486_t9iuny.webp",
+      "/campaign-creators-gMsnXqILjp4-unsplash 1.svg",
   },
   {
     title: "Feature-Two",
     subtitle: "Admin Panel",
     navigateTo: "#",
-    desc: "Nextbase comes with a built-in admin panel that allows you to have a secret area within your app .",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. ",
     features: [
       "Integrated admin panel",
       "Secret area within the app for admin access.",
     ],
     imgSrc:
-      "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702915076/usenextbase/tinywow_admin-panel-gif_43379830_tltcqi.webp",
+      "/christin-hume-Hcfwew744z4-unsplash.svg",
   },
   {
     title: "Feature-Three",
@@ -89,9 +89,9 @@ export const SHOWCASE_FEATURES = [
       "Mimic and view the app from any user's view",
       "Useful for troubleshooting complex problems",
     ],
-    desc: "Admin panel also comes with a powerful debugging feature called User Impersonation.",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. ",
     imgSrc:
-      "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702921499/usenextbase/tinywow_user-imp_43386586_xpo6pr.webp",
+      "/mario-gogh-VBLHICVh-lI-unsplash.svg",
   },
   {
     title: "Feature-Four",
@@ -102,7 +102,7 @@ export const SHOWCASE_FEATURES = [
       "Enhanced data fetching for performance.",
       "Exceptional UX through Next.js capabilities.",
     ],
-    desc: "Nextbase is designed to deliver incredible performance. With Nextbase, you can build high-performance applications that meet the demands of today's users.",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. ",
     imgSrc:
       "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702916928/usenextbase/tinywow_layouts_43381898_qpovdj.webp",
   },
@@ -115,7 +115,7 @@ export const SHOWCASE_FEATURES = [
       "Pre-configured integration with Stripe",
       "Real-time updates on customer activities",
     ],
-    desc: "Nextbase is pre-configured with Stripe, a leading online payment processing platform. Your database will be in sync with all customer activity in Stripe via Webhooks. ",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. ",
     imgSrc:
       "https://res.cloudinary.com/dkqrmlxlg/video/upload/v1702916692/usenextbase/tinywow_stripe-payments-gif_43381706_by2uhy.webp",
   },
@@ -229,17 +229,17 @@ export const FOOTER_LINKS: FooterCategory[] = [
   },
 ];
 
-export const featuredTestimonial = {
-  body: "Why a landing page? Well, you know that feeling where you definitely don't another new app but just because the website looked great you decided to give it a spin and now you can't live without that app? Yes, I think you got your answer.",
-  author: {
-    name: "Brenna Goyette",
-    handle: "brennagoyette",
-    imageUrl:
-      "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80",
-    logoUrl: "https://tailwindui.com/img/logos/savvycal-logo-gray-900.svg",
-  },
-};
-export const testimonials = [
+// export const featuredTestimonial = {
+//   body: "Why a landing page? Well, you know that feeling where you definitely don't another new app but just because the website looked great you decided to give it a spin and now you can't live without that app? Yes, I think you got your answer.",
+//   author: {
+//     name: "Brenna Goyette",
+//     handle: "brennagoyette",
+//     imageUrl:
+//       "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80",
+//     logoUrl: "https://tailwindui.com/img/logos/savvycal-logo-gray-900.svg",
+//   },
+// };
+export const featuredTestimonial = [
   [
     [
       {
@@ -326,4 +326,39 @@ export const FAQ_QUESTIONS = [
     question: "Question Four",
     answer: "",
   },
+];
+
+
+export const companyShowcase = [
+  {
+    company: {
+      name: "Company A",
+      logo: "/vercel.svg"
+    }
+  },
+  {
+    company: {
+      name: "Company B",
+      logo: "/penta_logo.svg"
+    }
+  },
+  {
+    company: {
+      name: "Company C",
+      logo: "/prisma.svg"
+    }
+  },
+  {
+    company: {
+      name: "Company D",
+      logo: "/tailwindcss.svg"
+    }
+  },
+  {
+    company: {
+      name: "Company E",
+      logo: "/perplexity.svg"
+    }
+  },
+  // Add more companies as needed
 ];

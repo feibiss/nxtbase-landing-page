@@ -7,9 +7,9 @@ const BottomWave = ({
   type?: "top" | "bottom" | "arc-up" | "curved-up" | "curved-bottom";
 }) => {
   return (
-    <div className="w-full h-[140px] relative ">
+    <div className="w-full md:h-[140px] relative ">
       <Image
-        src={`wave-haikei-${type}.svg`}
+        src='/wave.svg'
         fill
         alt={`${type} wave`}
         className={cn("object-cover")}

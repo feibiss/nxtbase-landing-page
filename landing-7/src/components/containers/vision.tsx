@@ -6,26 +6,33 @@ import Image from "next/image";
 
 const Vision = () => {
   return (
-    <Container classNames="bg-primary dark:bg-card dark:text-white flex justify-between items-center overflow-hidden">
-      <div className="col-span-12 flex md:flex-row flex-col justify-between">
-        <div className="flex flex-col w-full md:w-1/2 justify-center relative items-start text-start space-y-16 py-20">
+    
+    <Container classNames="flex bg-primary py-3 dark:bg-card dark:text-white flex justify-between items-center overflow-hidden">
+      
+      <div className=" md:flex ">
+        <div className="my-10">
           <Typography
             variant={"h2"}
             className="text-start text-primary-foreground dark:text-white"
           >
-            Our goal is to simply make the Internet better. Through speed,
-            through performance, and through experience.
+            Our goal 
           </Typography>
-          <Button variant={"secondary"}>Get Started</Button>
+          <Typography
+            variant={"p"}
+            className="text-start text-primary-foreground md:w-2/3 dark:text-white my-3"
+          >
+           Great, now that we have your attention, we will actually talk about how we help you
+          </Typography>
+          <Button  className="bg-primary-foreground text-[#020817] text-base py-2 px-4 my-3 hover:bg-[#000] hover:text-primary-foreground">Get started for free</Button>
         </div>
-        <div className="flex w-full md:w-1/2 h-full">
-          <div className="h-full max-h-full w-[600px]  absolute right-0 md:-right-40">
+        <div className=" ">
+          <div className="my-8">
             <Image
-              width={600}
-              height={512}
+              width={320}
+              height={300}
               alt="Contact Us Illustration"
-              src="preview_spaceman.svg"
-              className="absolute h-full inset-y-0 w-full max-w-[600px]"
+              src="/image.png"
+              className="rounded-lg"
             />
           </div>
         </div>

@@ -1,38 +1,29 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { Typography } from "../ui/typography";
-import Container from "./container";
-import Image from "next/image";
+
 
 export default function ContactCard() {
   return (
-    <Container classNames="bg-gradient-to-r from-accent to-secondary py-20 relative">
-      <div className="col-span-12 mx-auto flex flex-col md:flex-row justify-between items-center overflow-x-hidden w-full overflow-hidden">
-        <div className="h-full max-h-full w-full md:w-[600px] absolute -bottom-40 md:bottom-0 md:-left-20 lg:left-0">
-          <Image
-            width={600}
-            height={512}
-            alt="Contact Us Illustration"
-            src="cta_spaceman.svg"
-            className="h-full w-full"
-          />
-        </div>
-
-        <div className="flex w-fit pb-80 md:ml-auto md:pb-0 mx-auto flex-col items-center justify-center px-4 space-y-8  ">
-          <div className="text-center md:ml-auto w-full md:w-1/2 space-y-4">
-            <Typography variant={"h2"} className="text-balance">
-              Interested in having your SAAS deployed with us?
-            </Typography>
-            <Button variant={"secondary"} className="mx-auto">
-              <div className="flex w-full items-center justify-center gap-2">
-                <p className="">Let&apos;s Talk</p>
-
-                <ArrowRightIcon className="h-4 w-4" />
-              </div>
-            </Button>
-          </div>
-        </div>
+    <div className="flex bg-primary py-3 mx-auto dark:bg-card dark:text-white flex justify-between items-center overflow-hidden">
+    <div className="w-4/5 md:w-2/3 mx-auto item-start">
+      <div className="my-10">
+        <Typography
+          variant={"h2"}
+          className="text-start tracking-tighter text-primary-foreground dark:text-white"
+        >
+          Grow with Nextbase
+        </Typography>
+        <Typography
+          variant={"p"}
+          className="text-start font-light text-lg text-primary-foreground md:w-2/4 dark:text-white my-4"
+        >
+         Great, now that we have your attention, we will actually talk about how we help you
+        </Typography>
+        <Button  className="bg-primary-foreground text-[#020817] text-base py-2 px-4 my-4 hover:bg-[#000] hover:text-primary-foreground">Get started for free</Button>
       </div>
-    </Container>
+     
+    </div>
+  </div>
   );
 }
