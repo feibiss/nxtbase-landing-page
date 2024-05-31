@@ -37,7 +37,7 @@ const Brands = () => {
     },
   ];
   return (
-    <div className="flex absolute z-20 inset-x-0  bottom-0 mx-auto pt-40  flex-col row-span-1 col-span-12 items-center md:h-fit justify-start w-full space-y-4 py-10">
+    <div className="flex absolute z-20 inset-x-0  bottom-0 mx-auto pt-40  flex-col row-span-1 col-span-12 items-center md:h-fit justify-start w-full  py-10">
    
       <div className="flex flex-wrap lg:flex-nowrap space-x-4 pt-10 w-full max-w-screen-md overflow-hidden lg:max-w-screen-xl justify-center  items-center mx-auto">
         {[...BRANDS].map(({ id, src, alt }, idx) => {

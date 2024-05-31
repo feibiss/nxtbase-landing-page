@@ -54,7 +54,7 @@ export default function Header() {
           // variant={"default"}
           size={"sm"}
           rounded={"full"}
-          className="hidden px-8 py-2 md:block  bg-primary text-sm font-medium leading-5 text-white"
+          className="hidden px-8 py-2 md:block  bg-primary text-sm font-medium leading-5 text-white hover:bg-black "
         >
           Get started for free
         </Button>

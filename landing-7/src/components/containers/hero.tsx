@@ -18,7 +18,7 @@ export default function Hero() {
           className="bg-blend-darken object-cover"
         />
       </div>
-      <div className=" col-span-12  lg:col-span-6 flex h-[100vh] lg:h-[60vh] z-20 snap-start flex-col items-start justify-start lg:items-start space-y-8 py-4 text-start md:mt-[var(--navbar-height)] pt-40">
+      <div className=" col-span-12  lg:col-span-6 flex h-[100vh] lg:h-[50vh] z-20 snap-start flex-col items-start justify-start lg:items-start space-y-8 py-4 text-start md:mt-[var(--navbar-height)] pt-40">
         <div className="flex flex-col items-start justify-start space-y-2 w-full md:w-1/2 text-black">
           <Typography variant="h1" className="text-black z-20 font-display ">
             A fancy looking hero text to catch your attention
@@ -32,7 +32,7 @@ export default function Hero() {
           </Typography>
         </div>
 
-        <Button className="bg-primary">
+        <Button className="bg-primary hover:bg-black hover:text-muted">
           <div className="flex w-fit items-center justify-between gap-2">
             <p className=" font-semibold">Get started for free</p>
 
