@@ -229,17 +229,17 @@ export const FOOTER_LINKS: FooterCategory[] = [
   },
 ];
 
-export const featuredTestimonial = {
-  body: "Why a landing page? Well, you know that feeling where you definitely don't another new app but just because the website looked great you decided to give it a spin and now you can't live without that app? Yes, I think you got your answer.",
-  author: {
-    name: "Brenna Goyette",
-    handle: "brennagoyette",
-    imageUrl:
-      "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80",
-    logoUrl: "https://tailwindui.com/img/logos/savvycal-logo-gray-900.svg",
-  },
-};
-export const testimonials = [
+// export const featuredTestimonial = {
+//   body: "Why a landing page? Well, you know that feeling where you definitely don't another new app but just because the website looked great you decided to give it a spin and now you can't live without that app? Yes, I think you got your answer.",
+//   author: {
+//     name: "Brenna Goyette",
+//     handle: "brennagoyette",
+//     imageUrl:
+//       "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80",
+//     logoUrl: "https://tailwindui.com/img/logos/savvycal-logo-gray-900.svg",
+//   },
+// };
+export const featuredTestimonial = [
   [
     [
       {

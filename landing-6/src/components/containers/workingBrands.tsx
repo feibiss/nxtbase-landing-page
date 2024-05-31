@@ -63,7 +63,7 @@ const WorkingBrands = () => {
     },
   ];
   return (
-    <Container classNames="flex flex-col col-span-12 items-center md:h-fit justify-start space-y-4 py-20">
+    <Container classNames="flex flex-col col-span-12 items-center md:h-fit justify-start space-y-4 py-0 md:py-20">
     
       <div className="flex flex-wrap w-full h-full justify-center mx-auto">
         {[...BRANDS].map(({ id, src, alt }, idx) => {
