@@ -16,7 +16,6 @@ export default function Home() {
       <Showcase />
       <Vision />
       <Testimonials />
-      
       <Blogs />
       <ContactCard />
     </main>
