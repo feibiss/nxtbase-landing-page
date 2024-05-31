@@ -29,9 +29,9 @@ export default function Hero() {
             </Button>
           </div>
         </div>
-        <div className="flex relative w-full h-full min-h-96 justify-items-center justify-center col-span-12 items-center">
-          {/* right section content will go here */}
-        </div>
+        {/* <div className="sm:hidden flex relative w-full h-full min-h-96 justify-items-center justify-center col-span-12 items-center">
+            ...right side content will go here...
+        </div> */}
       </div>
     </Wrapper>
   );

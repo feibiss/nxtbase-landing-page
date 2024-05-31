@@ -8,7 +8,6 @@ interface PricingCardProps {
   price: string;
   features: string[];
   dark?: boolean;
-  popular?: boolean;
 }
 
 const PricingCard: React.FC<PricingCardProps> = ({
@@ -16,7 +15,6 @@ const PricingCard: React.FC<PricingCardProps> = ({
   price,
   features,
   dark,
-  popular,
 }) => {
   return (
     <div
@@ -50,8 +48,10 @@ const PricingCard: React.FC<PricingCardProps> = ({
       </ul>
       <Button
         className={`w-full mt-8 ${
-          dark ? "bg-blue-50 text-black" : "bg-black text-white"
-        } ${popular ? "bg-blue-50 text-black" : ""}`}
+          dark
+            ? "bg-blue-50 text-black hover:text-white"
+            : "bg-black text-white"
+        }`}
         variant={"secondary"}
         size="sm"
       >
@@ -82,17 +82,11 @@ const Pricing = () => {
 
       <div className="flex flex-row gap-8 p-6">
         <PricingCard title="" price="$799" features={features} dark={true} />
-        <PricingCard
-          title=""
-          price="$799"
-          features={features}
-          dark={true}
-          popular={false}
-        />
+        <PricingCard title="" price="$799" features={features} dark={true} />
         <PricingCard title="" price="$799" features={features} dark={true} />
       </div>
     </>
   );
-}; 
+};
 
 export default Pricing;
