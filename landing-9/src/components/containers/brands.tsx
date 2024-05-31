@@ -66,14 +66,14 @@ const Brands = () => {
     },
   ];
   return (
-    <div className="flex flex-col row-span-1 col-span-12 items-center md:h-fit bg-black justify-center w-full space-y-4 py-10">
+    <div className="flex flex-col row-span-1 col-span-12 items-center md:h-fit bg-background justify-center w-full space-y-4 md:py-12">
       <Marquee reverse fade pauseOnHover className="w-full max-w-screen">
         {BRANDS.map(({ id, src, alt }) => {
           return (
             <Image
               key={id}
               src={src}
-              className="h-12 md:h-20 blur-0 grayscale text-transparent invert transition-all hover:grayscale-0 col-span-1"
+              className="h-14 md:h-20 blur-0 transition-all hover:grayscale-0"
               width={220}
               height={182}
               alt={alt}
