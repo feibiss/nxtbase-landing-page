@@ -21,7 +21,7 @@ const Features = () => {
           </Typography>
         </div>
         <div className="mx-auto my-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 lg:gap-x-12 gap-y-12 lg:gap-y-20">
-          {Array(9)
+          {Array(12)
             .fill(1)
             .map((_, idx) => (
               <FeatureCard key={idx} />
@@ -35,7 +35,7 @@ const Features = () => {
 const FeatureCard = () => {
   return (
     <div className="bg-[#1E293B80]/50 p-4 border rounded-md flex col-span-1 flex-col gap-6 text-sm text-slate-800 dark:text-slate-300 tracking-normal font-medium leading-normal">
-      <div className="flex flex-col gap-3 items-start text-slate-800/80 dark:text-slate-400/80">
+      <div className="flex flex-col gap-3 items-start text-slate-800/80 dark:text-slate-900">
         <CubeIcon className="text-gray-400 hover:text-white" />
         <span className="text-lg font-semibold text-slate-900 dark:text-slate-50">
           Feature
@@ -49,9 +49,9 @@ const FeatureCard = () => {
       </Typography>
       <Button
         variant={"link"}
-        className="text-indigo-500 dark:text-indigo-300 gap-2 hover:gap-4 transition-all text-start w-fit pl-0 hover:text-indigo-800 dark:hover:text-white hover:underline decoration-dotted underline-offset-4 decoration-slate-50/30"
+        className="text-indigo-300 dark:text-indigo-500 gap-2 text-start w-fit pl-0 dark:hover:text-white"
       >
-        <p>Learn more</p>
+        Learn more
       </Button>
     </div>
   );
