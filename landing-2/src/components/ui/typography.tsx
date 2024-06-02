@@ -49,6 +49,7 @@ const variantElementMap: Record<
   lead: "p",
   mutedText: "p",
   ul: "ul",
+  subheading: "p",
 };
 
 export interface TypographyProps
