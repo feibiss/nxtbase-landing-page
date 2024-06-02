@@ -1,46 +1,72 @@
-import React from "react";
-import Container from "./container";
-import Image from "next/image";
-import { featuredTestimonial } from "@lib/enums";
-import { Typography } from "@components/ui/typography";
+"use client";
 
-const FeaturedTestimonial = ({}) => {
+import React, { useState } from "react";
+import Container from "./container";
+import { Typography } from "../ui/typography";
+import Image from "next/image";
+import { TESTIMONIES } from "@/lib/enums";
+import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
+
+const Testimonials = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? TESTIMONIES.length - 1 : prevIndex - 1
+    );
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === TESTIMONIES.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const currentTestimony = TESTIMONIES[currentIndex];
+
   return (
-    <Container>
-      <div className="mx-auto col-span-12  pt-20 lg:pt-[12rem] flex flex-col items-center justify-center gap-8 text-sm leading-6 text-gray-900 dark:text-gray-300 xl:mx-0 xl:max-w-none">
-        <Typography className="text-center w-full" variant={"h2"}>
-          Loved by industry leaders
-        </Typography>
-        <Typography
-          variant="subheading"
-          className="w-3/4 lg:max-w-[50%] mx-auto text-balance text-white/60 text-center"
-        >
-          Great, now that we have your attention, we will actually talk about
-          how we help you
-        </Typography>
-        <figure className="col-span-2 w-4/5 md:w-full max-w-6xl mx-auto rounded-2xl shadow-lg ring-1 ring-gray-900/5 space-y-10">
-          <blockquote className="text-white/60 font-normal text-balance text-2xl lg:text-4xl xl:text-4xl leading-normal w-full text-center lg:leading-relaxed xl:leading-normal ">
-            {`“${featuredTestimonial.body}”`}
-          </blockquote>
-          <figcaption className="flex items-center justify-center w-full gap-x-4 border-t border-gray-900/10 px-6">
-            <Image
-              width={70}
-              height={50}
-              className="h-20 w-20 flex-none rounded-full bg-gray-50"
-              src={featuredTestimonial.author.imageUrl}
-              alt=""
-            />
-            <div className="flex flex-col w-fit gap-1">
-              <div className="font-semibold text-card-foreground w-fit">
-                {featuredTestimonial.author.name}
-              </div>
-              <div className="text-card-foreground/70 w-fit">{`@${featuredTestimonial.author.handle}`}</div>
+    <Container classNames="flex justify-center items-center">
+      <div className="w-full p-6 shadow-lg rounded-lg">
+        <div className="flex flex-col items-center justify-center gap-4 mx-auto md:flex-col md:items-center md:justify-center">
+          <Typography className="text-center w-full" variant={"h2"}>
+            Loved by industry leaders
+          </Typography>
+          <Typography
+            variant="subheading"
+            className="w-3/4 lg:max-w-[50%] mx-auto text-balance text-white/60 text-center"
+          >
+            Great, now that we have your attention, we will actually talk about
+            how we help you
+          </Typography>
+          <div className="flex flex-col items-center justify-center gap-8 text-balance md:flex-row md:w-2/4">
+            <button onClick={handlePrev} className="p-2 md:p-1">
+              <ChevronLeftIcon className="w-8 h-8 md:w-6 md:h-6" />
+            </button>
+            <Typography className="text-lg md:flex-grow text-balance px-12">
+              &rdquo;{currentTestimony.review}&rdquo;
+            </Typography>
+            <button onClick={handleNext} className="p-2 md:p-1">
+              <ChevronRightIcon className="w-8 h-8 md:w-6 md:h-6" />
+            </button>
+          </div>
+          <div className="flex flex-col items-center justify-center mt-10 md:mt-4">
+            <div className="relative w-24 h-24">
+              <Image
+                src={currentTestimony.profilePic}
+                layout="fill"
+                objectFit="cover"
+                className="rounded-full"
+                alt={`Picture of ${currentTestimony.author}`}
+              />
             </div>
-          </figcaption>
-        </figure>
+            <Typography className="mt-2">
+              @{currentTestimony.author.split(" ")[0]}
+            </Typography>
+          </div>
+        </div>
       </div>
     </Container>
   );
 };
 
-export default FeaturedTestimonial;
+export default Testimonials;

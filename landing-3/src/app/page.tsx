@@ -5,8 +5,8 @@ import Spacer from "@/components/ui/spacer";
 import ContactCard from "@/components/containers/contact";
 import FAQ from "@components/ui/faq";
 import Pricing from "@components/containers/pricing";
-import FeaturedTestimonial from "@components/containers/featuresTestimonial";
 import Features from "@components/containers/featuresCard";
+import Testimonials from "@components/containers/featuresTestimonial";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
       <Brands />
       <Spacer type="lg" />
       <Features />
-      <FeaturedTestimonial />
+      <Testimonials/>
       <Pricing />
       <FAQ />
       <ContactCard />
