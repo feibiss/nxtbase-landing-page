@@ -4,7 +4,12 @@ import { Typography } from "../ui/typography";
 import { Input } from "../ui/input";
 import { Label } from "../ui/label";
 import { FOOTER_LINKS, FooterCategory } from "@/lib/enums";
-import { CubeIcon } from "@radix-ui/react-icons";
+import {
+  CubeIcon,
+  GitHubLogoIcon,
+  InstagramLogoIcon,
+  TwitterLogoIcon,
+} from "@radix-ui/react-icons";
 
 export default function Footer() {
   return (
@@ -18,17 +23,17 @@ export default function Footer() {
           </span>
         </div>
         <div className="flex space-x-4">
-          <a href="https://twitter.com" aria-label="Twitter">
+          <a href="#!" aria-label="Twitter">
+            <TwitterLogoIcon className="text-gray-400 hover:text-white" />
+          </a>
+          <a href="#!" aria-label="Facebook">
             <CubeIcon className="text-gray-400 hover:text-white" />
           </a>
-          <a href="https://facebook.com" aria-label="Facebook">
-            <CubeIcon className="text-gray-400 hover:text-white" />
+          <a href="#!" aria-label="Instagram">
+            <InstagramLogoIcon className="text-gray-400 hover:text-white" />
           </a>
-          <a href="https://instagram.com" aria-label="Instagram">
-            <CubeIcon className="text-gray-400 hover:text-white" />
-          </a>
-          <a href="https://github.com" aria-label="GitHub">
-            <CubeIcon className="text-gray-400 hover:text-white" />
+          <a href="#!" aria-label="GitHub">
+            <GitHubLogoIcon className="text-gray-400 hover:text-white" />
           </a>
         </div>
       </div>
