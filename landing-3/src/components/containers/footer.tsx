@@ -4,7 +4,6 @@ import { Typography } from "../ui/typography";
 import { Input } from "../ui/input";
 import { Label } from "../ui/label";
 import { FOOTER_LINKS, FooterCategory } from "@/lib/enums";
-import Image from "next/image";
 import {
   CubeIcon,
   GitHubLogoIcon,
@@ -14,7 +13,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col max-w-7xl xl:max-w-[1400px] mx-auto justify-start relative bg-gray-950 px-8 md:pt-8 lg:pt-8">
+    <footer className="flex flex-col max-w-7xl xl:max-w-[1400px] mx-auto justify-start relative bg-gray-950 px-8 pt-8">
       <div className="text-white flex items-center justify-between">
         <div className="flex items-center">
           <div className="bg-white rounded-full h-6 w-6 flex items-center justify-center"></div>

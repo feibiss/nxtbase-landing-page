@@ -6,7 +6,7 @@ import Footer from "@/components/containers/footer";
 import { TailwindIndicator } from "@components/ui/tailwindIndicator";
 
 export const metadata: Metadata = {
-  title: "Clubbed",
+  title: "Trois",
   description: "Created by Nextbase team",
 };
 
