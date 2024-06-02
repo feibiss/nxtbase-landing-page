@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="flex w-full h-full flex-col md:flex-row md:justify-between items-start md:items-center gap-16 lg:gap-32">
         <div className="max-w-[580px] mt-12 mb-12 md:mt-24 w-full flex z-20 snap-start flex-col items-start justify-center lg:items-start gap-6 text-start">
           <div className="flex flex-col items-start justify-start w-full text-foreground">
-            <Typography variant="h1">
+            <Typography variant="h1" className="tracking-tighter">
               A fancy looking hero text to catch your attention
             </Typography>
             <Typography

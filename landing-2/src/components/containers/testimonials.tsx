@@ -9,7 +9,7 @@ const Testimonials = ({}) => {
     <Container classNames="flex flex-col w-full text-center justify-center items-center mt-16">
       <Typography
         variant={"h2"}
-        className="w-full text-center mx-auto text-lime-900"
+        className="w-full text-center mx-auto text-lime-900 tracking-tighter"
       >
         What our users are saying
       </Typography>
