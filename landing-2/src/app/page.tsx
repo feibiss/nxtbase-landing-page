@@ -7,6 +7,7 @@ import FeatureList from "@/components/containers/featurelist";
 import Testimonials from "@/components/containers/testimonials";
 import ContactCard from "@/components/containers/contact";
 import Globe from "@/components/containers/globe";
+import FAQ from "@/components/containers/faq";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <StatsCard />
       <Spacer type="lg" />
       <FeatureList />
+      <FAQ />
       <Testimonials />
       <ContactCard />
     </div>

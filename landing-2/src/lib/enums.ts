@@ -381,3 +381,26 @@ export const testimonials = [
     ],
   ],
 ];
+
+export const FAQ_QUESTIONS = [
+  {
+    id: 1,
+    question: "Question 1",
+    answer: "",
+  },
+  {
+    id: 2,
+    question: "Question 2",
+    answer: "",
+  },
+  {
+    id: 3,
+    question: "Question 3",
+    answer: "",
+  },
+  {
+    id: 4,
+    question: "Question 4",
+    answer: "",
+  },
+];
