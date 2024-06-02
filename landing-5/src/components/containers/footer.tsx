@@ -9,31 +9,33 @@ import { CubeIcon } from "@radix-ui/react-icons";
 export default function Footer() {
   return (
     <footer className="flex flex-col justify-start relative bg-gray-950 px-8 md:pt-8  pt-8">
-     <div className="flex col-span-11 md:col-span-6 mx-auto flex-col justify-center items-center text-center">
+      <div className="flex col-span-11 md:col-span-6 mx-auto flex-col justify-center items-center text-center">
         <div className="flex flex-col items-center justify-center text-center space-y-2">
-          <Typography variant="h1" className="font-bold text-white md:text-[40px] md:leading-[48px] ">
+          <Typography
+            variant="h1"
+            className="font-bold text-white md:text-[40px] md:leading-[48px] tracking-tighter"
+          >
             A fancy looking hero text to catch your attention{" "}
           </Typography>
           <Typography
             variant="p"
             className="max-w-xl text-primary-foreground md:px-0 leading-7 font-extralight text-fuchsia-50 mt-10"
           >
-           Great, now that we have your attention, we will actually talk about how we help you
+            Great, now that we have your attention, we will actually talk about
+            how we help you
           </Typography>
         </div>
         <div className="w-full flex lg:flex-row flex-col  items-start gap-8 lg:items-center my-10">
           <div className="w-max-2/4 mx-auto relative md:flex justify-center">
             <Button className="mt-0 scroll-m-0 relative bg-fuchsia-50 text-dark hover:text-fuchsia-50 font-medium">
-            Get started for free
+              Get started for free
             </Button>
             <Button className="my-3 md:my-0 px-16  md:ms-5  scroll-m-0 relative bg-transparent font-medium border border-fushia-50 text-fuchsia-50">
-            Watch Video
+              Watch Video
             </Button>
-           
           </div>
-         
         </div>
-        </div>
+      </div>
       <div className="grid grid-cols-1 h-full gap-8 lg:grid-cols-2 lg:gap-10">
         <div className="col-span-1 flex flex-wrap justify-start lg:justify-normal items-start w-full content-start gap-4 pt-4 md:pt-12 md:mx-auto md:mt-8 md:gap-8 lg:col-span-1 lg:mt-0">
           {FOOTER_LINKS.map((details) => {
@@ -62,7 +64,10 @@ export default function Footer() {
                 type="email"
               />
             </div>
-            <Button  className="w-full py-0 bg-fuchsia-50 text-dark hover:text-white" type="submit">
+            <Button
+              className="w-full py-0 bg-fuchsia-50 text-dark hover:text-white"
+              type="submit"
+            >
               Subscribe
             </Button>
           </form>

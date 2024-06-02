@@ -24,7 +24,10 @@ export default function Hero() {
             </p>
             <ArrowRightIcon className="h-4 w-4" />
           </Link>
-          <Typography variant="h1" className="text-left text-cyan-900 my-4">
+          <Typography
+            variant="h1"
+            className="text-left text-cyan-900 my-4 tracking-tighter"
+          >
             A fancy looking hero text to catch your attention
           </Typography>
           <Typography variant="p" className="max-w-sm md:max-w-lg md:px-0">

@@ -20,7 +20,9 @@ export default function FeatureCard2({
     <div className=" group relative mt-8 md:mt-0 md:h-[85vh]  row-span-1 mx-auto w-full rounded-md bg-inherit flex justify-center items-center">
       <div className="relative lg:h-3/4 h-full max-h-none  z-10 w-full border-none bg-transparent  ">
         <div
-          className={"col-span-1 flex flex-col mx-auto items-center gap-8 lg:flex-row"}
+          className={
+            "col-span-1 flex flex-col mx-auto items-center gap-8 lg:flex-row"
+          }
         >
           <div className="order-2 w-full md:w-2/4 col-span-2 flex h-full items-center justify-center">
             <video
@@ -35,14 +37,18 @@ export default function FeatureCard2({
           <div className="order-0 md:w-2/4 w-full flex flex-col justify-center items-start space-y-4">
             <div className="text-sm flex  ">
               <Typography variant={"p"} className="text-sm  font-semibold">
-              {feature.title} {id}
-            </Typography>
+                {feature.title} {id}
+              </Typography>
             </div>
-            <Typography variant="h1" className="font-bold text-primary md:text-[40px] md:leading-[48px] ">
-            A fancy looking hero text to catch your attention{" "}
+            <Typography
+              variant="h1"
+              className="font-bold text-primary md:text-[40px] md:leading-[48px] tracking-tighter"
+            >
+              A fancy looking hero text to catch your attention{" "}
             </Typography>
             <Typography className=" text-lg font-normal text-pretty text-secondary-foreground">
-            Great, now that we have your attention, we will actually talk about how we help you
+              Great, now that we have your attention, we will actually talk
+              about how we help you
             </Typography>
             <Typography variant={"ul"} className="my-4 list-none">
               {feature.features?.map((feature) => (
@@ -53,18 +59,18 @@ export default function FeatureCard2({
                 >
                   <CheckCircledIcon className="mr-2 flex h-6 w-6 items-center text-primary justify-center capitalize text-green-500" />
 
-                  <p className="text-ellipsis text-wrap text-base ">{feature}</p>
+                  <p className="text-ellipsis text-wrap text-base ">
+                    {feature}
+                  </p>
                 </li>
               ))}
             </Typography>
             <div className="relative group">
-            <Button className="mt-0 scroll-m-0 relative bg-primary">
-            Get started for free
-            </Button>
-           
+              <Button className="mt-0 scroll-m-0 relative bg-primary">
+                Get started for free
+              </Button>
+            </div>
           </div>
-          </div>
-          
         </div>
       </div>
     </div>

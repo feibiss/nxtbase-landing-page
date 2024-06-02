@@ -20,11 +20,11 @@ const PricingCard: React.FC<PricingCardProps> = ({
 }) => {
   return (
     <div
-      className={`relative rounded-lg p-6 w-full h-full shadow-lg ${dark ? "bg-gray-900 text-white" : "bg-white text-black"}`}
+      className={`relative rounded-lg p-6 max-w-3/4 mx-auto h-full shadow-lg my-5 md:my-0  ${dark ? "bg-gray-900 text-white" : "bg-white text-black"}`}
     >
       {popular && (
         <div
-          className={` ${dark ? "text-black" : "text-white"} absolute top-2 right-2 px-3 py-1 mt-2 mr-2 bg-blue-100 text-sm font-semibold rounded`}
+          className={` ${dark ? "text-black" : "text-white"} absolute top-2 right-2 px-3 py-1 mt-2 mr-2 bg-white text-sm font-semibold rounded`}
         >
           Most popular
         </div>
@@ -57,11 +57,11 @@ const PricingCard: React.FC<PricingCardProps> = ({
         ))}
       </ul>
       <Button
-        className={`w-full mt-8 ${dark ? "bg-blue-50 text-black" : "bg-black text-white"} ${popular ? "bg-blue-50 text-black" : ""}`}
+        className={`w-full mt-8 ${dark ? "bg-blue-50 text-white" : "bg-black text-white"} ${popular ? "bg-white text-black" : ""}`}
         variant={"secondary"}
         size="sm"
       >
-        Get started today
+        Get started
       </Button>
     </div>
   );
@@ -78,15 +78,20 @@ const Pricing = () => {
 
   return (
     <>
-      <Typography className="text-center w-full mx-auto" variant={"h2"}>
-        Simple and transparent pricing
-      </Typography>
-      <Typography className="mx-auto px-4 text-center text-wrap text-gray-800 md:px-0 dark:text-gray-300">
-        Great, now that we have your attention, we will actually talk about how
-        we help you
-      </Typography>
+      <div className="flex w-full flex-col justify-start items-center space-y-4 pb-4">
+        <Typography
+          variant="h2"
+          className="text-center font-bold w-full mx-auto md:text-[40px] md:leading-[48px]"
+        >
+          Simple and transparent pricing
+        </Typography>
+        <Typography className="text-center text-lg font-normal text-pretty text-secondary-foreground px-5 md:px-0">
+          Great, now that we have your attention, we will actually talk about
+          how we help you
+        </Typography>
+      </div>
 
-      <div className="flex flex-row gap-8 p-6 bg-blue-50">
+      <div className="md:flex flex-row gap-6 p-6 bg-blue-50">
         <PricingCard
           title="Freelancer"
           price="$799"

@@ -30,7 +30,10 @@ export default function Hero() {
             <ArrowRightIcon className="h-4 w-4" />
           </Link>
         </div>
-        <Typography variant="h1" className="text-lime-900 text-center">
+        <Typography
+          variant="h1"
+          className="text-lime-900 text-center tracking-tighter"
+        >
           A fancy looking hero text to catch your attention
         </Typography>
         <Typography

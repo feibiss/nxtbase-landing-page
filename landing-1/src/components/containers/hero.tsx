@@ -32,7 +32,7 @@ export default function Hero() {
             <ArrowRightIcon className="h-4 w-4" />
           </Link>
         </div>
-        <Typography variant="h1" className="text-blue-900">
+        <Typography variant="h1" className="text-blue-900 tracking-tighter">
           A fancy looking hero text to catch your attention
         </Typography>
         <Typography

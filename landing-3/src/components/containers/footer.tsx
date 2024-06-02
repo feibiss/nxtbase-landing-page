@@ -4,12 +4,16 @@ import { Typography } from "../ui/typography";
 import { Input } from "../ui/input";
 import { Label } from "../ui/label";
 import { FOOTER_LINKS, FooterCategory } from "@/lib/enums";
-import Image from "next/image";
-import { CubeIcon } from "@radix-ui/react-icons";
+import {
+  CubeIcon,
+  GitHubLogoIcon,
+  InstagramLogoIcon,
+  TwitterLogoIcon,
+} from "@radix-ui/react-icons";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col max-w-7xl xl:max-w-[1400px] mx-auto justify-start relative bg-gray-950 px-8 md:pt-8 lg:pt-8">
+    <footer className="flex flex-col max-w-7xl xl:max-w-[1400px] mx-auto justify-start relative bg-gray-950 px-8 pt-8">
       <div className="text-white flex items-center justify-between">
         <div className="flex items-center">
           <div className="bg-white rounded-full h-6 w-6 flex items-center justify-center"></div>
@@ -19,17 +23,17 @@ export default function Footer() {
           </span>
         </div>
         <div className="flex space-x-4">
-          <a href="https://twitter.com" aria-label="Twitter">
+          <a href="#!" aria-label="Twitter">
+            <TwitterLogoIcon className="text-gray-400 hover:text-white" />
+          </a>
+          <a href="#!" aria-label="Facebook">
             <CubeIcon className="text-gray-400 hover:text-white" />
           </a>
-          <a href="https://facebook.com" aria-label="Facebook">
-            <CubeIcon className="text-gray-400 hover:text-white" />
+          <a href="#!" aria-label="Instagram">
+            <InstagramLogoIcon className="text-gray-400 hover:text-white" />
           </a>
-          <a href="https://instagram.com" aria-label="Instagram">
-            <CubeIcon className="text-gray-400 hover:text-white" />
-          </a>
-          <a href="https://github.com" aria-label="GitHub">
-            <CubeIcon className="text-gray-400 hover:text-white" />
+          <a href="#!" aria-label="GitHub">
+            <GitHubLogoIcon className="text-gray-400 hover:text-white" />
           </a>
         </div>
       </div>
